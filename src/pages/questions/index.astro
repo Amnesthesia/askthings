@@ -1,0 +1,52 @@
+---
+// Every card on the site, browsable and filterable. The island server-renders
+// the complete list, so without JavaScript this is still the whole database.
+import QuestionBrowser from "@react/components/QuestionBrowser";
+import type { Row } from "@react/components/QuestionBrowser";
+import { publishedDecks } from "../../common.ts";
+import Base from "../../layouts/Base.astro";
+import { cardHeadline, cardPath, cardSummary, SITE_URL, type DilemmaCard } from "../../shared.ts";
+
+const decks = publishedDecks();
+const rows: Row[] = decks.flatMap((deck) =>
+	deck.cards.map((card) => ({
+		id: card.id,
+		deck: deck.deck,
+		deckName: deck.name,
+		kind: deck.kind,
+		tier: card.tier,
+		intensity: card.intensity,
+		tags: card.tags,
+		scores: card.scores,
+		headline: cardHeadline(deck.kind, card),
+		body:
+			deck.kind === "dilemma"
+				? `${(card as DilemmaCard).setup} ${(card as DilemmaCard).dilemma}`
+				: deck.kind === "pair"
+					? cardSummary(deck.kind, card)
+					: "",
+		path: cardPath(deck.deck, card.id),
+	})),
+);
+const description = `Browse all ${rows.length} questions across ${decks.length} decks. Filter by deck, exposure level, conversation and depth scores, or tag.`;
+const schema = [
+	{
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: "All questions",
+		numberOfItems: rows.length,
+		itemListElement: rows.slice(0, 100).map((r, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: r.headline,
+			url: `${SITE_URL}${r.path}`,
+		})),
+	},
+];
+---
+
+<Base title="All questions" description={description} path="/questions/" schema={schema}>
+  <h1>All questions</h1>
+  <p>{description}</p>
+  <QuestionBrowser client:load rows={rows} />
+</Base>

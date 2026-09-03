@@ -98,7 +98,7 @@ function fieldsOf(
 
 function requestFor({ spec, tier, provider, n }: Task): JsonRequest {
 	return {
-		model: GEN_MODEL[provider],
+		model: spec.generation.models?.[provider] ?? GEN_MODEL[provider],
 		system: generateSystem(spec),
 		user: generateUser(
 			spec,
@@ -206,12 +206,20 @@ async function main() {
 		`generate: ${tasks.length} requests (${decks.length} decks × providers ${providers.join(",")})`,
 	);
 
-	// One batch per provider, the three providers in parallel. Requests are
-	// built up front so every avoid-list reflects the same starting state.
+	// One batch per (provider, model), all in parallel. Requests are built up
+	// front so every avoid-list reflects the same starting state. Grouped by
+	// model too because a Gemini batch must use one model, and decks may
+	// override theirs in decks.yml.
+	const groups = new Map<string, { provider: ProviderName; tasks: Task[] }>();
+	for (const t of tasks) {
+		const key = `${t.provider}:${t.spec.generation.models?.[t.provider] ?? GEN_MODEL[t.provider]}`;
+		groups.set(key, {
+			provider: t.provider,
+			tasks: [...(groups.get(key)?.tasks ?? []), t],
+		});
+	}
 	await Promise.all(
-		providers.map(async (provider) => {
-			const mine = tasks.filter((t) => t.provider === provider);
-			// Gemini batches need one model per batch; each provider uses one here.
+		[...groups.values()].map(async ({ provider, tasks: mine }) => {
 			try {
 				const results = await callJsonMany(mine.map(requestFor), {
 					stage: "generate",

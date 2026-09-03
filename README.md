@@ -72,6 +72,8 @@ generation:
   candidatesPerTier: 25   # asked per provider per tier per call
   targetPerTier: 30       # publish keeps the best cards up to this many
   brief: |                # what a card IS, the mechanic, hard rules, exemplars
+  models:                 # optional per-provider model override for this deck
+    anthropic: claude-sonnet-5
 ```
 
 ## Content model

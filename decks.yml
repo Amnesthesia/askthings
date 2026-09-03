@@ -9,6 +9,9 @@
 # play.howToPlay: shown on the deck page and behind the game's help button.
 # generation.candidatesPerTier: asked per provider per tier per call.
 # generation.targetPerTier: publish keeps the best cards up to this many.
+# generation.models: optional per-provider model override for this deck, e.g.
+#   models: { anthropic: claude-sonnet-5, gemini: gemini-3.8-flash, openai: gpt-5.6-terra }
+#   Defaults (and RATE_MODEL / SAFETY_MODEL for the judges) live in src/stage.ts.
 # tiers[].name/description/guidance/intensity are for prompts and publishing
 #   only; the site shows "Level n" and nothing else.
 

@@ -18,6 +18,7 @@ import {
 	type Tier,
 	validateDeck,
 } from "./common.ts";
+import { type ProviderName, providerOfModel } from "./providers/base.ts";
 
 export interface TierSpec extends Tier {
 	/** Where cards written for this tier land on the global 1-4 scale. */
@@ -37,6 +38,8 @@ export interface DeckSpec {
 		candidatesPerTier: number;
 		/** Publish keeps the best cards up to this many per tier. */
 		targetPerTier: number;
+		/** Per-provider generation model for this deck; defaults in src/stage.ts. */
+		models?: Partial<Record<ProviderName, string>>;
 	};
 	tiers: TierSpec[];
 }
@@ -62,6 +65,20 @@ export function loadDeckSpecs(
 		for (const k of ["candidatesPerTier", "targetPerTier"] as const)
 			if (!Number.isInteger(s.generation?.[k]) || s.generation[k] < 1)
 				problems.push(`generation.${k}`);
+		for (const [provider, model] of Object.entries(
+			s.generation?.models ?? {},
+		)) {
+			try {
+				if (providerOfModel(model) !== provider)
+					problems.push(
+						`generation.models.${provider}: "${model}" belongs to ${providerOfModel(model)}`,
+					);
+			} catch {
+				problems.push(
+					`generation.models.${provider}: unknown model "${model}"`,
+				);
+			}
+		}
 		for (const t of s.tiers ?? []) {
 			if (!(INTENSITIES as readonly number[]).includes(t.intensity))
 				problems.push(`tier ${t.level} intensity ${t.intensity}`);

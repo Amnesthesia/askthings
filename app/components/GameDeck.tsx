@@ -294,6 +294,7 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 								{d.name}
 							</a>
 						))}
+						<a href="/questions/">All questions</a>
 					</nav>
 					<div className="game-actions">
 						<button
