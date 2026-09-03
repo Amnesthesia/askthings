@@ -60,6 +60,9 @@ const website = {
       // applied after hydration flashes the wrong one first.
       const t = localStorage.getItem("theme");
       if (t) document.documentElement.setAttribute("data-theme", t);
+      // Game mode is server-rendered but must only show when scripts run;
+      // without this class a reader with JavaScript off gets the list.
+      document.documentElement.classList.add("js");
     </script>
   </head>
   <body>

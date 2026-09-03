@@ -114,7 +114,11 @@ body > main {
 	padding-block: 1rem 3rem;
 }
 
+:root {
+	--header-h: 60px;
+}
 .site-header {
+	min-height: var(--header-h);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -342,4 +346,154 @@ body > main {
 		animation: none !important;
 		transition: none !important;
 	}
+}
+
+/* ── Game mode ──────────────────────────────────────────────────────────────
+   Rendered on the server too, so it must not exist for a reader without
+   JavaScript: they get the list. Base.astro adds `js` to <html> inline. */
+.game,
+.game-resume {
+	display: none;
+}
+html.js .game {
+	position: fixed;
+	inset: var(--header-h, 60px) 0 0 0;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	background: var(--bg);
+	border-top: 4px solid var(--tier);
+	touch-action: pan-x pan-y;
+}
+html.game-open {
+	overflow: hidden;
+}
+html.js .game-resume {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 5;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	min-height: 44px;
+	width: auto;
+	padding: 0 1rem;
+	margin: 0;
+	background: var(--fg);
+	color: var(--bg);
+	border: 0;
+	border-radius: 999px;
+}
+
+.game-bar {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.5rem 1rem;
+	border-bottom: 1px solid var(--border);
+}
+.game-level {
+	font-weight: 700;
+	color: var(--tier);
+}
+.game-pos {
+	color: var(--muted);
+	font-variant-numeric: tabular-nums;
+}
+.game-actions {
+	margin-left: auto;
+	display: flex;
+	gap: 0.25rem;
+}
+.wide-only {
+	display: none;
+}
+@media (min-width: 900px) {
+	.wide-only {
+		display: inline-flex;
+	}
+}
+
+.game-stage {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	overflow: hidden;
+	/* Enough for the swipe to be the only gesture: the stage never scrolls. */
+	user-select: none;
+	-webkit-user-select: none;
+}
+.game-card {
+	width: 100%;
+	max-width: 40rem;
+	max-height: 100%;
+	overflow-y: auto;
+	padding: 1.5rem 1.25rem;
+	border-left: 4px solid var(--tier);
+	background: var(--surface);
+	text-align: left;
+	color: var(--fg);
+	animation: card-in 180ms ease-out;
+}
+.game-card .headline {
+	font-size: clamp(1.4rem, 4vw, 2rem);
+	line-height: 1.3;
+	margin: 0;
+}
+@keyframes card-in {
+	from {
+		opacity: 0;
+		transform: translateY(6px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.game-empty {
+	color: var(--muted);
+}
+
+.game-grid {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 1rem;
+	padding: 1rem;
+	overflow: auto;
+}
+.game-grid .game-card {
+	cursor: pointer;
+	border: 1px solid var(--border);
+	border-left: 4px solid var(--tier);
+	margin: 0;
+	height: auto;
+	max-width: none;
+}
+.game-grid .game-card[aria-current="true"] {
+	outline: 2px solid var(--tier);
+}
+.game-grid .game-level {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 0.85rem;
+}
+
+.game-nav {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+	border-top: 1px solid var(--border);
+}
+.game-nav .icon-button {
+	width: 56px;
+	height: 48px;
+}
+.icon-button:disabled {
+	opacity: 0.35;
+	cursor: default;
 }
