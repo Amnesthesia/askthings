@@ -38,6 +38,11 @@ export interface DeckSpec {
 		candidatesPerTier: number;
 		/** Publish keeps the best cards up to this many per tier. */
 		targetPerTier: number;
+		/** The deck is generated as ONE complete run per provider (21 Questions):
+		 * asked at targetPerTier, never deduplicated across runs, rated and
+		 * published as a whole. Sequential decks without this (Fast Friends) are
+		 * oversampled and the best cards per set are kept. */
+		wholeRun?: boolean;
 		/** Per-provider generation model for this deck; defaults in src/stage.ts. */
 		models?: Partial<Record<ProviderName, string>>;
 	};

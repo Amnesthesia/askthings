@@ -7,7 +7,7 @@ import type { DeckKind, Intensity } from "./shared.ts";
 import { INTENSITY_NAMES } from "./shared.ts";
 
 export const PROMPT_VERSION = {
-	generate: "generate@1",
+	generate: "generate@2",
 	dedupe: "dedupe@1",
 	rate: "rate@1",
 	safety: "safety@1",
@@ -104,7 +104,7 @@ export function generateUser(
 		`Deck: ${spec.name}. Level ${tier.level} of ${spec.tiers.length} ("${tier.name}": ${tier.description}).`,
 		`Guidance for this level: ${tier.guidance}`,
 		`Target exposure level: ${tier.intensity} (${INTENSITY_NAMES[tier.intensity]}).`,
-		spec.play.order === "sequential"
+		spec.generation.wholeRun
 			? `Write the complete run of exactly ${n} cards, in play order.`
 			: `Write ${n} cards for this level. Vary topic, form and length; no two cards on the same subject.`,
 	];

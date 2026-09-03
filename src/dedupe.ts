@@ -41,6 +41,21 @@ async function dedupeDeck(spec: DeckSpec) {
 	const deck = readDeck(spec);
 	const fresh = all.filter((c) => c.status === "new");
 	if (!fresh.length) return;
+	// A whole-run deck publishes exactly one run, so the same question in two
+	// providers' runs is not a duplicate: rate and publish decide between runs.
+	if (spec.generation.wholeRun) {
+		for (const c of fresh) c.status = "unique";
+		writeCandidates(spec.deck, all);
+		console.log(
+			ratio(
+				`dedupe ${spec.deck}`,
+				fresh.length,
+				fresh.length,
+				new Map([["whole-run deck, not deduplicated", 0]]),
+			),
+		);
+		return;
+	}
 	const accepted: string[] = [
 		...deck.cards.map((c) => headlineOf(deck, c)),
 		...all

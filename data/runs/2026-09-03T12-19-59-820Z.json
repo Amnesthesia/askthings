@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-03T12:19:59.820Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "generate": {
+      "calls": 63,
+      "input": 61804,
+      "output": 167267,
+      "cached": 20841,
+      "cacheHits": 0,
+      "usd": 2.8736207000000014,
+      "retries": 0,
+      "failures": 1
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 21,
+      "input": 20482,
+      "output": 29281,
+      "cached": 18653,
+      "cacheHits": 0,
+      "usd": 0.8437614999999998,
+      "retries": 0,
+      "failures": 0
+    },
+    "gemini": {
+      "calls": 21,
+      "input": 21360,
+      "output": 106663,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 1.322676,
+      "retries": 0,
+      "failures": 1
+    },
+    "openai": {
+      "calls": 21,
+      "input": 19962,
+      "output": 31323,
+      "cached": 2188,
+      "cacheHits": 0,
+      "usd": 0.7071832,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

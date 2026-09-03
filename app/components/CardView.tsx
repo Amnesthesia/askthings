@@ -24,14 +24,9 @@ export default function CardView({
 			<>
 				<p className="headline">Would you rather…</p>
 				<div className="pair">
-					<div>
-						<small>A</small>
-						{a}
-					</div>
-					<div>
-						<small>B</small>
-						{b}
-					</div>
+					<div>{a}</div>
+					<div className="pair-or">or</div>
+					<div>{b}</div>
 				</div>
 			</>
 		);

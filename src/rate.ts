@@ -112,7 +112,7 @@ async function rateDeck(spec: DeckSpec) {
 	});
 
 	// An ordered run is a sequence, not a set: one bad card sinks the run.
-	if (spec.play.order === "sequential") {
+	if (spec.generation.wholeRun) {
 		const byBatch = new Map<string, Candidate[]>();
 		for (const c of todo)
 			byBatch.set(c.batch, [...(byBatch.get(c.batch) ?? []), c]);

@@ -1,0 +1,89 @@
+{
+  "at": "2026-09-03T12:22:34.774Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "dedupe/inquisitives": {
+      "calls": 3,
+      "input": 2900,
+      "output": 1371,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.00731625,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/never-have-i-ever": {
+      "calls": 6,
+      "input": 7199,
+      "output": 2721,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.015603000000000002,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/fast-friends": {
+      "calls": 1,
+      "input": 903,
+      "output": 401,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.002181,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/twenty-one-questions": {
+      "calls": 1,
+      "input": 390,
+      "output": 172,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.0009375,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/would-you-rather": {
+      "calls": 1,
+      "input": 810,
+      "output": 359,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.00195375,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/thought-experiments": {
+      "calls": 1,
+      "input": 319,
+      "output": 233,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.001113,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/undercurrent": {
+      "calls": 3,
+      "input": 2744,
+      "output": 1077,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.00609675,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 16,
+      "input": 15265,
+      "output": 6334,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.03520125,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

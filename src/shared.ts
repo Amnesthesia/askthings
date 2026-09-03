@@ -28,7 +28,12 @@ export const DECK_KINDS = ["question", "pair", "dilemma"] as const;
 export type DeckKind = (typeof DECK_KINDS)[number];
 
 /** Slugs a deck may not use because a route already owns them. */
-export const RESERVED_SLUGS = ["questions", "about", "404"] as const;
+export const RESERVED_SLUGS = [
+	"questions",
+	"favourites",
+	"about",
+	"404",
+] as const;
 
 /** 1–5 each, null until `rate` has run. Always present so callers never
  * branch on the object being missing. */
@@ -73,6 +78,9 @@ interface CardBase {
 	/** null means hand-authored. */
 	gen: Provenance | null;
 	scores: Scores;
+	/** Only on synthetic mixed decks built in the browser (favourites), where
+	 * cards come from decks of different kinds. Never present in content/. */
+	kind?: DeckKind;
 }
 
 export interface QuestionCard extends CardBase {

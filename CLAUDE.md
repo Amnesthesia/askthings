@@ -80,7 +80,9 @@ The whole screen is the level's colour (`--game-1..4`, white text >= 4.5:1 acros
 ±14° hue drift, tested), the card is white and bold, four edge chevrons, a menu icon that
 folds down a bar of the other games. `/` opens straight into the first published deck.
 Cards slide out/in in the direction of travel (240ms, `SLIDE_MS`). Shake to shuffle; shuffle
-returns to the start of the level. Horizontal swipe = next/previous card in the tier;
+returns to the start of the level. Past the last card of a level the next swipe opens the
+next level. A heart stars the card into localStorage; `/favourites/` is a synthetic mixed
+deck (`FavouritesGame`, `linkable={false}`, cards carry their own `kind`). Horizontal swipe = next/previous card in the tier;
 vertical swipe = jump tiers. Desktop: arrow keys on the same axes, visible level indicator
 ("Level 2", never the name) and position ("7 / 12"), and an option to show all tiers at once, one card each. The URL reflects
 the current card (`/{deck}/{id}/`) so any position is linkable and back/forward work.
@@ -169,7 +171,8 @@ can check, tier guidance, 3–4 exemplars in the house voice. Summaries:
   consensual, legal).
 - **Fast Friends** — the Aron procedure (3 sets × 12, both answer, escalating), ORIGINAL
   questions, ≤ 30 words, may be two-part or an instruction. `rate` keeps 12 per set.
-- **21 Questions** — a complete ordered run of 21 (warm → curious → personal → a closer),
+- **21 Questions** (`generation.wholeRun: true` — the ONLY deck where one weak card sinks the
+  run; Fast Friends is oversampled and the best 12 per set are kept) — a complete ordered run of 21 (warm → curious → personal → a closer),
   `position` echoed, no adjacent same-topic cards, ≤ 20 words; a run is kept or rejected
   whole; `ordered: true`.
 - **Would You Rather** — `a`/`b` ≤ 12 words each, parallel grammar, genuinely hard, reveals

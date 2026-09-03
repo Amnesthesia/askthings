@@ -11,7 +11,7 @@ import {
 	reject,
 	writeCandidates,
 } from "./candidates.ts";
-import { type Card, cardId, EMPTY_SCORES } from "./common.ts";
+import { type Card, cardId, EMPTY_SCORES, normaliseText } from "./common.ts";
 import {
 	type DeckSpec,
 	deckSpec,
@@ -33,10 +33,7 @@ function toCard(spec: DeckSpec, c: Candidate): Card {
 	return {
 		...c.fields,
 		id: cardId(spec.deck, headlineOfFields(spec.kind, c.fields)),
-		tier:
-			spec.play.order === "sequential"
-				? c.tier
-				: tierForIntensity(spec, intensity),
+		tier: spec.generation.wholeRun ? c.tier : tierForIntensity(spec, intensity),
 		intensity,
 		tags: c.tags,
 		origin: "origin" in c.fields ? c.fields.origin : null,
@@ -54,7 +51,7 @@ function publishDeck(spec: DeckSpec) {
 	const have = new Set(deck.cards.map((c) => c.id));
 	let chosen: Candidate[];
 
-	if (spec.play.order === "sequential") {
+	if (spec.generation.wholeRun) {
 		if (deck.cards.length) {
 			for (const c of safe) {
 				reject(c, spec.kind, "publish", "ordered deck already has its run");
@@ -79,7 +76,14 @@ function publishDeck(spec: DeckSpec) {
 				count(reasons, `no complete run of ${spec.generation.targetPerTier}`);
 		}
 	} else {
-		// Best first, then fill each tier up to its target.
+		// Best first, then fill each tier up to its target. A canonical thought
+		// experiment retold under three titles is one card: the first (best) one
+		// per normalised origin is kept, the rest rejected with the reason.
+		const originsSeen = new Set(
+			deck.cards
+				.map((c) => (c.origin ? normaliseText(c.origin) : ""))
+				.filter(Boolean),
+		);
 		const room = new Map(
 			spec.tiers.map((t) => [
 				t.level,
@@ -89,6 +93,21 @@ function publishDeck(spec: DeckSpec) {
 		);
 		chosen = [];
 		for (const c of [...safe].sort((a, b) => quality(b) - quality(a))) {
+			const rawOrigin = "origin" in c.fields ? c.fields.origin : null;
+			const origin = rawOrigin ? normaliseText(rawOrigin) : "";
+			if (origin) {
+				if (originsSeen.has(origin)) {
+					reject(
+						c,
+						spec.kind,
+						"publish",
+						`another retelling of "${rawOrigin}" scored higher`,
+					);
+					count(reasons, "duplicate origin");
+					continue;
+				}
+				originsSeen.add(origin);
+			}
 			const tier = tierForIntensity(spec, c.judgedIntensity ?? c.intensity);
 			if ((room.get(tier) ?? 0) <= 0) {
 				count(reasons, `level ${tier} full (left as safe)`);

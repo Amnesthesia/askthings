@@ -1,0 +1,20 @@
+---
+// Favourites are per browser (localStorage); this page is the frame the
+// island fills. Nothing to index, so robots are told not to.
+import FavouritesGame from "@react/components/FavouritesGame";
+import { publishedDecks } from "../../common.ts";
+import Base from "../../layouts/Base.astro";
+
+const links = publishedDecks().map((d) => ({ deck: d.deck, name: d.name }));
+---
+
+<Base
+  title="Favourites"
+  description="Every card you have starred, from every deck, as one game grouped by level. Stored in your browser."
+  path="/favourites/"
+  noindex
+>
+  <FavouritesGame client:load decks={links} />
+  <h1>Favourites</h1>
+  <p>Star any card in any game and it appears here, grouped into levels by exposure. Favourites are stored in this browser only.</p>
+</Base>

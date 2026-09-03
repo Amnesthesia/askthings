@@ -299,10 +299,12 @@ body > main {
 	border: 1px solid var(--border);
 	border-radius: var(--pico-border-radius);
 }
-.card .pair small {
-	display: block;
+.pair-or {
+	text-align: center;
 	color: var(--muted);
-	font-weight: 600;
+	font-style: italic;
+	border: 0 !important;
+	padding: 0 !important;
 }
 .card .probes {
 	margin-top: 1rem;
@@ -601,9 +603,10 @@ html.js .game-resume {
 	border-radius: 8px;
 	font-weight: 600;
 }
-.game-card .pair small {
-	display: block;
-	opacity: 0.8;
+.game-card .pair-or {
+	color: #fff;
+	opacity: 0.85;
+	font-weight: 400;
 }
 .game-card .probes {
 	text-align: left;
@@ -774,4 +777,17 @@ html.js .game-resume {
 	display: block;
 	color: var(--muted);
 	margin-top: 0.15rem;
+}
+
+/* Favourite star: filled when starred; the top row is menu / star / status. */
+.game-top .game-star {
+	margin-left: auto;
+	margin-right: 0.5rem;
+}
+.game-empty-state .game-card {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.game-empty-state .game-bar {
+	padding: 1rem;
 }

@@ -107,7 +107,11 @@ function requestFor({ spec, tier, provider, n }: Task): JsonRequest {
 			avoidList(spec, tier.level, readCandidates(spec.deck)),
 		),
 		schema: generateSchema(spec.kind),
-		maxOutputTokens: spec.kind === "dilemma" ? 16000 : 8000,
+		// Gemini counts thinking tokens against maxOutputTokens; a Pro response
+		// ran out of room mid-JSON at 8000, so it gets double headroom.
+		maxOutputTokens:
+			(spec.kind === "dilemma" ? 16000 : 8000) *
+			(provider === "gemini" ? 2 : 1),
 		effort: provider === "anthropic" ? "medium" : "low",
 		...(provider === "gemini" ? { temperature: 1.0 } : {}),
 	};
@@ -121,7 +125,7 @@ function harvest({ spec, tier, provider }: Task, res: CallResult) {
 		console.error(`  [${label}] response had no items`);
 		return;
 	}
-	const sequential = spec.play.order === "sequential";
+	const wholeRun = spec.generation.wholeRun === true;
 	const batch = `${provider}:${res.model}:${Date.now().toString(36)}`;
 	const reasons = new Map<string, number>();
 	const fresh: Candidate[] = [];
@@ -163,7 +167,7 @@ function harvest({ spec, tier, provider }: Task, res: CallResult) {
 			return;
 		}
 		// A writer that lands two levels off the brief did not read the brief.
-		if (!sequential && Math.abs(intensity - tier.intensity) > 1) {
+		if (!wholeRun && Math.abs(intensity - tier.intensity) > 1) {
 			rejectNow(
 				c,
 				`intensity ${intensity} is ${Math.abs(intensity - tier.intensity)} off the level`,
@@ -194,8 +198,7 @@ async function main() {
 	const perTier = process.env.PER_TIER ? Number(process.env.PER_TIER) : null;
 	const tasks: Task[] = decks.flatMap((d) => {
 		const spec = deckSpec(d);
-		const sequential = spec.play.order === "sequential";
-		const n = sequential
+		const n = spec.generation.wholeRun
 			? spec.generation.targetPerTier
 			: (perTier ?? spec.generation.candidatesPerTier);
 		return spec.tiers.flatMap((tier) =>

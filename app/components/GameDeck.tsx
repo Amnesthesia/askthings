@@ -3,6 +3,7 @@ import {
 	ChevronLeft,
 	ChevronRight,
 	ChevronUp,
+	Heart,
 	LayoutGrid,
 	List,
 	Menu,
@@ -29,6 +30,11 @@ import {
 	shuffleOrder,
 	wrap,
 } from "../utils/deckNav.ts";
+import {
+	isFavourite,
+	loadFavourites,
+	toggleFavourite,
+} from "../utils/favourites.ts";
 import CardView from "./CardView.tsx";
 
 export interface DeckLink {
@@ -42,6 +48,9 @@ interface Props {
 	decks: DeckLink[];
 	/** Card to open on; the first card of the first level when absent. */
 	startId?: string;
+	/** Sync the URL to the current card. Off for synthetic decks (favourites)
+	 * whose card pages do not exist. */
+	linkable?: boolean;
 }
 
 /** Degrees of hue drift across one level: enough to feel movement, small
@@ -61,11 +70,18 @@ const SLIDE_MS = 240;
  * always names the current card, so any position is linkable and back/forward
  * work.
  */
-export default function GameDeck({ deck, decks, startId }: Props) {
+export default function GameDeck({
+	deck,
+	decks,
+	startId,
+	linkable = true,
+}: Props) {
 	const cards = useMemo(
 		() => new Map(deck.cards.map((c) => [c.id, c])),
 		[deck],
 	);
+	// Mixed decks (favourites) carry the kind on each card.
+	const kindOf = (c: Card) => c.kind ?? deck.kind;
 	// play.order decides the opening state: random decks open shuffled,
 	// sequential ones never shuffle, free ones offer it.
 	const canShuffle = deck.play.order !== "sequential";
@@ -95,6 +111,19 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 	// Position within the level as a hue offset, centred on the level's colour.
 	const drift =
 		ids.length > 1 ? ((index / (ids.length - 1)) * 2 - 1) * (HUE_DRIFT / 2) : 0;
+
+	// Favourites: read after mount (localStorage), refreshed on every toggle.
+	const [favCount, setFavCount] = useState(0);
+	const [starred, setStarred] = useState(false);
+	useEffect(() => {
+		const refresh = () => {
+			setFavCount(loadFavourites().length);
+			setStarred(id ? isFavourite(id) : false);
+		};
+		refresh();
+		window.addEventListener("favourites-changed", refresh);
+		return () => window.removeEventListener("favourites-changed", refresh);
+	}, [id]);
 
 	const goTo = useCallback((pos: { tier: number; index: number }) => {
 		setTier(pos.tier);
@@ -133,6 +162,13 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 		},
 		[levels, levelPos],
 	);
+	// Shuffle reshuffles every level and puts you at the start of this one.
+	const doShuffle = useCallback(() => {
+		if (!canShuffle) return;
+		setOrder(dealOrder(shuffleOrder(buildOrder(deck)), deck.play.cardsPerTier));
+		setIndexByTier({});
+		setMenu(false);
+	}, [canShuffle, deck]);
 
 	// When the card changes after a directional move, keep the old one around
 	// for one animation so it can slide out while the new one slides in.
@@ -147,29 +183,23 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 		const t = setTimeout(() => setLeaving(null), SLIDE_MS);
 		return () => clearTimeout(t);
 	}, [card]);
-	// Shuffle reshuffles every level and puts you at the start of this one.
-	const doShuffle = useCallback(() => {
-		if (!canShuffle) return;
-		setOrder(dealOrder(shuffleOrder(buildOrder(deck)), deck.play.cardsPerTier));
-		setIndexByTier({});
-		setMenu(false);
-	}, [canShuffle, deck]);
 
 	// URL <-> state. The first render replaces (the deck or home URL becomes the
 	// card URL without adding a history entry); every later change pushes.
 	const first = useRef(true);
 	useEffect(() => {
-		if (!id) return;
+		if (!id || !linkable) return;
 		const path = cardPath(deck.deck, id);
 		if (window.location.pathname === path) return;
 		if (first.current) window.history.replaceState({ id }, "", path);
 		else window.history.pushState({ id }, "", path);
 		first.current = false;
-	}, [id, deck.deck]);
+	}, [id, deck.deck, linkable]);
 	useEffect(() => {
 		first.current = false;
 	}, []);
 	useEffect(() => {
+		if (!linkable) return;
 		const onPop = () => {
 			const target = idFromPath(window.location.pathname, deck.deck);
 			const pos = target ? locate(order, target) : null;
@@ -177,7 +207,7 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 		};
 		window.addEventListener("popstate", onPop);
 		return () => window.removeEventListener("popstate", onPop);
-	}, [order, deck.deck, goTo]);
+	}, [order, deck.deck, goTo, linkable]);
 
 	// Keyboard, only while the game is showing and nothing is focused for typing.
 	useEffect(() => {
@@ -216,7 +246,7 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 
 	const share = async () => {
 		const url = window.location.href;
-		const title = card ? cardHeadline(deck.kind, card) : deck.name;
+		const title = card ? cardHeadline(kindOf(card), card) : deck.name;
 		if (navigator.share)
 			await navigator.share({ title, url }).catch(() => undefined);
 		else await navigator.clipboard?.writeText(url);
@@ -268,11 +298,21 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 					aria-expanded={menu}
 					onClick={() => setMenu((m) => !m)}
 				>
-					{menu ? (
-						<Menu size={24} aria-hidden="true" />
-					) : (
-						<Menu size={24} aria-hidden="true" />
-					)}
+					<Menu size={24} aria-hidden="true" />
+				</button>
+				<button
+					type="button"
+					className="game-icon game-star"
+					aria-pressed={starred}
+					aria-label={starred ? "Remove from favourites" : "Add to favourites"}
+					disabled={!card}
+					onClick={() => card && setStarred(toggleFavourite(deck, card))}
+				>
+					<Heart
+						size={24}
+						fill={starred ? "currentColor" : "none"}
+						aria-hidden="true"
+					/>
 				</button>
 				<span className="game-status" aria-live="polite">
 					Level {tier}
@@ -294,6 +334,12 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 								{d.name}
 							</a>
 						))}
+						<a
+							href="/favourites/"
+							aria-current={deck.deck === "favourites" ? "page" : undefined}
+						>
+							Favourites{favCount ? ` (${favCount})` : ""}
+						</a>
 						<a href="/questions/">All questions</a>
 					</nav>
 					<div className="game-actions">
@@ -335,14 +381,16 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 							<LayoutGrid size={20} aria-hidden="true" />{" "}
 							<span>All levels</span>
 						</button>
-						<button
-							type="button"
-							className="game-icon"
-							aria-label="Read the whole deck as a list"
-							onClick={() => setOpen(false)}
-						>
-							<List size={20} aria-hidden="true" /> <span>Read as list</span>
-						</button>
+						{linkable && (
+							<button
+								type="button"
+								className="game-icon"
+								aria-label="Read the whole deck as a list"
+								onClick={() => setOpen(false)}
+							>
+								<List size={20} aria-hidden="true" /> <span>Read as list</span>
+							</button>
+						)}
 						<button
 							type="button"
 							className="game-icon"
@@ -375,7 +423,7 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 								}}
 							>
 								<span className="game-status">Level {t.level}</span>
-								{tCard && <CardView kind={deck.kind} card={tCard} />}
+								{tCard && <CardView kind={kindOf(tCard)} card={tCard} />}
 							</button>
 						);
 					})}
@@ -389,7 +437,7 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 								className={`game-card leave-${leaving.dir}`}
 								aria-hidden="true"
 							>
-								<CardView kind={deck.kind} card={leaving.card} />
+								<CardView kind={kindOf(leaving.card)} card={leaving.card} />
 							</article>
 						)}
 						{card ? (
@@ -397,7 +445,7 @@ export default function GameDeck({ deck, decks, startId }: Props) {
 								key={id}
 								className={`game-card ${leaving ? `enter-${leaving.dir}` : ""}`}
 							>
-								<CardView kind={deck.kind} card={card} />
+								<CardView kind={kindOf(card)} card={card} />
 							</article>
 						) : (
 							<p className="game-card">No cards at this level yet.</p>

@@ -15,9 +15,11 @@ interface Props {
 	schema?: unknown[];
 	/** Deck slug, so the switcher can mark the current one. */
 	deck?: string;
+	/** Per-browser pages (favourites) have nothing to index. */
+	noindex?: boolean;
 }
 
-const { title, description, path, ogType = "website", schema = [], deck } = Astro.props;
+const { title, description, path, ogType = "website", schema = [], deck, noindex = false } = Astro.props;
 // Trailing slashes: the slash-less form 301s on GitHub Pages, and a canonical
 // that points at a redirect is one Google has to resolve rather than trust.
 const url = `${SITE_URL}${path}`;
@@ -37,7 +39,7 @@ const website = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow, max-snippet:-1" />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-snippet:-1"} />
     <link rel="canonical" href={url} />
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE_NAME} />

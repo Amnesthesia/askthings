@@ -71,6 +71,7 @@ play:
 generation:
   candidatesPerTier: 25   # asked per provider per tier per call
   targetPerTier: 30       # publish keeps the best cards up to this many
+  wholeRun: false         # true = one complete run per provider, kept or dropped whole (21 Questions)
   brief: |                # what a card IS, the mechanic, hard rules, exemplars
   models:                 # optional per-provider model override for this deck
     anthropic: claude-sonnet-5
@@ -196,6 +197,10 @@ pnpm publish-cards would-you-rather
 ```
 
 ## Game mode
+
+The heart on any card stars it. `/favourites/` plays every starred card from every deck as one
+game, grouped into levels by exposure. Favourites live in the browser (localStorage); the page
+is `noindex`.
 
 With JavaScript, every deck page is a game: the whole screen is the level's colour, the card
 is white and bold, chevrons sit at the four edges. Swipe or arrow left/right for the next

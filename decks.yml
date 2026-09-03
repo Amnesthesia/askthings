@@ -9,6 +9,8 @@
 # play.howToPlay: shown on the deck page and behind the game's help button.
 # generation.candidatesPerTier: asked per provider per tier per call.
 # generation.targetPerTier: publish keeps the best cards up to this many.
+# generation.wholeRun: the deck is one complete run per provider (21 Questions):
+#   asked at targetPerTier, kept or dropped whole, one run published.
 # generation.models: optional per-provider model override for this deck, e.g.
 #   models: { anthropic: claude-sonnet-5, gemini: gemini-3.8-flash, openai: gpt-5.6-terra }
 #   Defaults (and RATE_MODEL / SAFETY_MODEL for the judges) live in src/stage.ts.
@@ -45,22 +47,36 @@ inquisitives:
       name: Openers
       description: "Easy to answer, hard to answer boringly."
       intensity: 1
-      guidance: "Taste, perspective, a small story. A near-stranger answers comfortably and reveals something."
+      guidance: >-
+        Taste, habits, small stories: things a stranger answers in one breath and enjoys answering.
+        IN: "What can you cook without a recipe?", "Which stranger has stuck in your head?"
+        TOO DEEP for this level: anything about fear, regret, family wounds, or the other person.
+        TOO SHALLOW: pure preference with no story behind it ("favourite colour?").
     - level: 2
       name: Unguarded
       description: "Opinions, and the experiences that formed them."
       intensity: 2
-      guidance: "Opinions, preferences, formative experiences, how they see the world. Wants a real answer, not a fact."
+      guidance: >-
+        Opinions and the experiences that formed them; how they see the world; formative but not painful.
+        IN: "What's the worst advice you ever followed?", "What do you pretend to like because people expect you to?"
+        TOO SHALLOW: daily habits and trivia with no opinion in them ("what do you eat alone?").
+        TOO DEEP: shame, grief, fear, or what they are working through now.
     - level: 3
       name: Vulnerable
       description: "Needs some trust in the room."
       intensity: 3
-      guidance: "Values, fears, regrets, identity, what they are working through. Assumes rapport."
+      guidance: >-
+        What they are working through, what they avoid, values under pressure, regret, identity.
+        IN: "Where in your life are you playing it too safe?", "Whose approval are you still trying to win?"
+        Assumes an evening of rapport. TOO DEEP: mortality, the unsayable, or direct questions about the person asking.
     - level: 4
       name: Intimate
       description: "For people who have already gone somewhere together."
       intensity: 4
-      guidance: "Mortality, meaning, the things rarely said out loud, and how they feel about the person across from them."
+      guidance: >-
+        Mortality, meaning, the things rarely said out loud, and the person across the table ("me").
+        IN: "What do you think I'd be shocked to learn about you?", "What keeps you awake at three in the morning?"
+        About a third of the cards should be about the two people in the room. Nothing here is small talk.
 
 never-have-i-ever:
   name: Never Have I Ever
@@ -93,22 +109,34 @@ never-have-i-ever:
       name: Harmless
       description: "Small embarrassments anyone will admit."
       intensity: 1
-      guidance: "Everyday, slightly embarrassing, funny to admit. Nobody blushes."
+      guidance: >-
+        Everyday small embarrassments anyone owns up to with a laugh: social slips, clumsiness, tiny fibs.
+        IN: "waved back at someone waving at somebody else", "fallen asleep in a cinema".
+        TOO DEEP: anything involving another person's feelings, rules broken, or romance.
     - level: 2
       name: Cheeky
       description: "Things you did and got away with."
       intensity: 2
-      guidance: "Mild mischief, white lies, minor rule-bending, crushes. A grin, not a wince."
+      guidance: >-
+        Mild mischief and getting away with it: white lies, skiving, petty theft of snacks, crushes, small cheats.
+        IN: "called in sick to do nothing", "cheated at a board game against a child".
+        TOO SHALLOW: pure clumsiness. TOO DEEP: anything that hurt someone or costs something to admit.
     - level: 3
       name: Confessional
       description: "Now it costs something to put a finger down."
       intensity: 3
-      guidance: "Regrets, heartbreak, jealousy, things done to friends and family. Admitting it says something."
+      guidance: >-
+        It costs something to put a finger down: regret, heartbreak, jealousy, small betrayals of friends and family.
+        IN: "stayed in a relationship months after I knew it was over", "skipped a funeral I should have gone to".
+        Not sexual yet. TOO SHALLOW: mischief with no one hurt.
     - level: 4
       name: Spicy
       description: "Adults only, and the story is the point."
       intensity: 4
-      guidance: "Romance and sex between consenting adults, wild nights, the stories people save for close friends. Never illegal, never involving anyone under 18, never degrading."
+      guidance: >-
+        Adults only: sex, romance and wild nights between consenting adults, where the STORY is the point.
+        IN: "kissed a friend and pretended the next morning it never happened", "cried straight after sex".
+        Never illegal, never anyone under 18, never degrading, never a bare act with no story ("had a threesome" is a fact, not a card).
 
 fast-friends:
   name: Fast Friends
@@ -143,17 +171,27 @@ fast-friends:
       name: Set one
       description: "Warm, curious, low stakes."
       intensity: 1
-      guidance: "Preferences, small stories, how they spend a good day. Comfortable for strangers."
+      guidance: >-
+        Set one: warm and curious. Preferences, small stories, an ideal day, a place they'd return to.
+        IN: "Tell your partner one story about your name.", "If tomorrow were empty, how would you spend it?"
+        Both people answer comfortably within a minute of meeting. Nothing about family pain or the other person yet.
     - level: 2
       name: Set two
       description: "Personal history and how they see themselves."
       intensity: 3
-      guidance: "Childhood, family, accomplishments, what they would change. Real disclosure, still safe."
+      guidance: >-
+        Set two: personal history and how they see themselves. Childhood, family, what they'd change, what they hide.
+        IN: "Which parent are you more like, and how do you feel about that?", "Who believed in you before you'd earned it?"
+        Real disclosure, still safe: no direct questions about the partner, no mortality.
     - level: 3
       name: Set three
       description: "The two of you, and the things rarely said."
       intensity: 4
-      guidance: "Feelings about the other person, fears, regrets, what they would want the other to know. Reciprocal and direct."
+      guidance: >-
+        Set three: the two of you, and the things rarely said. Half the cards address the partner directly.
+        IN: "Tell your partner what you noticed about them in the first minute, and whether you were right.",
+        "If you died tonight, what would you most regret not having told someone? Why haven't you told them?"
+        Reciprocal and direct; ends with something both will remember.
 
 twenty-one-questions:
   name: 21 Questions
@@ -167,6 +205,7 @@ twenty-one-questions:
       - "Play the cards in order. The run is built to climb."
       - "No skipping. You may ask a follow-up before moving on."
   generation:
+    wholeRun: true
     candidatesPerTier: 21
     targetPerTier: 21
     brief: |
@@ -185,7 +224,10 @@ twenty-one-questions:
       name: The run
       description: "Twenty-one questions, in order."
       intensity: 2
-      guidance: "The whole arc from warm to personal. Rate each card's intensity honestly; the run as a whole should climb."
+      guidance: >-
+        The whole arc from warm to personal, in order. Cards 1-5 exposure 1, 6-12 exposure 2, 13-19 exposure 3, 20-21 exposure 3-4.
+        Rate each card's intensity honestly so the climb is visible. No two adjacent cards on one topic.
+        Card 21 turns back to the two people talking.
 
 would-you-rather:
   name: Would You Rather
@@ -217,17 +259,26 @@ would-you-rather:
       name: Playful
       description: "Preferences and superpowers."
       intensity: 1
-      guidance: "Fun trade-offs about abilities, food, travel, habits. Reveals taste."
+      guidance: >-
+        Playful: powers, food, travel, habits, silly trade-offs. Reveals taste, nothing more.
+        IN: "fly at walking speed / run at motorway speed", "wear only bright colours / wear only black and white".
+        TOO DEEP: money, career, family, death.
     - level: 2
       name: Revealing
       description: "Trade-offs about time, money, fame and comfort."
       intensity: 2
-      guidance: "What they would give up for what. Reveals priorities."
+      guidance: >-
+        Revealing: real trade-offs about time, money, fame, comfort, work. Each pick says what they value.
+        IN: "work four days a week for half the pay / six days for double", "be loved by everyone who barely knows you / by three who know everything".
+        TOO SHALLOW: logistics with no value at stake ("arrive early / arrive late").
     - level: 3
       name: Uncomfortable
       description: "Loyalty, mortality, identity."
       intensity: 3
-      guidance: "Choices about people they love, what they would sacrifice, how they want to be remembered. Reveals values and fears."
+      guidance: >-
+        Uncomfortable: loyalty, mortality, identity, the people they love. Both options cost something real.
+        IN: "forgive the person who hurt you most / be forgiven by the person you hurt most",
+        "know which of your friendships is one-sided / never know and keep them all".
 
 thought-experiments:
   name: Thought Experiments
@@ -266,17 +317,26 @@ thought-experiments:
       name: Puzzling
       description: "Abstract and fun to argue about."
       intensity: 1
-      guidance: "Identity, knowledge, logic. Nobody has to confess anything to have a view. Most canonical experiments belong here."
+      guidance: >-
+        Puzzling: identity, knowledge, meaning, logic. Nobody has to confess anything to have a view.
+        CANONICAL EXPERIMENTS FOR THIS LEVEL ONLY: Ship of Theseus, Chinese Room, Mary's Room, the Teleporter, the Sorites heap, Plato's Cave, Newcomb's Problem.
+        Original cards here are about objects, copies, memory, words and what makes something real. Do not retell experiments assigned to other levels.
     - level: 2
       name: Uncomfortable
       description: "A real trade-off you might actually face."
       intensity: 2
-      guidance: "Fairness, harm, promises, money. The answer says something about the person."
+      guidance: >-
+        Uncomfortable: fairness, harm, promises, money. A trade-off the player might actually face; the answer says something about them.
+        CANONICAL EXPERIMENTS FOR THIS LEVEL ONLY: Trolley Problem, the Footbridge / Fat Man variant, Ring of Gyges, the Repugnant Conclusion, the Utility Monster, Pascal's Wager, Veil of Ignorance.
+        Original cards here are about strangers, colleagues, money found or owed, small lies with real consequences.
     - level: 3
       name: Personal
       description: "It asks what you would actually do, and why you haven't."
       intensity: 3
-      guidance: "Dilemmas that turn on the player's own life: their family, their work, what they owe and to whom."
+      guidance: >-
+        Personal: it asks what YOU would actually do, and why you haven't. Turns on the player's own family, work, body, debts.
+        CANONICAL EXPERIMENTS FOR THIS LEVEL ONLY: the Drowning Child, the Violinist, the Lifeboat, the Experience Machine.
+        Original cards here name the player's own life ("your sister", "your salary", "the person you'd write down"). Probes should ask for a number, a name, or a reason they have not acted.
 
 undercurrent:
   name: Undercurrent
@@ -311,14 +371,23 @@ undercurrent:
       name: Surface
       description: "Noticing each other."
       intensity: 2
-      guidance: "First impressions, what each has noticed about the other, easy honesty."
+      guidance: >-
+        Surface: noticing each other. First impressions, guesses about the other person, easy honesty said to their face.
+        IN: "What did you notice about me first?", "Guess the last thing that made me cry."
+        TOO DEEP: what is wrong between you, fear, or what has gone unsaid.
     - level: 2
       name: Current
       description: "What is actually between you."
       intensity: 3
-      guidance: "The relationship itself: what they like, what they avoid, what they want from each other."
+      guidance: >-
+        Current: what is actually between you. What each holds back, avoids, wants from the other, misunderstands.
+        IN: "What do you hold back from telling me?", "What part of your life have you kept me out of?"
+        Both people at the table are the subject. TOO SHALLOW: guessing games about habits.
     - level: 3
       name: Depth
       description: "The unsaid."
       intensity: 4
-      guidance: "What has gone unsaid between the two of them; what they are afraid to ask; what they would want the other to know."
+      guidance: >-
+        Depth: the unsaid. What they've been afraid to ask, where they've let each other down, what would change things.
+        IN: "What have you forgiven me for without telling me?", "What have you been afraid to tell me because it could change us?"
+        Every card is addressed to the other person and could change the evening.
