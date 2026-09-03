@@ -152,6 +152,9 @@ export interface CallOptions {
 	/** Bump when a prompt changes; part of the cache key. */
 	promptVersion: string;
 	provider?: ProviderName;
+	/** Called as each request settles (live path and batch path), so callers
+	 * can flush incrementally instead of waiting for the whole set. */
+	onResult?: (index: number, result: CallResult | Error) => void;
 }
 
 export interface CallResult {
@@ -339,6 +342,8 @@ export async function callJsonMany(
 			if (err instanceof BudgetExhaustedError) throw err;
 			out[i] = err instanceof Error ? err : new Error(String(err));
 		}
+		const r = out[i];
+		if (r) opts.onResult?.(i, r);
 	};
 
 	if (LLM_MODE === "batch" && provider.batchJson) {
@@ -354,6 +359,7 @@ export async function callJsonMany(
 			if (res instanceof Error) {
 				record(opts.stage, providerName, { failures: 1 });
 				out[i] = res;
+				opts.onResult?.(i, res);
 				return;
 			}
 			const json = settle(opts.stage, providerName, reqs[i].model, res);
@@ -366,6 +372,7 @@ export async function callJsonMany(
 					model: reqs[i].model,
 					fromCache: false,
 				};
+				opts.onResult?.(i, out[i] as CallResult);
 			}
 		});
 		// Empty results are failures: one live retry each, then recorded as such.

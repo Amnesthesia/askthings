@@ -221,22 +221,28 @@ async function main() {
 	await Promise.all(
 		[...groups.values()].map(async ({ provider, tasks: mine }) => {
 			try {
+				// Harvest as each response lands: a killed run keeps what it proved.
 				const results = await callJsonMany(mine.map(requestFor), {
 					stage: "generate",
 					promptVersion: PROMPT_VERSION.generate,
 					provider,
+					onResult: (i, res) => {
+						const t = mine[i];
+						if (res instanceof Error)
+							console.error(
+								`  [${t.spec.deck} L${t.tier.level} ${provider}] failed: ${res.message}`,
+							);
+						else harvest(t, res);
+					},
 				});
+				// Cache hits do not pass through onResult; harvest those here.
 				results.forEach((res, i) => {
 					const t = mine[i];
 					if (res === null)
 						console.warn(
 							`  [${t.spec.deck} L${t.tier.level} ${provider}] provider unavailable`,
 						);
-					else if (res instanceof Error)
-						console.error(
-							`  [${t.spec.deck} L${t.tier.level} ${provider}] failed: ${res.message}`,
-						);
-					else harvest(t, res);
+					else if (!(res instanceof Error) && res.fromCache) harvest(t, res);
 				});
 			} catch (err) {
 				if (err instanceof BudgetExhaustedError)
