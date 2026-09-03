@@ -39,7 +39,7 @@ function deck(overrides: Partial<Deck> = {}): Deck {
 		name: "Sample",
 		blurb: "A sample deck.",
 		kind: "question",
-		ordered: false,
+		play: { order: "free", cardsPerTier: null, howToPlay: [] },
 		tiers: [{ level: 1, name: "One", description: "First." }],
 		cards: [
 			{

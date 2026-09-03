@@ -1,0 +1,372 @@
+{
+  "deck": "would-you-rather",
+  "name": "Would You Rather",
+  "blurb": "Two options, both hard to pick. Choose one, then defend it.",
+  "kind": "pair",
+  "play": {
+    "order": "random",
+    "cardsPerTier": null,
+    "howToPlay": [
+      "Everyone picks A or B. No abstaining.",
+      "Then everyone defends their pick. That is the game.",
+      "Swipe up when the easy ones stop being interesting."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Playful",
+      "description": "Preferences and superpowers."
+    },
+    {
+      "level": 2,
+      "name": "Revealing",
+      "description": "Trade-offs about time, money, fame and comfort."
+    },
+    {
+      "level": 3,
+      "name": "Uncomfortable",
+      "description": "Loyalty, mortality, identity."
+    }
+  ],
+  "cards": [
+    {
+      "a": "forgive the person who hurt you most",
+      "b": "be forgiven by the person you hurt most",
+      "id": "9c74242f47",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "forgiveness",
+        "guilt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.498Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "die suddenly with everything unsaid",
+      "b": "die slowly with time to say it all",
+      "id": "c122157ee9",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "mortality",
+        "regret"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.498Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "give up your closest friendship to save a stranger",
+      "b": "keep the friendship and never learn who died",
+      "id": "e610e016b0",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "loyalty",
+        "sacrifice"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.498Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "know your child will struggle but stay kind",
+      "b": "know your child will succeed but turn cold",
+      "id": "caf84b4bf8",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "values"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.498Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be loved by everyone who barely knows you",
+      "b": "be loved by three people who know everything",
+      "id": "226b4dd408",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.498Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "travel somewhere new every month",
+      "b": "know one city better than anyone",
+      "id": "a15e71aaa5",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "travel",
+        "home"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.496Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "work four days a week for half the pay",
+      "b": "work six days a week for double the pay",
+      "id": "b5ebf2eb84",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "money"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.497Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "have a job you love that nobody respects",
+      "b": "have a job you tolerate that everyone admires",
+      "id": "a816a31b9d",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "status"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.497Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "live somewhere beautiful with no friends nearby",
+      "b": "live somewhere dull with everyone you love",
+      "id": "9879787545",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "home",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.497Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "retire at forty with just enough money",
+      "b": "retire at seventy with more than enough",
+      "id": "852b1436f6",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "time",
+        "money"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.497Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be famous to strangers and ignored by family",
+      "b": "be unknown to strangers and adored at home",
+      "id": "95765431d0",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "fame",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.497Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be able to speak every language",
+      "b": "be able to play every instrument",
+      "id": "f2bd22c353",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "skills",
+        "music"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.493Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "eat your favourite meal every day",
+      "b": "never eat the same meal twice",
+      "id": "c272ffb365",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "food",
+        "routine"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:05:04.495Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    }
+  ]
+}

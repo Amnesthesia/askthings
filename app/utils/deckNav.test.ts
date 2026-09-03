@@ -3,6 +3,7 @@ import { test } from "node:test";
 import { type Deck, EMPTY_SCORES } from "../../src/shared.ts";
 import {
 	buildOrder,
+	dealOrder,
 	idFromPath,
 	locate,
 	shuffle,
@@ -25,7 +26,7 @@ const deck: Deck = {
 	name: "D",
 	blurb: "b",
 	kind: "question",
-	ordered: false,
+	play: { order: "free", cardsPerTier: null, howToPlay: [] },
 	tiers: [
 		{ level: 1, name: "One", description: "x" },
 		{ level: 2, name: "Two", description: "y" },
@@ -65,6 +66,12 @@ test("shuffleOrder keeps every id in its own tier", () => {
 		"c000000000",
 	]);
 	assert.deepEqual(order.get(2), ["b000000000"]);
+});
+
+test("dealOrder caps each tier and null means everything", () => {
+	const order = buildOrder(deck);
+	assert.deepEqual(dealOrder(order, 1).get(1), ["a000000000"]);
+	assert.equal(dealOrder(order, null), order);
 });
 
 test("locate finds a card's tier and index, null when absent", () => {

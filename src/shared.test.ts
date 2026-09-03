@@ -87,7 +87,7 @@ test("groupByTier keeps declared tier order and file order within a tier", () =>
 		name: "D",
 		blurb: "b",
 		kind: "question",
-		ordered: false,
+		play: { order: "free", cardsPerTier: null, howToPlay: [] },
 		tiers: [
 			{ level: 1, name: "One", description: "x" },
 			{ level: 2, name: "Two", description: "y" },

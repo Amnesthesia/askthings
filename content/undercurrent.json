@@ -1,0 +1,33 @@
+{
+  "deck": "undercurrent",
+  "name": "Undercurrent",
+  "blurb": "For two people who want to get closer. Three levels; take turns; you may pass once per level.",
+  "kind": "question",
+  "play": {
+    "order": "random",
+    "cardsPerTier": 15,
+    "howToPlay": [
+      "Two people. Take turns drawing; the drawer answers first, honestly.",
+      "You may pass once per level. Say so out loud.",
+      "Finish a level before going deeper. Level three is the point."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Surface",
+      "description": "Noticing each other."
+    },
+    {
+      "level": 2,
+      "name": "Current",
+      "description": "What is actually between you."
+    },
+    {
+      "level": 3,
+      "name": "Depth",
+      "description": "The unsaid."
+    }
+  ],
+  "cards": []
+}

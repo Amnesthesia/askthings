@@ -5,7 +5,7 @@
 import Base from "../../layouts/Base.astro";
 import CardBody from "../../components/CardBody.astro";
 import GameDeck from "@react/components/GameDeck";
-import { loadDecks } from "../../common.ts";
+import { publishedDecks } from "../../common.ts";
 import {
 	type Card,
 	cardHeadline,
@@ -17,7 +17,7 @@ import {
 } from "../../shared.ts";
 
 export function getStaticPaths() {
-	return loadDecks().flatMap((deck) =>
+	return publishedDecks().flatMap((deck) =>
 		deck.cards.map((card) => ({ params: { deck: deck.deck, card: card.id }, props: { deck, card } })),
 	);
 }
@@ -38,6 +38,7 @@ const description =
 		? `Level ${card.tier} of ${deck.tiers.length} — from ${deck.name} on askthings.lol. ${deck.blurb}`
 		: summary;
 
+const links = publishedDecks().map((d) => ({ deck: d.deck, name: d.name }));
 const index = deck.cards.indexOf(card);
 const prev = deck.cards[index - 1];
 const next = deck.cards[index + 1];
@@ -74,7 +75,7 @@ const schema = [
 ---
 
 <Base title={headline} description={description} path={path} ogType="article" schema={schema} deck={deck.deck}>
-  <GameDeck client:load deck={deck} startId={card.id} />
+  <GameDeck client:load deck={deck} decks={links} startId={card.id} />
   <nav aria-label="Breadcrumb">
     <a href={deckPath(deck.deck)}>{deck.name}</a>
     {" · "}

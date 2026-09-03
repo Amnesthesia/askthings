@@ -1,0 +1,33 @@
+{
+  "deck": "fast-friends",
+  "name": "Fast Friends",
+  "blurb": "Three sets of twelve, done in order, both of you answering. Each set asks a little more than the last.",
+  "kind": "question",
+  "play": {
+    "order": "sequential",
+    "cardsPerTier": 12,
+    "howToPlay": [
+      "Two people. Work through the three sets in order; do not skip ahead.",
+      "Both of you answer every card, taking turns to go first.",
+      "Give it about forty-five minutes. Set three is where it lands."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Set one",
+      "description": "Warm, curious, low stakes."
+    },
+    {
+      "level": 2,
+      "name": "Set two",
+      "description": "Personal history and how they see themselves."
+    },
+    {
+      "level": 3,
+      "name": "Set three",
+      "description": "The two of you, and the things rarely said."
+    }
+  ],
+  "cards": []
+}

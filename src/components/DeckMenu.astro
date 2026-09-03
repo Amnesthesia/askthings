@@ -3,14 +3,14 @@
 // needs no island; in game mode this same element is the only chrome on a
 // phone, so it floats over the page rather than taking a row of its own.
 import { LayoutGrid } from "lucide-react";
-import { loadDecks } from "../common.ts";
+import { publishedDecks } from "../common.ts";
 import { deckPath } from "../shared.ts";
 
 interface Props {
 	current?: string;
 }
 const { current } = Astro.props;
-const decks = loadDecks();
+const decks = publishedDecks();
 ---
 
 <details class="deck-menu">

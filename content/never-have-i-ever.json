@@ -1,0 +1,38 @@
+{
+  "deck": "never-have-i-ever",
+  "name": "Never Have I Ever",
+  "blurb": "Statements, not questions. Everyone who has done it puts a finger down, and then tells the story.",
+  "kind": "question",
+  "play": {
+    "order": "random",
+    "cardsPerTier": null,
+    "howToPlay": [
+      "Read the card aloud. Everyone who HAS done it puts a finger down (or drinks).",
+      "Anyone who put a finger down owes the table the story.",
+      "Swipe up when the room is ready for the next level."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Harmless",
+      "description": "Small embarrassments anyone will admit."
+    },
+    {
+      "level": 2,
+      "name": "Cheeky",
+      "description": "Things you did and got away with."
+    },
+    {
+      "level": 3,
+      "name": "Confessional",
+      "description": "Now it costs something to put a finger down."
+    },
+    {
+      "level": 4,
+      "name": "Spicy",
+      "description": "Adults only, and the story is the point."
+    }
+  ],
+  "cards": []
+}

@@ -72,3 +72,55 @@ for (const [theme, t] of Object.entries(themes)) {
 test("both dark blocks declare the same tokens", () => {
 	assert.deepEqual(themes["dark (system)"], themes["dark (explicit)"]);
 });
+
+/** CSS `filter: hue-rotate(deg)` as the spec's matrix over sRGB values. */
+function hueRotate(hex: string, deg: number): string {
+	const h = hex.length === 4 ? hex.replace(/#(.)(.)(.)/, "#$1$1$2$2$3$3") : hex;
+	const [r, g, b] = [1, 3, 5].map(
+		(i) => Number.parseInt(h.slice(i, i + 2), 16) / 255,
+	);
+	const c = Math.cos((deg * Math.PI) / 180);
+	const s = Math.sin((deg * Math.PI) / 180);
+	const m = [
+		[
+			0.213 + c * 0.787 - s * 0.213,
+			0.715 - c * 0.715 - s * 0.715,
+			0.072 - c * 0.072 + s * 0.928,
+		],
+		[
+			0.213 - c * 0.213 + s * 0.143,
+			0.715 + c * 0.285 + s * 0.14,
+			0.072 - c * 0.072 - s * 0.283,
+		],
+		[
+			0.213 - c * 0.213 - s * 0.787,
+			0.715 - c * 0.715 + s * 0.715,
+			0.072 + c * 0.928 + s * 0.072,
+		],
+	];
+	const out = m.map(([x, y, z]) =>
+		Math.min(1, Math.max(0, x * r + y * g + z * b)),
+	);
+	return `#${out
+		.map((v) =>
+			Math.round(v * 255)
+				.toString(16)
+				.padStart(2, "0"),
+		)
+		.join("")}`;
+}
+
+test("white text stays >= 4.5:1 on every game colour across the whole hue drift", () => {
+	const game = tokens(block(":root {\n\t--game-1"));
+	for (const name of ["game-1", "game-2", "game-3", "game-4"]) {
+		assert.ok(game[name], `--${name} declared`);
+		// HUE_DRIFT in GameDeck.tsx is 28°, so ±14° from the base colour.
+		for (let deg = -14; deg <= 14; deg += 2) {
+			const ratio = contrast(hueRotate(game[name], deg), "#ffffff");
+			assert.ok(
+				ratio >= 4.5,
+				`--${name} rotated ${deg}° is ${ratio.toFixed(2)}:1`,
+			);
+		}
+	}
+});

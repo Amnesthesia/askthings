@@ -53,6 +53,27 @@ invites a story or an admission, not a fact.
 - Bad: *What is a belief you hold that has significantly shaped your worldview?*
 - Good: *What did you believe for a long time that turned out to be wrong?*
 
+## Defining a game
+
+`decks.yml` is the source of truth for every deck: name and blurb, `kind` (`question` |
+`pair` | `dilemma`), how the game flows (`play`), and how the pipeline grows it
+(`generation` brief, counts, per-tier guidance and target intensity). `pnpm sync` writes the
+site-facing part into `content/{deck}.json`, preserving cards; a missing file is created
+empty and stays off the site until it has cards. Adding a game is a block in `decks.yml`
+plus `pnpm sync`, then `pnpm generate <deck>`.
+
+```yaml
+play:
+  order: free          # sequential (file order, no shuffle) | random (shuffled on open) | free
+  cardsPerTier: null   # deal at most this many per level per session; null = all
+  howToPlay:           # shown on the deck page and behind the game's menu
+    - "Whoever draws the card answers first, then asks it back."
+generation:
+  candidatesPerTier: 25   # asked per provider per tier per call
+  targetPerTier: 30       # publish keeps the best cards up to this many
+  brief: |                # what a card IS, the mechanic, hard rules, exemplars
+```
+
 ## Content model
 
 One JSON file per deck under `content/`, committed. The slug equals the filename.
@@ -63,7 +84,7 @@ One JSON file per deck under `content/`, committed. The slug equals the filename
   "name": "Inquisitives",
   "blurb": "Questions for skipping small talk. …",
   "kind": "question",
-  "ordered": false,
+  "play": { "order": "free", "cardsPerTier": null, "howToPlay": ["…"] },
   "tiers": [
     { "level": 1, "name": "Openers", "description": "Easy to answer, hard to answer boringly." }
   ],
@@ -102,8 +123,8 @@ loads every deck, so bad content fails `pnpm check`.
 All URLs end in a slash: Astro writes `<path>/index.html` and GitHub Pages redirects the
 slash-less form.
 
-- `/` — the decks.
-- `/{deck}/` — the whole deck as plain HTML, grouped by tier. This is the SEO surface and
+- `/` — opens straight into the first game (the decks list is underneath for crawlers).
+- `/{deck}/` — the whole deck as plain HTML, grouped by level. This is the SEO surface and
   what link-preview crawlers see; game mode is a layer on top of it.
 - `/{deck}/{id}/` — one card, with its own `og:title`, `og:description` and
   `Question`/`CreativeWork` JSON-LD, so a shared link previews as that card.
@@ -131,25 +152,75 @@ Node 22 (`.tool-versions`), pnpm 9.
   Pages (A records 185.199.108.153, .109.153, .110.153, .111.153, or an ALIAS/ANAME to
   `amnesthesia.github.io`).
 
-## Generation pipeline (planned; see CLAUDE.md for the design)
+## Generation pipeline
 
-`generate → dedupe → rate → safety → publish`, each a `pnpm <stage>` script, run on demand
-from the `Generate` workflow (`workflow_dispatch`, never scheduled). Additive: existing cards
-are never removed. Every model call goes through one metered wrapper with a hard budget of
-$5 per provider per run. Rejections are persisted with their reason under `data/`.
+```
+pnpm sync                      decks.yml -> content/*.json (metadata + play; cards kept)
+pnpm generate [deck,...]       one request per (deck, tier, provider); candidates to data/candidates/
+pnpm deduplicate  [deck,...]       exact + Dice similarity, ambiguous band to a judge
+pnpm rate     [deck,...]       rubric scores 1-5 + judged intensity; keep conversation>=3 && voice>=3
+pnpm safety   [deck,...]       the gate: only a positive "ok" passes
+pnpm publish-cards [deck,...]  safe candidates -> content/{deck}.json, best first, up to targetPerTier
+```
+
+Run on demand from the `Generate` workflow (`workflow_dispatch`, never scheduled) or
+locally with keys in `.env`. Additive: existing cards are never removed. Every rejection is
+persisted with its stage and reason in `data/rejected/{deck}.jsonl`; candidates and their
+status in `data/candidates/{deck}.jsonl`; per-run spend in `data/runs/`.
+
+Every model call goes through `src/llm.ts`: one concurrency limiter, 429 backoff honouring
+`Retry-After`, a response cache keyed by content hash + prompt version (`data/_cache/`,
+gitignored), and hard budgets: `MAX_USD_PER_PROVIDER` (default 5), `MAX_USD` (12),
+`MAX_CALLS` (300). Spend is printed per stage and provider at exit, including on Ctrl-C.
+
+**Cost.** `LLM_MODE=batch` (the default) sends each stage's requests through the providers'
+half-price tiers: Anthropic Message Batches, Gemini Batch API, OpenAI flex. Results take
+minutes to (rarely) hours; the run waits. `LLM_MODE=live` makes synchronous calls at list
+price for smoke tests. Prompts put the stable system text first so Anthropic
+(`cache_control`), OpenAI (`prompt_cache_key`) and Gemini prefix caching all hit.
+
+Models: generation on `claude-opus-5`, `gemini-3.1-pro-preview`, `gpt-5.6-sol` (override
+`GEN_MODEL_ANTHROPIC` / `GEN_MODEL_GEMINI` / `GEN_MODEL_OPENAI`); dedupe + rating on
+`gemini-3.8-flash` (`RATE_MODEL`); the safety gate on `claude-sonnet-5` (`SAFETY_MODEL`).
+Providers: `PROVIDERS=anthropic,gemini` allowlist, `DISABLE_PROVIDERS=openai` denylist; a
+named provider without its key is an error, an unnamed one is skipped with a warning.
+
+Smoke test one deck for cents:
+
+```sh
+LLM_MODE=live PROVIDERS=anthropic PER_TIER=5 MAX_USD=1 pnpm generate would-you-rather
+pnpm deduplicate would-you-rather && pnpm rate would-you-rather && pnpm safety would-you-rather
+pnpm publish-cards would-you-rather
+```
+
+## Game mode
+
+With JavaScript, every deck page is a game: the whole screen is the level's colour, the card
+is white and bold, chevrons sit at the four edges. Swipe or arrow left/right for the next
+card in the level, up/down to change level; the hue drifts slightly with your position in
+the level. Shake (or the menu's Shuffle) reshuffles and returns to the start of the level.
+The menu icon folds down a bar of the other games plus Share and "Read as list". The URL
+always names the current card. Touch events only, drift cancels; reduced motion respected.
 
 ## Layout
 
 ```
+decks.yml             every deck: metadata, play settings, generation brief
 src/                  Node pipeline + Astro routes
   shared.ts           types and helpers shared with the browser — no node: imports
   common.ts           pipeline helpers (ids, validation, loading); re-exports shared.ts
+  decks.ts, sync.ts   decks.yml -> content JSON
+  llm.ts              THE metered model wrapper (limiter, budgets, cache, batch mode)
+  providers/          anthropic, gemini, openai adapters + selection
+  prompts.ts          every prompt and schema; PROMPT_VERSION per stage
+  generate/dedupe/rate/safety/publish.ts   the stages
   validate.ts         pnpm validate
   layouts/Base.astro  the one <head>
   components/         CardBody (one card by kind), DeckMenu (the switcher)
   pages/              /, /[deck]/, /[deck]/[card]/, 404
-app/                  React islands, hooks, styles (styles.css is the token layer)
+app/                  React islands (GameDeck), hooks (swipe, shake, theme), styles
 content/{deck}.json   the decks — the site's input
+data/                 candidates, rejections, run records (committed); _cache (ignored)
 public/               CNAME, robots.txt, favicon
-.github/workflows/    check, deploy
+.github/workflows/    check, deploy, generate (manual)
 ```

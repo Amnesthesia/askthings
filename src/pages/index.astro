@@ -1,9 +1,14 @@
 ---
 import Base from "../layouts/Base.astro";
-import { loadDecks } from "../common.ts";
+import { publishedDecks } from "../common.ts";
+import GameDeck from "@react/components/GameDeck";
 import { deckPath } from "../shared.ts";
 
-const decks = loadDecks();
+const decks = publishedDecks();
+// The start page IS a game: the first deck opens straight away when scripts
+// run; the list below is what crawlers and no-JS readers get.
+const home = decks[0];
+const links = decks.map((d) => ({ deck: d.deck, name: d.name }));
 const total = decks.reduce((n, d) => n + d.cards.length, 0);
 const description = `${total} questions across ${decks.length} decks — conversation games, starters and thought experiments for having a better conversation than you otherwise would.`;
 const schema = [
@@ -23,6 +28,7 @@ const schema = [
 ---
 
 <Base title="Ask things" description={description} path="/" schema={schema}>
+  {home && <GameDeck client:load deck={home} decks={links} />}
   <h1>Things to ask</h1>
   <p>Conversation games, conversation starters and thought experiments. Every deck escalates: start shallow, go as deep as the room allows.</p>
   <ul class="deck-list">

@@ -15,6 +15,7 @@ import {
 	INTENSITIES,
 	normaliseText,
 	type PairCard,
+	PLAY_ORDERS,
 	type QuestionCard,
 	RESERVED_SLUGS,
 	SCORE_KEYS,
@@ -69,9 +70,22 @@ export function validateDeck(deck: Deck): string[] {
 	if (!nonEmpty(deck.blurb)) errors.push("blurb is empty");
 	if (!DECK_KINDS.includes(deck.kind))
 		errors.push(`kind "${deck.kind}" is not one of ${DECK_KINDS.join(", ")}`);
-	if (typeof deck.ordered !== "boolean")
-		errors.push("ordered must be a boolean");
-
+	if (!deck.play || typeof deck.play !== "object")
+		errors.push("play settings missing");
+	else {
+		if (!PLAY_ORDERS.includes(deck.play.order))
+			errors.push(
+				`play.order "${deck.play.order}" not one of ${PLAY_ORDERS.join(", ")}`,
+			);
+		const n = deck.play.cardsPerTier;
+		if (n !== null && !(Number.isInteger(n) && n > 0))
+			errors.push("play.cardsPerTier must be a positive integer or null");
+		if (
+			!Array.isArray(deck.play.howToPlay) ||
+			!deck.play.howToPlay.every(nonEmpty)
+		)
+			errors.push("play.howToPlay must be a list of strings");
+	}
 	if (!Array.isArray(deck.tiers) || deck.tiers.length === 0) {
 		errors.push("tiers is empty");
 	} else {
@@ -188,6 +202,12 @@ export function loadDecks(root = CONTENT_ROOT): Deck[] {
 		decks.push(deck);
 	}
 	return decks;
+}
+
+/** Decks the site renders: a deck synced from decks.yml but not yet
+ * generated has no cards and no page. */
+export function publishedDecks(root = CONTENT_ROOT): Deck[] {
+	return loadDecks(root).filter((d) => d.cards.length > 0);
 }
 
 /** Headline of a card given its deck — the id basis. */

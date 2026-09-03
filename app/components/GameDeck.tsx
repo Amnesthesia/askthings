@@ -5,9 +5,11 @@ import {
 	ChevronUp,
 	LayoutGrid,
 	List,
+	Menu,
 	Play,
 	Share2,
 	Shuffle,
+	X,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -15,11 +17,13 @@ import {
 	cardHeadline,
 	cardPath,
 	type Deck,
+	deckPath,
 } from "../../src/shared.ts";
 import { useShake } from "../hooks/useShake.ts";
 import { useSwipe } from "../hooks/useSwipe.ts";
 import {
 	buildOrder,
+	dealOrder,
 	idFromPath,
 	locate,
 	shuffleOrder,
@@ -27,33 +31,60 @@ import {
 } from "../utils/deckNav.ts";
 import CardView from "./CardView.tsx";
 
+export interface DeckLink {
+	deck: string;
+	name: string;
+}
+
 interface Props {
 	deck: Deck;
+	/** Every playable deck, for the fold-down game bar. */
+	decks: DeckLink[];
 	/** Card to open on; the first card of the first level when absent. */
 	startId?: string;
 }
 
+/** Degrees of hue drift across one level: enough to feel movement, small
+ * enough that white text stays >= 4.5:1 on every step (app/styles.test.ts). */
+const HUE_DRIFT = 28;
+
+type Dir = "left" | "right" | "up" | "down";
+/** Must match the slide animation length in styles.css. */
+const SLIDE_MS = 240;
+
 /**
- * Game mode: one card, the whole screen. A presentation layer over the static
- * list that is already in the page — the list stays in the HTML for crawlers
- * and for anyone with JavaScript off (CSS shows this element only under
- * `html.js`). Horizontal = next/previous card in the level, vertical = change
- * level; arrow keys on desktop do the same. The URL always names the current
- * card, so any position is linkable and back/forward work.
+ * Game mode: the whole screen is the colour of the level, the card is white
+ * and bold, and nothing else is on screen but four chevrons and a menu icon.
+ * A presentation layer over the static list already in the page (CSS shows
+ * this element only under `html.js`). Horizontal = next/previous card in the
+ * level, vertical = change level; arrow keys on desktop do the same. The URL
+ * always names the current card, so any position is linkable and back/forward
+ * work.
  */
-export default function GameDeck({ deck, startId }: Props) {
+export default function GameDeck({ deck, decks, startId }: Props) {
 	const cards = useMemo(
 		() => new Map(deck.cards.map((c) => [c.id, c])),
 		[deck],
 	);
-	const [order, setOrder] = useState(() => buildOrder(deck));
+	// play.order decides the opening state: random decks open shuffled,
+	// sequential ones never shuffle, free ones offer it.
+	const canShuffle = deck.play.order !== "sequential";
+	const [order, setOrder] = useState(() => {
+		const base = buildOrder(deck);
+		const dealt = deck.play.order === "random" ? shuffleOrder(base) : base;
+		return dealOrder(dealt, deck.play.cardsPerTier);
+	});
 	const start = startId ? locate(order, startId) : null;
 	const [tier, setTier] = useState(start?.tier ?? deck.tiers[0]?.level ?? 1);
 	const [indexByTier, setIndexByTier] = useState<Record<number, number>>(() =>
 		start ? { [start.tier]: start.index } : {},
 	);
 	const [open, setOpen] = useState(true);
+	const [menu, setMenu] = useState(false);
 	const [grid, setGrid] = useState(false);
+	// Slide transitions: the card that just left, and which way things moved.
+	const dir = useRef<Dir | null>(null);
+	const [leaving, setLeaving] = useState<{ card: Card; dir: Dir } | null>(null);
 
 	const ids = order.get(tier) ?? [];
 	const index = wrap(indexByTier[tier] ?? 0, ids.length);
@@ -61,34 +92,71 @@ export default function GameDeck({ deck, startId }: Props) {
 	const card: Card | undefined = id ? cards.get(id) : undefined;
 	const levels = deck.tiers.map((t) => t.level);
 	const levelPos = levels.indexOf(tier);
+	// Position within the level as a hue offset, centred on the level's colour.
+	const drift =
+		ids.length > 1 ? ((index / (ids.length - 1)) * 2 - 1) * (HUE_DRIFT / 2) : 0;
 
 	const goTo = useCallback((pos: { tier: number; index: number }) => {
 		setTier(pos.tier);
 		setIndexByTier((prev) => ({ ...prev, [pos.tier]: pos.index }));
 	}, []);
+	// Past the last card of a level, the next swipe opens the next level at its
+	// first card; before the first card, the previous level at its last. The
+	// deck never wraps within a level: the levels are the progression.
 	const stepCard = useCallback(
-		(delta: 1 | -1) =>
+		(delta: 1 | -1) => {
+			const target = index + delta;
+			if (target >= 0 && target < ids.length) {
+				dir.current = delta > 0 ? "left" : "right";
+				setIndexByTier((prev) => ({ ...prev, [tier]: target }));
+				return;
+			}
+			const nextTier = levels[levelPos + delta];
+			if (nextTier === undefined) return;
+			dir.current = delta > 0 ? "left" : "right";
+			const nextLen = order.get(nextTier)?.length ?? 0;
 			setIndexByTier((prev) => ({
 				...prev,
-				[tier]: wrap((prev[tier] ?? 0) + delta, ids.length),
-			})),
-		[tier, ids.length],
+				[nextTier]: delta > 0 ? 0 : Math.max(0, nextLen - 1),
+			}));
+			setTier(nextTier);
+		},
+		[index, ids.length, tier, levels, levelPos, order],
 	);
 	const stepTier = useCallback(
 		(delta: 1 | -1) => {
 			const next = levels[levelPos + delta];
-			if (next !== undefined) setTier(next);
+			if (next === undefined) return;
+			// Deeper: out through the top, in from the bottom (the scroll metaphor).
+			dir.current = delta > 0 ? "up" : "down";
+			setTier(next);
 		},
 		[levels, levelPos],
 	);
-	const doShuffle = useCallback(() => {
-		if (deck.ordered) return;
-		setOrder((prev) => shuffleOrder(prev));
-		setIndexByTier({});
-	}, [deck.ordered]);
 
-	// URL ↔ state. The first render replaces (the deck URL becomes the card URL
-	// without adding a history entry); every later change pushes.
+	// When the card changes after a directional move, keep the old one around
+	// for one animation so it can slide out while the new one slides in.
+	const prevCard = useRef<Card | undefined>(card);
+	useEffect(() => {
+		const prev = prevCard.current;
+		prevCard.current = card;
+		const d = dir.current;
+		dir.current = null;
+		if (!prev || !card || prev === card || !d) return;
+		setLeaving({ card: prev, dir: d });
+		const t = setTimeout(() => setLeaving(null), SLIDE_MS);
+		return () => clearTimeout(t);
+	}, [card]);
+	// Shuffle reshuffles every level and puts you at the start of this one.
+	const doShuffle = useCallback(() => {
+		if (!canShuffle) return;
+		setOrder(dealOrder(shuffleOrder(buildOrder(deck)), deck.play.cardsPerTier));
+		setIndexByTier({});
+		setMenu(false);
+	}, [canShuffle, deck]);
+
+	// URL <-> state. The first render replaces (the deck or home URL becomes the
+	// card URL without adding a history entry); every later change pushes.
 	const first = useRef(true);
 	useEffect(() => {
 		if (!id) return;
@@ -123,6 +191,7 @@ export default function GameDeck({ deck, startId }: Props) {
 				// Down = deeper, like scrolling further down a page.
 				ArrowDown: () => stepTier(1),
 				ArrowUp: () => stepTier(-1),
+				Escape: () => setMenu(false),
 			};
 			const fn = map[e.key];
 			if (fn) {
@@ -137,7 +206,7 @@ export default function GameDeck({ deck, startId }: Props) {
 	// Swipe up = deeper, same scroll metaphor as ArrowDown.
 	const stage = useRef<HTMLDivElement>(null);
 	useSwipe(stage, { onHorizontal: stepCard, onVertical: stepTier });
-	const armShake = useShake(doShuffle, open && !deck.ordered);
+	const armShake = useShake(doShuffle, open && canShuffle);
 
 	// The page under the overlay must not scroll while the game is open.
 	useEffect(() => {
@@ -151,6 +220,7 @@ export default function GameDeck({ deck, startId }: Props) {
 		if (navigator.share)
 			await navigator.share({ title, url }).catch(() => undefined);
 		else await navigator.clipboard?.writeText(url);
+		setMenu(false);
 	};
 
 	if (!open) {
@@ -165,65 +235,124 @@ export default function GameDeck({ deck, startId }: Props) {
 		);
 	}
 
+	const edge = (
+		label: string,
+		Icon: typeof ChevronLeft,
+		onClick: () => void,
+		disabled: boolean,
+		cls: string,
+	) => (
+		<button
+			type="button"
+			className={`game-edge ${cls}`}
+			aria-label={label}
+			disabled={disabled}
+			onClick={onClick}
+		>
+			<Icon size={32} strokeWidth={2.5} aria-hidden="true" />
+		</button>
+	);
+
 	return (
 		<section
 			className="game"
 			data-tier={tier}
+			style={{ "--drift": `${drift.toFixed(1)}deg` } as React.CSSProperties}
 			aria-label={`${deck.name}, game mode`}
 		>
-			<div className="game-bar">
-				<span className="game-level">Level {tier}</span>
-				<span className="game-pos" aria-live="polite">
-					{ids.length ? `${index + 1} / ${ids.length}` : "—"}
+			<div className="game-top">
+				<button
+					type="button"
+					className="game-icon"
+					aria-label={menu ? "Close menu" : "Menu"}
+					aria-expanded={menu}
+					onClick={() => setMenu((m) => !m)}
+				>
+					{menu ? (
+						<Menu size={24} aria-hidden="true" />
+					) : (
+						<Menu size={24} aria-hidden="true" />
+					)}
+				</button>
+				<span className="game-status" aria-live="polite">
+					Level {tier}
+					<span className="game-pos">
+						{ids.length ? ` · ${index + 1} / ${ids.length}` : ""}
+					</span>
 				</span>
-				<div className="game-actions">
-					<button
-						type="button"
-						className="icon-button wide-only"
-						aria-pressed={grid}
-						aria-label="Show one card from every level"
-						title="All levels"
-						onClick={() => setGrid((g) => !g)}
-					>
-						<LayoutGrid size={18} aria-hidden="true" />
-					</button>
-					<button
-						type="button"
-						className="icon-button"
-						aria-label="Shuffle"
-						title={
-							deck.ordered
-								? "This deck is played in order"
-								: "Shuffle (or shake your phone)"
-						}
-						disabled={deck.ordered}
-						onClick={() => {
-							armShake();
-							doShuffle();
-						}}
-					>
-						<Shuffle size={18} aria-hidden="true" />
-					</button>
-					<button
-						type="button"
-						className="icon-button"
-						aria-label="Share this card"
-						title="Share"
-						onClick={share}
-					>
-						<Share2 size={18} aria-hidden="true" />
-					</button>
-					<button
-						type="button"
-						className="icon-button"
-						aria-label="Show the whole deck as a list"
-						title="List"
-						onClick={() => setOpen(false)}
-					>
-						<List size={18} aria-hidden="true" />
-					</button>
-				</div>
 			</div>
+
+			{menu && (
+				<div className="game-menu" role="dialog" aria-label="Games and actions">
+					<nav className="game-bar" aria-label="Games">
+						{decks.map((d) => (
+							<a
+								key={d.deck}
+								href={deckPath(d.deck)}
+								aria-current={d.deck === deck.deck ? "page" : undefined}
+							>
+								{d.name}
+							</a>
+						))}
+					</nav>
+					<div className="game-actions">
+						<button
+							type="button"
+							className="game-icon"
+							aria-label="Shuffle"
+							title={
+								canShuffle
+									? "Shuffle (or shake your phone)"
+									: "This deck is played in order"
+							}
+							disabled={!canShuffle}
+							onClick={() => {
+								armShake();
+								doShuffle();
+							}}
+						>
+							<Shuffle size={20} aria-hidden="true" /> <span>Shuffle</span>
+						</button>
+						<button
+							type="button"
+							className="game-icon"
+							aria-label="Share this card"
+							onClick={share}
+						>
+							<Share2 size={20} aria-hidden="true" /> <span>Share</span>
+						</button>
+						<button
+							type="button"
+							className="game-icon wide-only"
+							aria-pressed={grid}
+							aria-label="Show one card from every level"
+							onClick={() => {
+								setGrid((g) => !g);
+								setMenu(false);
+							}}
+						>
+							<LayoutGrid size={20} aria-hidden="true" />{" "}
+							<span>All levels</span>
+						</button>
+						<button
+							type="button"
+							className="game-icon"
+							aria-label="Read the whole deck as a list"
+							onClick={() => setOpen(false)}
+						>
+							<List size={20} aria-hidden="true" /> <span>Read as list</span>
+						</button>
+						<button
+							type="button"
+							className="game-icon"
+							aria-label="Close menu"
+							onClick={() => setMenu(false)}
+						>
+							<X size={20} aria-hidden="true" />
+						</button>
+					</div>
+				</div>
+			)}
 
 			{grid ? (
 				<div className="game-grid">
@@ -236,7 +365,7 @@ export default function GameDeck({ deck, startId }: Props) {
 							<button
 								type="button"
 								key={t.level}
-								className="game-card"
+								className="game-grid-card"
 								data-tier={t.level}
 								aria-current={t.level === tier ? "true" : undefined}
 								onClick={() => {
@@ -244,7 +373,7 @@ export default function GameDeck({ deck, startId }: Props) {
 									setGrid(false);
 								}}
 							>
-								<span className="game-level">Level {t.level}</span>
+								<span className="game-status">Level {t.level}</span>
 								{tCard && <CardView kind={deck.kind} card={tCard} />}
 							</button>
 						);
@@ -252,52 +381,62 @@ export default function GameDeck({ deck, startId }: Props) {
 				</div>
 			) : (
 				<div className="game-stage" ref={stage}>
-					{card ? (
-						<article key={id} className="game-card">
-							<CardView kind={deck.kind} card={card} />
-						</article>
-					) : (
-						<p className="game-empty">No cards at this level yet.</p>
-					)}
+					<div className="game-track">
+						{leaving && (
+							<article
+								key={`leaving-${leaving.card.id}`}
+								className={`game-card leave-${leaving.dir}`}
+								aria-hidden="true"
+							>
+								<CardView kind={deck.kind} card={leaving.card} />
+							</article>
+						)}
+						{card ? (
+							<article
+								key={id}
+								className={`game-card ${leaving ? `enter-${leaving.dir}` : ""}`}
+							>
+								<CardView kind={deck.kind} card={card} />
+							</article>
+						) : (
+							<p className="game-card">No cards at this level yet.</p>
+						)}
+					</div>
 				</div>
 			)}
 
-			<nav className="game-nav" aria-label="Move through the deck">
-				<button
-					type="button"
-					className="icon-button"
-					aria-label="Previous card"
-					onClick={() => stepCard(-1)}
-				>
-					<ChevronLeft size={22} aria-hidden="true" />
-				</button>
-				<button
-					type="button"
-					className="icon-button"
-					aria-label="Lighter level"
-					disabled={levelPos <= 0}
-					onClick={() => stepTier(-1)}
-				>
-					<ChevronUp size={22} aria-hidden="true" />
-				</button>
-				<button
-					type="button"
-					className="icon-button"
-					aria-label="Deeper level"
-					disabled={levelPos >= levels.length - 1}
-					onClick={() => stepTier(1)}
-				>
-					<ChevronDown size={22} aria-hidden="true" />
-				</button>
-				<button
-					type="button"
-					className="icon-button"
-					aria-label="Next card"
-					onClick={() => stepCard(1)}
-				>
-					<ChevronRight size={22} aria-hidden="true" />
-				</button>
-			</nav>
+			{!grid &&
+				edge(
+					"Previous card",
+					ChevronLeft,
+					() => stepCard(-1),
+					index === 0 && levelPos <= 0,
+					"game-edge-left",
+				)}
+			{!grid &&
+				edge(
+					"Next card",
+					ChevronRight,
+					() => stepCard(1),
+					index >= ids.length - 1 && levelPos >= levels.length - 1,
+					"game-edge-right",
+				)}
+			{!grid &&
+				edge(
+					"Lighter level",
+					ChevronUp,
+					() => stepTier(-1),
+					levelPos <= 0,
+					"game-edge-up",
+				)}
+			{!grid &&
+				edge(
+					"Deeper level",
+					ChevronDown,
+					() => stepTier(1),
+					levelPos >= levels.length - 1,
+					"game-edge-down",
+				)}
 		</section>
 	);
 }

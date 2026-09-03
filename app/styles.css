@@ -349,21 +349,49 @@ body > main {
 }
 
 /* ── Game mode ──────────────────────────────────────────────────────────────
+   The whole screen is the level's colour and the card is white. These four
+   are the light-theme tier hues: every one is >= 4.5:1 under white text, and
+   app/styles.test.ts re-checks that across the full hue drift (±14°), so the
+   drift can never push a level below AA. Theme-independent on purpose.
    Rendered on the server too, so it must not exist for a reader without
    JavaScript: they get the list. Base.astro adds `js` to <html> inline. */
+:root {
+	--game-1: #16736a; /* white on teal   5.68:1 */
+	--game-2: #2c5fb3; /* white on blue   6.19:1 */
+	--game-3: #8a5a12; /* white on amber  5.91:1 */
+	--game-4: #b0364f; /* white on rose   6.02:1 */
+	--game: var(--game-1);
+}
+.game[data-tier="1"] { --game: var(--game-1); }
+.game[data-tier="2"] { --game: var(--game-2); }
+.game[data-tier="3"] { --game: var(--game-3); }
+.game[data-tier="4"] { --game: var(--game-4); }
+
 .game,
 .game-resume {
 	display: none;
 }
 html.js .game {
 	position: fixed;
-	inset: var(--header-h, 60px) 0 0 0;
-	z-index: 5;
-	display: flex;
-	flex-direction: column;
-	background: var(--bg);
-	border-top: 4px solid var(--tier);
-	touch-action: pan-x pan-y;
+	inset: 0;
+	z-index: 20;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	color: #fff;
+	isolation: isolate;
+	touch-action: none;
+	overflow: hidden;
+}
+/* The colour lives on a layer of its own so hue-rotate never touches the
+   white text. --drift moves with the card's position in the level. */
+html.js .game::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: var(--game);
+	filter: hue-rotate(var(--drift, 0deg));
+	transition: filter 220ms ease, background-color 220ms ease;
 }
 html.game-open {
 	overflow: hidden;
@@ -386,25 +414,109 @@ html.js .game-resume {
 	border-radius: 999px;
 }
 
-.game-bar {
+.game-top {
 	display: flex;
 	align-items: center;
-	gap: 0.75rem;
-	padding: 0.5rem 1rem;
-	border-bottom: 1px solid var(--border);
+	justify-content: space-between;
+	padding: calc(0.5rem + env(safe-area-inset-top)) 0.75rem 0.5rem;
 }
-.game-level {
+.game-status {
 	font-weight: 700;
-	color: var(--tier);
+	font-size: 0.95rem;
+	letter-spacing: 0.02em;
 }
 .game-pos {
-	color: var(--muted);
+	font-weight: 400;
+	opacity: 0.85;
 	font-variant-numeric: tabular-nums;
 }
-.game-actions {
-	margin-left: auto;
+
+/* Every control in the game is white on the level colour; 44px minimum. */
+.game-icon,
+.game-edge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	min-width: 44px;
+	min-height: 44px;
+	margin: 0;
+	padding: 0 0.6rem;
+	background: transparent;
+	color: #fff;
+	border: 0;
+	border-radius: 999px;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+	width: auto;
+}
+.game-icon:hover,
+.game-icon:focus-visible,
+.game-edge:hover,
+.game-edge:focus-visible {
+	background: rgba(255, 255, 255, 0.16);
+	outline-color: #fff;
+}
+.game-icon:disabled,
+.game-edge:disabled {
+	opacity: 0.35;
+	cursor: default;
+}
+
+/* The fold-down menu: a bar of games, then a row of actions. */
+.game-menu {
+	position: absolute;
+	top: calc(44px + 1rem + env(safe-area-inset-top));
+	left: 0;
+	right: 0;
+	z-index: 2;
+	padding: 0.5rem 0.75rem 0.75rem;
+	background: rgba(0, 0, 0, 0.35);
+	backdrop-filter: blur(8px);
+	animation: fold-down 160ms ease-out;
+}
+@keyframes fold-down {
+	from {
+		opacity: 0;
+		transform: translateY(-8px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.game-bar {
 	display: flex;
+	gap: 0.5rem;
+	overflow-x: auto;
+	padding-bottom: 0.5rem;
+	scrollbar-width: none;
+}
+.game-bar a {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0 1rem;
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	border-radius: 999px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.game-bar a[aria-current="page"] {
+	background: #fff;
+	color: var(--game);
+}
+.game-actions {
+	display: flex;
+	flex-wrap: wrap;
 	gap: 0.25rem;
+}
+.game-actions .game-icon span {
+	font-size: 0.9rem;
 }
 .wide-only {
 	display: none;
@@ -416,32 +528,93 @@ html.js .game-resume {
 }
 
 .game-stage {
-	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 1rem;
+	padding: 1rem 4rem 4rem;
 	overflow: hidden;
-	/* Enough for the swipe to be the only gesture: the stage never scrolls. */
 	user-select: none;
 	-webkit-user-select: none;
 }
+/* Both the leaving and the entering card share one grid cell, so they
+   overlap and only translate. 240ms: matches SLIDE_MS in GameDeck.tsx. */
+.game-track {
+	position: relative;
+	display: grid;
+	width: 100%;
+	max-width: 36rem;
+	max-height: 100%;
+}
+.game-track > * {
+	grid-area: 1 / 1;
+}
 .game-card {
 	width: 100%;
-	max-width: 40rem;
 	max-height: 100%;
 	overflow-y: auto;
-	padding: 1.5rem 1.25rem;
-	border-left: 4px solid var(--tier);
-	background: var(--surface);
-	text-align: left;
-	color: var(--fg);
+	margin: 0;
+	color: #fff;
+	text-align: center;
 	animation: card-in 180ms ease-out;
 }
+.game-card.enter-left  { animation: in-from-right 240ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.game-card.enter-right { animation: in-from-left 240ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.game-card.enter-up    { animation: in-from-bottom 240ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.game-card.enter-down  { animation: in-from-top 240ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.game-card.leave-left  { animation: out-to-left 240ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards; pointer-events: none; }
+.game-card.leave-right { animation: out-to-right 240ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards; pointer-events: none; }
+.game-card.leave-up    { animation: out-to-top 240ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards; pointer-events: none; }
+.game-card.leave-down  { animation: out-to-bottom 240ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards; pointer-events: none; }
+@keyframes in-from-right  { from { transform: translateX(60vw); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes in-from-left   { from { transform: translateX(-60vw); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes in-from-bottom { from { transform: translateY(60vh); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes in-from-top    { from { transform: translateY(-60vh); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes out-to-left    { to { transform: translateX(-60vw); opacity: 0; } }
+@keyframes out-to-right   { to { transform: translateX(60vw); opacity: 0; } }
+@keyframes out-to-top     { to { transform: translateY(-60vh); opacity: 0; } }
+@keyframes out-to-bottom  { to { transform: translateY(60vh); opacity: 0; } }
+/* With reduced motion the global rule below removes every animation; the
+   leaving card is then simply unmounted after SLIDE_MS. */
 .game-card .headline {
-	font-size: clamp(1.4rem, 4vw, 2rem);
-	line-height: 1.3;
+	font-size: clamp(1.6rem, 5.5vw, 2.6rem);
+	font-weight: 700;
+	line-height: 1.25;
 	margin: 0;
+	color: #fff;
+}
+.game-card p,
+.game-card li,
+.game-card strong,
+.game-card small,
+.game-card h3 {
+	color: #fff;
+}
+.game-card .pair {
+	display: grid;
+	gap: 0.75rem;
+	margin-top: 1rem;
+	text-align: left;
+}
+.game-card .pair > div {
+	padding: 0.75rem 1rem;
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	border-radius: 8px;
+	font-weight: 600;
+}
+.game-card .pair small {
+	display: block;
+	opacity: 0.8;
+}
+.game-card .probes {
+	text-align: left;
+	margin-top: 1rem;
+}
+.game-card .probes h3 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	opacity: 0.85;
+	margin-bottom: 0.25rem;
 }
 @keyframes card-in {
 	from {
@@ -453,47 +626,78 @@ html.js .game-resume {
 		transform: none;
 	}
 }
-.game-empty {
-	color: var(--muted);
+
+/* Chevrons at the four edges. */
+.game-edge {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	padding: 0;
+	z-index: 1;
+}
+.game-edge-left {
+	left: 0.25rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.game-edge-right {
+	right: 0.25rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.game-edge-up {
+	left: 50%;
+	top: calc(48px + env(safe-area-inset-top));
+	transform: translateX(-50%);
+}
+.game-edge-down {
+	left: 50%;
+	bottom: calc(0.5rem + env(safe-area-inset-bottom));
+	transform: translateX(-50%);
 }
 
+/* Desktop "all levels": one card from each level, click to jump. */
 .game-grid {
-	flex: 1;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 	gap: 1rem;
 	padding: 1rem;
 	overflow: auto;
 }
-.game-grid .game-card {
+.game-grid-card {
+	--game: var(--game-1);
+	background: var(--game);
+	color: #fff;
+	border: 0;
+	border-radius: 12px;
+	padding: 1.25rem;
+	text-align: left;
 	cursor: pointer;
-	border: 1px solid var(--border);
-	border-left: 4px solid var(--tier);
 	margin: 0;
-	height: auto;
-	max-width: none;
 }
-.game-grid .game-card[aria-current="true"] {
-	outline: 2px solid var(--tier);
+.game-grid-card[data-tier="2"] { --game: var(--game-2); }
+.game-grid-card[data-tier="3"] { --game: var(--game-3); }
+.game-grid-card[data-tier="4"] { --game: var(--game-4); }
+.game-grid-card[aria-current="true"] {
+	outline: 3px solid #fff;
+	outline-offset: 2px;
 }
-.game-grid .game-level {
+.game-grid-card .game-status {
 	display: block;
 	margin-bottom: 0.5rem;
-	font-size: 0.85rem;
+}
+.game-grid-card .headline {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
 }
 
-.game-nav {
-	display: flex;
-	justify-content: center;
-	gap: 0.5rem;
-	padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
-	border-top: 1px solid var(--border);
-}
-.game-nav .icon-button {
-	width: 56px;
-	height: 48px;
-}
-.icon-button:disabled {
-	opacity: 0.35;
-	cursor: default;
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
+	}
 }

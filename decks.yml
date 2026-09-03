@@ -1,0 +1,321 @@
+# Source of truth for every deck: metadata, how the game flows, and the
+# generation brief. `pnpm sync` writes name/blurb/kind/play/tiers into
+# content/{deck}.json (cards are preserved; a missing file is created empty).
+# Adding a game = adding a block here and running `pnpm sync`.
+#
+# play.order: sequential (file order, no shuffle) | random (shuffled when
+#   opened) | free (file order, shuffle offered).
+# play.cardsPerTier: deal at most this many per level per session; null = all.
+# play.howToPlay: shown on the deck page and behind the game's help button.
+# generation.candidatesPerTier: asked per provider per tier per call.
+# generation.targetPerTier: publish keeps the best cards up to this many.
+# tiers[].name/description/guidance/intensity are for prompts and publishing
+#   only; the site shows "Level n" and nothing else.
+
+inquisitives:
+  name: Inquisitives
+  blurb: "Questions for skipping small talk. Start anywhere; go as deep as the other person lets you."
+  kind: question
+  play:
+    order: free
+    cardsPerTier: null
+    howToPlay:
+      - "Whoever draws the card answers first, then asks it back."
+      - "Swipe sideways for another card at this level; swipe up to go deeper."
+      - "Go as deep as the other person lets you, and no deeper."
+  generation:
+    candidatesPerTier: 25
+    targetPerTier: 30
+    brief: |
+      A card is ONE question a curious interviewer would ask a stranger to skip small talk.
+      Mechanic: two or more people, any card, any order; whoever draws it answers first.
+      Rules: at most 22 words; exactly one question mark; answerable without preparation;
+      never "What's one thing…", never a list request ("name three…"). Ask about a specific
+      moment or a real opinion, not a category.
+      Exemplars:
+      - "What do you like to learn about?"
+      - "Who taught you something you still use?"
+      - "What did you believe for a long time that turned out to be wrong?"
+      - "What have you been avoiding?"
+  tiers:
+    - level: 1
+      name: Openers
+      description: "Easy to answer, hard to answer boringly."
+      intensity: 1
+      guidance: "Taste, perspective, a small story. A near-stranger answers comfortably and reveals something."
+    - level: 2
+      name: Unguarded
+      description: "Opinions, and the experiences that formed them."
+      intensity: 2
+      guidance: "Opinions, preferences, formative experiences, how they see the world. Wants a real answer, not a fact."
+    - level: 3
+      name: Vulnerable
+      description: "Needs some trust in the room."
+      intensity: 3
+      guidance: "Values, fears, regrets, identity, what they are working through. Assumes rapport."
+    - level: 4
+      name: Intimate
+      description: "For people who have already gone somewhere together."
+      intensity: 4
+      guidance: "Mortality, meaning, the things rarely said out loud, and how they feel about the person across from them."
+
+never-have-i-ever:
+  name: Never Have I Ever
+  blurb: "Statements, not questions. Everyone who has done it puts a finger down, and then tells the story."
+  kind: question
+  play:
+    order: random
+    cardsPerTier: null
+    howToPlay:
+      - "Read the card aloud. Everyone who HAS done it puts a finger down (or drinks)."
+      - "Anyone who put a finger down owes the table the story."
+      - "Swipe up when the room is ready for the next level."
+  generation:
+    candidatesPerTier: 25
+    targetPerTier: 25
+    brief: |
+      A card is ONE first-person statement that begins exactly "Never have I ever" and names one
+      concrete act in the present perfect. Mechanic: read aloud; everyone who HAS done it puts a
+      finger down or drinks, and usually has to tell the story. So pick acts with a story behind
+      them, not yes/no facts about identity or possessions.
+      Rules: starts with "Never have I ever"; at most 18 words; one act, no "or"; adults only,
+      consensual and legal; nothing that pressures anyone to confess a crime.
+      Exemplars:
+      - "Never have I ever pretended to know a song I had never heard."
+      - "Never have I ever cried at an advert."
+      - "Never have I ever ghosted someone I actually liked."
+      - "Never have I ever lied about my age to get into somewhere."
+  tiers:
+    - level: 1
+      name: Harmless
+      description: "Small embarrassments anyone will admit."
+      intensity: 1
+      guidance: "Everyday, slightly embarrassing, funny to admit. Nobody blushes."
+    - level: 2
+      name: Cheeky
+      description: "Things you did and got away with."
+      intensity: 2
+      guidance: "Mild mischief, white lies, minor rule-bending, crushes. A grin, not a wince."
+    - level: 3
+      name: Confessional
+      description: "Now it costs something to put a finger down."
+      intensity: 3
+      guidance: "Regrets, heartbreak, jealousy, things done to friends and family. Admitting it says something."
+    - level: 4
+      name: Spicy
+      description: "Adults only, and the story is the point."
+      intensity: 4
+      guidance: "Romance and sex between consenting adults, wild nights, the stories people save for close friends. Never illegal, never involving anyone under 18, never degrading."
+
+fast-friends:
+  name: Fast Friends
+  blurb: "Three sets of twelve, done in order, both of you answering. Each set asks a little more than the last."
+  kind: question
+  play:
+    order: sequential
+    cardsPerTier: 12
+    howToPlay:
+      - "Two people. Work through the three sets in order; do not skip ahead."
+      - "Both of you answer every card, taking turns to go first."
+      - "Give it about forty-five minutes. Set three is where it lands."
+  generation:
+    candidatesPerTier: 25
+    targetPerTier: 12
+    brief: |
+      This deck follows the Fast Friends procedure from Aron et al. (1997): two people work
+      through three sets of twelve questions in order, BOTH answering every question, with each set
+      more self-disclosing than the last. Write ORIGINAL questions in that spirit. Do not reproduce
+      or lightly paraphrase the published 1997 list.
+      Reciprocity principle: both people answer, so every question must be equally answerable by
+      two strangers with different lives. Rules: at most 30 words; may be two-part ("…? Why?");
+      up to a third of the cards may be instructions ("Tell your partner…", "Share…"); no
+      yes/no questions.
+      Exemplars:
+      - "If you could have dinner with anyone alive, who, and what would you want to ask them?"
+      - "Tell your partner about the last time you felt properly proud of yourself."
+      - "What do you value most in a friend, and when did you last fail at it yourself?"
+      - "Share something you like about the person across from you that they might not know."
+  tiers:
+    - level: 1
+      name: Set one
+      description: "Warm, curious, low stakes."
+      intensity: 1
+      guidance: "Preferences, small stories, how they spend a good day. Comfortable for strangers."
+    - level: 2
+      name: Set two
+      description: "Personal history and how they see themselves."
+      intensity: 3
+      guidance: "Childhood, family, accomplishments, what they would change. Real disclosure, still safe."
+    - level: 3
+      name: Set three
+      description: "The two of you, and the things rarely said."
+      intensity: 4
+      guidance: "Feelings about the other person, fears, regrets, what they would want the other to know. Reciprocal and direct."
+
+twenty-one-questions:
+  name: 21 Questions
+  blurb: "One run of twenty-one, played in order, taking turns. It starts light and ends somewhere."
+  kind: question
+  play:
+    order: sequential
+    cardsPerTier: 21
+    howToPlay:
+      - "Two people, taking turns: one asks, the other answers, then swap."
+      - "Play the cards in order. The run is built to climb."
+      - "No skipping. You may ask a follow-up before moving on."
+  generation:
+    candidatesPerTier: 21
+    targetPerTier: 21
+    brief: |
+      Write ONE complete run of exactly 21 questions to be played in order by two people taking
+      turns. This is a sequence, not a pool: it should start warm, move through curious and
+      personal, and end with one closing question that lands. Rules: at most 20 words each; no
+      two adjacent questions on the same topic; no yes/no questions; question 21 should be one
+      they will still be talking about afterwards.
+      Exemplars for the arc:
+      - Q1 "What's the best thing that happened to you this week?"
+      - Q8 "What's something you're good at that you never get to use?"
+      - Q15 "When did you last surprise yourself?"
+      - Q21 "What would you want me to remember about this conversation?"
+  tiers:
+    - level: 1
+      name: The run
+      description: "Twenty-one questions, in order."
+      intensity: 2
+      guidance: "The whole arc from warm to personal. Rate each card's intensity honestly; the run as a whole should climb."
+
+would-you-rather:
+  name: Would You Rather
+  blurb: "Two options, both hard to pick. Choose one, then defend it."
+  kind: pair
+  play:
+    order: random
+    cardsPerTier: null
+    howToPlay:
+      - "Everyone picks A or B. No abstaining."
+      - "Then everyone defends their pick. That is the game."
+      - "Swipe up when the easy ones stop being interesting."
+  generation:
+    candidatesPerTier: 25
+    targetPerTier: 25
+    brief: |
+      A card is two options, a and b, that are genuinely hard to choose between and reveal a
+      value or a fear, not a gross-out. Mechanic: pick one, then explain; the explanation is the
+      conversation. Rules: each option at most 12 words; parallel grammar (both start the same
+      way); neither obviously better; no bodily-fluid humour; use "…for the rest of your life"
+      at most once per batch; do not write the words "Would you rather", the site adds them.
+      Exemplars:
+      - a: "know how you will die" / b: "know when you will die"
+      - a: "be the funniest person in every room" / b: "be the smartest person in every room"
+      - a: "lose every photo you have ever taken" / b: "lose every message you have ever sent"
+      - a: "be forgotten after you die" / b: "be remembered for the wrong reason"
+  tiers:
+    - level: 1
+      name: Playful
+      description: "Preferences and superpowers."
+      intensity: 1
+      guidance: "Fun trade-offs about abilities, food, travel, habits. Reveals taste."
+    - level: 2
+      name: Revealing
+      description: "Trade-offs about time, money, fame and comfort."
+      intensity: 2
+      guidance: "What they would give up for what. Reveals priorities."
+    - level: 3
+      name: Uncomfortable
+      description: "Loyalty, mortality, identity."
+      intensity: 3
+      guidance: "Choices about people they love, what they would sacrifice, how they want to be remembered. Reveals values and fears."
+
+thought-experiments:
+  name: Thought Experiments
+  blurb: "The classics and some new ones. A scenario, the question it forces, and the follow-ups that make it bite."
+  kind: dilemma
+  play:
+    order: free
+    cardsPerTier: null
+    howToPlay:
+      - "One person reads the setup and the question. Everyone answers before anyone argues."
+      - "Then work through the follow-ups. That is where it gets interesting."
+      - "Nobody has to be consistent. Notice when you are not."
+  generation:
+    candidatesPerTier: 10
+    targetPerTier: 12
+    brief: |
+      A card is a thought experiment or moral dilemma with four parts: a short title; a setup
+      (the scenario, at most 120 words, plain words, no jargon, no philosopher's names in the
+      text); the dilemma (the ONE question the scenario forces); and 2-3 probes, follow-up
+      questions that push on whichever answer was given ("Would that change if…", "What if it
+      were your…"). The probes are where the conversation happens; make them sharper than the
+      dilemma.
+      Two kinds of card. CANONICAL: retell a well-known experiment in this voice and put the
+      standard attribution in `origin` (e.g. "Philippa Foot, 1967", "Robert Nozick, 1974",
+      "Plutarch / Hobbes", "John Rawls, 1971", "John Searle, 1980", "Frank Jackson, 1982",
+      "Derek Parfit, 1984", "Peter Singer, 1972", "William Newcomb / Robert Nozick, 1969").
+      ORIGINAL: a new dilemma about ordinary life (money, friends, family, work, technology)
+      with `origin` null. Never invent an attribution.
+      Canonical experiments to cover (one card each, best retelling wins): Trolley Problem;
+      the Fat Man / Footbridge variant; Experience Machine; Ship of Theseus; Veil of Ignorance;
+      Chinese Room; Mary's Room; the Teleporter; the Lifeboat; the Drowning Child; the
+      Repugnant Conclusion; Newcomb's Problem; the Sorites heap; the Violinist; Plato's Cave;
+      the Ring of Gyges; the Utility Monster; Pascal's Wager.
+  tiers:
+    - level: 1
+      name: Puzzling
+      description: "Abstract and fun to argue about."
+      intensity: 1
+      guidance: "Identity, knowledge, logic. Nobody has to confess anything to have a view. Most canonical experiments belong here."
+    - level: 2
+      name: Uncomfortable
+      description: "A real trade-off you might actually face."
+      intensity: 2
+      guidance: "Fairness, harm, promises, money. The answer says something about the person."
+    - level: 3
+      name: Personal
+      description: "It asks what you would actually do, and why you haven't."
+      intensity: 3
+      guidance: "Dilemmas that turn on the player's own life: their family, their work, what they owe and to whom."
+
+undercurrent:
+  name: Undercurrent
+  blurb: "For two people who want to get closer. Three levels; take turns; you may pass once per level."
+  kind: question
+  play:
+    order: random
+    cardsPerTier: 15
+    howToPlay:
+      - "Two people. Take turns drawing; the drawer answers first, honestly."
+      - "You may pass once per level. Say so out loud."
+      - "Finish a level before going deeper. Level three is the point."
+  generation:
+    candidatesPerTier: 25
+    targetPerTier: 20
+    brief: |
+      A closeness deck for two people, in the escalating-intimacy card format: three levels,
+      taken in turns, answered honestly, with one pass allowed per level. Write ORIGINAL cards.
+      Do not reference, imitate, or paraphrase "We're Not Really Strangers" or any commercial
+      card game; that name and its card text are someone else's property. The format is free;
+      the words are ours.
+      Rules: at most 20 words; addressed to "you" and "me", these cards are about the two people
+      at the table, not about life in general; up to a third may be instructions ("Tell me…",
+      "Describe…"); no therapy vocabulary (no "boundaries", "process", "hold space", "journey").
+      Exemplars:
+      - "What did you notice about me first?"
+      - "What do you think we have in common that we haven't talked about?"
+      - "Tell me something you assumed about me that turned out to be wrong."
+      - "What have you wanted to say to me tonight and haven't?"
+  tiers:
+    - level: 1
+      name: Surface
+      description: "Noticing each other."
+      intensity: 2
+      guidance: "First impressions, what each has noticed about the other, easy honesty."
+    - level: 2
+      name: Current
+      description: "What is actually between you."
+      intensity: 3
+      guidance: "The relationship itself: what they like, what they avoid, what they want from each other."
+    - level: 3
+      name: Depth
+      description: "The unsaid."
+      intensity: 4
+      guidance: "What has gone unsaid between the two of them; what they are afraid to ask; what they would want the other to know."

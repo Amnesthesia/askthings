@@ -13,10 +13,11 @@ design decisions that must survive into later sessions.
 1. ✅ Skeleton: Astro + React + tokens, `pnpm check` green in CI, deploy to Pages.
 2. ✅ `content/` schema, Inquisitives hand-authored (10 cards per tier), no-JS list rendering,
    per-card pages, sitemap.
-3. Game mode over the list (see below).
-4. Generation pipeline: one provider first, then the other two.
-5. Dedupe, rating, safety gate.
-6. The remaining decks.
+3. ✅ Game mode over the list (see below).
+4. ✅ Generation pipeline, all three providers, batch mode.
+5. ✅ Dedupe, rating, safety gate.
+6. The remaining decks: run the `Generate` workflow (or the stages locally) per deck and
+   review what lands.
 
 ## Stack (deliberate — do not swap)
 
@@ -34,12 +35,16 @@ merges red. The pre-commit hook runs it too.
 
 ## Content model
 
-See README. Key points: flat `cards[]` with a `tier` field (not nested under tiers); deck-level
+`decks.yml` is the source of truth (metadata, `play` settings, `generation` brief and per-tier
+guidance/intensity); `pnpm sync` writes the site-facing part into `content/{deck}.json`, cards
+preserved. Edit the yml, never the JSON metadata. See README. Key points: flat `cards[]` with a `tier` field (not nested under tiers); deck-level
 `kind` discriminator (`question` | `pair` | `dilemma`); every card has `intensity` 1–4 on the
 global scale, `tags`, `origin` (canonical source or null), `gen` (provenance or null for
 hand-authored), `scores` (always present, nulls until rated). Types in `src/shared.ts`,
 validator in `src/common.ts`, `pnpm validate` assigns ids and fills bookkeeping fields for
-hand-written cards. Reserved slugs: `questions`, `about`, `404`.
+hand-written cards. Reserved slugs: `questions`, `about`, `404`. `play.order` is
+`sequential` | `random` | `free`; `play.cardsPerTier` deals a subset per session. A deck with
+no cards is skipped by the site (`publishedDecks()`).
 
 ### Tiers
 
@@ -69,10 +74,13 @@ copy questions from, "We're Not Really Strangers": registered trademark of a com
 game, copyrighted card text. The mechanic is free; the branding and the words are not. Put
 this sentence in that deck's generation brief.
 
-## Game mode (step 3)
+## Game mode
 
-Mobile: a deck is the whole screen, one card, nothing else. Tiers colour-coded so a change
-of level is visible. Shake to shuffle. Horizontal swipe = next/previous card in the tier;
+The whole screen is the level's colour (`--game-1..4`, white text >= 4.5:1 across the
+±14° hue drift, tested), the card is white and bold, four edge chevrons, a menu icon that
+folds down a bar of the other games. `/` opens straight into the first published deck.
+Cards slide out/in in the direction of travel (240ms, `SLIDE_MS`). Shake to shuffle; shuffle
+returns to the start of the level. Horizontal swipe = next/previous card in the tier;
 vertical swipe = jump tiers. Desktop: arrow keys on the same axes, visible level indicator
 ("Level 2", never the name) and position ("7 / 12"), and an option to show all tiers at once, one card each. The URL reflects
 the current card (`/{deck}/{id}/`) so any position is linkable and back/forward work.
@@ -91,10 +99,18 @@ pre-rendered page with its own `og:title`/`og:description` and JSON-LD.
 
 ## Generation pipeline design (steps 4–5)
 
-`generate → dedupe → rate → safety → publish`, each `pnpm <stage>`, run ON DEMAND from
+`generate → dedupe → rate → safety → publish` (`pnpm generate | deduplicate | rate | safety | publish-cards`; "dedupe" and "publish" alone are pnpm built-ins), run ON DEMAND from
 `.github/workflows/generate.yml` (`workflow_dispatch`; never a `schedule`). Additive: the
 pipeline never deletes committed cards. Every stage is resumable; every rejection is persisted
 with its reason.
+
+### Batch mode
+
+`LLM_MODE=batch` is the default: every uncached request of a stage goes out as one
+Anthropic Message Batch / Gemini Batch job (half price, polled until it ends) and OpenAI
+requests use `service_tier: "flex"` (half price). Prompt caching is on for all three
+(`cache_control` on the system block, `prompt_cache_key`, Gemini implicit). `LLM_MODE=live`
+for smoke tests. Stages call `callJsonMany`, never one call per card.
 
 ### Hard cost rule
 

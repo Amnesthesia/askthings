@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-03T12:06:05.103Z",
+  "mode": "live",
+  "argv": [
+    "would-you-rather"
+  ],
+  "stages": {
+    "safety/would-you-rather": {
+      "calls": 1,
+      "input": 1329,
+      "output": 391,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.006568,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 1,
+      "input": 1329,
+      "output": 391,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.006568,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

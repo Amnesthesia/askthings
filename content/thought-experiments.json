@@ -1,0 +1,33 @@
+{
+  "deck": "thought-experiments",
+  "name": "Thought Experiments",
+  "blurb": "The classics and some new ones. A scenario, the question it forces, and the follow-ups that make it bite.",
+  "kind": "dilemma",
+  "play": {
+    "order": "free",
+    "cardsPerTier": null,
+    "howToPlay": [
+      "One person reads the setup and the question. Everyone answers before anyone argues.",
+      "Then work through the follow-ups. That is where it gets interesting.",
+      "Nobody has to be consistent. Notice when you are not."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Puzzling",
+      "description": "Abstract and fun to argue about."
+    },
+    {
+      "level": 2,
+      "name": "Uncomfortable",
+      "description": "A real trade-off you might actually face."
+    },
+    {
+      "level": 3,
+      "name": "Personal",
+      "description": "It asks what you would actually do, and why you haven't."
+    }
+  ],
+  "cards": []
+}

@@ -36,6 +36,12 @@ export function shuffleOrder(
 	return new Map([...order].map(([tier, ids]) => [tier, shuffle(ids, rng)]));
 }
 
+/** Deal at most n cards per tier (null = all). Keeps the current order. */
+export function dealOrder(order: Order, n: number | null): Order {
+	if (n === null) return order;
+	return new Map([...order].map(([tier, ids]) => [tier, ids.slice(0, n)]));
+}
+
 export function locate(order: Order, id: string): Position | null {
 	for (const [tier, ids] of order) {
 		const index = ids.indexOf(id);

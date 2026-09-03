@@ -3,7 +3,15 @@
   "name": "Inquisitives",
   "blurb": "Questions for skipping small talk. Start anywhere; go as deep as the other person lets you.",
   "kind": "question",
-  "ordered": false,
+  "play": {
+    "order": "free",
+    "cardsPerTier": null,
+    "howToPlay": [
+      "Whoever draws the card answers first, then asks it back.",
+      "Swipe sideways for another card at this level; swipe up to go deeper.",
+      "Go as deep as the other person lets you, and no deeper."
+    ]
+  },
   "tiers": [
     {
       "level": 1,

@@ -1,0 +1,103 @@
+name: Generate
+
+# Manual only. Regeneration is on demand, never scheduled; existing cards are
+# never removed. Deploy chains off this workflow's success.
+on:
+  workflow_dispatch:
+    inputs:
+      decks:
+        description: "Comma-separated deck slugs (empty = all decks in decks.yml)"
+        type: string
+        default: ""
+      providers:
+        description: "Comma-separated providers to generate with"
+        type: string
+        default: "gemini,anthropic,openai"
+      stages:
+        description: "Comma-separated stages to run, in order"
+        type: string
+        default: "generate,dedupe,rate,safety,publish"
+      per_tier:
+        description: "Candidates asked per provider per tier (empty = deck default)"
+        type: string
+        default: ""
+      max_usd_per_provider:
+        description: "Hard cap per provider for this run, in USD"
+        type: string
+        default: "5"
+      max_usd:
+        description: "Hard cap for the whole run, in USD"
+        type: string
+        default: "12"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      PROVIDERS: ${{ inputs.providers }}
+      PER_TIER: ${{ inputs.per_tier }}
+      MAX_USD_PER_PROVIDER: ${{ inputs.max_usd_per_provider }}
+      MAX_USD: ${{ inputs.max_usd }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # Typecheck and test before spending any API budget.
+      - name: Check
+        run: pnpm check
+
+      - name: Run stages
+        run: |
+          IFS=',' read -ra STAGES <<< "${{ inputs.stages }}"
+          for stage in "${STAGES[@]}"; do
+            stage="$(echo "$stage" | xargs)"
+            case "$stage" in
+              publish) script=publish-cards ;;
+              dedupe) script=deduplicate ;;
+              *) script="$stage" ;;
+            esac
+            echo "::group::$stage"
+            pnpm "$script" ${{ inputs.decks }}
+            echo "::endgroup::"
+          done
+
+      - name: Validate content
+        run: pnpm validate
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content data
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "content: generate ${{ inputs.decks || 'all decks' }}"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((attempt * 10))
+          done
+          # Without this the loop's last command is `sleep`, which exits 0 —
+          # three failed pushes would report success and the run's content
+          # would be discarded with the runner.
+          echo "::error::failed to push after 3 attempts"
+          exit 1

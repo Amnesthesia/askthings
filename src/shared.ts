@@ -96,17 +96,35 @@ export type Card = QuestionCard | PairCard | DilemmaCard;
 
 export interface Tier {
 	level: number;
+	/** Prompt-only: the site shows "Level n" and never the name. */
 	name: string;
 	description: string;
 }
 
+export const PLAY_ORDERS = ["sequential", "random", "free"] as const;
+/**
+ * sequential: play in file order, no shuffle (21 Questions).
+ * random: shuffled every time the deck is opened.
+ * free: file order, shuffle offered.
+ */
+export type PlayOrder = (typeof PLAY_ORDERS)[number];
+
+/** How the game flows. Everything game mode needs to run a deck lives here;
+ * authored in decks.yml and synced into the deck JSON by `pnpm sync`. */
+export interface Play {
+	order: PlayOrder;
+	/** Deal at most this many cards per level per session; null = all of them. */
+	cardsPerTier: number | null;
+	/** Shown on the deck page and behind the game's help button. */
+	howToPlay: string[];
+}
+
 interface DeckBase {
-	/** Slug; equals the filename under content/. */
+	/** Slug; equals the filename under content/ and the key in decks.yml. */
 	deck: string;
 	name: string;
 	blurb: string;
-	/** Played in sequence (21 Questions). Game mode disables shuffle. */
-	ordered: boolean;
+	play: Play;
 	tiers: Tier[];
 }
 

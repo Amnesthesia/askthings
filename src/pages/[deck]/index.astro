@@ -4,11 +4,11 @@
 import Base from "../../layouts/Base.astro";
 import CardBody from "../../components/CardBody.astro";
 import GameDeck from "@react/components/GameDeck";
-import { loadDecks } from "../../common.ts";
+import { publishedDecks } from "../../common.ts";
 import { cardHeadline, cardPath, deckPath, groupByTier, SITE_URL, type Deck } from "../../shared.ts";
 
 export function getStaticPaths() {
-	return loadDecks().map((deck) => ({ params: { deck: deck.deck }, props: { deck } }));
+	return publishedDecks().map((deck) => ({ params: { deck: deck.deck }, props: { deck } }));
 }
 
 interface Props {
@@ -16,6 +16,7 @@ interface Props {
 }
 const { deck } = Astro.props;
 const groups = [...groupByTier(deck).entries()];
+const links = publishedDecks().map((d) => ({ deck: d.deck, name: d.name }));
 // Levels are numbered, never named, in anything a player sees: the theme of a
 // level is theirs to read, and it differs between decks. Names and
 // descriptions exist in the JSON for the generation prompts only.
@@ -46,10 +47,13 @@ const schema = [
 ---
 
 <Base title={deck.name} description={description} path={deckPath(deck.deck)} schema={schema} deck={deck.deck}>
-  <GameDeck client:load deck={deck} />
+  <GameDeck client:load deck={deck} decks={links} />
   <h1>{deck.name}</h1>
   <p>{deck.blurb}</p>
-  {deck.ordered && <p><em>Play these in order.</em></p>}
+  <section class="how-to-play">
+    <h2>How to play</h2>
+    <ol>{deck.play.howToPlay.map((line) => <li>{line}</li>)}</ol>
+  </section>
   {groups.map(([tier, cards]) => (
     <section class="tier" data-tier={tier.level} id={`level-${tier.level}`}>
       <h2>Level {tier.level}</h2>

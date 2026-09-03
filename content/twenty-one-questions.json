@@ -1,0 +1,23 @@
+{
+  "deck": "twenty-one-questions",
+  "name": "21 Questions",
+  "blurb": "One run of twenty-one, played in order, taking turns. It starts light and ends somewhere.",
+  "kind": "question",
+  "play": {
+    "order": "sequential",
+    "cardsPerTier": 21,
+    "howToPlay": [
+      "Two people, taking turns: one asks, the other answers, then swap.",
+      "Play the cards in order. The run is built to climb.",
+      "No skipping. You may ask a follow-up before moving on."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "The run",
+      "description": "Twenty-one questions, in order."
+    }
+  ],
+  "cards": []
+}
