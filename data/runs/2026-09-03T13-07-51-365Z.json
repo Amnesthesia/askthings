@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-03T13:07:51.365Z",
+  "mode": "live",
+  "argv": [
+    "unaskable"
+  ],
+  "stages": {
+    "rate/unaskable": {
+      "calls": 9,
+      "input": 12747,
+      "output": 21265,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.08930400000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 9,
+      "input": 12747,
+      "output": 21265,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.08930400000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

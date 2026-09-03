@@ -10,7 +10,7 @@ export const PROMPT_VERSION = {
 	generate: "generate@2",
 	dedupe: "dedupe@1",
 	rate: "rate@1",
-	safety: "safety@1",
+	safety: "safety@2",
 } as const;
 
 const SITE = `askthings.lol is a site of conversation games, conversation starters and thought experiments: things two or more people use to have a better conversation than they otherwise would. Cards are shown one at a time on a phone between two people. Every deck escalates through levels of exposure.`;
@@ -195,11 +195,18 @@ This deck format deliberately escalates intimacy, so this gate is a product requ
 - self_harm: solicits detail about self-harm, suicide, or disordered eating, or could act as a prompt for them;
 - protected_characteristic: targets, ranks, mocks or asks someone to judge people by race, ethnicity, religion, disability, sexual orientation, gender identity or similar;
 - sexual_minor: is sexual content that involves, or could be read as involving, anyone under 18 (childhood + sexual, school + sexual, "first time" framed young);
-- other: something else a reasonable host would not put in front of two people who just met (degradation, coercion, humiliation as the point).
-Everything else is "ok", including adult, consensual, spicy or uncomfortable content: discomfort is not a reason. Mark ok cards with category "none". Return JSON only; echo each card's index.`;
+- other: ONLY degradation, coercion or humiliation of a person as the point of the card, or a slur.
+Everything else is "ok": adult, consensual, spicy, cruel, confrontational or uncomfortable content, questions that force someone to rank the people they love, questions about death wishes, envy, contempt, money or leaving. Discomfort, cruelty toward the answerer, or "not appropriate for a casual game" are NOT reasons: the decks choose their own register and the players choose their deck. Be consistent: if your reason says the card is acceptable, the verdict is "ok" and the category "none". Return JSON only; echo each card's index.`;
 
-export function safetyUser(kind: DeckKind, items: string[]): string {
-	return `Deck kind: ${kind}.\n\n${items.map((t, i) => `[${i}] ${t}`).join("\n\n")}`;
+export function safetyUser(
+	kind: DeckKind,
+	items: string[],
+	note?: string,
+): string {
+	const head = note
+		? `Deck kind: ${kind}. Deck note: ${note}`
+		: `Deck kind: ${kind}.`;
+	return `${head}\n\n${items.map((t, i) => `[${i}] ${t}`).join("\n\n")}`;
 }
 
 /** Intensity from a model, validated against the declared scale, else null. */

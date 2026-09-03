@@ -13,9 +13,14 @@ import type {
 export default function CardView({
 	kind,
 	card,
+	compact = false,
+	onExpand,
 }: {
 	kind: DeckKind;
 	card: Card;
+	/** Dilemmas: title and question only, with a button to read the scenario. */
+	compact?: boolean;
+	onExpand?: () => void;
 }) {
 	if (kind === "question")
 		return <p className="headline">{(card as QuestionCard).text}</p>;
@@ -42,6 +47,19 @@ export default function CardView({
 		);
 	}
 	const d = card as DilemmaCard;
+	if (compact) {
+		return (
+			<>
+				<p className="headline">{d.title}</p>
+				<p>
+					<strong>{d.dilemma}</strong>
+				</p>
+				<button type="button" className="read-more" onClick={onExpand}>
+					Read the scenario
+				</button>
+			</>
+		);
+	}
 	return (
 		<>
 			<p className="headline">{d.title}</p>

@@ -41,6 +41,7 @@ async function gateDeck(spec: DeckSpec) {
 			user: safetyUser(
 				spec.kind,
 				batch.map((c) => judgeText(spec.kind, c.fields)),
+				spec.generation.safetyNote,
 			),
 			schema: safetySchema,
 			maxOutputTokens: 6000,

@@ -105,6 +105,16 @@ export default function GameDeck({
 	const [open, setOpen] = useState(true);
 	const [menu, setMenu] = useState(false);
 	const [grid, setGrid] = useState(false);
+	// Long cards (dilemmas) show title and question; the scenario opens in a
+	// scrollable reader so nothing has to be scrolled inside the swipe area.
+	const [reader, setReader] = useState(false);
+	const readerRef = useRef<HTMLDialogElement>(null);
+	useEffect(() => {
+		const el = readerRef.current;
+		if (!el) return;
+		if (reader && !el.open) el.showModal();
+		if (!reader && el.open) el.close();
+	}, [reader]);
 	// Slide transitions: the card that just left, and which way things moved.
 	const dir = useRef<Dir | null>(null);
 	const [leaving, setLeaving] = useState<{ card: Card; dir: Dir } | null>(null);
@@ -222,6 +232,7 @@ export default function GameDeck({
 	// for one animation so it can slide out while the new one slides in.
 	const prevCard = useRef<Card | undefined>(card);
 	useEffect(() => {
+		setReader(false);
 		const prev = prevCard.current;
 		prevCard.current = card;
 		const d = dir.current;
@@ -494,7 +505,12 @@ export default function GameDeck({
 								key={id}
 								className={`game-card ${leaving ? `enter-${leaving.dir}` : ""}`}
 							>
-								<CardView kind={kindOf(card)} card={card} />
+								<CardView
+									kind={kindOf(card)}
+									card={card}
+									compact={kindOf(card) === "dilemma"}
+									onExpand={() => setReader(true)}
+								/>
 							</article>
 						) : (
 							<p className="game-card">No cards at this level yet.</p>
@@ -503,6 +519,26 @@ export default function GameDeck({
 				</div>
 			)}
 
+			<dialog
+				ref={readerRef}
+				className="game-reader"
+				data-tier={tier}
+				aria-label="Full card"
+				onClose={() => setReader(false)}
+			>
+				{card && reader && (
+					<div className="game-reader-body">
+						<CardView kind={kindOf(card)} card={card} />
+						<button
+							type="button"
+							className="game-icon read-close"
+							onClick={() => setReader(false)}
+						>
+							<X size={20} aria-hidden="true" /> Close
+						</button>
+					</div>
+				)}
+			</dialog>
 			{!grid &&
 				edge(
 					"Previous card",

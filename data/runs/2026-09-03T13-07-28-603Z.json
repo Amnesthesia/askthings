@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-03T13:07:28.603Z",
+  "mode": "live",
+  "argv": [
+    "unaskable"
+  ],
+  "stages": {
+    "dedupe/unaskable": {
+      "calls": 3,
+      "input": 3826,
+      "output": 1350,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.007932,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 3,
+      "input": 3826,
+      "output": 1350,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.007932,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

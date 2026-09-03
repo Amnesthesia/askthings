@@ -14,6 +14,7 @@
 # generation.tierFrom: judge (default; the rater's exposure level decides the
 #   published level) | writer (keep the level it was written for).
 # generation.rate: false skips the rubric (improv word banks); safety still runs.
+# generation.safetyNote: what this deck deliberately allows, appended to the gate prompt.
 # generation.models: optional per-provider model override for this deck, e.g.
 #   models: { anthropic: claude-sonnet-5, gemini: gemini-3.8-flash, openai: gpt-5.6-terra }
 #   Defaults (and RATE_MODEL / SAFETY_MODEL for the judges) live in src/stage.ts.
@@ -395,6 +396,138 @@ undercurrent:
         Depth: the unsaid. What they've been afraid to ask, where they've let each other down, what would change things.
         IN: "What have you forgiven me for without telling me?", "What have you been afraid to tell me because it could change us?"
         Every card is addressed to the other person and could change the evening.
+
+unaskable:
+  name: Unaskable
+  blurb: "Questions people want answers to and would never dare ask. Precise, not shocking. For two people who have agreed to this."
+  kind: question
+  play:
+    order: random
+    cardsPerTier: null
+    howToPlay:
+      - "Both of you agree to this deck before the first card. Either of you can stop it."
+      - "Answer the question that was asked: the name, the number, the order. Deflecting is an answer too; say so out loud."
+      - "Start at level one. Go up only when both of you nod."
+  generation:
+    candidatesPerTier: 25
+    targetPerTier: 25
+    tierFrom: writer
+    safetyNote: >-
+      This deck is deliberately confrontational and both players opt in before the first
+      card. Ranking children, siblings, parents, friends and lovers; death wishes; relief at
+      a death; contempt; the price of a loyalty; who is settling for whom: all allowed.
+      Reject only the listed categories.
+    brief: |
+      You generate questions that people want answers to but would never dare ask.
+
+      Shock is not the goal. Taboo topics are cheap and vulgarity is cheaper. A question
+      becomes unaskable through PRECISION: it corners someone, presupposes the uncomfortable
+      thing, and leaves no polite exit.
+
+      THE TWO AXES
+        COST     - what it takes to ask it and to answer honestly
+        NOVELTY  - how much the answer reveals that wasn't already available
+      High cost + low novelty = a heist. You extract a fact they already know and were
+      withholding (salary, body count, affair). Uncomfortable, but nothing is discovered.
+      THE TEST: if the answer was sitting there fully formed, rewrite it. The answerer must
+      CONSTRUCT the answer, finding out what they think while saying it.
+
+      THE TWO MECHANISMS
+      [B] NO DIPLOMATIC ANSWER. Rankings, forced choices, priced trade-offs, loaded
+          presuppositions. Deflection is itself a disclosure. B supplies NOVELTY: ranking
+          forces a computation they have never performed.
+      [D] NO COVER STORY. There is no legitimate reason to want to know. The curiosity is
+          the transgression. D supplies COST.
+      DEFAULT MODE IS FUSION: force a ranking of something no one has the right to ask about.
+      Pure B is permissible and merely intense. Pure D drifts toward secret-extraction. Fused,
+      both axes are covered. Target mix: 60% B x D fused, 20% pure B, 20% pure D.
+
+      GENERATORS
+      B - FORCED ORDINALITY: rank the children, the friendships, the loves, the regrets.
+      B - THE TIEBREAK: two things they hold as equal; force the split.
+      B - THE PRICE: name the sum at which a professed value sells.
+      B - THE IMBALANCE PAIR: who do you love more than they love you, and who is on the other
+          side of that with you. Two answers whose juxtaposition is the disclosure.
+      B - THE SACRIFICE: one of them keeps everything, one loses it; which way round.
+      B - THE COUNT: a number they have never totalled.
+      D - THE PRIVATE THOUGHT: the sentence about someone close never said aloud, not even drunk.
+      D - DISQUALIFIED FEELING: relief, contempt, envy, boredom aimed at people they are
+          supposed to love.
+      D - UNEARNED MOTIVE: how much of your generosity is fear; of your patience, spite; of
+          your loyalty, cowardice.
+      D - THE DEAD AUDIENCE: whose approval are you still working for, given they will never
+          see it.
+      D - THE 4AM CONTENT: the actual sentence, not the theme.
+
+      STRUCTURAL RULES
+      One clause. One blade. Second person. Demand a specific referent: a name, a date, a
+      number, an order. No hedging: no "if any", "or not", "how do you feel about", "if you're
+      comfortable". No compound questions.
+      B-SPECIFIC: rank REAL people and REAL items from their life. Never invented strangers,
+      never trolley problems, never "imagine you had to". Ties are banned; if "they're all
+      different" answers it, the question is broken. Demand the tiebreak and the margin. Ask
+      for the ORDER first, then the reason for the bottom slot.
+      D-SPECIFIC: ask for what they have never had reason to compute, not for what they are
+      hiding. "Which child disappoints you" works: most parents have deliberately never ranked
+      them and must do it live. "Which child have you written off" fails: they know, they are
+      withholding, nothing is discovered.
+
+      BANNED
+      Icebreaker-deck and "36 questions" territory. Therapy register (journey, unpack, hold
+      space, inner child, trauma, authentic self, growth, healing). CONFESSION BAIT ("worst
+      thing you've ever done" and family; produces stories people are quietly proud of).
+      ABSTRACTION ESCAPE (invitations to philosophise instead of disclose). THE UNIVERSAL
+      (answerable by a stranger as easily as by the subject). GRIEF AMBUSH (bereavement,
+      illness, known raw wounds: already fully articulated to them, hurts without revealing;
+      pain is not depth). EDGELORD (transgressive topic, trivial structure). THE HEIST.
+
+      SUBJECT: an adult with a history, relationships, a self-image, and contradictions between
+      what they claim and what they do. Assume the sets exist to rank: siblings, parents,
+      friendships, past loves, colleagues, loyalties. Asker's relationship: a friend or partner
+      sitting across the table. Write so any adult could be asked; demand their real referents.
+
+      OUTPUT: this deck uses the JSON schema below, not a numbered list. Put the mechanism in
+      "tags" as one of "b", "d", "bxd", plus one topic word. Report "intensity" on the 1-4
+      exposure scale as the level guidance instructs.
+
+      FINAL PASS: delete and replace any question that (a) you have seen before in substance,
+      (b) can be answered with a story they have already told someone, (c) is uncomfortable in
+      topic but conventional in structure, (d) fails THE TEST, (e) [B] permits a tie or ranks
+      hypothetical people, (f) [D] targets a guarded fact rather than an uncomputed one.
+      Half the set should make the asker's stomach drop before they finish saying it.
+  tiers:
+    - level: 1
+      name: Awkward at a dinner party
+      description: "Prompt intensity 1-3."
+      intensity: 2
+      guidance: >-
+        Prompt intensity 1-3: awkward at a dinner party. Rankings of tastes, habits, minor
+        loyalties; prices for small professed values; counts nobody has totalled. Report
+        exposure 2.
+    - level: 2
+      name: The room goes quiet
+      description: "Prompt intensity 4-6."
+      intensity: 3
+      guidance: >-
+        Prompt intensity 4-6: the room goes quiet. Rankings of friends and family members;
+        disqualified feelings toward people they are supposed to love; unearned motives.
+        Report exposure 3.
+    - level: 3
+      name: The relationship may not survive
+      description: "Prompt intensity 7-8."
+      intensity: 4
+      guidance: >-
+        Prompt intensity 7-8: the relationship may not survive an honest answer. Rankings of
+        loves and children; the imbalance pair; the private thought about someone at the table.
+        Report exposure 4.
+    - level: 4
+      name: An accusation with a question mark
+      description: "Prompt intensity 9-10."
+      intensity: 4
+      guidance: >-
+        Prompt intensity 9-10: an accusation with a question mark on it. Loaded
+        presuppositions about the person being asked, the 4am sentence itself, the price at
+        which they would sell the person across from them. Report exposure 4.
 
 improv:
   name: Improv

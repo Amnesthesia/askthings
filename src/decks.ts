@@ -51,6 +51,8 @@ export interface DeckSpec {
 		/** false = skip the rubric (improv words are not conversations); cards go
 		 * straight from unique to rated with null scores, the safety gate still runs. */
 		rate?: boolean;
+		/** Appended to the safety gate's prompt: what this deck deliberately allows. */
+		safetyNote?: string;
 		/** Per-provider generation model for this deck; defaults in src/stage.ts. */
 		models?: Partial<Record<ProviderName, string>>;
 	};

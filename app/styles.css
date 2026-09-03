@@ -381,7 +381,6 @@ html.js .game {
 	grid-template-rows: auto 1fr;
 	color: #fff;
 	isolation: isolate;
-	touch-action: none;
 	overflow: hidden;
 }
 /* The colour lives on a layer of its own so hue-rotate never touches the
@@ -1014,4 +1013,65 @@ html.js .game-resume {
 	animation: none;
 	opacity: 0.75;
 	filter: blur(0.5px);
+}
+
+/* Reader for long cards: a native modal, scrollable, on the level colour. */
+.read-more {
+	width: auto;
+	min-height: 44px;
+	margin: 1rem auto 0;
+	padding: 0 1.25rem;
+	border: 2px solid #fff;
+	border-radius: 999px;
+	background: transparent;
+	color: #fff;
+	font-weight: 700;
+}
+.game-reader {
+	width: min(100vw, 40rem);
+	max-width: 100vw;
+	max-height: 100dvh;
+	margin: auto;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: var(--game);
+	color: #fff;
+}
+.game-reader[data-tier="1"] { --game: var(--game-1); }
+.game-reader[data-tier="2"] { --game: var(--game-2); }
+.game-reader[data-tier="3"] { --game: var(--game-3); }
+.game-reader[data-tier="4"] { --game: var(--game-4); }
+.game-reader::backdrop {
+	background: rgba(0, 0, 0, 0.55);
+}
+.game-reader-body {
+	max-height: 100dvh;
+	overflow-y: auto;
+	padding: calc(1.5rem + env(safe-area-inset-top)) 1.25rem calc(1.5rem + env(safe-area-inset-bottom));
+	touch-action: pan-y;
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+.game-reader-body .headline {
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin: 0 0 0.75rem;
+	color: #fff;
+}
+.game-reader-body p,
+.game-reader-body li,
+.game-reader-body h3,
+.game-reader-body strong {
+	color: #fff;
+}
+.game-reader-body .probes h3 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	opacity: 0.85;
+}
+.read-close {
+	margin-top: 1rem;
+	border: 2px solid #fff;
 }

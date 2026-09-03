@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-03T13:07:22.646Z",
+  "mode": "live",
+  "argv": [
+    "unaskable"
+  ],
+  "stages": {
+    "generate": {
+      "calls": 11,
+      "input": 21537,
+      "output": 37663,
+      "cached": 5631,
+      "cacheHits": 0,
+      "usd": 0.6991514,
+      "retries": 0,
+      "failures": 1
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 4,
+      "input": 13278,
+      "output": 7813,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.261715,
+      "retries": 0,
+      "failures": 0
+    },
+    "gemini": {
+      "calls": 3,
+      "input": 5914,
+      "output": 22878,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.28636399999999995,
+      "retries": 0,
+      "failures": 1
+    },
+    "openai": {
+      "calls": 4,
+      "input": 2345,
+      "output": 6972,
+      "cached": 5631,
+      "cacheHits": 0,
+      "usd": 0.1510724,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

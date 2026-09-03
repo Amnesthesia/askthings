@@ -1,0 +1,2568 @@
+{
+  "deck": "unaskable",
+  "name": "Unaskable",
+  "blurb": "Questions people want answers to and would never dare ask. Precise, not shocking. For two people who have agreed to this.",
+  "kind": "question",
+  "play": {
+    "order": "random",
+    "cardsPerTier": null,
+    "howToPlay": [
+      "Both of you agree to this deck before the first card. Either of you can stop it.",
+      "Answer the question that was asked: the name, the number, the order. Deflecting is an answer too; say so out loud.",
+      "Start at level one. Go up only when both of you nod."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Awkward at a dinner party",
+      "description": "Prompt intensity 1-3."
+    },
+    {
+      "level": 2,
+      "name": "The room goes quiet",
+      "description": "Prompt intensity 4-6."
+    },
+    {
+      "level": 3,
+      "name": "The relationship may not survive",
+      "description": "Prompt intensity 7-8."
+    },
+    {
+      "level": 4,
+      "name": "An accusation with a question mark",
+      "description": "Prompt intensity 9-10."
+    }
+  ],
+  "cards": [
+    {
+      "text": "If I got sick in a way that took years, at what month would you start wishing it were over?",
+      "id": "6aa1d9a580",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "illness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What would I have to do for you to leave, and how close have I already come?",
+      "id": "19b3efb66c",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "partner"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What relief did you feel at a death you were supposed to only be sad about?",
+      "id": "ffc224b306",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "relief"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What's the sentence about your mother you've never said out loud to anyone?",
+      "id": "cb0ba44126",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "mother"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose approval are you still working for, knowing they'll never see any of it?",
+      "id": "f36e496e4d",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "approval"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "How much of your loyalty to your oldest friend is dread of the conversation that ends it?",
+      "id": "8296d34981",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "loyalty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What's the exact sentence about this relationship that shows up at 4am?",
+      "id": "f319d03f79",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "us"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you know about me that you decided, at some specific moment, never to bring up?",
+      "id": "9e8fb06dc1",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "us"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.293Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your parents is the bigger coward?",
+      "id": "d11f79b68f",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "parents",
+        "cowardice"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.343Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What percentage of your loyalty to your partner is just inertia?",
+      "id": "7990b3cc7c",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "relationships",
+        "motives"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.343Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose approval are you still trying to win who rarely thinks about you anymore?",
+      "id": "1afe5273c0",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "past",
+        "approval"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.344Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Between your mother and father, whose moral failures are you more willing to forgive?",
+      "id": "75622d292b",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "parents",
+        "morality"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.344Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose sudden misfortune would secretly make your life a little easier?",
+      "id": "a9b8503897",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "career",
+        "rivalry"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.344Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Between the two of us, who is settling for the other?",
+      "id": "75656a6c21",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "us",
+        "romance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:09.437Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What is the specific reason you think you will eventually outgrow me?",
+      "id": "7ffcb56b78",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "us",
+        "future"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:09.437Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What is the worst thing you genuinely believe about me?",
+      "id": "20270d5861",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "us",
+        "judgment"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:09.437Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which part of me do you tolerate because you want to keep me?",
+      "id": "b5705852a4",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "us"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the person you would least want describing you honestly to this table.",
+      "id": "eb0bf623c8",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "reputation"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.205Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What exact insult from me would hurt because you already believe it?",
+      "id": "0577b1d3e0",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "shame"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:39.346Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank the three people who love you most by how much of that love you actually return, and explain the one at the bottom.",
+      "id": "c94cc78f1f",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "love"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What's the sentence about me you've composed at 4am and never said?",
+      "id": "964f4be841",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "partner"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank us: your work, your kids, me. No ties, and tell me what the last twelve months would say if I asked them instead.",
+      "id": "330e2381c8",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "priority"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who have you stayed with past the point of loving them, and what month did it end for you?",
+      "id": "c3acd6e111",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "relationships"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which version of me do you actually prefer: the one from five years ago, or this one?",
+      "id": "0f3971dfc8",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "partner"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who would you take back tonight if they asked, and what does it cost you to have said their name in front of me?",
+      "id": "05484c1abc",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "exes"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which friend's good news was hardest for you to be happy about?",
+      "id": "923aa9888d",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "envy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who have you already outgrown but haven't told?",
+      "id": "6e184ccdd3",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your parents would you be quietly relieved to stop having to call every week?",
+      "id": "2a214ee461",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "parents"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Of the people who raised you, who owes you the apology first, and what's the second one's excuse?",
+      "id": "2813e1a437",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "parents"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose dependence on you do you secretly resent the most?",
+      "id": "9f096a043d",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "resentment",
+        "relationships"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.343Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Put your three biggest life decisions in order of how much they were driven by cowardice.",
+      "id": "94779c83f6",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "b",
+        "choices",
+        "cowardice"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.344Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What percentage of your oldest friendship is affection rather than history?",
+      "id": "73ec87e158",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "history"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:58.067Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who gets the most polished version of you because you trust them least?",
+      "id": "c8bf4f9945",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "trust"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:58.067Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which parent would you choose to know the full truth about you?",
+      "id": "82c1e8e2bc",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "parents"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the person whose affection makes you feel more powerful than loved.",
+      "id": "7df23cec96",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "power"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which person’s happiness have you quietly treated as evidence of your own failure?",
+      "id": "756d803051",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "comparison"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.205Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Give the exact age when you became less impressive than you expected to be.",
+      "id": "d0a31e2eb5",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "b",
+        "self-image"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.205Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the person you love whose calls you most often wish you had missed.",
+      "id": "564df9bef2",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "boredom"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:39.346Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What exact sentence about me comes to you at four in the morning?",
+      "id": "2f279a6405",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "intimacy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:39.346Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the person your patience is really contempt for.",
+      "id": "8434180286",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "contempt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:39.346Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose approval still changes your choices despite your claim that it does not?",
+      "id": "4036f09944",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "approval"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:39.346Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "How much of your patience with your mother is actually contempt you can't afford to show?",
+      "id": "40d7e8100d",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who did you love more than they loved you, and who is currently on the other side of that arrangement with you?",
+      "id": "bbdd06d2e0",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "b",
+        "love"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose approval are you still chasing, given they're dead and can't give it?",
+      "id": "23d3cede14",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "approval"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who in your family have you already privately decided is a lost cause?",
+      "id": "1e8653506f",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What's the ugliest thought you've had about your own child, word for word?",
+      "id": "51818681b9",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "d",
+        "children"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "If my memory of you had to be either honest or kind, which do you want, and why does that answer embarrass you?",
+      "id": "6b29415e79",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "legacy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:12.761Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who do you stay patient with purely out of contempt?",
+      "id": "3b1d9c7d60",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "contempt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you last feel relief hearing someone else's bad news, and whose was it?",
+      "id": "73cd571235",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "relief"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose loyalty do you take for granted because you know it isn't going anywhere?",
+      "id": "ce09b8c74f",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "loyalty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your two closest friends gets the phone call when your life falls apart, and what's missing in the other one?",
+      "id": "73d65a9bc5",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your friends' good news did you have to work at being pleased about, and how many days did it take?",
+      "id": "4cf22c89fc",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "envy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your friends would be a little pleased to hear you'd been humiliated in public?",
+      "id": "9788b86956",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose funeral would you skip if the flight were expensive and the week were busy?",
+      "id": "4ad6aeee53",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "b",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which relationship of yours would survive you being fully honest, and which one would be over by Friday?",
+      "id": "47d04838e3",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.293Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which friend's professional success makes you feel the most insecure?",
+      "id": "03668c60d1",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "success",
+        "insecurity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Between your mother and your father, whose worst trait are you most relieved to not have?",
+      "id": "9780f1eadb",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "b",
+        "parents",
+        "traits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your friendships is sustained primarily by your pity for the other person?",
+      "id": "40470fda89",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "pity",
+        "friends"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your three oldest friendships by how quickly they would end if you stopped reaching out first.",
+      "id": "4ef9eba45b",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "effort",
+        "friends"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your siblings by how much you actually enjoy their company right now.",
+      "id": "5d6f321bb0",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "siblings",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Put your three closest friends in order of whose life you would least want.",
+      "id": "f8844995c4",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "b",
+        "friendship",
+        "envy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.343Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who loves you noticeably more than you love them?",
+      "id": "c9b2923cab",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "b",
+        "romance",
+        "imbalance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:28.344Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which parent’s approval still has the higher price in your decisions?",
+      "id": "56cc0f47c0",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "parents"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:58.067Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which former partner understood you better than anyone since?",
+      "id": "70dcc31470",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "exes"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:58.067Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose side do you keep taking mainly because changing your mind would embarrass you?",
+      "id": "efa286ee98",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "pride"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:58.067Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose success is hardest for you to hear about without taking stock of your own life?",
+      "id": "e9001e5173",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "envy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:58.067Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "For what exact dollar amount would you never speak to me again?",
+      "id": "6b4bb3aa9b",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "b",
+        "us",
+        "money"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:09.437Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Between your parents, whose funeral will feel more like an obligation than a tragedy?",
+      "id": "f6f429d622",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "parents",
+        "grief"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:09.437Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your children by whose opinion of you has the most power.",
+      "id": "b13aa37165",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "children"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the friend you love more than they love you.",
+      "id": "f17ac06cb2",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which person in your family would you remove to make everyone else closer?",
+      "id": "15c8b32e0e",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "bxd",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the person whose approval still decides what you call success.",
+      "id": "20b378110d",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "approval"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.205Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank the promises you currently keep by how badly you want to break them.",
+      "id": "7d4f46d227",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "b",
+        "promises"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.205Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose success this year did you have to work hardest to be pleased about?",
+      "id": "f49f856035",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "envy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your two oldest friendships would you let lapse first, and what tipped it?",
+      "id": "7f6620c845",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "b",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your two parents do you like less as a person?",
+      "id": "22e182ca54",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "bxd",
+        "parents"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the friendship you're keeping alive out of habit rather than wanting.",
+      "id": "597974a290",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "d",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:21.438Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "How many people are in your life mainly because leaving would be more effort than staying? Give me the number, then the first name on that list.",
+      "id": "7d123312a7",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "count"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:30.292Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your close friends is the most consistently boring to talk to one-on-one?",
+      "id": "3ee400aeda",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "boredom",
+        "friends"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "How much of your reputation for being a good listener is just you enjoying other people's drama?",
+      "id": "a388d6239c",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "d",
+        "gossip",
+        "motives"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which friend's aging makes you feel the most secure about your own appearance?",
+      "id": "7c6b46240a",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "aging",
+        "vanity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What percentage of your generosity is just a fear of looking cheap?",
+      "id": "62a6c83b11",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "d",
+        "generosity",
+        "motives"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your three closest friends by how often you lie to avoid seeing them.",
+      "id": "dc415b4a87",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "lying",
+        "avoidance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What behavior do you mock in strangers but tolerate in your closest friend?",
+      "id": "6206e2e3b6",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "d",
+        "hypocrisy",
+        "friends"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your three closest friends by how quickly they exhaust your patience.",
+      "id": "8f6e95499e",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "patience",
+        "friends"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which friend's creative work is the hardest for you to pretend to admire?",
+      "id": "41bd85b0ee",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "bxd",
+        "art",
+        "lying"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "For what exact dollar amount would you publicly endorse a politician you actively despise?",
+      "id": "b25bea0e5d",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "b",
+        "money",
+        "principles"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Whose house or apartment do you leave feeling the most envious?",
+      "id": "78f8529cea",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "bxd",
+        "envy",
+        "status"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:03:08.444Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your siblings by how relieved you feel when each one cancels.",
+      "id": "f875efa108",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "siblings"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your closest friends by how much their success annoys you.",
+      "id": "0bd3b20608",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "envy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Name the colleague whose failure would make you feel most vindicated.",
+      "id": "d17ca56952",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "work"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank the people you have slept with by how embarrassed you would be to resemble them.",
+      "id": "ce39ba0f39",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "sex"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:04:19.204Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your three closest friends by how much you look forward to seeing them, and say what puts the last one last.",
+      "id": "961b689eb9",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.668Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of your friends' partners do you quietly think they settled for?",
+      "id": "78743585cb",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "d",
+        "couples"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Of the people at this table, whose invitation are you most likely to decline next time?",
+      "id": "6a9437e353",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "loyalty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank your siblings by whose life you'd least want to swap into, and start with the bottom.",
+      "id": "cf4b12f6c5",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "bxd",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which friend's texts do you leave the longest, and what makes theirs the ones that wait?",
+      "id": "fefb2af038",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "bxd",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which opinion of yours is mostly there because of who it annoys?",
+      "id": "f9fdf1c1d4",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "d",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who in your life do you find slightly boring but keep seeing anyway?",
+      "id": "c2f1a5aa99",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "d",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Rank the people you live with by who you'd most like a week away from.",
+      "id": "e4fefd4743",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "bxd",
+        "home"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@2",
+        "at": "2026-09-03T13:02:10.669Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    }
+  ]
+}
