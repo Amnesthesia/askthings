@@ -36,6 +36,7 @@ import {
 	toggleFavourite,
 } from "../utils/favourites.ts";
 import CardView from "./CardView.tsx";
+import DeckPicker from "./DeckPicker.tsx";
 
 export interface DeckLink {
 	deck: string;
@@ -323,25 +324,22 @@ export default function GameDeck({
 			</div>
 
 			{menu && (
-				<div className="game-menu" role="dialog" aria-label="Games and actions">
-					<nav className="game-bar" aria-label="Games">
-						{decks.map((d) => (
-							<a
-								key={d.deck}
-								href={deckPath(d.deck)}
-								aria-current={d.deck === deck.deck ? "page" : undefined}
-							>
-								{d.name}
-							</a>
-						))}
-						<a
-							href="/favourites/"
-							aria-current={deck.deck === "favourites" ? "page" : undefined}
-						>
-							Favourites{favCount ? ` (${favCount})` : ""}
-						</a>
-						<a href="/questions/">All questions</a>
-					</nav>
+				<div className="game-menu" role="dialog" aria-label="Pick a game">
+					<DeckPicker
+						links={[
+							...decks.map((d) => ({
+								href: deckPath(d.deck),
+								name: d.name,
+								current: d.deck === deck.deck,
+							})),
+							{
+								href: "/favourites/",
+								name: favCount ? `Favourites (${favCount})` : "Favourites",
+								current: deck.deck === "favourites",
+							},
+							{ href: "/questions/", name: "All questions" },
+						]}
+					/>
 					<div className="game-actions">
 						<button
 							type="button"

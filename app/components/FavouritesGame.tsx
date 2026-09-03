@@ -4,6 +4,7 @@ import {
 	favouritesDeck,
 	loadFavourites,
 } from "../utils/favourites.ts";
+import DeckPicker from "./DeckPicker.tsx";
 import GameDeck, { type DeckLink } from "./GameDeck.tsx";
 
 /** The Favourites game: reads localStorage after mount (nothing to render on
@@ -30,21 +31,9 @@ export default function FavouritesGame({ decks }: { decks: DeckLink[] }) {
 					No favourites yet. Star a card in any game and it will show up here,
 					grouped by level.
 				</p>
-				<nav className="deck-columns" aria-label="Games">
-					{decks.map((d, i) => (
-						<a
-							key={d.deck}
-							href={`/${d.deck}/`}
-							style={
-								{
-									"--game": `var(--game-${(i % 4) + 1})`,
-								} as React.CSSProperties
-							}
-						>
-							<span>{d.name}</span>
-						</a>
-					))}
-				</nav>
+				<DeckPicker
+					links={decks.map((d) => ({ href: `/${d.deck}/`, name: d.name }))}
+				/>
 			</section>
 		);
 	}
