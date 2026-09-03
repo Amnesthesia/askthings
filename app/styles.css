@@ -1,0 +1,346 @@
+/* ── Token layer ──────────────────────────────────────────────────────────
+   A small monochrome set, mapped onto Pico's variables so Pico follows the
+   theme instead of being overridden per component. */
+:root {
+	--pico-font-family-sans-serif: system-ui, -apple-system, "Segoe UI", sans-serif;
+	--pico-font-size: 16px;
+	--pico-line-height: 1.5;
+	--pico-border-radius: 6px;
+	--pico-card-box-shadow: none;
+
+	--bg: #fff;
+	--fg: #0a0a0a;
+	--muted: #666; /* 5.74:1 on --surface */
+	--border: #ddd;
+	--surface: #fff;
+
+	--pico-background-color: var(--bg);
+	--pico-color: var(--fg);
+	--pico-muted-color: var(--muted);
+	--pico-muted-border-color: var(--border);
+	--pico-card-background-color: var(--surface);
+	--pico-card-border-color: var(--border);
+	--pico-primary: var(--fg);
+	--pico-primary-hover: #333;
+	--pico-primary-focus: rgba(0, 0, 0, 0.1);
+	--pico-primary-inverse: #fff;
+	--pico-secondary: var(--muted);
+	--pico-h1-color: var(--fg);
+	--pico-h2-color: var(--fg);
+	--pico-h3-color: var(--fg);
+
+	/* Native controls (details marker, scrollbars, form fields) follow the
+	   theme instead of rendering with the light UA scheme on a dark page. */
+	color-scheme: light;
+
+	/* Tier hues — four of the six the site may ever use. Each tier is told
+	   apart by hue AND by its written "Level n · Name" label, never by colour
+	   alone. Every value is used on text, so every value is >= 4.5:1 on
+	   --surface in its own theme. Measured (WCAG relative luminance), not
+	   eyeballed; app/styles.test.ts fails if a value drops below 4.5. */
+	--tier-1: #16736a; /* teal   5.68:1 on #fff */
+	--tier-2: #2c5fb3; /* blue   6.19:1 on #fff */
+	--tier-3: #8a5a12; /* amber  5.91:1 on #fff */
+	--tier-4: #b0364f; /* rose   6.02:1 on #fff */
+
+	/* Defaults to --muted so an undeclared tier stays monochrome rather than
+	   inheriting whichever colour is in scope. */
+	--tier: var(--muted);
+}
+
+[data-tier="1"] { --tier: var(--tier-1); }
+[data-tier="2"] { --tier: var(--tier-2); }
+[data-tier="3"] { --tier: var(--tier-3); }
+[data-tier="4"] { --tier: var(--tier-4); }
+
+/* Dark tokens — system preference (auto) or explicit toggle. Written twice
+   because `auto` must follow the OS while an explicit choice must win. */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		--bg: #0b0b0b;
+		--fg: #ededed;
+		--muted: #888; /* 5.33:1 on --surface */
+		--border: #242424;
+		--surface: #111;
+		--pico-background-color: var(--bg);
+		--pico-color: var(--fg);
+		--pico-muted-color: var(--muted);
+		--pico-muted-border-color: var(--border);
+		--pico-card-background-color: var(--surface);
+		--pico-card-border-color: var(--border);
+		--pico-primary: var(--fg);
+		--pico-primary-hover: #bbb;
+		--pico-primary-focus: rgba(255, 255, 255, 0.1);
+		--pico-primary-inverse: #0b0b0b;
+		--pico-h1-color: var(--fg);
+		--pico-h2-color: var(--fg);
+		--pico-h3-color: var(--fg);
+		/* Lightened for >= 4.5:1 on the dark --surface (#111). */
+		--tier-1: #4fc0ae; /* teal   8.53:1 on #111 */
+		--tier-2: #7aa8ee; /* blue   7.79:1 on #111 */
+		--tier-3: #d9a44a; /* amber  8.42:1 on #111 */
+		--tier-4: #ec8199; /* rose   7.34:1 on #111 */
+		color-scheme: dark;
+	}
+}
+:root[data-theme="dark"] {
+	--bg: #0b0b0b;
+	--fg: #ededed;
+	--muted: #888; /* 5.33:1 on --surface */
+	--border: #242424;
+	--surface: #111;
+	--pico-background-color: var(--bg);
+	--pico-color: var(--fg);
+	--pico-muted-color: var(--muted);
+	--pico-muted-border-color: var(--border);
+	--pico-card-background-color: var(--surface);
+	--pico-card-border-color: var(--border);
+	--pico-primary: var(--fg);
+	--pico-primary-hover: #bbb;
+	--pico-primary-focus: rgba(255, 255, 255, 0.1);
+	--pico-primary-inverse: #0b0b0b;
+	--pico-h1-color: var(--fg);
+	--pico-h2-color: var(--fg);
+	--pico-h3-color: var(--fg);
+	--tier-1: #4fc0ae; /* teal   8.53:1 on #111 */
+	--tier-2: #7aa8ee; /* blue   7.79:1 on #111 */
+	--tier-3: #d9a44a; /* amber  8.42:1 on #111 */
+	--tier-4: #ec8199; /* rose   7.34:1 on #111 */
+	color-scheme: dark;
+}
+
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+body > main {
+	max-width: 42rem;
+	padding-block: 1rem 3rem;
+}
+
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	max-width: 42rem;
+	margin-inline: auto;
+	padding: 0.5rem 1rem;
+}
+.site-header .brand {
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--fg);
+}
+.site-header .controls {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+/* Touch targets >= 44px, always. */
+.icon-button,
+.deck-menu > summary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	min-width: 44px;
+	min-height: 44px;
+	margin: 0;
+	padding: 0 0.6rem;
+	background: transparent;
+	color: var(--fg);
+	border: 1px solid var(--border);
+	border-radius: var(--pico-border-radius);
+	cursor: pointer;
+	font-size: 0.9rem;
+	line-height: 1;
+}
+.icon-button {
+	width: 44px;
+	padding: 0;
+}
+
+/* Deck switcher: a native <details>, so it needs no script and it is the only
+   persistent chrome on a phone. Its panel floats over the page instead of
+   pushing it, which is what lets game mode keep the same element. */
+.deck-menu {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.deck-menu > summary::-webkit-details-marker,
+.deck-menu > summary::marker {
+	display: none;
+	content: "";
+}
+.deck-menu > summary::after {
+	display: none;
+}
+.deck-menu[open] > summary {
+	background: var(--pico-primary-focus);
+}
+.deck-menu nav {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 0.25rem);
+	z-index: 10;
+	min-width: 16rem;
+	max-width: calc(100vw - 2rem);
+	padding: 0.25rem;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--pico-border-radius);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.deck-menu nav a {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	min-height: 44px;
+	align-items: center;
+	padding: 0.4rem 0.75rem;
+	text-decoration: none;
+	color: var(--fg);
+	border-radius: 4px;
+}
+.deck-menu nav a:hover,
+.deck-menu nav a:focus-visible {
+	background: var(--pico-primary-focus);
+}
+.deck-menu nav a[aria-current="page"] {
+	font-weight: 600;
+}
+.deck-menu nav small {
+	color: var(--muted);
+}
+
+/* ── Content ────────────────────────────────────────────────────────────── */
+.deck-list {
+	list-style: none;
+	padding: 0;
+}
+.deck-list li {
+	padding: 0.75rem 0;
+	border-bottom: 1px solid var(--border);
+}
+.deck-list h2 {
+	margin-bottom: 0.15rem;
+	font-size: 1.15rem;
+}
+.deck-list p {
+	margin: 0;
+}
+.deck-list small {
+	color: var(--muted);
+}
+
+/* One tier of a deck: a coloured left rule plus the written level label. */
+.tier {
+	margin: 1.75rem 0;
+	padding-left: 1rem;
+	border-left: 4px solid var(--tier);
+}
+.tier > h2 {
+	font-size: 1.1rem;
+	margin-bottom: 0.15rem;
+	color: var(--tier);
+}
+.tier > p {
+	color: var(--muted);
+	margin-bottom: 0.75rem;
+}
+.tier ol {
+	padding-left: 1.4rem;
+	margin: 0;
+}
+.tier ol li {
+	margin: 0.35rem 0;
+}
+.tier ol a {
+	color: var(--fg);
+	text-decoration: none;
+}
+.tier ol a:hover {
+	text-decoration: underline;
+}
+
+.tier-badge {
+	display: inline-block;
+	padding: 0.15rem 0.5rem;
+	border: 1px solid var(--tier);
+	border-radius: 999px;
+	color: var(--tier);
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.card {
+	margin: 1.5rem 0;
+	padding: 1.5rem 1.25rem;
+	border-left: 4px solid var(--tier);
+	background: var(--surface);
+}
+.card .headline {
+	font-size: 1.5rem;
+	line-height: 1.3;
+	margin: 0;
+}
+.card .pair {
+	display: grid;
+	gap: 0.75rem;
+	margin-top: 0.5rem;
+}
+.card .pair > div {
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--border);
+	border-radius: var(--pico-border-radius);
+}
+.card .pair small {
+	display: block;
+	color: var(--muted);
+	font-weight: 600;
+}
+.card .probes {
+	margin-top: 1rem;
+}
+.card .probes h3 {
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--muted);
+	margin-bottom: 0.25rem;
+}
+
+.siblings h2 {
+	font-size: 1rem;
+	color: var(--muted);
+}
+.pager {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+.pager a {
+	min-height: 44px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.site-footer {
+	max-width: 42rem;
+	margin: 2rem auto 0;
+	padding: 1rem;
+	color: var(--muted);
+	font-size: 0.85rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
+	}
+}

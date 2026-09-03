@@ -1,0 +1,817 @@
+{
+  "deck": "inquisitives",
+  "name": "Inquisitives",
+  "blurb": "Questions for skipping small talk. Start anywhere; go as deep as the other person lets you.",
+  "kind": "question",
+  "ordered": false,
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Openers",
+      "description": "Easy to answer, hard to answer boringly."
+    },
+    {
+      "level": 2,
+      "name": "Unguarded",
+      "description": "Opinions, and the experiences that formed them."
+    },
+    {
+      "level": 3,
+      "name": "Vulnerable",
+      "description": "Needs some trust in the room."
+    },
+    {
+      "level": 4,
+      "name": "Intimate",
+      "description": "For people who have already gone somewhere together."
+    }
+  ],
+  "cards": [
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What do you like to learn about?",
+      "tags": [
+        "curiosity"
+      ],
+      "id": "e50bb24bdb",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What's the last thing you got weirdly good at?",
+      "tags": [
+        "skills",
+        "story"
+      ],
+      "id": "2715306814",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "Where do you go when you need to think?",
+      "tags": [
+        "habits",
+        "place"
+      ],
+      "id": "35c81b37de",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What did you want to be when you were ten?",
+      "tags": [
+        "childhood"
+      ],
+      "id": "50315cd80c",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What's a small thing that reliably makes your day better?",
+      "tags": [
+        "habits",
+        "taste"
+      ],
+      "id": "ebea324aa1",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What are you a snob about?",
+      "tags": [
+        "taste"
+      ],
+      "id": "32704383de",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "Who taught you something you still use?",
+      "tags": [
+        "people",
+        "story"
+      ],
+      "id": "64e7b948db",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What do people get wrong about the place you grew up?",
+      "tags": [
+        "place",
+        "childhood"
+      ],
+      "id": "81d0eebd53",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What's the best meal you've had this year, and who was there?",
+      "tags": [
+        "food",
+        "people"
+      ],
+      "id": "e7b0e24b7d",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "text": "What are you reading, watching or listening to that you'd actually recommend?",
+      "tags": [
+        "taste"
+      ],
+      "id": "70a732c394",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What did you believe for a long time that turned out to be wrong?",
+      "tags": [
+        "beliefs",
+        "change"
+      ],
+      "id": "e43f6f41ef",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What's an opinion you hold that most of your friends don't?",
+      "tags": [
+        "opinions"
+      ],
+      "id": "7961630ac8",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "When did you last change your mind about something that mattered?",
+      "tags": [
+        "change",
+        "beliefs"
+      ],
+      "id": "05cefb87c3",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What did your parents get right?",
+      "tags": [
+        "family"
+      ],
+      "id": "15e467b352",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What's a compliment you got that you still think about?",
+      "tags": [
+        "people",
+        "self"
+      ],
+      "id": "a182b6d139",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What's the most useful thing anyone has ever told you?",
+      "tags": [
+        "advice"
+      ],
+      "id": "20a5318133",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What do you do that you suspect is unusual?",
+      "tags": [
+        "habits",
+        "self"
+      ],
+      "id": "ec1d2b953d",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What have you quit, and were you right to?",
+      "tags": [
+        "change",
+        "work"
+      ],
+      "id": "9a5c0f7629",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What kind of person do you find hard to be around?",
+      "tags": [
+        "people",
+        "opinions"
+      ],
+      "id": "19c56eba64",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "text": "What's a rule you live by that you've never said out loud?",
+      "tags": [
+        "values"
+      ],
+      "id": "50eefacde1",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What are you working on in yourself right now?",
+      "tags": [
+        "self",
+        "growth"
+      ],
+      "id": "45547d470f",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What do you envy in other people?",
+      "tags": [
+        "self",
+        "envy"
+      ],
+      "id": "51e7b1b8a6",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What have you been avoiding?",
+      "tags": [
+        "avoidance"
+      ],
+      "id": "d27904b744",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "When did you last cry, and what was it actually about?",
+      "tags": [
+        "emotion"
+      ],
+      "id": "d87bfd9a81",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What's a fear you have that sounds silly when you say it?",
+      "tags": [
+        "fear"
+      ],
+      "id": "fb6180680c",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What do you wish you'd said to someone?",
+      "tags": [
+        "regret",
+        "people"
+      ],
+      "id": "44f0b7be21",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "Which part of your life would you not want your younger self to see?",
+      "tags": [
+        "regret",
+        "self"
+      ],
+      "id": "2149449a95",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What do you need more of that you have trouble asking for?",
+      "tags": [
+        "needs"
+      ],
+      "id": "5874302d6f",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What would you do differently if nobody would judge you for it?",
+      "tags": [
+        "freedom",
+        "self"
+      ],
+      "id": "174eb6e448",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "text": "What have you forgiven someone for that you're not sure you should have?",
+      "tags": [
+        "forgiveness",
+        "people"
+      ],
+      "id": "eee36670a3",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "Is there a belief that's useful to hold and false?",
+      "tags": [
+        "beliefs",
+        "philosophy"
+      ],
+      "id": "70abf845cd",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "What do you think happens when we die, and does it change how you live?",
+      "tags": [
+        "mortality",
+        "meaning"
+      ],
+      "id": "ad994eb152",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "What would you want people to say about you when you're not in the room?",
+      "tags": [
+        "identity",
+        "legacy"
+      ],
+      "id": "881e0a3c49",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "What's the thing you've never told anyone, or the closest thing to it you can say?",
+      "tags": [
+        "secrets"
+      ],
+      "id": "575f9735fc",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "What do you think I've got wrong about you so far?",
+      "tags": [
+        "us",
+        "identity"
+      ],
+      "id": "76df72c9b2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "What do you hope is true?",
+      "tags": [
+        "hope",
+        "meaning"
+      ],
+      "id": "cd5ddaed7a",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "If you had one phone call left, who would you call, and what would you say?",
+      "tags": [
+        "mortality",
+        "people"
+      ],
+      "id": "0116e2bec8",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "What's the loneliest you've ever been?",
+      "tags": [
+        "loneliness"
+      ],
+      "id": "14a6739122",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "If you knew you had five years left, what would you stop doing tomorrow?",
+      "tags": [
+        "mortality",
+        "priorities"
+      ],
+      "id": "b0654c35c8",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 4,
+      "intensity": 4,
+      "text": "What do you think you're for?",
+      "tags": [
+        "meaning",
+        "identity"
+      ],
+      "id": "a61b9e27c2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.env
+.env.local
+node_modules/
+.astro/
+*.tsbuildinfo
+dist/
+
+# Pipeline working data: model response cache. Regenerable, unbounded.
+data/_cache/
+
+# Generated at build time by @astrojs/sitemap into dist/ — never at the repo root
+/sitemap*.xml

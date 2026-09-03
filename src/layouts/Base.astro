@@ -1,0 +1,80 @@
+---
+import "@react/pico.scss";
+import "@react/styles.css";
+import ThemeToggle from "@react/components/ThemeToggle";
+import { SITE_NAME, SITE_URL } from "../shared.ts";
+import DeckMenu from "../components/DeckMenu.astro";
+
+interface Props {
+	title: string;
+	description: string;
+	/** Site-root-relative path of this page, WITH the trailing slash. */
+	path: string;
+	ogType?: string;
+	/** JSON-LD object(s) for this page. */
+	schema?: unknown[];
+	/** Deck slug, so the switcher can mark the current one. */
+	deck?: string;
+}
+
+const { title, description, path, ogType = "website", schema = [], deck } = Astro.props;
+// Trailing slashes: the slash-less form 301s on GitHub Pages, and a canonical
+// that points at a redirect is one Google has to resolve rather than trust.
+const url = `${SITE_URL}${path}`;
+const fullTitle = path === "/" ? `${SITE_NAME} — ${title}` : `${title} — ${SITE_NAME}`;
+const website = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	name: SITE_NAME,
+	url: `${SITE_URL}/`,
+};
+---
+
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-snippet:-1" />
+    <link rel="canonical" href={url} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <!-- --bg for each scheme, so the browser chrome matches the page. -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)" />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json" set:html={JSON.stringify(website)} />
+    {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <script is:inline>
+      // Runs before the body paints, which is the whole point: a stored theme
+      // applied after hydration flashes the wrong one first.
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">{SITE_NAME}</a>
+      <div class="controls">
+        <DeckMenu current={deck} />
+        <ThemeToggle client:load />
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      Conversation games, starters and thought experiments. Pick a deck, put the phone between you.
+    </footer>
+  </body>
+</html>

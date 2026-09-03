@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadDecks } from "../common.ts";
+import { deckPath } from "../shared.ts";
+
+const decks = loadDecks();
+const total = decks.reduce((n, d) => n + d.cards.length, 0);
+const description = `${total} questions across ${decks.length} decks — conversation games, starters and thought experiments for having a better conversation than you otherwise would.`;
+const schema = [
+	{
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: "Decks",
+		numberOfItems: decks.length,
+		itemListElement: decks.map((deck, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: deck.name,
+			url: `https://askthings.lol${deckPath(deck.deck)}`,
+		})),
+	},
+];
+---
+
+<Base title="Ask things" description={description} path="/" schema={schema}>
+  <h1>Things to ask</h1>
+  <p>Conversation games, conversation starters and thought experiments. Every deck escalates: start shallow, go as deep as the room allows.</p>
+  <ul class="deck-list">
+    {decks.map((deck) => (
+      <li>
+        <h2><a href={deckPath(deck.deck)}>{deck.name}</a></h2>
+        <p>{deck.blurb}</p>
+        <small>{deck.cards.length} cards · {deck.tiers.map((t) => t.name).join(" → ")}</small>
+      </li>
+    ))}
+  </ul>
+</Base>

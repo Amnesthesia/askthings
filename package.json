@@ -1,0 +1,33 @@
+{
+  "name": "askthings",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prepare": "node ./scripts/setup-hooks.mjs",
+    "validate": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/validate.ts",
+    "test": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts' 'app/**/*.test.ts'",
+    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app && pnpm test"
+  },
+  "dependencies": {
+    "@astrojs/react": "^5.0.7",
+    "@astrojs/sitemap": "^3.7.4",
+    "@picocss/pico": "^2.1.1",
+    "astro": "^6.3.7",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.12",
+    "@types/node": "^25.8.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "sass": "^1.100.0",
+    "tsx": "^4.22.0",
+    "typescript": "^5.9.3"
+  }
+}

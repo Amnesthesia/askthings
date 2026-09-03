@@ -1,0 +1,26 @@
+---
+// The deck switcher. A native <details>, so it works with JavaScript off and
+// needs no island; in game mode this same element is the only chrome on a
+// phone, so it floats over the page rather than taking a row of its own.
+import { LayoutGrid } from "lucide-react";
+import { loadDecks } from "../common.ts";
+import { deckPath } from "../shared.ts";
+
+interface Props {
+	current?: string;
+}
+const { current } = Astro.props;
+const decks = loadDecks();
+---
+
+<details class="deck-menu">
+  <summary aria-label="Switch deck"><LayoutGrid size={18} aria-hidden="true" /> Decks</summary>
+  <nav aria-label="Decks">
+    {decks.map((deck) => (
+      <a href={deckPath(deck.deck)} aria-current={deck.deck === current ? "page" : undefined}>
+        <span>{deck.name}</span>
+        <small>{deck.cards.length} cards</small>
+      </a>
+    ))}
+  </nav>
+</details>

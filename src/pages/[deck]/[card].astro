@@ -1,0 +1,105 @@
+---
+// One card, pre-rendered, so a shared link previews as THAT card. No island:
+// this page is plain HTML and works with JavaScript disabled.
+import Base from "../../layouts/Base.astro";
+import CardBody from "../../components/CardBody.astro";
+import { loadDecks } from "../../common.ts";
+import {
+	type Card,
+	cardHeadline,
+	cardPath,
+	cardSummary,
+	type Deck,
+	deckPath,
+	SITE_URL,
+} from "../../shared.ts";
+
+export function getStaticPaths() {
+	return loadDecks().flatMap((deck) =>
+		deck.cards.map((card) => ({ params: { deck: deck.deck, card: card.id }, props: { deck, card } })),
+	);
+}
+
+interface Props {
+	deck: Deck;
+	card: Card;
+}
+const { deck, card } = Astro.props;
+const tier = deck.tiers.find((t) => t.level === card.tier);
+const headline = cardHeadline(deck.kind, card);
+const summary = cardSummary(deck.kind, card);
+const path = cardPath(deck.deck, card.id);
+const url = `${SITE_URL}${path}`;
+
+// og:title is the card itself; og:description carries the context.
+const description =
+	deck.kind === "question"
+		? `Level ${card.tier} · ${tier?.name} — from ${deck.name} on askthings.lol. ${deck.blurb}`
+		: summary;
+
+const index = deck.cards.indexOf(card);
+const prev = deck.cards[index - 1];
+const next = deck.cards[index + 1];
+const siblings = deck.cards.filter((c) => c.tier === card.tier && c !== card).slice(0, 8);
+
+const schema = [
+	deck.kind === "question"
+		? {
+				"@context": "https://schema.org",
+				"@type": "Question",
+				name: headline,
+				text: headline,
+				url,
+				isPartOf: { "@type": "CreativeWork", name: deck.name, url: `${SITE_URL}${deckPath(deck.deck)}` },
+			}
+		: {
+				"@context": "https://schema.org",
+				"@type": "CreativeWork",
+				name: headline,
+				text: summary,
+				url,
+				isPartOf: { "@type": "CreativeWork", name: deck.name, url: `${SITE_URL}${deckPath(deck.deck)}` },
+			},
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{ "@type": "ListItem", position: 1, name: "askthings.lol", item: `${SITE_URL}/` },
+			{ "@type": "ListItem", position: 2, name: deck.name, item: `${SITE_URL}${deckPath(deck.deck)}` },
+			{ "@type": "ListItem", position: 3, name: headline, item: url },
+		],
+	},
+];
+---
+
+<Base title={headline} description={description} path={path} ogType="article" schema={schema} deck={deck.deck}>
+  <nav aria-label="Breadcrumb">
+    <a href={deckPath(deck.deck)}>{deck.name}</a>
+    {" · "}
+    <a class="tier-badge" data-tier={card.tier} href={`${deckPath(deck.deck)}#level-${card.tier}`}>
+      Level {card.tier} · {tier?.name}
+    </a>
+  </nav>
+
+  <article class="card" data-tier={card.tier}>
+    <CardBody kind={deck.kind} card={card} as="h1" />
+  </article>
+
+  <p>{deck.blurb} {tier?.description}</p>
+
+  <nav class="pager" aria-label="Previous and next">
+    {prev ? <a href={cardPath(deck.deck, prev.id)} rel="prev">← Previous</a> : <span />}
+    {next ? <a href={cardPath(deck.deck, next.id)} rel="next">Next →</a> : <span />}
+  </nav>
+
+  {siblings.length > 0 && (
+    <section class="siblings tier" data-tier={card.tier}>
+      <h2>More at this level</h2>
+      <ol>
+        {siblings.map((s) => (
+          <li><a href={cardPath(deck.deck, s.id)}>{cardHeadline(deck.kind, s)}</a></li>
+        ))}
+      </ol>
+    </section>
+  )}
+</Base>

@@ -1,0 +1,63 @@
+---
+// The whole deck as plain HTML. This is the SEO surface and what unfurl
+// crawlers (which run no JavaScript) see; game mode is a layer over it.
+import Base from "../../layouts/Base.astro";
+import CardBody from "../../components/CardBody.astro";
+import { loadDecks } from "../../common.ts";
+import { cardHeadline, cardPath, deckPath, groupByTier, SITE_URL, type Deck } from "../../shared.ts";
+
+export function getStaticPaths() {
+	return loadDecks().map((deck) => ({ params: { deck: deck.deck }, props: { deck } }));
+}
+
+interface Props {
+	deck: Deck;
+}
+const { deck } = Astro.props;
+const groups = [...groupByTier(deck).entries()];
+const description = `${deck.blurb} ${deck.cards.length} cards in ${deck.tiers.length} levels: ${deck.tiers.map((t) => t.name).join(", ")}.`;
+const schema = [
+	{
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: deck.name,
+		description: deck.blurb,
+		numberOfItems: deck.cards.length,
+		itemListElement: deck.cards.map((card, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: cardHeadline(deck.kind, card),
+			url: `${SITE_URL}${cardPath(deck.deck, card.id)}`,
+		})),
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{ "@type": "ListItem", position: 1, name: "askthings.lol", item: `${SITE_URL}/` },
+			{ "@type": "ListItem", position: 2, name: deck.name, item: `${SITE_URL}${deckPath(deck.deck)}` },
+		],
+	},
+];
+---
+
+<Base title={deck.name} description={description} path={deckPath(deck.deck)} schema={schema} deck={deck.deck}>
+  <h1>{deck.name}</h1>
+  <p>{deck.blurb}</p>
+  {deck.ordered && <p><em>Play these in order.</em></p>}
+  {groups.map(([tier, cards]) => (
+    <section class="tier" data-tier={tier.level} id={`level-${tier.level}`}>
+      <h2>Level {tier.level} · {tier.name}</h2>
+      <p>{tier.description}</p>
+      <ol>
+        {cards.map((card) => (
+          <li>
+            <a href={cardPath(deck.deck, card.id)}>
+              <CardBody kind={deck.kind} card={card} />
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+</Base>

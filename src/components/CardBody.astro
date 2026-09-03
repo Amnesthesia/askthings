@@ -1,0 +1,38 @@
+---
+// Renders one card according to its deck's kind. Used by the deck list page
+// (compact) and the card page (full), so the two never disagree.
+import type { Card, DeckKind, DilemmaCard, PairCard, QuestionCard } from "../shared.ts";
+
+interface Props {
+	kind: DeckKind;
+	card: Card;
+	/** Heading level for the headline element. */
+	as?: "h1" | "p";
+}
+const { kind, card, as: Tag = "p" } = Astro.props;
+const q = card as QuestionCard;
+const p = card as PairCard;
+const d = card as DilemmaCard;
+---
+
+{kind === "question" && <Tag class="headline">{q.text}</Tag>}
+{kind === "pair" && (
+  <>
+    <Tag class="headline">Would you rather…</Tag>
+    <div class="pair">
+      <div><small>A</small>{p.a}</div>
+      <div><small>B</small>{p.b}</div>
+    </div>
+  </>
+)}
+{kind === "dilemma" && (
+  <>
+    <Tag class="headline">{d.title}</Tag>
+    <p>{d.setup}</p>
+    <p><strong>{d.dilemma}</strong></p>
+    <div class="probes">
+      <h3>Then ask</h3>
+      <ul>{d.probes.map((probe) => <li>{probe}</li>)}</ul>
+    </div>
+  </>
+)}
