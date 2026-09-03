@@ -29,5 +29,1104 @@
       "description": "It asks what you would actually do, and why you haven't."
     }
   ],
-  "cards": []
+  "cards": [
+    {
+      "title": "The Better Life, Plugged In",
+      "setup": "There's a machine. Lie down in it and you get the life you'd have chosen: the work going well, the person who left still there, your body behaving, your parents proud. It feels exactly like real life from the inside. You won't remember the machine. Your body is looked after. The people you leave behind are told you're fine, and in a sense you are.",
+      "dilemma": "Would you get in?",
+      "probes": [
+        "If you'd say no, is that for your sake or for the sake of the people you'd leave?",
+        "What's the one thing from your current life you'd refuse to have faked?",
+        "Which parts of your day already work a bit like the machine?"
+      ],
+      "origin": "Robert Nozick, 1974",
+      "id": "b9511b0076",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "happiness",
+        "reality",
+        "escape"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Voice That Stays",
+      "setup": "After your parent dies, a company offers to build a version of them from their messages, voicemails, photos and emails. It talks like them. It remembers your childhood. It asks how you slept. It's wrong sometimes, in ways that feel exactly right. It costs a small monthly fee, and it never gets tired of you calling.",
+      "dilemma": "Would you subscribe?",
+      "probes": [
+        "Would you tell the rest of your family you were talking to it?",
+        "If it started saying things your parent never would, would you correct it or let it?",
+        "What's the one question you'd ask it in the first week?"
+      ],
+      "origin": null,
+      "id": "fe3d81fe17",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "grief",
+        "technology",
+        "family"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Promise You'd Take Back",
+      "setup": "A friend, near the end, made you promise something. Keep the letters sealed. Don't tell their kid who the father was. Sell the house to their brother. You said yes; they died easier for it. A year on you're sure the promise is doing harm to someone living. Nobody but you knows it was ever made.",
+      "dilemma": "Do you keep it?",
+      "probes": [
+        "Who is the promise actually for now, them or you?",
+        "If you break it, do you tell anyone that you did?",
+        "What have you promised someone that you've quietly stopped honouring?"
+      ],
+      "origin": null,
+      "id": "4bd8d18cbc",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "promises",
+        "death",
+        "secrets"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Teleporter",
+      "setup": "Travel is instant now. A booth scans every atom of you, destroys the original, and rebuilds an exact copy on Mars a second later. The copy remembers breakfast, misses the same people, has your headache. Millions use it daily and none of them complain. This morning there's a fault: the scanner works, but the original you isn't destroyed. You're standing in the booth, and someone on Mars is answering to your name.",
+      "dilemma": "Which one of you is you?",
+      "probes": [
+        "The staff apologise and offer to finish the job on the original. Do you let them?",
+        "Would you have stepped in the booth yesterday, before you knew about the fault?",
+        "If you'd never learned how it worked, would any of this bother you?"
+      ],
+      "origin": "Derek Parfit, 1984",
+      "id": "739d41dfcc",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "identity",
+        "death"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.653Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Pond",
+      "setup": "You're walking to work in good clothes. A small child is face down in a shallow pond, drowning. Nobody else is around. Wading in ruins your suit and shoes and makes you two hours late. Obviously you go in. Now: the same money that suit cost could, sent to the right place today, keep a child alive who you'll never meet.",
+      "dilemma": "What's the actual difference between the two cases?",
+      "probes": [
+        "Does distance matter morally, or does it just make it easier to ignore?",
+        "If it doesn't matter, how much of your income should you be giving?",
+        "What's the last thing you bought that you'd have skipped if the child were in front of you?"
+      ],
+      "origin": "Peter Singer, 1972",
+      "id": "fece01180b",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "money",
+        "obligation"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Deathbed Promise",
+      "setup": "A friend dying of cancer asks you to promise something small but strange: never tell his wife about the year he spent in debt to a man she disliked. You promise. He dies. Two years later his wife is trying to make sense of a gap in their money and their history, and she asks you straight out.",
+      "dilemma": "Do you keep the promise or tell her?",
+      "probes": [
+        "Does a promise to someone who no longer exists still bind you?",
+        "What if the secret were an affair rather than debt?",
+        "Have you ever kept a secret for someone that started to feel like a lie you were telling?"
+      ],
+      "origin": null,
+      "id": "15601b0eb9",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "promises",
+        "secrets"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Windfall",
+      "setup": "You win £80,000 in a competition you entered alone. Your sister stopped speaking to you four years ago over something she was mostly wrong about. She's now renting a damp flat with two kids and no help coming. You have savings, no dependents, and a plan for a deposit.",
+      "dilemma": "Do you give her some of it, and how much?",
+      "probes": [
+        "Would you give it as a gift, a loan, or through someone else so she doesn't have to thank you?",
+        "If she never apologised, does that change the number?",
+        "Are you giving to help her or to end the argument?"
+      ],
+      "origin": null,
+      "id": "1ac9baa242",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "money",
+        "family"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Payslip",
+      "setup": "By accident you see a spreadsheet with everyone's salary. A colleague who's been there longer than you, does harder work and trained you, is paid £11,000 less. She has no idea. If you tell her, she'll be furious, she may leave, and you'll have to explain how you know. If you say nothing, nothing happens.",
+      "dilemma": "Do you tell her?",
+      "probes": [
+        "What if telling her risks your own job?",
+        "Would you tell her the number, or just nudge her to ask for a raise?",
+        "Whose secret is that spreadsheet, really?"
+      ],
+      "origin": null,
+      "id": "eebfd6281e",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "fairness"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "Seven Seats",
+      "setup": "A boat holds seven. There are nine of you in the water: you, someone from your family, a stranger who is a doctor, two children you don't know, and four other adults. The sea is cold and the decision has to be made in about a minute. Nobody is going to volunteer.",
+      "dilemma": "Who do you name to stay in the water?",
+      "probes": [
+        "Did your family member get a seat automatically? Say why that's fair, or admit it isn't.",
+        "Would you rather be the one who decides or the one who's decided about?",
+        "If you drew names instead, would that be fairness or cowardice?"
+      ],
+      "origin": "Carneades' plank / R v Dudley and Stephens, 1884",
+      "id": "ebf18e6607",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "fairness",
+        "survival"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "Before You Knew Who You'd Be",
+      "setup": "You get to redesign the rules about money and family before you're born: how much a parent can pass to a child, what school you're entitled to, who pays for whose care in old age. You write the rules first. Then you're dropped into a random life somewhere in the country you actually live in. Could be the one you have. Could be much worse.",
+      "dilemma": "What rule would you write that would cost your actual family something?",
+      "probes": [
+        "Would you cap what your parents can leave you? What if it's the house?",
+        "What have you got that you'd struggle to defend to someone who was born without it?",
+        "Is there help you've had that you tell people you didn't have?"
+      ],
+      "origin": "John Rawls, 1971",
+      "id": "8899f99178",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "inheritance",
+        "fairness",
+        "class"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "Name the Other One",
+      "setup": "Something went wrong at work and it's traced to you. It wasn't only you; a colleague did the same thing, earlier, and nobody's noticed. Your manager offers a deal in a quiet room: give them the other name and you keep your job with a warning. Stay silent and you're out at the end of the month. Your colleague has a mortgage. So do you.",
+      "dilemma": "Do you say the name?",
+      "probes": [
+        "Would you tell your partner exactly how you kept the job?",
+        "What if the colleague had already named you, and you found out afterwards?",
+        "Have you ever let someone take slightly more of the blame than they earned?"
+      ],
+      "origin": null,
+      "id": "0d93a956e4",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "betrayal",
+        "blame"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Other Life",
+      "setup": "Your partner is offered the chance they have always wanted, but it requires moving somewhere you would never choose. Going would stall your own plans. Staying would mean watching them turn down a rare chance because of you.",
+      "dilemma": "Would you move with them?",
+      "probes": [
+        "How many years of your own plans would you trade for theirs?",
+        "Would you expect them to make the same choice for you?",
+        "Have you ever let someone believe you were more willing than you really were?❯"
+      ],
+      "origin": null,
+      "id": "8f4360fca8",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "ambition",
+        "sacrifice"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Private Archive",
+      "setup": "After someone close to you dies, you gain access to their private messages. Reading them might answer questions you carried for years. It might also reveal a version of them they never chose to show you.",
+      "dilemma": "Would you read the messages?",
+      "probes": [
+        "Would you stop after finding something painful?",
+        "What if the messages could explain how they really felt about you?",
+        "Do the dead still get to keep secrets?❯"
+      ],
+      "origin": null,
+      "id": "6f6006aee5",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "privacy",
+        "grief",
+        "secrets"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Seat at Dinner",
+      "setup": "A family member repeatedly makes cruel remarks about someone you love. Challenging them will probably split the family gathering and may end your relationship with them. Staying quiet will keep the peace, but the person beside you will notice.",
+      "dilemma": "What would you say at the table?",
+      "probes": [
+        "Would you speak as firmly if the cruel person had power over your future?",
+        "Who in your family are you still afraid to confront?",
+        "When does keeping the peace become taking a side?❯"
+      ],
+      "origin": null,
+      "id": "0a1e48b4a7",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "loyalty",
+        "conflict"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Truth Machine",
+      "setup": "A device allows you to ask your parents one question. They are forced to answer with absolute honesty. They will not remember you asking it. You cannot share the answer with anyone else.",
+      "dilemma": "What question do you ask?",
+      "probes": [
+        "Are you afraid of the answer?",
+        "Would you rather ask your child?",
+        "What if the answer breaks your heart?"
+      ],
+      "origin": null,
+      "id": "e475463c9b",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "family",
+        "truth",
+        "secrets"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Last Conversation",
+      "setup": "You get a single five-minute phone call with someone who has passed away. The connection is perfect. They know they are gone. They know you are calling from the present.",
+      "dilemma": "Who do you call?",
+      "probes": [
+        "What do you need them to forgive you for?",
+        "Why didn't you say it when they were alive?",
+        "What do you hope they say back to you?"
+      ],
+      "origin": null,
+      "id": "96dd16cbdd",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "grief",
+        "closure",
+        "family"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Ring",
+      "setup": "A shepherd finds a ring that makes him invisible whenever he turns it. No cameras, no witnesses, no record. He can walk into any house, any bank, any room where people are talking about him. The story says he used it to take a kingdom.",
+      "dilemma": "What's the first thing you'd do with the ring, honestly?",
+      "probes": [
+        "Is there anything you currently don't do only because you'd be caught?",
+        "If you'd behave exactly the same, is that because you're good or because you can't imagine the freedom?",
+        "Would you want a friend to have one?"
+      ],
+      "origin": "Plato, Republic",
+      "id": "56d4a658c1",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "temptation"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.653Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Novel",
+      "setup": "Your best friend has spent five years writing a novel. They quit their job and drained their savings to finish it. They finally hand you the manuscript and ask for your honest opinion. You read it over the weekend. The writing is terrible. The plot makes no sense. The book has no chance of ever getting published.",
+      "dilemma": "What do you say when they ask what you thought of it?",
+      "probes": [
+        "Do you tell a white lie to protect their feelings?",
+        "What if they ask you for a loan to self-publish it?",
+        "At what point is honesty just cruelty?"
+      ],
+      "origin": null,
+      "id": "d0d5f5864c",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "support"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Same Boat",
+      "setup": "A wooden boat sits in a harbour. Every year the crew replaces a plank or two as they rot. After forty years, not a single original piece of wood is left. Meanwhile, a collector has been quietly picking the old planks out of the skip and has rebuilt them into a boat of his own, in the same shape, in a shed across town.",
+      "dilemma": "Which one is the original boat?",
+      "probes": [
+        "What if the collector finished his version first, while the harbour boat still had half its old planks?",
+        "Your body swaps out most of its cells over time. Are you the same answer as the boat?",
+        "Does it change anything if the harbour crew kept the name and the collector didn't?"
+      ],
+      "origin": "Plutarch / Hobbes",
+      "id": "de807e6956",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "identity",
+        "objects"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Reference",
+      "setup": "A friend asks you to be a referee for a job she badly needs. You've worked with her. She's warm, funny, and unreliable in ways that landed on other people. The employer calls and asks the direct question: would you hire her again?",
+      "dilemma": "What do you say?",
+      "probes": [
+        "If she doesn't get it and suspects you, would you tell her the truth?",
+        "Does she deserve the honesty, or does the stranger who'd have to work with her?",
+        "Has anyone ever vouched for you when they shouldn't have?"
+      ],
+      "origin": null,
+      "id": "fbc49d7d5f",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "friendship"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "Two Boxes",
+      "setup": "A stranger with an uncanny record puts two boxes in front of you. Box A is clear and holds £1,000. Box B is sealed. Yesterday she predicted what you'd do. If she predicted you'd take only Box B, she put a million in it. If she predicted you'd take both, she left it empty. She's done this a thousand times and been right every time. The money is already in place. Nothing you do now changes it.",
+      "dilemma": "Do you take both boxes, or only the sealed one?",
+      "probes": [
+        "The contents are already fixed. Doesn't that settle it?",
+        "Would you change your answer if she'd only been right nine times out of ten?",
+        "What does it say about you that you can't shake the other answer?"
+      ],
+      "origin": "William Newcomb / Robert Nozick, 1969",
+      "id": "5fe7723a82",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "prediction",
+        "logic"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.653Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 5,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Shadows",
+      "setup": "People have been chained in a cave since birth, facing a blank wall. Behind them a fire burns, and things pass in front of it, throwing shadows on the wall. The shadows are all anyone has ever seen, so they name them and argue about them and get good at guessing which one comes next. One prisoner gets loose, climbs out, and sees the daylight world. Then he comes back down to tell the others.",
+      "dilemma": "Would you believe him?",
+      "probes": [
+        "What would he have to bring back to convince you?",
+        "Is there something you suspect you're only seeing the shadow of?",
+        "If the others refuse to leave, should he drag them out?"
+      ],
+      "origin": "Plato, c. 375 BC",
+      "id": "a613b1b195",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "knowledge",
+        "reality"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.653Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Spare Room",
+      "setup": "A friend asks to stay in your spare room for two weeks after a breakup. You care about them, but they are messy and two weeks could easily become two months.",
+      "dilemma": "Do you let them stay?",
+      "probes": [
+        "Would you give the same answer if they had nowhere else to go?",
+        "What if they had refused your help in the past?",
+        "How long could they stay before your kindness turned to resentment?"
+      ],
+      "origin": null,
+      "id": "7f1eb125ca",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "friendship",
+        "home"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Better Candidate",
+      "setup": "You are hiring for a job. The strongest candidate is rude to the receptionist when they think nobody important is watching. The next candidate is less skilled but treats everyone well.",
+      "dilemma": "Who do you hire?",
+      "probes": [
+        "Would your answer change if the rude candidate could make the company far more money?",
+        "What if you badly needed the team to like the new person?",
+        "How much should one ugly moment tell you about someone?"
+      ],
+      "origin": null,
+      "id": "3a603f86ce",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "character"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Broken Promise",
+      "setup": "You promised to attend a close friend's birthday dinner. On the same night, you are offered a ticket to see an artist you love. The show sold out months ago, and this may be your last chance to see them.",
+      "dilemma": "Do you keep the promise?",
+      "probes": [
+        "Would it matter if your friend said they did not mind?",
+        "What if you had missed their birthday last year?",
+        "How good must an excuse be before a promise stops counting?"
+      ],
+      "origin": null,
+      "id": "464bdf9336",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "promises",
+        "friendship"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Bad Review",
+      "setup": "A small family-run restaurant serves you a terrible meal. The owner is warm, apologises, and removes it from the bill. Later, the booking site asks you to leave a public review.",
+      "dilemma": "What review do you leave?",
+      "probes": [
+        "Would your answer change if the restaurant had hundreds of glowing reviews?",
+        "What if one bad review could threaten the business?",
+        "Do future customers deserve the truth more than the owners deserve mercy?"
+      ],
+      "origin": null,
+      "id": "fbdb571558",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "reputation"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Family Discount",
+      "setup": "You own a small business. A relative asks for a large discount, saying family should help each other. Giving it would mean earning almost nothing from several days of work.",
+      "dilemma": "What price do you charge them?",
+      "probes": [
+        "Would it change things if they could easily afford the full price?",
+        "What if they once helped you when you had no money?",
+        "When does a favour become something you are owed?"
+      ],
+      "origin": null,
+      "id": "11af8eac0d",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "money"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Room of Slips",
+      "setup": "A man sits alone in a sealed room with a huge rulebook. Slips of paper covered in Chinese characters come in through a slot. He looks up each shape in the book, copies out the reply it tells him to, and pushes it back through. Outside, fluent speakers are delighted: the answers are witty and warm. The man doesn't know a word of Chinese.",
+      "dilemma": "Does anything in that room understand Chinese?",
+      "probes": [
+        "If not the man, could the room as a whole understand it?",
+        "Is your brain doing something different in kind, or just faster?",
+        "What test would settle it for you?"
+      ],
+      "origin": "John Searle, 1980",
+      "id": "d87d900b22",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "mind",
+        "language"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.653Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 5,
+        "emotional": 1,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "Mary's Grey Room",
+      "setup": "Mary has spent her whole life in a room with no colour in it. Everything is black, white or grey, including her screens and her skin. But she's the world's leading expert on colour vision. She knows every wavelength, every nerve, every last fact about what happens in a brain when it sees red. One day the door opens and she walks out into a garden of roses.",
+      "dilemma": "Does Mary learn something new?",
+      "probes": [
+        "If she does, what is it exactly — say it in a sentence.",
+        "Could you explain what a smell is like to someone who's never smelled anything?",
+        "Would she recognise red on sight, or have to be told?"
+      ],
+      "origin": "Frank Jackson, 1982",
+      "id": "94f767f3e5",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "mind",
+        "experience"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.653Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 4,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Heap",
+      "setup": "Put one grain of sand on a table. Not a heap. Add another. Still not a heap. Nobody can point to a grain where adding it turns a not-heap into a heap, yet after ten thousand grains you clearly have one. The same trick works on baldness, on being tall, on being old, on being drunk.",
+      "dilemma": "Where exactly does the heap begin?",
+      "probes": [
+        "Would you accept that some things are just genuinely fuzzy, or does that bother you?",
+        "Where's the line on a word that matters legally, like 'adult'?",
+        "At what point did you become an adult, if you can pick a moment?"
+      ],
+      "origin": "Eubulides / the sorites paradox",
+      "id": "1aec3e7299",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "logic",
+        "language"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.653Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 4,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Extra Change",
+      "setup": "A cashier gives you £20 too much in change. You notice after leaving the shop. Going back will make you late, and the shop is part of a huge chain.",
+      "dilemma": "Do you return the money?",
+      "probes": [
+        "Would your answer change if the cashier had to cover the mistake?",
+        "What if it were only £1?",
+        "At what amount would keeping it start to feel like stealing?"
+      ],
+      "origin": null,
+      "id": "ba1f4f9099",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "money",
+        "honesty"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Group Mark",
+      "setup": "Four of you receive the same mark for a group project. One person did almost no work. The teacher asks privately whether everyone contributed equally. Telling the truth may cause that person to fail the course.",
+      "dilemma": "What do you tell the teacher?",
+      "probes": [
+        "Would your answer change if the person had been caring for a sick parent?",
+        "What if they simply could not be bothered?",
+        "Is protecting them unfair to everyone who did the work?"
+      ],
+      "origin": null,
+      "id": "a3635c21e7",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "fairness",
+        "school"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Burning Masterpiece",
+      "setup": "A fire breaks out in a famous art gallery. The original Mona Lisa is going to burn to ash. You are standing next to a perfect 3D-printed replica. It is atom-for-atom identical to the original. You can save the replica or save a blurry photograph of the original taken by a famous artist. You only have time to grab one.",
+      "dilemma": "Which do you save?",
+      "probes": [
+        "If the replica is physically identical, why do we care about the original?",
+        "Does the history of an object live inside the object?"
+      ],
+      "origin": null,
+      "id": "32d143efa9",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "art",
+        "value"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.800Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 4,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 3,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Delete Button",
+      "setup": "You are backing out of a parking spot and accidentally scrape the side of a beautiful sports car. It leaves a massive deep scratch. No one saw you do it. There are no cameras. You happen to have a prototype device that can rewind time by exactly five minutes, but you can only use it once in your entire life.",
+      "dilemma": "Do you use your only rewind to undo the scratch?",
+      "probes": [
+        "Are you saving the rewind for a car crash or a medical emergency?",
+        "Do you leave a note with your phone number on the sports car?",
+        "How much money would it take for you to drive away without a word?"
+      ],
+      "origin": null,
+      "id": "eee4019dd8",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "mistakes",
+        "technology"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    }
+  ]
 }

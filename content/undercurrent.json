@@ -29,5 +29,1504 @@
       "description": "The unsaid."
     }
   ],
-  "cards": []
+  "cards": [
+    {
+      "text": "What do you hold back from telling me?",
+      "id": "e461c88de5",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "honesty",
+        "withholding"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you need from me that you've never asked for?",
+      "id": "d5751dc09e",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "needs",
+        "asking"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me about a time I disappointed you and you said nothing.",
+      "id": "6f99722bce",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "disappointment",
+        "silence"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you think I'm afraid you'll find out?",
+      "id": "95f677ce5d",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "fear",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What would change between us if you were completely honest with me?",
+      "id": "b6d53eb2f9",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "honesty",
+        "change"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What have you forgiven me for without telling me?",
+      "id": "360f7e3722",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "forgiveness",
+        "unsaid"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you almost walk away from me?",
+      "id": "89d719917f",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "leaving",
+        "doubt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What did knowing me cost you?",
+      "id": "cd22911e2f",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "cost",
+        "closeness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What have you been afraid to tell me because it could change us?",
+      "id": "bfded98539",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "confession",
+        "risk"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you need from me that you hate needing?",
+      "id": "842c98d415",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "need",
+        "dependence"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When have you felt furthest from me while we were together?",
+      "id": "0c5bfc3096",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "distance",
+        "loneliness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Have you ever doubted that I truly cared about you?",
+      "id": "d191ab6a82",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "care",
+        "doubt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When have you wanted me to choose you?",
+      "id": "d2199a0891",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "priority",
+        "longing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Where do you think I have failed to really know you?",
+      "id": "17d551ad9c",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "recognition",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When have I made you uncomfortable without meaning to?",
+      "id": "d0b29b095c",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "discomfort",
+        "feedback"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When have you felt closest to me?",
+      "id": "1f2cae3f4d",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "closeness",
+        "memory"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What version of me do you like least?",
+      "id": "46ad20dfb5",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "criticism",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which subject do we both steer around?",
+      "id": "ad8ff10a55",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "avoidance",
+        "topics"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When have you wanted more from me than I gave?",
+      "id": "91bfc19008",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "wanting",
+        "shortfall"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me the last thing you swallowed instead of saying to me.",
+      "id": "67eed32ad2",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "unsaid",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Have I ever hurt you without knowing it?",
+      "id": "691530debf",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "hurt",
+        "unsaid"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Do you think I love you more, or you me?",
+      "id": "702f836041",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "love",
+        "imbalance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you protect me from?",
+      "id": "28b0565bef",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "protection",
+        "secrecy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Is there something you've been waiting for me to notice?",
+      "id": "81b9a539cc",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "noticing",
+        "unsaid"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What topic do you avoid with me because my answer might hurt?",
+      "id": "a03e0072e8",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "avoidance",
+        "fear"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When do you feel most misunderstood by me?",
+      "id": "ee27bb0a3e",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "misunderstood",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When do you feel like you have to perform for me?",
+      "id": "1628ba11a5",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "performance",
+        "pressure"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me something you assumed about me that turned out to be wrong.",
+      "id": "d2834f411d",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "assumptions"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you envy about my life?",
+      "id": "faf7271459",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "envy",
+        "comparison"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What part of your life have you kept me out of?",
+      "id": "86e695d12b",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "distance",
+        "secrecy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you forgive in me that you wouldn't forgive in anyone else?",
+      "id": "7c0e6d60d4",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "forgiveness",
+        "exception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you think I'll never understand about you?",
+      "id": "a398553b9a",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "distance",
+        "knowing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me how you talk about me when I'm not there.",
+      "id": "42e5b2ca4e",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "loyalty",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you rely on me for that you rarely admit?",
+      "id": "bcaf69d951",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "reliance",
+        "admission"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "If we drifted apart, what do you think would have caused it?",
+      "id": "a2f3b396b1",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "distance",
+        "conflict"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you first realize we were actually close?",
+      "id": "63acfb0bbe",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "realization",
+        "bond"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What kind of person do you think I'm drawn to?",
+      "id": "9c85456e61",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "attraction",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What's the first thing you'd warn a stranger about me?",
+      "id": "002c2ca977",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "impressions"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me one thing about my face you've looked at more than once.",
+      "id": "765572c3f6",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "looking",
+        "appearance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you last lie to me, even a small one?",
+      "id": "5403e43d01",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "lying",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Do you think I know how much I matter to you?",
+      "id": "ed6f41617a",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "affection",
+        "doubt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you think I'd say is the hardest thing about knowing me?",
+      "id": "1ed4440149",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "self-image",
+        "difficulty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Do you compete with me? Over what?",
+      "id": "f058f53be0",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "competition",
+        "rivalry"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me something you've wanted to ask me but thought was too much.",
+      "id": "9bf4cccfac",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "curiosity",
+        "permission"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What did you expect me to ask you by now?",
+      "id": "7ff3266ad9",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "expectations",
+        "conversation"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you wish I would ask you about more often?",
+      "id": "d4a3c0e91d",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "attention",
+        "interest"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What did you notice about me first?",
+      "id": "08336d11cd",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "first impressions",
+        "noticing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Guess what I was like at fifteen.",
+      "id": "fc18f6bef6",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "guessing",
+        "past"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of us would handle bad news better? Say why.",
+      "id": "fc3f5627a6",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "comparison"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you think I'm proud of?",
+      "id": "209b662e6c",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "pride",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do I talk about more than I realise?",
+      "id": "fcccbb7b8e",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "habits",
+        "noticing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you think I'm bad at?",
+      "id": "1e4d1cbafb",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "weakness",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you think my family is like?",
+      "id": "e45bf0e01a",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "guessing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me what you thought this would be like before we sat down.",
+      "id": "faecd5b458",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "expectations",
+        "tonight"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do I seem to care about that other people ignore?",
+      "id": "e15b1e2407",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "values",
+        "noticing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which of my habits have you quietly picked up?",
+      "id": "f67951c6b0",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "influence",
+        "habits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Have you ever pretended to agree with me? About what?",
+      "id": "06705aa6e3",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "conflict",
+        "pretending"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What do you wish I'd stop apologising for?",
+      "id": "3ec93a9e03",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "apology",
+        "patterns"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell me about the last time you were relieved to see me.",
+      "id": "796aec8000",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "relief",
+        "presence"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What was the first detail about me that caught your attention?",
+      "id": "4ad3ea9dd5",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "first impression",
+        "attention"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    }
+  ]
 }

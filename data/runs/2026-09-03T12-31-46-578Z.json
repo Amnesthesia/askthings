@@ -1,0 +1,89 @@
+{
+  "at": "2026-09-03T12:31:46.578Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "safety/inquisitives": {
+      "calls": 10,
+      "input": 13798,
+      "output": 8141,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.10900599999999999,
+      "retries": 1,
+      "failures": 0
+    },
+    "safety/never-have-i-ever": {
+      "calls": 7,
+      "input": 10824,
+      "output": 5775,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.079398,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/fast-friends": {
+      "calls": 3,
+      "input": 4504,
+      "output": 2370,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.032708,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/twenty-one-questions": {
+      "calls": 3,
+      "input": 3727,
+      "output": 1799,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.025444,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/would-you-rather": {
+      "calls": 6,
+      "input": 10938,
+      "output": 4961,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.07148600000000001,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/thought-experiments": {
+      "calls": 3,
+      "input": 12964,
+      "output": 2553,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.051458000000000004,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/undercurrent": {
+      "calls": 7,
+      "input": 9827,
+      "output": 5888,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.078534,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 39,
+      "input": 66582,
+      "output": 31487,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.4480339999999999,
+      "retries": 1,
+      "failures": 0
+    }
+  }
+}

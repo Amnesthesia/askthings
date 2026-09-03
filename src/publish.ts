@@ -23,6 +23,13 @@ import {
 } from "./decks.ts";
 import { deckArgs } from "./stage.ts";
 
+/** The level a candidate publishes into. */
+function tierOf(spec: DeckSpec, c: Candidate): number {
+	if (spec.generation.wholeRun || spec.generation.tierFrom === "writer")
+		return c.tier;
+	return tierForIntensity(spec, c.judgedIntensity ?? c.intensity);
+}
+
 function quality(c: Candidate): number {
 	const s = c.scores;
 	return (s?.conversation ?? 0) + (s?.voice ?? 0) + (s?.depth ?? 0);
@@ -33,7 +40,7 @@ function toCard(spec: DeckSpec, c: Candidate): Card {
 	return {
 		...c.fields,
 		id: cardId(spec.deck, headlineOfFields(spec.kind, c.fields)),
-		tier: spec.generation.wholeRun ? c.tier : tierForIntensity(spec, intensity),
+		tier: tierOf(spec, c),
 		intensity,
 		tags: c.tags,
 		origin: "origin" in c.fields ? c.fields.origin : null,
@@ -108,7 +115,7 @@ function publishDeck(spec: DeckSpec) {
 				}
 				originsSeen.add(origin);
 			}
-			const tier = tierForIntensity(spec, c.judgedIntensity ?? c.intensity);
+			const tier = tierOf(spec, c);
 			if ((room.get(tier) ?? 0) <= 0) {
 				count(reasons, `level ${tier} full (left as safe)`);
 				continue;
@@ -118,6 +125,16 @@ function publishDeck(spec: DeckSpec) {
 		}
 	}
 
+	// A sequential deck is played in file order, so within each set the cards
+	// climb: lighter first, best of equals first.
+	if (spec.play.order === "sequential" && !spec.generation.wholeRun)
+		chosen.sort(
+			(a, b) =>
+				tierOf(spec, a) - tierOf(spec, b) ||
+				(a.judgedIntensity ?? a.intensity) -
+					(b.judgedIntensity ?? b.intensity) ||
+				quality(b) - quality(a),
+		);
 	const cards = deck.cards as Card[];
 	for (const c of chosen) {
 		const card = toCard(spec, c);

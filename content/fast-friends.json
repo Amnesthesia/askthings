@@ -29,5 +29,906 @@
       "description": "The two of you, and the things rarely said."
     }
   ],
-  "cards": []
+  "cards": [
+    {
+      "text": "What's something small you're unreasonably good at?",
+      "id": "ebe3c9d4a4",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "skills",
+        "play"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.647Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What song do you know every word to, and who taught it to you?",
+      "id": "0db513a305",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "music",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.647Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you last laugh so hard you couldn't make a sound?",
+      "id": "cd5feed50a",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "humor",
+        "memory"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.795Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What did you assume was normal in your family until you met other families?",
+      "id": "44f90633f9",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "childhood"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.600Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Which parent are you more like, and how do you feel about that?",
+      "id": "20f69a4fc0",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What's the worst thing about being the age you are now?",
+      "id": "219c9dcaa4",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "age",
+        "time"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What did you love doing before you cared whether you were good at it?",
+      "id": "3dc760a957",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "childhood",
+        "play"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.600Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What did you want to be when you were eight, and what happened to that idea?",
+      "id": "86e740ad2f",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "childhood",
+        "work"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.647Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell your partner about something you achieved that nobody made a fuss about.",
+      "id": "0e80b2fa8a",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "pride",
+        "achievement"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you surprise yourself by handling something better than you expected?",
+      "id": "19cd409f6d",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "growth",
+        "confidence"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.600Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What family trait do you recognize in yourself with mixed feelings?",
+      "id": "b11d4d9a8d",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.600Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "If someone who knew you as a child met you now, what change would surprise them most?",
+      "id": "5a766f7984",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "change",
+        "childhood"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.600Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who believed in you before you'd done anything to earn it?",
+      "id": "f6796209a5",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "support"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What part of yourself did you inherit and wish you hadn't?",
+      "id": "f7d3798166",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What are you most afraid of becoming?",
+      "id": "09a18825f4",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "fear",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you last feel completely understood by someone?",
+      "id": "140854265f",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "connection",
+        "loneliness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.796Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What did your family argue about most when you were growing up?",
+      "id": "6472da40e0",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "childhood"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell your partner about a friendship that ended. Do you know why it did?",
+      "id": "982fefc423",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "loss"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell your partner what you noticed about them in the first minute, and whether you were right.",
+      "id": "afd906129e",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "impressions",
+        "connection"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What's something you've been carrying this year that you haven't said out loud to anyone?",
+      "id": "2527cf873a",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "secrets",
+        "burden"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you last cry in front of another person? What brought it on?",
+      "id": "f9f0ad11cf",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "grief",
+        "emotion"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "How is your relationship with your family different from how it looks from the outside?",
+      "id": "e857ecf2f5",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.796Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "When did you last feel completely loved by another person?",
+      "id": "ef7720f1ff",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "relationships"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.796Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "If you could go back and change one decision, which one? What stops you calling it a mistake?",
+      "id": "b91f62328e",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "regret",
+        "choices"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Who in your life do you love but can't be honest with? What would you say if you could?",
+      "id": "7d59e7e6aa",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "family",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What part of yourself do you try hardest to hide from others?",
+      "id": "a865b321b8",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "identity",
+        "fear"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.796Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What have you wanted to ask me but decided was too personal?",
+      "id": "34bea9af62",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "curiosity",
+        "restraint"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.601Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What are you worried I may have already judged you for?",
+      "id": "d28b0013d2",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "judgment",
+        "fear"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.601Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What would make you pull away from me, even if you liked me?",
+      "id": "2d17b19a7a",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "distance",
+        "fear"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.601Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "If this were our last conversation, what would you regret leaving unsaid?",
+      "id": "a0fd4519fa",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "regret",
+        "parting"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.601Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What feeling about me are you least comfortable saying aloud?",
+      "id": "694c56edc7",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "feelings",
+        "admission"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.601Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What is a mistake you made years ago that you still haven't forgiven yourself for?",
+      "id": "4d10b6e68f",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "mistake",
+        "regret"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.796Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "If you died tonight, what would you most regret not having told someone? Why haven't you told them?",
+      "id": "431b4b1ab1",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "mortality",
+        "unsaid"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Tell your partner something about themselves you'd struggle to say to their face, but mean kindly.",
+      "id": "0a8a4cd851",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "directness",
+        "praise"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.648Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "Of everything you've shared in the last hour, what was hardest to say? Why that one?",
+      "id": "b5175dadee",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "disclosure",
+        "reflection"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.649Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "text": "What have you already trusted me with that you did not expect to say?",
+      "id": "039aeea868",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "trust",
+        "disclosure"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.601Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    }
+  ]
 }

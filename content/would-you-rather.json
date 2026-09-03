@@ -367,6 +367,1618 @@
         "voice": 4,
         "rated": "gemini-3.8-flash@rate@1"
       }
+    },
+    {
+      "a": "be told exactly how your parents remember you",
+      "b": "tell them exactly how you remember them",
+      "id": "9ddef9887c",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "family",
+        "memory"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "outlive everyone you love",
+      "b": "be the first of them to go",
+      "id": "0bdb203145",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "mortality",
+        "love"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "watch a recording of your worst moment",
+      "b": "let one person you love watch it",
+      "id": "f9b61aad14",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "shame",
+        "exposure"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "know which of your friendships is one-sided",
+      "b": "never know and keep them all",
+      "id": "fecd1b5ccf",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "truth"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be the person your family calls in a crisis",
+      "b": "be the person nobody worries about",
+      "id": "7598336844",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "role"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be the one who leaves",
+      "b": "be the one who is left",
+      "id": "9eea98bc56",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "endings",
+        "love"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "lend money you may never get back",
+      "b": "refuse someone who genuinely needs it",
+      "id": "d542bc37a9",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "money",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "know your parents' worst secret",
+      "b": "know what they really think of you",
+      "id": "4c6a4655c4",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "truth"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be needed by someone forever",
+      "b": "be free of everyone's expectations",
+      "id": "127fcfe877",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "duty",
+        "freedom"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "have your family proud of a lie",
+      "b": "have them disappointed in the truth",
+      "id": "9979c4c3a9",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "identity",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be remembered as difficult but honest",
+      "b": "be remembered as easy but hollow",
+      "id": "1ed3ed8f1c",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "legacy",
+        "character"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "never be misunderstood again",
+      "b": "never be lonely again",
+      "id": "eafa92ebc2",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "loneliness",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "keep every promise you have ever made",
+      "b": "be released from all of them",
+      "id": "825c7732ae",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "loyalty",
+        "promises"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "betray a friend to protect your family",
+      "b": "betray your family to protect a friend",
+      "id": "131edc7f22",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "loyalty",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "lose your memory of the last ten years",
+      "b": "lose everyone else's memory of you from them",
+      "id": "60028682af",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "memory",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "see everyone you loved one last time",
+      "b": "skip the goodbyes and spare them the grief",
+      "id": "3994fed826",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "death",
+        "grief"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "admit you betrayed someone who still trusts you",
+      "b": "let them keep trusting the person you pretend to be",
+      "id": "b40357ff72",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "betrayal",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "care for an ageing parent who mistreated you",
+      "b": "leave their care to people they never hurt",
+      "id": "448bcc73c6",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "family",
+        "duty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be fully understood by someone who dislikes you",
+      "b": "be deeply loved by someone who misunderstands you",
+      "id": "a37fc6238d",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "meet the parent who chose not to know you",
+      "b": "keep imagining the parent they might have been",
+      "id": "6abcadb178",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "family",
+        "rejection"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be the friend everyone calls in a crisis",
+      "b": "be the friend everyone calls for a good night out",
+      "id": "38b71f69d4",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "friendship",
+        "role"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "know exactly what your friends earn",
+      "b": "have them know exactly what you earn",
+      "id": "55ae501730",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "money",
+        "secrecy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be respected by people you don't like",
+      "b": "be liked by people who don't take you seriously",
+      "id": "7b7a5354ba",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "respect",
+        "belonging"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "have one great year then ten flat ones",
+      "b": "have eleven pretty good years in a row",
+      "id": "4eb942857a",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "ambition",
+        "contentment"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be recognised in your field by twenty people who matter",
+      "b": "be recognised in the street by strangers who don't",
+      "id": "f2af16448f",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "fame",
+        "status"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be praised in public for work you know was mediocre",
+      "b": "be ignored for work you know was your best",
+      "id": "ff05079409",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "pride",
+        "recognition"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "leave the place that made you who you are",
+      "b": "stay where you no longer feel like yourself",
+      "id": "804847952e",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "belonging",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "keep believing something that gives your life meaning",
+      "b": "learn whether that belief is actually true",
+      "id": "6ca2d151dd",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "belief",
+        "meaning"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 5,
+        "emotional": 3,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "have a house with a perfect view",
+      "b": "have a house with perfect neighbours",
+      "id": "e0cd354fee",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "home",
+        "taste"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "win every board game you play",
+      "b": "win every argument about the rules",
+      "id": "e72dc46826",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "games",
+        "competition"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "only ever listen to new music",
+      "b": "only ever listen to music you already know",
+      "id": "01b040abee",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "music",
+        "taste"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "always get the joke first",
+      "b": "always be the one who tells it",
+      "id": "b0a9616e33",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "humour",
+        "social"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "eat the best meal of your life alone",
+      "b": "eat an average meal with your favourite people",
+      "id": "a9840b3acd",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "food",
+        "company"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be the person who plans the trip",
+      "b": "be the person who just shows up",
+      "id": "2334e5a98c",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "travel",
+        "personality"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "own a home you can never sell",
+      "b": "rent forever and move whenever you want",
+      "id": "0b6e3625c3",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "home",
+        "freedom"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be great at something you'll never be paid for",
+      "b": "be paid well for something you're only okay at",
+      "id": "e2936190a0",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "talent",
+        "money"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "take a year off now and start over after",
+      "b": "take six months off every decade until you stop working",
+      "id": "7246abe6d4",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "time",
+        "rest"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "have a boss who pushes you and is often unfair",
+      "b": "have a boss who leaves you alone and never notices",
+      "id": "405de90fc3",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "growth"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "lend a friend money and never mention it",
+      "b": "borrow from a friend and pay back slowly",
+      "id": "36abb6e067",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "money",
+        "friendship"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "holiday alone somewhere incredible",
+      "b": "holiday with everyone you love somewhere ordinary",
+      "id": "dfc00b3b72",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "travel",
+        "people"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be the richest person in a poor town",
+      "b": "be the poorest person in a rich one",
+      "id": "01f55fd153",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "money",
+        "status"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "have a spare room you never use",
+      "b": "have a spare month you never plan",
+      "id": "a99209fb6e",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "space",
+        "time"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "always be slightly early and slightly bored",
+      "b": "always be slightly late and slightly panicked",
+      "id": "f443847acf",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "time",
+        "temperament"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "take a perfect photo on the first try",
+      "b": "tell a perfect story on the first try",
+      "id": "8907692970",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "creativity",
+        "skills"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.602Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "never feel cold again",
+      "b": "never feel tired again",
+      "id": "a3aa332c6a",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "body",
+        "comfort"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "have a spotless house you cannot relax in",
+      "b": "have a messy house that feels warm",
+      "id": "cf0356c15d",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "home",
+        "habits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "eat the same good meal every day",
+      "b": "eat something different every day, half of it bad",
+      "id": "4a5b667418",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "food",
+        "risk"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "live in a small flat in the city centre",
+      "b": "live in a big house an hour from everything",
+      "id": "97d950aae8",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "home",
+        "city"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "never check your phone before noon",
+      "b": "never work past six",
+      "id": "58b86c7a55",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "habits",
+        "work"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be given a house outright with no choice of where",
+      "b": "be given the deposit and pick anywhere you like",
+      "id": "596e38f32f",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "home",
+        "control"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "see ten minutes into the future",
+      "b": "see ten minutes into the past",
+      "id": "315173d736",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "time",
+        "superpowers"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.602Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "plan every weekend a month ahead",
+      "b": "decide every weekend on Saturday morning",
+      "id": "e8806b7bf5",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "planning",
+        "spontaneity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.602Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "wear the same perfect outfit every day",
+      "b": "wear something different every day",
+      "id": "62f470fc90",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "clothes",
+        "choice"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "drive everywhere in complete comfort",
+      "b": "cycle everywhere without traffic",
+      "id": "d474fb6f28",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "transport",
+        "comfort"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "pay for a cleaner and stop eating out",
+      "b": "clean everything yourself and eat out weekly",
+      "id": "cc20f50afc",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "chores",
+        "money"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "wake at the same time every morning",
+      "b": "stay up whenever the night feels worth it",
+      "id": "920ee4e8b9",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "sleep",
+        "routine"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "never listen to music again",
+      "b": "never watch a movie again",
+      "id": "24a622df19",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "entertainment",
+        "media"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.797Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be able to fly, slowly",
+      "b": "be able to teleport, once a day",
+      "id": "60cd5cf737",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "superpowers",
+        "travel"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.649Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "never wait in a queue again",
+      "b": "never sit in traffic again",
+      "id": "4da1256e2f",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "patience",
+        "daily life"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 1,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "be great at cooking one cuisine",
+      "b": "be decent at cooking any cuisine",
+      "id": "92dd0c28d4",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "food",
+        "skill"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "wake up at five feeling brilliant",
+      "b": "stay up till three feeling brilliant",
+      "id": "8c9cbb771a",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "sleep",
+        "habits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 1,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "a": "live somewhere it is always warm",
+      "b": "live somewhere with four proper seasons",
+      "id": "76cce5d94b",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "weather",
+        "place"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 1,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
     }
   ]
 }

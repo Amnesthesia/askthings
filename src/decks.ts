@@ -43,6 +43,11 @@ export interface DeckSpec {
 		 * published as a whole. Sequential decks without this (Fast Friends) are
 		 * oversampled and the best cards per set are kept. */
 		wholeRun?: boolean;
+		/** Which level a published card lands in: "judge" (default) maps the
+		 * rater's fresh exposure level onto the deck's tiers; "writer" keeps the
+		 * level the card was written for. Use "writer" where the deck's levels
+		 * mean something other than exposure (Never Have I Ever's spiciness). */
+		tierFrom?: "judge" | "writer";
 		/** Per-provider generation model for this deck; defaults in src/stage.ts. */
 		models?: Partial<Record<ProviderName, string>>;
 	};

@@ -166,7 +166,8 @@ Each brief: what a card IS, the mechanic (write for how it is played), hard form
 can check, tier guidance, 3–4 exemplars in the house voice. Summaries:
 
 - **Inquisitives** — interviewer's question to a stranger; ≤ 22 words, one question mark.
-- **Never Have I Ever** — starts exactly "Never have I ever", one concrete act with a story
+- **Never Have I Ever** (`generation.tierFrom: writer` — its levels are spiciness, not exposure,
+  so the writer's level is kept rather than the judge's) — starts exactly "Never have I ever", one concrete act with a story
   behind it, ≤ 18 words, no "or". Tiers Harmless / Cheeky / Confessional / Spicy (adults,
   consensual, legal).
 - **Fast Friends** — the Aron procedure (3 sets × 12, both answer, escalating), ORIGINAL
