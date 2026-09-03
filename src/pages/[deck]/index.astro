@@ -4,6 +4,7 @@
 import Base from "../../layouts/Base.astro";
 import CardBody from "../../components/CardBody.astro";
 import GameDeck from "@react/components/GameDeck";
+import ImprovGame from "@react/components/ImprovGame";
 import { publishedDecks } from "../../common.ts";
 import { cardHeadline, cardPath, deckPath, groupByTier, SITE_URL, type Deck } from "../../shared.ts";
 
@@ -47,7 +48,11 @@ const schema = [
 ---
 
 <Base title={deck.name} description={description} path={deckPath(deck.deck)} schema={schema} deck={deck.deck}>
-  <GameDeck client:load deck={deck} decks={links} />
+  {deck.kind === "improv" ? (
+    <ImprovGame client:load deck={deck} decks={links} />
+  ) : (
+    <GameDeck client:load deck={deck} decks={links} />
+  )}
   <h1>{deck.name}</h1>
   <p>{deck.blurb}</p>
   <section class="how-to-play">

@@ -38,6 +38,14 @@ async function rateDeck(spec: DeckSpec) {
 	const all = readCandidates(spec.deck);
 	const todo = all.filter((c) => c.status === "unique");
 	if (!todo.length) return;
+	if (spec.generation.rate === false) {
+		for (const c of todo) c.status = "rated";
+		writeCandidates(spec.deck, all);
+		console.log(
+			`  rate ${spec.deck}: ${todo.length} -> ${todo.length} (rubric skipped for this deck)`,
+		);
+		return;
+	}
 	const reasons = new Map<string, number>();
 	const groups = batches(todo, JUDGE_BATCH);
 	const results = await callJsonMany(

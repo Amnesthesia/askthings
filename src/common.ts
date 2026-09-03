@@ -12,6 +12,8 @@ import {
 	DECK_KINDS,
 	type Deck,
 	type DilemmaCard,
+	IMPROV_SLOTS,
+	type ImprovCard,
 	INTENSITIES,
 	normaliseText,
 	type PairCard,
@@ -149,6 +151,15 @@ export function validateDeck(deck: Deck): string[] {
 				const { a, b } = card as PairCard;
 				if (!nonEmpty(a) || !nonEmpty(b))
 					errors.push(`${label}: a and b must both be set`);
+				break;
+			}
+			case "improv": {
+				const w = card as ImprovCard;
+				if (!nonEmpty(w.word)) errors.push(`${label}: word is empty`);
+				if (!IMPROV_SLOTS.includes(w.slot))
+					errors.push(
+						`${label}: slot must be one of ${IMPROV_SLOTS.join(", ")}`,
+					);
 				break;
 			}
 			case "dilemma": {

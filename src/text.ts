@@ -37,6 +37,7 @@ export interface Fields {
 	setup?: string;
 	dilemma?: string;
 	probes?: string[];
+	word?: string;
 }
 
 /**
@@ -74,6 +75,11 @@ export function slopReason(kind: DeckKind, f: Fields): string | null {
 			if (/^would you rather/i.test(v))
 				return `option ${k} repeats "would you rather"`;
 		}
+	}
+	if (kind === "improv") {
+		if (wordCount(f.word ?? "") > 3)
+			return `${wordCount(f.word ?? "")} words for one slot`;
+		if (/[.?!]$/.test(f.word ?? "")) return "slot word ends in punctuation";
 	}
 	if (kind === "dilemma") {
 		if (wordCount(f.setup ?? "") > 130)

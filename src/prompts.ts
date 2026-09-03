@@ -42,6 +42,11 @@ function cardFields(kind: DeckKind): Record<string, unknown> {
 			return { text: { type: "string" } };
 		case "pair":
 			return { a: { type: "string" }, b: { type: "string" } };
+		case "improv":
+			return {
+				word: { type: "string" },
+				slot: { type: "string", enum: ["mood", "role"] },
+			};
 		case "dilemma":
 			return {
 				title: { type: "string" },

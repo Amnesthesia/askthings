@@ -24,7 +24,7 @@ export const INTENSITY_NAMES: Record<Intensity, string> = {
 	4: "Intimate",
 };
 
-export const DECK_KINDS = ["question", "pair", "dilemma"] as const;
+export const DECK_KINDS = ["question", "pair", "dilemma", "improv"] as const;
 export type DeckKind = (typeof DECK_KINDS)[number];
 
 /** Slugs a deck may not use because a route already owns them. */
@@ -100,7 +100,17 @@ export interface DilemmaCard extends CardBase {
 	probes: string[];
 }
 
-export type Card = QuestionCard | PairCard | DilemmaCard;
+export const IMPROV_SLOTS = ["mood", "role"] as const;
+export type ImprovSlot = (typeof IMPROV_SLOTS)[number];
+
+/** One word for the improv slot machine: a mood ("Distrustful") or a role
+ * ("Crab"). The game pairs one of each at random. */
+export interface ImprovCard extends CardBase {
+	word: string;
+	slot: ImprovSlot;
+}
+
+export type Card = QuestionCard | PairCard | DilemmaCard | ImprovCard;
 
 export interface Tier {
 	level: number;
@@ -139,7 +149,8 @@ interface DeckBase {
 export type Deck =
 	| (DeckBase & { kind: "question"; cards: QuestionCard[] })
 	| (DeckBase & { kind: "pair"; cards: PairCard[] })
-	| (DeckBase & { kind: "dilemma"; cards: DilemmaCard[] });
+	| (DeckBase & { kind: "dilemma"; cards: DilemmaCard[] })
+	| (DeckBase & { kind: "improv"; cards: ImprovCard[] });
 
 export const EMPTY_SCORES: Scores = {
 	conversation: null,
@@ -173,6 +184,8 @@ export function cardHeadline(kind: DeckKind, card: Card): string {
 		}
 		case "dilemma":
 			return (card as DilemmaCard).title;
+		case "improv":
+			return (card as ImprovCard).word;
 	}
 }
 
@@ -188,6 +201,10 @@ export function cardSummary(kind: DeckKind, card: Card): string {
 		}
 		case "dilemma":
 			return truncateAtWord((card as DilemmaCard).setup, 200);
+		case "improv": {
+			const { word, slot } = card as ImprovCard;
+			return `${word}: a ${slot} for the improv slot machine. Spin a mood and a role, then play the scene.`;
+		}
 	}
 }
 

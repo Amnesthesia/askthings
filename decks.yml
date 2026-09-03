@@ -13,6 +13,7 @@
 #   asked at targetPerTier, kept or dropped whole, one run published.
 # generation.tierFrom: judge (default; the rater's exposure level decides the
 #   published level) | writer (keep the level it was written for).
+# generation.rate: false skips the rubric (improv word banks); safety still runs.
 # generation.models: optional per-provider model override for this deck, e.g.
 #   models: { anthropic: claude-sonnet-5, gemini: gemini-3.8-flash, openai: gpt-5.6-terra }
 #   Defaults (and RATE_MODEL / SAFETY_MODEL for the judges) live in src/stage.ts.
@@ -394,3 +395,52 @@ undercurrent:
         Depth: the unsaid. What they've been afraid to ask, where they've let each other down, what would change things.
         IN: "What have you forgiven me for without telling me?", "What have you been afraid to tell me because it could change us?"
         Every card is addressed to the other person and could change the evening.
+
+improv:
+  name: Improv
+  blurb: "A slot machine of moods and roles. Angry Fireman. Happy Banker. Distrustful Crab. Spin, then play the scene."
+  kind: improv
+  play:
+    order: random
+    cardsPerTier: null
+    howToPlay:
+      - "Set the number of players. Spin. Everyone gets a mood and a role."
+      - "Play the scene in character for a minute; the others guess or join in."
+      - "Swipe up for stranger combinations."
+  generation:
+    candidatesPerTier: 40
+    targetPerTier: 80
+    rate: false
+    tierFrom: writer
+    brief: |
+      This deck is two word banks for an improv slot machine. Each card is ONE word (two at most)
+      and a slot: "mood" is an emotional state or attitude an actor can play in a second
+      ("Angry", "Smug", "Distrustful", "Homesick"); "role" is a person, creature or thing an actor
+      can become ("Fireman", "Banker", "Crab", "Wedding DJ"). Write both slots in each batch, about
+      half and half. Rules: title case; no punctuation; a role is a noun phrase, a mood an
+      adjective or short state; nothing that mocks a real group of people; roles should be
+      playable by anyone in a living room without props.
+      Exemplars: mood "Distrustful", role "Crab"; mood "Overjoyed", role "Tax Inspector".
+  tiers:
+    - level: 1
+      name: Plain
+      description: "Everyday moods, familiar roles."
+      intensity: 1
+      guidance: >-
+        Moods everyone recognises (Angry, Happy, Bored, Nervous) and roles everyone can picture
+        (Fireman, Banker, Teacher, Pirate, Grandmother, Dog). Instantly playable.
+    - level: 2
+      name: Odd
+      description: "Specific moods, unexpected roles."
+      intensity: 2
+      guidance: >-
+        Moods with a flavour (Smug, Homesick, Overcaffeinated, Suspicious) and roles with a twist
+        (Crab, Wedding DJ, Retired Astronaut, Sentient Toaster, Substitute Teacher).
+    - level: 3
+      name: Absurd
+      description: "Moods that fight the role."
+      intensity: 3
+      guidance: >-
+        Moods that are hard to hold (Quietly Triumphant, Existentially Bored, Falsely Modest) and
+        roles that are ideas or unlikely things (The Concept of Monday, A Haunted Vending Machine,
+        Your Own Shadow, A Very Patient Volcano).

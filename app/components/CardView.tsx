@@ -2,6 +2,7 @@ import type {
 	Card,
 	DeckKind,
 	DilemmaCard,
+	ImprovCard,
 	PairCard,
 	QuestionCard,
 } from "../../src/shared.ts";
@@ -18,6 +19,15 @@ export default function CardView({
 }) {
 	if (kind === "question")
 		return <p className="headline">{(card as QuestionCard).text}</p>;
+	if (kind === "improv") {
+		const { word, slot } = card as ImprovCard;
+		return (
+			<>
+				<p className="headline">{word}</p>
+				<small className="slot-label">{slot}</small>
+			</>
+		);
+	}
 	if (kind === "pair") {
 		const { a, b } = card as PairCard;
 		return (

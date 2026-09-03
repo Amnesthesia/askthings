@@ -48,6 +48,9 @@ export interface DeckSpec {
 		 * level the card was written for. Use "writer" where the deck's levels
 		 * mean something other than exposure (Never Have I Ever's spiciness). */
 		tierFrom?: "judge" | "writer";
+		/** false = skip the rubric (improv words are not conversations); cards go
+		 * straight from unique to rated with null scores, the safety gate still runs. */
+		rate?: boolean;
 		/** Per-provider generation model for this deck; defaults in src/stage.ts. */
 		models?: Partial<Record<ProviderName, string>>;
 	};

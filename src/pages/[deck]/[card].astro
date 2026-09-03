@@ -5,6 +5,7 @@
 import Base from "../../layouts/Base.astro";
 import CardBody from "../../components/CardBody.astro";
 import GameDeck from "@react/components/GameDeck";
+import ImprovGame from "@react/components/ImprovGame";
 import { publishedDecks } from "../../common.ts";
 import {
 	type Card,
@@ -75,7 +76,11 @@ const schema = [
 ---
 
 <Base title={headline} description={description} path={path} ogType="article" schema={schema} deck={deck.deck}>
-  <GameDeck client:load deck={deck} decks={links} startId={card.id} />
+  {deck.kind === "improv" ? (
+    <ImprovGame client:load deck={deck} decks={links} />
+  ) : (
+    <GameDeck client:load deck={deck} decks={links} startId={card.id} />
+  )}
   <nav aria-label="Breadcrumb">
     <a href={deckPath(deck.deck)}>{deck.name}</a>
     {" · "}

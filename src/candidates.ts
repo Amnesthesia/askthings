@@ -38,7 +38,8 @@ export type CardFields =
 			dilemma: string;
 			probes: string[];
 			origin: string | null;
-	  };
+	  }
+	| { word: string; slot: "mood" | "role" };
 
 export interface Candidate {
 	/** Candidate id: sha256(deck|provider|headline), 10 hex. Not the card id. */

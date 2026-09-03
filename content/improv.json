@@ -1,0 +1,2234 @@
+{
+  "deck": "improv",
+  "name": "Improv",
+  "blurb": "A slot machine of moods and roles. Angry Fireman. Happy Banker. Distrustful Crab. Spin, then play the scene.",
+  "kind": "improv",
+  "play": {
+    "order": "random",
+    "cardsPerTier": null,
+    "howToPlay": [
+      "Set the number of players. Spin. Everyone gets a mood and a role.",
+      "Play the scene in character for a minute; the others guess or join in.",
+      "Swipe up for stranger combinations."
+    ]
+  },
+  "tiers": [
+    {
+      "level": 1,
+      "name": "Plain",
+      "description": "Everyday moods, familiar roles."
+    },
+    {
+      "level": 2,
+      "name": "Odd",
+      "description": "Specific moods, unexpected roles."
+    },
+    {
+      "level": 3,
+      "name": "Absurd",
+      "description": "Moods that fight the role."
+    }
+  ],
+  "cards": [
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Angry",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "c17fba1db3",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Happy",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "8b1040ec6d",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Sad",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "43da37fc77",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Bored",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "b2f7681a78",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Nervous",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "21b788061a",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Excited",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "f6817647a7",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Tired",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "0eb54688ef",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Proud",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "2d426b9e04",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Confused",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "e79d288365",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Shy",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "e6751dd974",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Grumpy",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "7d63607036",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Cheerful",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "70dbf58674",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Scared",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "cb530ebc41",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Calm",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "b082c5677f",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Jealous",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "fa22b859b0",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Curious",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "cf5f39646e",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Sleepy",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "14d033a970",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Hungry",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "76567977b8",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Impatient",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "3998280882",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Relieved",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "ba719dd486",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Fireman",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "2170340008",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Banker",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "f0c82c778b",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Teacher",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "ac1354bb6c",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Pirate",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "5d9baed9be",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Grandmother",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "966c436b9d",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Dog",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "adc6013ad5",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Chef",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "6b67228f5b",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Detective",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "cd38dcc81e",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Nurse",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "9e1930bf78",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Farmer",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "376c6bcc3c",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Astronaut",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "c95b9a8105",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Bus Driver",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "5bd3667ffa",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Lifeguard",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "9ed7b0b6dc",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Librarian",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "ab9d3b7c88",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Cat",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "31fdb22a1c",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Wizard",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "fb8c3ee012",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Football Coach",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "a4467577b7",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Dentist",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "b829cff9f4",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Queen",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "4da071d7ee",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 1,
+      "intensity": 1,
+      "word": "Robot",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "cadfcf9e29",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Smug",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "0fbd83f2cf",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Homesick",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "99fc87759e",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Distrustful",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "9aa9025b57",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Overcaffeinated",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "9e38565740",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Suspicious",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "dc51ed20dc",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Flattered",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "3e452e1091",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Sheepish",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "edd2c53933",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Vindicated",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "4d49abd30b",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Nostalgic",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "6d21842a3d",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Overly Polite",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "d3645e7291",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Secretly Thrilled",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "a2c7f33e12",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Passive-Aggressive",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "f8b2fe863a",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Lovestruck",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "b4614d4f26",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Wistful",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "a38381dcda",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Defensive",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "b693176ade",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Starstruck",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "b101aef2e2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Melodramatic",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "46cabca275",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Deeply Unimpressed",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "7d12ece821",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Guilty",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "72e2a08488",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Chipper",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "a049001a2a",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Crab",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "b83082fefa",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Wedding DJ",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "94009c47d8",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Retired Astronaut",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "58eeec3030",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Sentient Toaster",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "df26caa0aa",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Substitute Teacher",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "9fcbd5b5ae",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Tax Inspector",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "717e5ec7c4",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Mall Santa",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "ec7448ac0f",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Seagull",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "86310d7401",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Cruise Ship Magician",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "01df6e6578",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Museum Guard",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "c5e0b52ca2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Parking Attendant",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "9408ff99b9",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Reality TV Judge",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "cb7872b4d2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Goose",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "ed4f908296",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Wine Sommelier",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "51be201934",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Escaped Zoo Penguin",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "5037d45eaa",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Airport Announcer",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "28c965eaba",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Ghost of a Landlord",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "7fa5fead0a",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Yoga Instructor",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "d1cff337d3",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Local News Weatherman",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "3b76e5f1ee",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 2,
+      "intensity": 2,
+      "word": "Sloth",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "81919746ad",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Quietly Triumphant",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "0a424b0080",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Existentially Bored",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "8a779962d8",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Falsely Modest",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "3f72aec1fc",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Aggressively Grateful",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "2996763df2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Cautiously Euphoric",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "7fff5142f2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Politely Furious",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "499e52d5bf",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Nostalgic for Next Week",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "60a1f42d7e",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Suspiciously Calm",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "d1a5f21d31",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Heroically Indifferent",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "b9f710b72d",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Romantically Confused",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "a3661f7b77",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Tragically Punctual",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "09243a47ef",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Serenely Panicked",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "898d98e397",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Smugly Apologetic",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "b72ac67be8",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Bravely Cowardly",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "74c9490947",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Cheerfully Doomed",
+      "slot": "mood",
+      "tags": [
+        "mood"
+      ],
+      "id": "bcf9698bdc",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "The Concept of Monday",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "abb09ceb8a",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "A Haunted Vending Machine",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "c46c33d15e",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Your Own Shadow",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "d5fb234840",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "A Very Patient Volcano",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "e9db9b497b",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "The Last Biscuit",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "02e97df1bd",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "A Sunset with Opinions",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "13f44bb583",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "An Unread Email",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "99517f8b74",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "The Moon, Off Duty",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "01b5ab93d2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "A Retired Superhero's Cape",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "cfb71cb2d2",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "Gravity, on Strike",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "80daa4ed58",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "A Traffic Cone with Ambition",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "13e8a507fb",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "The Wi-Fi Password",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "4db6ee1ea0",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "A Lighthouse in Love",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "a6bffdef4c",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "A Cloud that Remembers",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "e7fb06dc14",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    },
+    {
+      "tier": 3,
+      "intensity": 3,
+      "word": "The Feeling of Déjà Vu",
+      "slot": "role",
+      "tags": [
+        "role"
+      ],
+      "id": "5226079fe0",
+      "origin": null,
+      "gen": null,
+      "scores": {
+        "conversation": null,
+        "intellectual": null,
+        "emotional": null,
+        "depth": null,
+        "voice": null,
+        "rated": null
+      }
+    }
+  ]
+}

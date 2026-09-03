@@ -79,6 +79,12 @@ function fieldsOf(
 			const b = str(item.b);
 			return a && b ? { a, b } : "a or b missing";
 		}
+		case "improv": {
+			const word = str(item.word);
+			const slot =
+				item.slot === "mood" || item.slot === "role" ? item.slot : null;
+			return word && slot ? { word, slot } : "word or slot missing";
+		}
 		case "dilemma": {
 			const title = str(item.title);
 			const setup = str(item.setup);

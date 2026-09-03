@@ -822,15 +822,23 @@ html.js .game-resume {
 }
 .double-range {
 	position: relative;
+	width: 100%;
+	flex: 1 1 100%;
 	height: 44px;
+}
+.range-ticks {
+	flex: 1 1 100%;
 }
 .double-range input[type="range"] {
 	position: absolute;
 	inset: 0;
 	width: 100%;
+	height: 44px;
 	margin: 0;
 	background: transparent;
 	pointer-events: none;
+	appearance: none;
+	-webkit-appearance: none;
 }
 .double-range input[type="range"]::-webkit-slider-thumb {
 	pointer-events: auto;
@@ -897,4 +905,98 @@ html.js .game-resume {
 }
 .browser-filters input[type="range"] {
 	min-height: 44px;
+}
+
+/* ── Improv slot machine ────────────────────────────────────────────────── */
+.improv-players {
+	margin-bottom: 0;
+	padding: 0;
+	border: 0;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	margin-left: auto;
+	margin-right: 0.75rem;
+	font-weight: 600;
+}
+.improv-stage {
+	padding: 0.5rem 1rem 1rem;
+}
+.improv-board {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	max-width: 60rem;
+	max-height: 100%;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	overflow-y: auto;
+}
+.improv-row {
+	position: relative;
+	flex: 1 1 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 5.5rem;
+	border: 2px solid rgba(255, 255, 255, 0.55);
+	border-radius: 12px;
+	overflow: hidden;
+}
+.improv-row > .improv-mood,
+.improv-row > .improv-role {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.25rem 0.75rem;
+	font-weight: 700;
+	font-size: clamp(1.3rem, 4.5vw, 2.4rem);
+	line-height: 1.15;
+	text-align: center;
+	overflow-wrap: anywhere;
+}
+.improv-row > .improv-mood {
+	border-right: 2px solid rgba(255, 255, 255, 0.55);
+}
+.improv-row > .improv-role {
+	background: rgba(255, 255, 255, 0.12);
+}
+.improv-player {
+	position: absolute;
+	top: 0.35rem;
+	left: 0.6rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	opacity: 0.8;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+.improv-board.spinning .improv-mood,
+.improv-board.spinning .improv-role {
+	opacity: 0.75;
+	filter: blur(0.5px);
+}
+.improv-nav {
+	justify-content: center;
+	border-top: 0;
+}
+.improv-spin {
+	min-width: 8rem;
+	border: 2px solid #fff;
+	font-weight: 700;
+}
+.slot-label {
+	display: block;
+	color: var(--muted);
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	font-size: 0.75rem;
+}
+.game-card .slot-label {
+	color: #fff;
+	opacity: 0.85;
 }
