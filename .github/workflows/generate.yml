@@ -40,7 +40,8 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Batch jobs can sit in a queue for a while; GitHub allows up to 360.
+    timeout-minutes: 300
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
