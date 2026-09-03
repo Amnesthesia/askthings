@@ -535,6 +535,14 @@ html.js .game-resume {
 	max-height: 100%;
 	overflow-y: auto;
 	margin: 0;
+	/* Pico styles every <article> as a card on --surface (white in light
+	   mode), which put white text on a white box. The level colour is the
+	   only background here. */
+	padding: 0.5rem;
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+	border-radius: 0;
 	color: #fff;
 	text-align: center;
 	animation: card-in 180ms ease-out;
