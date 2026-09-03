@@ -44,9 +44,9 @@ const SCORE_LABEL: Record<(typeof SCORE_KEYS)[number], string> = {
 export default function QuestionBrowser({ rows }: Props) {
 	const [deck, setDeck] = useState("");
 	const [kind, setKind] = useState("");
-	const [levels, setLevels] = useState<Set<Intensity>>(new Set());
+	const [range, setRange] = useState<[number, number]>([1, 4]);
 	const [mins, setMins] = useState<Mins>({});
-	const [tag, setTag] = useState("");
+	const [tags, setTags] = useState<Set<string>>(new Set());
 	const [q, setQ] = useState("");
 
 	const decks = useMemo(
@@ -60,7 +60,7 @@ export default function QuestionBrowser({ rows }: Props) {
 		() => [...new Set(rows.map((r) => r.kind))].sort(),
 		[rows],
 	);
-	const tags = useMemo(() => {
+	const tagCounts = useMemo(() => {
 		const n = new Map<string, number>();
 		for (const r of rows) for (const t of r.tags) n.set(t, (n.get(t) ?? 0) + 1);
 		return [...n].sort((a, b) => b[1] - a[1]).slice(0, 40);
@@ -71,8 +71,8 @@ export default function QuestionBrowser({ rows }: Props) {
 	const shown = rows.filter((r) => {
 		if (deck && r.deck !== deck) return false;
 		if (kind && r.kind !== kind) return false;
-		if (levels.size && !levels.has(r.intensity)) return false;
-		if (tag && !r.tags.includes(tag)) return false;
+		if (r.intensity < range[0] || r.intensity > range[1]) return false;
+		if (tags.size && !r.tags.some((t) => tags.has(t))) return false;
 		for (const k of SCORE_KEYS) {
 			const min = mins[k];
 			if (min && (r.scores[k] ?? 0) < min) return false;
@@ -87,19 +87,22 @@ export default function QuestionBrowser({ rows }: Props) {
 		return true;
 	});
 
-	const toggleLevel = (l: Intensity) =>
-		setLevels((prev) => {
+	const toggleTag = (t: string) =>
+		setTags((prev) => {
 			const next = new Set(prev);
-			if (next.has(l)) next.delete(l);
-			else next.add(l);
+			if (next.has(t)) next.delete(t);
+			else next.add(t);
 			return next;
 		});
+	// Two native range inputs on one track; they may not cross.
+	const setLo = (v: number) => setRange(([, hi]) => [Math.min(v, hi), hi]);
+	const setHi = (v: number) => setRange(([lo]) => [lo, Math.max(v, lo)]);
 	const reset = () => {
 		setDeck("");
 		setKind("");
-		setLevels(new Set());
+		setRange([1, 4]);
 		setMins({});
-		setTag("");
+		setTags(new Set());
 		setQ("");
 	};
 
@@ -143,56 +146,91 @@ export default function QuestionBrowser({ rows }: Props) {
 						</select>
 					</label>
 				)}
-				<fieldset>
-					<legend>Exposure level</legend>
-					{INTENSITIES.map((l) => (
-						<label key={l} className="check">
-							<input
-								type="checkbox"
-								checked={levels.has(l)}
-								onChange={() => toggleLevel(l)}
-							/>{" "}
-							{l}
-						</label>
-					))}
+				<fieldset className="range-field">
+					<legend>
+						Exposure level:{" "}
+						{range[0] === range[1] ? range[0] : `${range[0]} to ${range[1]}`}
+					</legend>
+					<div className="double-range">
+						<input
+							type="range"
+							min={1}
+							max={4}
+							step={1}
+							value={range[0]}
+							aria-label="Lowest exposure level"
+							onChange={(e) => setLo(Number(e.target.value))}
+						/>
+						<input
+							type="range"
+							min={1}
+							max={4}
+							step={1}
+							value={range[1]}
+							aria-label="Highest exposure level"
+							onChange={(e) => setHi(Number(e.target.value))}
+						/>
+					</div>
+					<div className="range-ticks" aria-hidden="true">
+						{INTENSITIES.map((l) => (
+							<span key={l}>{l}</span>
+						))}
+					</div>
 				</fieldset>
 				{rated && (
 					<fieldset>
-						<legend>Minimum score (1–5)</legend>
+						<legend>
+							Minimum score (1–5). <em>Voice</em> is how much the card sounds
+							like a person asked it rather than a model wrote it;{" "}
+							<em>conversation</em> is how well it starts a real exchange.
+						</legend>
 						{SCORE_KEYS.map((k) => (
 							<label key={k}>
 								{SCORE_LABEL[k]}
-								<select
-									value={mins[k] ?? ""}
+								<input
+									type="range"
+									min={1}
+									max={5}
+									step={1}
+									value={mins[k] ?? 1}
+									aria-valuetext={
+										(mins[k] ?? 1) > 1 ? `at least ${mins[k]}` : "any"
+									}
 									onChange={(e) =>
 										setMins((m) => ({
 											...m,
-											[k]: e.target.value ? Number(e.target.value) : undefined,
+											[k]:
+												Number(e.target.value) > 1
+													? Number(e.target.value)
+													: undefined,
 										}))
 									}
-								>
-									<option value="">any</option>
-									{[2, 3, 4, 5].map((n) => (
-										<option key={n} value={n}>
-											≥ {n}
-										</option>
-									))}
-								</select>
+								/>
+								<span className="range-value">
+									{(mins[k] ?? 1) > 1 ? `≥ ${mins[k]}` : "any"}
+								</span>
 							</label>
 						))}
 					</fieldset>
 				)}
-				<label>
-					Tag
-					<select value={tag} onChange={(e) => setTag(e.target.value)}>
-						<option value="">Any</option>
-						{tags.map(([t, n]) => (
-							<option key={t} value={t}>
-								{t} ({n})
-							</option>
+				<fieldset className="tag-field">
+					<legend>
+						Tags{tags.size ? ` (${tags.size} selected, any match)` : ""}
+					</legend>
+					<div className="tag-chips">
+						{tagCounts.map(([t, n]) => (
+							<button
+								type="button"
+								key={t}
+								className="tag-chip"
+								aria-pressed={tags.has(t)}
+								onClick={() => toggleTag(t)}
+							>
+								{t} <small>{n}</small>
+							</button>
 						))}
-					</select>
-				</label>
+					</div>
+				</fieldset>
 				<button type="button" className="secondary" onClick={reset}>
 					Reset
 				</button>

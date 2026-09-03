@@ -813,3 +813,88 @@ html.js .game-resume {
 	outline: 4px solid #fff;
 	outline-offset: -8px;
 }
+
+/* Double range: two native sliders stacked on one track, so either thumb
+   moves; the lower input's track is hidden so only one rail shows. */
+.range-field,
+.tag-field {
+	grid-column: 1 / -1;
+}
+.double-range {
+	position: relative;
+	height: 44px;
+}
+.double-range input[type="range"] {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	margin: 0;
+	background: transparent;
+	pointer-events: none;
+}
+.double-range input[type="range"]::-webkit-slider-thumb {
+	pointer-events: auto;
+	width: 28px;
+	height: 28px;
+}
+.double-range input[type="range"]::-moz-range-thumb {
+	pointer-events: auto;
+	width: 28px;
+	height: 28px;
+}
+.double-range input[type="range"]:nth-child(2)::-webkit-slider-runnable-track {
+	background: transparent;
+}
+.double-range input[type="range"]:nth-child(2)::-moz-range-track {
+	background: transparent;
+}
+.range-ticks {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.6rem;
+	color: var(--muted);
+	font-size: 0.8rem;
+}
+.tag-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+.tag-chip {
+	width: auto;
+	min-height: 36px;
+	margin: 0;
+	padding: 0.2rem 0.75rem;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	background: var(--surface);
+	color: var(--fg);
+	font-size: 0.9rem;
+}
+.tag-chip small {
+	color: var(--muted);
+}
+.tag-chip[aria-pressed="true"] {
+	background: var(--fg);
+	color: var(--bg);
+	border-color: var(--fg);
+}
+.tag-chip[aria-pressed="true"] small {
+	color: var(--bg);
+	opacity: 0.8;
+}
+.browser-filters legend em {
+	font-style: normal;
+	font-weight: 600;
+	color: var(--fg);
+}
+
+.browser-filters fieldset > label .range-value {
+	display: inline-block;
+	min-width: 3.5rem;
+	color: var(--fg);
+	font-variant-numeric: tabular-nums;
+}
+.browser-filters input[type="range"] {
+	min-height: 44px;
+}
