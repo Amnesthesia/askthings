@@ -24,7 +24,7 @@ inquisitives:
   blurb: "Questions for skipping small talk. Start anywhere; go as deep as the other person lets you."
   kind: question
   play:
-    order: free
+    order: random
     cardsPerTier: null
     howToPlay:
       - "Whoever draws the card answers first, then asks it back."
@@ -288,7 +288,7 @@ thought-experiments:
   blurb: "The classics and some new ones. A scenario, the question it forces, and the follow-ups that make it bite."
   kind: dilemma
   play:
-    order: free
+    order: random
     cardsPerTier: null
     howToPlay:
       - "One person reads the setup and the question. Everyone answers before anyone argues."
@@ -296,7 +296,7 @@ thought-experiments:
       - "Nobody has to be consistent. Notice when you are not."
   generation:
     candidatesPerTier: 10
-    targetPerTier: 12
+    targetPerTier: 60
     brief: |
       A card is a thought experiment or moral dilemma with four parts: a short title; a setup
       (the scenario, at most 120 words, plain words, no jargon, no philosopher's names in the

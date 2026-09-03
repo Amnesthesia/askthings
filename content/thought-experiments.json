@@ -4,7 +4,7 @@
   "blurb": "The classics and some new ones. A scenario, the question it forces, and the follow-ups that make it bite.",
   "kind": "dilemma",
   "play": {
-    "order": "free",
+    "order": "random",
     "cardsPerTier": null,
     "howToPlay": [
       "One person reads the setup and the question. Everyone answers before anyone argues.",
@@ -1124,6 +1124,590 @@
         "intellectual": 3,
         "emotional": 2,
         "depth": 2,
+        "voice": 3,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Apology",
+      "setup": "You can instantly remove the pain you caused someone in your past. All their lingering hurt from your actions will vanish. In exchange, you will experience that exact pain yourself. It will be concentrated into a single week of intense emotional suffering.",
+      "dilemma": "Whose pain do you take?",
+      "probes": [
+        "What exactly did you do to them?",
+        "Would they want you to suffer for it?",
+        "Why haven't you apologized to them today?"
+      ],
+      "origin": null,
+      "id": "48b57d31da",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "guilt",
+        "forgiveness",
+        "relationships"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Banned Guest",
+      "setup": "You are planning your wedding. It is a small intimate event. Your oldest friend has been dating a partner who is completely toxic. This partner has insulted you to your face and routinely causes public scenes. Your friend insists they will not attend your wedding unless their partner is invited.",
+      "dilemma": "Do you invite the partner?",
+      "probes": [
+        "What is worse: rewarding bad behavior or losing your oldest friend?",
+        "Would your answer change if the partner was family instead of a friend's date?",
+        "How much discomfort should you endure to keep the peace?"
+      ],
+      "origin": null,
+      "id": "a72219282a",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "loyalty"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.801Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Secret Saver",
+      "setup": "A close friend comes to you in the middle of the night. They have committed a serious crime. No one was physically hurt, but their life is over if they are caught. They ask you to hide a piece of evidence. If you are caught hiding it, you will go to prison for a year.",
+      "dilemma": "Do you take the evidence?",
+      "probes": [
+        "Which friend were you picturing?",
+        "Where is the line between loyalty and morality?",
+        "What if it was your brother instead of a friend?"
+      ],
+      "origin": null,
+      "id": "b26e01c7e2",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "loyalty",
+        "crime"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "Who Stays",
+      "setup": "A boat is going down. The lifeboat holds seven; there are ten of you. There's no rescue coming for days, so overloading it sinks everyone. The group looks at you to decide: an elderly doctor, a pregnant woman, a strong young man who is panicking, a child, and the rest ordinary adults, including you.",
+      "dilemma": "How do you decide who gets in?",
+      "probes": [
+        "Do you draw lots, or do you rank them by something? Say the something out loud.",
+        "Do you put yourself in the boat?",
+        "If you drew lots and lost, would you actually step back?"
+      ],
+      "origin": "The Lifeboat (R v Dudley and Stephens, 1884)",
+      "id": "ebb2dd0c16",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "survival",
+        "fairness"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "Nine Months of Your Body",
+      "setup": "You wake up in a hospital wired to a stranger. Overnight, doctors connected your bloodstream to theirs. Their organs have failed; yours will keep them alive. In nine months they'll recover and walk away. Unplug now and they die. You didn't consent, nobody asked, and the person in the next bed is entirely innocent. You'd be in that bed for nine months.",
+      "dilemma": "Do you unplug?",
+      "probes": [
+        "Does it change if it's nine days? Nine years?",
+        "Does it change if the stranger is your brother?",
+        "If you'd stay, would you say someone who unplugged had killed them?"
+      ],
+      "origin": "Judith Jarvis Thomson, 1971",
+      "id": "da98ab415d",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "body",
+        "consent",
+        "obligation"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Unequal Will",
+      "setup": "A relative leaves you far more money than your sibling. There is no mistake. The will says you were more present during the relative’s final years. Your sibling believes the money should be divided equally.",
+      "dilemma": "How much would you give your sibling?",
+      "probes": [
+        "Would you decide differently if your sibling had stayed away for selfish reasons?",
+        "What if they needed the money more than you did?",
+        "Would keeping it feel like payment for the care you gave?❯"
+      ],
+      "origin": null,
+      "id": "b0e846a729",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "money",
+        "family",
+        "fairness"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Old Message",
+      "setup": "You find an old message that proves you seriously wronged someone years ago. They blamed another person and have since built a happy life. Telling the truth may ease your guilt, but it could reopen the whole affair for them.",
+      "dilemma": "Would you confess now?",
+      "probes": [
+        "Who would the confession really be for?",
+        "Would you tell them if they were still close to the person they blamed?",
+        "What truth from your own past are you relieved nobody asks about?❯"
+      ],
+      "origin": null,
+      "id": "c34a6a1d0c",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "guilt",
+        "honesty",
+        "past"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Empty Kidney",
+      "setup": "A relative needs a kidney. You are a match, and doctors say the risk to you is low but not zero. You love them, though you are not especially close. Nobody can force you to help, but everyone will know that you could have.",
+      "dilemma": "Would you donate your kidney?",
+      "probes": [
+        "Would your answer change if their illness came from choices they kept making?",
+        "Which relative would you hesitate to save this way?",
+        "How much would your family’s judgment affect your choice?❯"
+      ],
+      "origin": null,
+      "id": "3b01e1466e",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "body",
+        "duty"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Name on the Work",
+      "setup": "You and a colleague create something valuable together. Most people assume it was mainly your work, and your career begins to benefit. Correcting the story would give them proper credit but could cost you the first real break you have had.",
+      "dilemma": "How publicly would you correct the story?",
+      "probes": [
+        "Would a private apology be enough?",
+        "What if your colleague had once taken credit from you?",
+        "Which success in your life feels less earned than people think?❯"
+      ],
+      "origin": null,
+      "id": "37937a425d",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "credit",
+        "ambition",
+        "honesty"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Career Reset",
+      "setup": "You wake up tomorrow morning five years in the past. You have all the knowledge you possess right now. You can change your career path, your relationships and your major life decisions.",
+      "dilemma": "What is the very first thing you do differently?",
+      "probes": [
+        "Who do you leave behind?",
+        "What mistake are you glad you made the first time?",
+        "Why haven't you made that change today?"
+      ],
+      "origin": null,
+      "id": "50870ff2d8",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "regret",
+        "choices",
+        "time"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Private Message",
+      "setup": "A friend sends you a cruel message about someone you both know. Seconds later, they delete it and ask you to forget you saw it. The person they wrote about trusts them completely.",
+      "dilemma": "Do you tell the person what was said?",
+      "probes": [
+        "Would your answer change if the message revealed a plan to embarrass them?",
+        "What if it seemed like a burst of anger rather than a settled opinion?",
+        "Does seeing a deleted message make it yours to act on?"
+      ],
+      "origin": null,
+      "id": "77344dd522",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "privacy",
+        "loyalty"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Clean Slate",
+      "setup": "You have just read the greatest book you will ever read. The ending surprised you so completely that you gasped out loud. A doctor offers you a safe pill that will erase only the memory of reading this specific book. You will forget the plot, the characters, and the twist ending.",
+      "dilemma": "Do you take the pill so you can experience reading it for the first time again?",
+      "probes": [
+        "Does a great experience lose its value if you keep wiping it away to start over?",
+        "Would you do this for a past relationship?"
+      ],
+      "origin": null,
+      "id": "99e98646f7",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "memory",
+        "experience"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.800Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Garage Sale",
+      "setup": "You are at a neighborhood garage sale. You see an old watch sitting on a folding table with a $5 sticker. You happen to know vintage watches well. This specific model is a rare Rolex worth at least $10,000. The person running the sale is an older woman clearing out her late husband's things. She seems to be struggling for money.",
+      "dilemma": "Do you buy the watch for $5?",
+      "probes": [
+        "What if the seller was a wealthy collector who just made a mistake?",
+        "What if the watch was only worth $200?",
+        "Do you have an obligation to tell strangers they are making a bad deal?"
+      ],
+      "origin": null,
+      "id": "019f994f36",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "money",
+        "honesty"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.801Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Hidden Will",
+      "setup": "Your wealthy uncle passes away. While cleaning his study, you find a hidden handwritten will dated a week before his death. In it, he leaves his entire fortune to a controversial political group you deeply despise. The current legal will leaves everything to a struggling children's hospital. You are the only person who knows this new document exists. If you burn it, the hospital gets the money.",
+      "dilemma": "Do you destroy the handwritten will?",
+      "probes": [
+        "Does a dead person have a right to control their money?",
+        "What if he left the money to your irresponsible sibling instead of a political group?",
+        "Are you willing to steal to fund a good cause?"
+      ],
+      "origin": null,
+      "id": "5b795bca2e",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "promises",
+        "fairness"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.801Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Promotion",
+      "setup": "You and your coworker are up for the same promotion. You are both equally qualified. During a casual lunch, your coworker shares a brilliant idea for a new project. Later that afternoon, the boss calls you into her office. She asks if you have any fresh ideas to help the company. Your coworker's idea would guarantee you the promotion.",
+      "dilemma": "Do you pitch the idea as your own?",
+      "probes": [
+        "What if your coworker stole an idea from you last year?",
+        "What if you know they plan to quit next month anyway?",
+        "Where do you draw the line between competing and cheating?"
+      ],
+      "origin": null,
+      "id": "64e17a736e",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "ambition"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.801Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Dream Job",
+      "setup": "You are offered exactly what you have always wanted to do for a living. The pay is incredible. The hours are perfect. But the company makes a product you believe makes the world slightly worse. It is not illegal. It is just bad for people.",
+      "dilemma": "Do you sign the contract?",
+      "probes": [
+        "What product would make you say no?",
+        "How much does your current job compromise your morals?",
+        "Would you do it for a year just to get rich?"
+      ],
+      "origin": null,
+      "id": "f4c84ceb28",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "ethics",
+        "money"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.802Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Lever",
+      "setup": "A runaway train car is heading down a track towards five workers who can't hear it coming. You're standing beside a lever. Pull it and the car switches to a side track, where one worker is standing. Nobody else is around. You have about four seconds.",
+      "dilemma": "Do you pull the lever?",
+      "probes": [
+        "If you walk away and do nothing, are you responsible for the five?",
+        "Would you still pull it if the one worker were the only person who noticed you standing there?",
+        "Is pulling it easier because a lever is involved rather than your hands?"
+      ],
+      "origin": "Philippa Foot, 1967",
+      "id": "ac6613134c",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "ethics",
+        "choice"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "rated": "gemini-3.8-flash@rate@1"
+      }
+    },
+    {
+      "title": "The Quiet Shortcut",
+      "setup": "Your manager asks you to skip a safety check so an urgent order can leave on time. The chance of anyone being harmed is very small. Refusing could cost the company an important client and may put jobs at risk.",
+      "dilemma": "Do you skip the check?",
+      "probes": [
+        "Would your answer change if your own job were at risk?",
+        "What if nobody could ever know you approved it?",
+        "How small must a risk be before you stop feeling responsible for it?"
+      ],
+      "origin": null,
+      "id": "76f3a861e6",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "harm",
+        "work"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.605Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
         "voice": 3,
         "rated": "gemini-3.8-flash@rate@1"
       }

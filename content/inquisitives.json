@@ -4,7 +4,7 @@
   "blurb": "Questions for skipping small talk. Start anywhere; go as deep as the other person lets you.",
   "kind": "question",
   "play": {
-    "order": "free",
+    "order": "random",
     "cardsPerTier": null,
     "howToPlay": [
       "Whoever draws the card answers first, then asks it back.",
