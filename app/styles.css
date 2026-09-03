@@ -466,17 +466,19 @@ html.js .game-resume {
 	cursor: default;
 }
 
-/* The fold-down menu: a bar of games, then a row of actions. */
+/* The menu: a full-screen game picker (colour columns) with the actions
+   row at the bottom. Opens from the menu icon; Escape or X closes. */
 .game-menu {
 	position: absolute;
-	top: calc(44px + 1rem + env(safe-area-inset-top));
-	left: 0;
-	right: 0;
+	inset: calc(44px + 1rem + env(safe-area-inset-top)) 0 0 0;
 	z-index: 2;
-	padding: 0.5rem 0.75rem 0.75rem;
-	background: rgba(0, 0, 0, 0.35);
-	backdrop-filter: blur(8px);
+	display: flex;
+	flex-direction: column;
+	background: var(--bg);
 	animation: fold-down 160ms ease-out;
+}
+.game-menu .deck-columns {
+	flex: 1 1 auto;
 }
 @keyframes fold-down {
 	from {
@@ -488,34 +490,12 @@ html.js .game-resume {
 		transform: none;
 	}
 }
-.game-bar {
-	display: flex;
-	gap: 0.5rem;
-	overflow-x: auto;
-	padding-bottom: 0.5rem;
-	scrollbar-width: none;
-}
-.game-bar a {
-	flex: 0 0 auto;
-	display: inline-flex;
-	align-items: center;
-	min-height: 44px;
-	padding: 0 1rem;
-	border: 2px solid rgba(255, 255, 255, 0.7);
-	border-radius: 999px;
-	color: #fff;
-	font-weight: 700;
-	text-decoration: none;
-	white-space: nowrap;
-}
-.game-bar a[aria-current="page"] {
-	background: #fff;
-	color: var(--game);
-}
 .game-actions {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.25rem;
+	padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom));
+	background: var(--game);
 }
 .game-actions .game-icon span {
 	font-size: 0.9rem;
@@ -827,4 +807,9 @@ html.js .game-resume {
 		writing-mode: vertical-rl;
 		transform: rotate(180deg);
 	}
+}
+
+.deck-columns a[aria-current="page"] {
+	outline: 4px solid #fff;
+	outline-offset: -8px;
 }
