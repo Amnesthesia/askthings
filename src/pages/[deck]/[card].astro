@@ -25,7 +25,6 @@ interface Props {
 	card: Card;
 }
 const { deck, card } = Astro.props;
-const tier = deck.tiers.find((t) => t.level === card.tier);
 const headline = cardHeadline(deck.kind, card);
 const summary = cardSummary(deck.kind, card);
 const path = cardPath(deck.deck, card.id);
@@ -34,7 +33,7 @@ const url = `${SITE_URL}${path}`;
 // og:title is the card itself; og:description carries the context.
 const description =
 	deck.kind === "question"
-		? `Level ${card.tier} · ${tier?.name} — from ${deck.name} on askthings.lol. ${deck.blurb}`
+		? `Level ${card.tier} of ${deck.tiers.length} — from ${deck.name} on askthings.lol. ${deck.blurb}`
 		: summary;
 
 const index = deck.cards.indexOf(card);
@@ -77,7 +76,7 @@ const schema = [
     <a href={deckPath(deck.deck)}>{deck.name}</a>
     {" · "}
     <a class="tier-badge" data-tier={card.tier} href={`${deckPath(deck.deck)}#level-${card.tier}`}>
-      Level {card.tier} · {tier?.name}
+      Level {card.tier} of {deck.tiers.length}
     </a>
   </nav>
 
@@ -85,7 +84,7 @@ const schema = [
     <CardBody kind={deck.kind} card={card} as="h1" />
   </article>
 
-  <p>{deck.blurb} {tier?.description}</p>
+  <p>{deck.blurb}</p>
 
   <nav class="pager" aria-label="Previous and next">
     {prev ? <a href={cardPath(deck.deck, prev.id)} rel="prev">← Previous</a> : <span />}

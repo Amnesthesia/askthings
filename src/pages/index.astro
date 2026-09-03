@@ -30,7 +30,7 @@ const schema = [
       <li>
         <h2><a href={deckPath(deck.deck)}>{deck.name}</a></h2>
         <p>{deck.blurb}</p>
-        <small>{deck.cards.length} cards · {deck.tiers.map((t) => t.name).join(" → ")}</small>
+        <small>{deck.cards.length} cards · {deck.tiers.length} levels</small>
       </li>
     ))}
   </ul>

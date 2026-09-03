@@ -47,7 +47,11 @@ Global intensity scale, shared by every deck: 1 Openers, 2 Unguarded, 3 Vulnerab
 4 Intimate (definitions in README). A deck declares its own tiers with deck-local `level`s;
 a card's `intensity` is per card and may differ from its tier's position (Fast Friends set 2
 holds intensity-2 and intensity-3 cards). Tier colour comes from `level` via CSS, never from
-JSON. Colour is never the only carrier: "Level n · Name" is always written out.
+JSON. Colour is never the only carrier: "Level n" is always written out.
+
+**The UI never names a level.** Players see "Level 1", "Level 2"… and nothing else — no
+"Intimate", no description. The theme of a level is theirs to read, and it differs between
+decks. Tier `name` and `description` exist in the JSON for the generation prompts only.
 
 ### Voice (applies to hand-written cards AND every generation prompt)
 
@@ -69,8 +73,8 @@ this sentence in that deck's generation brief.
 
 Mobile: a deck is the whole screen, one card, nothing else. Tiers colour-coded so a change
 of level is visible. Shake to shuffle. Horizontal swipe = next/previous card in the tier;
-vertical swipe = jump tiers. Desktop: arrow keys on the same axes, visible tier indicator and
-position ("7 / 12"), and an option to show all tiers at once, one card each. The URL reflects
+vertical swipe = jump tiers. Desktop: arrow keys on the same axes, visible level indicator
+("Level 2", never the name) and position ("7 / 12"), and an option to show all tiers at once, one card each. The URL reflects
 the current card (`/{deck}/{id}/`) so any position is linkable and back/forward work.
 `prefers-reduced-motion` respected. Touch targets ≥ 44px. The gesture must not fire on a
 scroll — cancel on drift, and don't bind mouse events at all.

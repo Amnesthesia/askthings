@@ -34,8 +34,7 @@
 	color-scheme: light;
 
 	/* Tier hues — four of the six the site may ever use. Each tier is told
-	   apart by hue AND by its written "Level n · Name" label, never by colour
-	   alone. Every value is used on text, so every value is >= 4.5:1 on
+	   apart by hue AND by its written "Level n" label, never by colour alone. Every value is used on text, so every value is >= 4.5:1 on
 	   --surface in its own theme. Measured (WCAG relative luminance), not
 	   eyeballed; app/styles.test.ts fails if a value drops below 4.5. */
 	--tier-1: #16736a; /* teal   5.68:1 on #fff */

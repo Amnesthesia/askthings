@@ -15,7 +15,10 @@ interface Props {
 }
 const { deck } = Astro.props;
 const groups = [...groupByTier(deck).entries()];
-const description = `${deck.blurb} ${deck.cards.length} cards in ${deck.tiers.length} levels: ${deck.tiers.map((t) => t.name).join(", ")}.`;
+// Levels are numbered, never named, in anything a player sees: the theme of a
+// level is theirs to read, and it differs between decks. Names and
+// descriptions exist in the JSON for the generation prompts only.
+const description = `${deck.blurb} ${deck.cards.length} cards in ${deck.tiers.length} levels.`;
 const schema = [
 	{
 		"@context": "https://schema.org",
@@ -47,8 +50,7 @@ const schema = [
   {deck.ordered && <p><em>Play these in order.</em></p>}
   {groups.map(([tier, cards]) => (
     <section class="tier" data-tier={tier.level} id={`level-${tier.level}`}>
-      <h2>Level {tier.level} · {tier.name}</h2>
-      <p>{tier.description}</p>
+      <h2>Level {tier.level}</h2>
       <ol>
         {cards.map((card) => (
           <li>

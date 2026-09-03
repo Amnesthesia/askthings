@@ -30,7 +30,9 @@ are not.
 ### Tiers
 
 Every card carries an `intensity` 1–4 on one global scale, so cards can be filtered across
-decks. A deck declares its own tiers (3 or 4), each a deck-local `level`.
+decks. A deck declares its own tiers (3 or 4), each a deck-local `level`. **The site shows
+only "Level 1", "Level 2"…** — tier names and descriptions live in the JSON for the
+generation prompts and are never rendered; players read the theme of a level themselves.
 
 1. **Openers** — low stakes. Curiosity-sparking questions a near-stranger can answer
    comfortably that reveal taste, perspective or a small story.
