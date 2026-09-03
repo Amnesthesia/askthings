@@ -62,6 +62,9 @@ const HUE_DRIFT = 28;
 type Dir = "left" | "right" | "up" | "down";
 /** Must match the slide animation length in styles.css. */
 const SLIDE_MS = 240;
+/** Slot-machine shuffle: how long random cards flicker before the deck settles. */
+const SPIN_MS = 900;
+const TICK_MS = 70;
 
 /**
  * Game mode: the whole screen is the colour of the level, the card is white
@@ -105,6 +108,9 @@ export default function GameDeck({
 	// Slide transitions: the card that just left, and which way things moved.
 	const dir = useRef<Dir | null>(null);
 	const [leaving, setLeaving] = useState<{ card: Card; dir: Dir } | null>(null);
+	// While shuffling, a random card from the level flickers in place of the real one.
+	const [spinCard, setSpinCard] = useState<Card | null>(null);
+	const spinTimer = useRef<ReturnType<typeof setInterval> | null>(null);
 
 	const ids = order.get(tier) ?? [];
 	const index = wrap(indexByTier[tier] ?? 0, ids.length);
@@ -181,10 +187,36 @@ export default function GameDeck({
 	// Shuffle reshuffles every level and puts you at the start of this one.
 	const doShuffle = useCallback(() => {
 		if (!canShuffle) return;
-		setOrder(dealOrder(shuffleOrder(buildOrder(deck)), deck.play.cardsPerTier));
-		setIndexByTier({});
 		setMenu(false);
-	}, [canShuffle, deck]);
+		const settle = () => {
+			setOrder(
+				dealOrder(shuffleOrder(buildOrder(deck)), deck.play.cardsPerTier),
+			);
+			setIndexByTier({});
+			setSpinCard(null);
+		};
+		if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+			settle();
+			return;
+		}
+		const bank = deck.cards.filter((c) => c.tier === tier);
+		if (spinTimer.current) clearInterval(spinTimer.current);
+		const started = Date.now();
+		spinTimer.current = setInterval(() => {
+			setSpinCard(bank[Math.floor(Math.random() * bank.length)] ?? null);
+			if (Date.now() - started >= SPIN_MS) {
+				if (spinTimer.current) clearInterval(spinTimer.current);
+				spinTimer.current = null;
+				settle();
+			}
+		}, TICK_MS);
+	}, [canShuffle, deck, tier]);
+	useEffect(
+		() => () => {
+			if (spinTimer.current) clearInterval(spinTimer.current);
+		},
+		[],
+	);
 
 	// When the card changes after a directional move, keep the old one around
 	// for one animation so it can slide out while the new one slides in.
@@ -453,7 +485,11 @@ export default function GameDeck({
 								<CardView kind={kindOf(leaving.card)} card={leaving.card} />
 							</article>
 						)}
-						{card ? (
+						{spinCard ? (
+							<article className="game-card spinning" aria-live="off">
+								<CardView kind={kindOf(spinCard)} card={spinCard} />
+							</article>
+						) : card ? (
 							<article
 								key={id}
 								className={`game-card ${leaving ? `enter-${leaving.dir}` : ""}`}

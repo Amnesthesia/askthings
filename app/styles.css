@@ -1008,3 +1008,10 @@ html.js .game-resume {
 	color: #fff;
 	opacity: 0.85;
 }
+
+/* Shuffle flicker shares the improv slot-machine look. */
+.game-card.spinning {
+	animation: none;
+	opacity: 0.75;
+	filter: blur(0.5px);
+}
