@@ -27,6 +27,7 @@ import {
 	dealOrder,
 	idFromPath,
 	locate,
+	promote,
 	shuffleOrder,
 	wrap,
 } from "../utils/deckNav.ts";
@@ -86,11 +87,13 @@ export default function GameDeck({
 	// play.order decides the opening state: random decks open shuffled,
 	// sequential ones never shuffle, free ones offer it.
 	const canShuffle = deck.play.order !== "sequential";
-	const [order, setOrder] = useState(() => {
-		const base = buildOrder(deck);
-		const dealt = deck.play.order === "random" ? shuffleOrder(base) : base;
-		return dealOrder(dealt, deck.play.cardsPerTier);
-	});
+	// Deterministic on the server (file order): shuffling here with
+	// Math.random() made the server and client render different cards, and
+	// React threw the whole tree away on hydration. Random decks shuffle in an
+	// effect after mount, keeping the card already on screen in front.
+	const [order, setOrder] = useState(() =>
+		dealOrder(buildOrder(deck), deck.play.cardsPerTier),
+	);
 	const start = startId ? locate(order, startId) : null;
 	const [tier, setTier] = useState(start?.tier ?? deck.tiers[0]?.level ?? 1);
 	const [indexByTier, setIndexByTier] = useState<Record<number, number>>(() =>
@@ -109,6 +112,18 @@ export default function GameDeck({
 	const card: Card | undefined = id ? cards.get(id) : undefined;
 	const levels = deck.tiers.map((t) => t.level);
 	const levelPos = levels.indexOf(tier);
+	// biome-ignore lint/correctness/useExhaustiveDependencies: runs once, after hydration
+	useEffect(() => {
+		if (deck.play.order !== "random") return;
+		const shuffled = shuffleOrder(buildOrder(deck));
+		const keep = id ?? startId;
+		setOrder(
+			dealOrder(
+				keep ? promote(shuffled, keep) : shuffled,
+				deck.play.cardsPerTier,
+			),
+		);
+	}, []);
 	// Position within the level as a hue offset, centred on the level's colour.
 	const drift =
 		ids.length > 1 ? ((index / (ids.length - 1)) * 2 - 1) * (HUE_DRIFT / 2) : 0;

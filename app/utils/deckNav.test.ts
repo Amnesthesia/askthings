@@ -6,6 +6,7 @@ import {
 	dealOrder,
 	idFromPath,
 	locate,
+	promote,
 	shuffle,
 	shuffleOrder,
 	wrap,
@@ -72,6 +73,12 @@ test("dealOrder caps each tier and null means everything", () => {
 	const order = buildOrder(deck);
 	assert.deepEqual(dealOrder(order, 1).get(1), ["a000000000"]);
 	assert.equal(dealOrder(order, null), order);
+});
+
+test("promote moves a card to the front of its own tier only", () => {
+	const order = promote(buildOrder(deck), "c000000000");
+	assert.deepEqual(order.get(1), ["c000000000", "a000000000"]);
+	assert.deepEqual(order.get(2), ["b000000000"]);
 });
 
 test("locate finds a card's tier and index, null when absent", () => {

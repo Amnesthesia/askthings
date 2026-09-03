@@ -42,6 +42,17 @@ export function dealOrder(order: Order, n: number | null): Order {
 	return new Map([...order].map(([tier, ids]) => [tier, ids.slice(0, n)]));
 }
 
+/** Moves one card to the front of its tier, so a shuffle performed after
+ * hydration keeps the card already on screen. */
+export function promote(order: Order, id: string): Order {
+	return new Map(
+		[...order].map(([tier, ids]) => [
+			tier,
+			ids.includes(id) ? [id, ...ids.filter((x) => x !== id)] : ids,
+		]),
+	);
+}
+
 export function locate(order: Order, id: string): Position | null {
 	for (const [tier, ids] of order) {
 		const index = ids.indexOf(id);
