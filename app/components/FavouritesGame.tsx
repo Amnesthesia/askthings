@@ -18,22 +18,30 @@ export default function FavouritesGame({ decks }: { decks: DeckLink[] }) {
 	}, []);
 	if (list === null) return null;
 	if (list.length === 0) {
+		// Nothing starred yet: the screen becomes the deck picker, one colour
+		// column per game (cycling the four level colours), tap to play.
 		return (
 			<section
 				className="game game-empty-state"
 				data-tier={1}
 				aria-label="Favourites"
 			>
-				<div className="game-stage">
-					<p className="game-card">
-						No favourites yet. Star a card in any game and it will show up here,
-						grouped by level.
-					</p>
-				</div>
-				<nav className="game-bar" aria-label="Games">
-					{decks.map((d) => (
-						<a key={d.deck} href={`/${d.deck}/`}>
-							{d.name}
+				<p className="game-empty-note">
+					No favourites yet. Star a card in any game and it will show up here,
+					grouped by level.
+				</p>
+				<nav className="deck-columns" aria-label="Games">
+					{decks.map((d, i) => (
+						<a
+							key={d.deck}
+							href={`/${d.deck}/`}
+							style={
+								{
+									"--game": `var(--game-${(i % 4) + 1})`,
+								} as React.CSSProperties
+							}
+						>
+							<span>{d.name}</span>
 						</a>
 					))}
 				</nav>
