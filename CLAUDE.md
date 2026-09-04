@@ -82,7 +82,7 @@ this sentence in that deck's generation brief.
 The whole screen is the level's colour (`--game-1..4`, white text >= 4.5:1 across the
 ±14° hue drift, tested), the card is white and bold, four edge chevrons, a menu icon that
 folds down a bar of the other games. `/` opens straight into the first published deck.
-Cards slide out/in in the direction of travel (240ms, `SLIDE_MS`). Shake to shuffle; shuffle
+Cards are thrown out in the direction of travel, tipping as they go, and the next lands from the other side (320ms, `SLIDE_MS`). Shake to shuffle; shuffle
 returns to the start of the level. Past the last card of a level the next swipe opens the
 next level. A heart stars the card into localStorage; `/favourites/` is a synthetic mixed
 deck (`FavouritesGame`, `linkable={false}`, cards carry their own `kind`). Horizontal swipe = next/previous card in the tier;

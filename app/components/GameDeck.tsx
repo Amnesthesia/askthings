@@ -62,7 +62,7 @@ const HUE_DRIFT = 28;
 
 type Dir = "left" | "right" | "up" | "down";
 /** Must match the slide animation length in styles.css. */
-const SLIDE_MS = 240;
+const SLIDE_MS = 320;
 /** Slot-machine shuffle: how long random cards flicker before the deck settles. */
 const SPIN_MS = 900;
 const TICK_MS = 70;
