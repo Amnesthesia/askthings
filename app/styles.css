@@ -1281,6 +1281,13 @@ html.js .game-resume {
 		padding-inline: max(1rem, calc((100% - 40rem) / 2));
 	}
 }
+/* Spin has no sliding cards, so its card needs no opaque backing; with one,
+   the flicker repainted a coloured box every tick and shimmered. */
+.spin .game-card,
+.spin .game-card.spinning {
+	background: transparent;
+	filter: none;
+}
 /* The filter icon sits with the heart, not in the middle of the bar. */
 .spin .game-star {
 	margin-left: 0;
