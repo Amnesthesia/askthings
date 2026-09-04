@@ -117,9 +117,11 @@ Undercurrent) they are the point.
 The definition is one string, `ASSUMES_HISTORY` in `prompts.ts`, shared by every prompt.
 
 The deck switcher is `src/components/DeckMenu.astro`, a native `<details>`: on a phone it is
-the ONLY persistent chrome, a corner button that opens the deck list as an overlay. Switching
-game never leaves the full-screen card or adds a nav bar. Reuse that element; do not add a
-second menu.
+the ONLY persistent chrome, a corner button that opens the same full-screen colour-column
+picker the games use (`.deck-columns`, one column per game, every deck plus Spin, Favourites
+and All questions), never a dropdown. Beside it a Back control returns to the previous page.
+Switching game never leaves the full-screen card or adds a nav bar. Reuse that element; do
+not add a second menu.
 
 **The whole deck exists in the static HTML.** Game mode is a presentation layer over the
 list in `src/pages/[deck]/index.astro`, which is the entire SEO surface and what unfurl

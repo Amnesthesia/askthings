@@ -71,8 +71,8 @@ type FacetKey = keyof typeof FACET_OPTIONS;
  * hydration. Filters are plain native inputs.
  */
 export default function QuestionBrowser({ rows }: Props) {
-	const [deck, setDeck] = useState("");
-	const [kind, setKind] = useState("");
+	/** Decks to show; empty = all. */
+	const [deckSel, setDeckSel] = useState<Set<string>>(new Set());
 	const [range, setRange] = useState<[number, number]>([1, 4]);
 	const [mins, setMins] = useState<Mins>({});
 	const [tags, setTags] = useState<Set<string>>(new Set());
@@ -89,10 +89,6 @@ export default function QuestionBrowser({ rows }: Props) {
 			),
 		[rows],
 	);
-	const kinds = useMemo(
-		() => [...new Set(rows.map((r) => r.kind))].sort(),
-		[rows],
-	);
 	const tagCounts = useMemo(() => {
 		const n = new Map<string, number>();
 		for (const r of rows) for (const t of r.tags) n.set(t, (n.get(t) ?? 0) + 1);
@@ -102,8 +98,7 @@ export default function QuestionBrowser({ rows }: Props) {
 
 	const needle = q.trim().toLowerCase();
 	const shown = rows.filter((r) => {
-		if (deck && r.deck !== deck) return false;
-		if (kind && r.kind !== kind) return false;
+		if (deckSel.size && !deckSel.has(r.deck)) return false;
 		if (r.intensity < range[0] || r.intensity > range[1]) return false;
 		if (tags.size && !r.tags.some((t) => tags.has(t))) return false;
 		for (const k of SCORE_KEYS) {
@@ -130,6 +125,13 @@ export default function QuestionBrowser({ rows }: Props) {
 		return true;
 	});
 
+	const toggleDeck = (slug: string) =>
+		setDeckSel((prev) => {
+			const next = new Set(prev);
+			if (next.has(slug)) next.delete(slug);
+			else next.add(slug);
+			return next;
+		});
 	const toggleTag = (t: string) =>
 		setTags((prev) => {
 			const next = new Set(prev);
@@ -141,8 +143,7 @@ export default function QuestionBrowser({ rows }: Props) {
 	const setLo = (v: number) => setRange(([, hi]) => [Math.min(v, hi), hi]);
 	const setHi = (v: number) => setRange(([lo]) => [lo, Math.max(v, lo)]);
 	const reset = () => {
-		setDeck("");
-		setKind("");
+		setDeckSel(new Set());
 		setRange([1, 4]);
 		setMins({});
 		setTags(new Set());
@@ -193,36 +194,31 @@ export default function QuestionBrowser({ rows }: Props) {
 							placeholder="any word"
 						/>
 					</label>
-					<label>
-						Deck
-						<select value={deck} onChange={(e) => setDeck(e.target.value)}>
-							<option value="">All decks</option>
+					<fieldset className="facet-radios">
+						<legend>
+							Deck{deckSel.size ? ` (${deckSel.size} selected)` : ""}
+						</legend>
+						<div className="tag-chips">
 							{decks.map(([slug, name]) => (
-								<option key={slug} value={slug}>
+								<button
+									type="button"
+									key={slug}
+									className="tag-chip"
+									aria-pressed={deckSel.has(slug)}
+									onClick={() => toggleDeck(slug)}
+								>
 									{name}
-								</option>
+								</button>
 							))}
-						</select>
-					</label>
-					{kinds.length > 1 && (
-						<label>
-							Card type
-							<select value={kind} onChange={(e) => setKind(e.target.value)}>
-								<option value="">Any</option>
-								{kinds.map((k) => (
-									<option key={k} value={k}>
-										{k}
-									</option>
-								))}
-							</select>
-						</label>
-					)}
+						</div>
+					</fieldset>
 				</fieldset>
 				<fieldset className="filter-group range-field">
 					<legend>
 						Exposure level:{" "}
 						{range[0] === range[1] ? range[0] : `${range[0]} to ${range[1]}`}
 					</legend>
+					<br />
 					<div className="double-range">
 						<input
 							type="range"

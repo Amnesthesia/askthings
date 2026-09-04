@@ -8676,6 +8676,948 @@
         "relational": "relational",
         "shape": "verdict"
       }
+    },
+    {
+      "title": "Where It Turned",
+      "setup": "Two people who work in different cities start messaging. Week one it's about work. By month four it's every night until one in the morning, and both of them stop mentioning it at home. They never meet, never touch, never say a word about love. Two years of this.",
+      "dilemma": "When exactly did it become an affair?",
+      "probes": [
+        "Point at the message that crossed the line. What did it say?",
+        "If they'd never hidden it, would there be a line to cross?",
+        "Would you rather your partner had one night with a stranger or two years of this?"
+      ],
+      "origin": null,
+      "id": "43ef66ce2c",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "sex",
+        "fidelity"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:36:45.912Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "sex",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "No Falling Out",
+      "setup": "There was a friend you saw every week. No argument, no betrayal, nobody moved. The gaps just got longer. Then it was three years, and now if you passed them on the street you'd both be pleased and neither of you would suggest a drink.",
+      "dilemma": "When did that friendship end, and is it over?",
+      "probes": [
+        "Tell me about the last time you saw them. Did it feel like the last time?",
+        "If they messaged tonight, would you answer honestly or perform?",
+        "Which of your current friends is halfway down that same slope?"
+      ],
+      "origin": null,
+      "id": "ce4f07c574",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "friendship",
+        "time"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:37:13.830Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "title": "The Failed Business",
+      "setup": "Your brother quit his job to start a restaurant. You lent him twenty thousand dollars to get it off the ground. It has been two years. The restaurant is failing. He asks you for another ten thousand to keep the doors open for one more month.",
+      "dilemma": "Do you write the second cheque?",
+      "probes": [
+        "When do you tell him it is time to quit?",
+        "How much money would you lose before you cut off your own family?"
+      ],
+      "origin": null,
+      "id": "189db9c6ce",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "money",
+        "failure"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.341Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Nearly",
+      "setup": "There's a job, a place, a person you didn't get. Someone offers to tell you exactly how close you came. Second out of four hundred, or last, or they never opened your file.",
+      "dilemma": "Do you want the number?",
+      "probes": [
+        "Which one would you ask about first?",
+        "Which answer would sting worse, second or never opened?",
+        "Has anyone ever told you how close you came, and what did you do with it?"
+      ],
+      "origin": null,
+      "id": "4500396ac8",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "failure",
+        "knowledge"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:36:57.168Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "title": "Still Say Home",
+      "setup": "You haven't lived in your parents' house for years. You have your own place, your own bed, your own bins to put out. But when you get in the car on a Friday you say you're going home, and everyone knows which house you mean.",
+      "dilemma": "When does that stop being home?",
+      "probes": [
+        "What would have to change in that house before the word came off it? New owners? Your mother gone? The road renamed?",
+        "Is there anywhere you've lived that never got the word at all?",
+        "In ten years, what will you be pointing at when you say it?"
+      ],
+      "origin": null,
+      "id": "399841cc69",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "home",
+        "language"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:37:13.830Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "home",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "Prayed For",
+      "setup": "You find out an aunt has prayed for you by name every night for twenty years. She's never mentioned it. You don't believe a word of what she believes. She's kept it up through your divorce, your job, the illness.",
+      "dilemma": "Has she been doing something for you or not?",
+      "probes": [
+        "Do you thank her? What do you say?",
+        "If it were free and took nothing from anyone, who would you ask to pray for you?",
+        "Would you do the same for someone you love, believing nothing?"
+      ],
+      "origin": null,
+      "id": "8d7cdd71a5",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "faith",
+        "family"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:36:45.912Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "faith",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Furthest Cousin",
+      "setup": "Start with your mum. Then her sister. Then that sister's kid. Then that kid's kid. Then the one you met once at a funeral in 2011 whose name you'd have to check. Somewhere along that line the word family stops being true and becomes a technicality.",
+      "dilemma": "Who's the furthest-out relative you'd still get in the car for?",
+      "probes": [
+        "Who shares your blood and would walk past you in a supermarket?",
+        "Does marrying in count more than being born in?",
+        "Is there anyone not related to you at all who's further in than any of them?"
+      ],
+      "origin": null,
+      "id": "a1c75ac206",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "belonging"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:37:13.682Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "Nobody Coming Round",
+      "setup": "You have a house to yourself for a month. Nobody visiting, no deliveries, no video calls. No one will see the state of it or the state of you.",
+      "dilemma": "What goes first: the bed made, the proper meals, the clothes with buttons?",
+      "probes": [
+        "What would you keep doing anyway, with nobody there to see it?",
+        "If your habits change when you're unwatched, which set is you?",
+        "Week three, what's the first thing you'd start doing that would worry someone?"
+      ],
+      "origin": null,
+      "id": "6e5223f277",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "home",
+        "solitude",
+        "habits"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:37:13.830Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "home",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "title": "The Box in the Loft",
+      "setup": "Everything you own ends up with someone who wasn't there for any of it. A ticket stub, a chipped bowl, a jumper you wore for eleven years. To them it's a bowl. To you it's a specific Sunday. Nothing about the objects changes; the stories just stop coming with them.",
+      "dilemma": "Which of your things stops being what it is once you're not around to say why?",
+      "probes": [
+        "What did you bin from a dead relative's house that you now wish you'd kept?",
+        "Have you ever told anyone the story behind one of these things, or is that the point?",
+        "What would you rather someone kept, the thing or the story?"
+      ],
+      "origin": null,
+      "id": "a328a795e3",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "objects",
+        "family",
+        "memory"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:37:13.682Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "title": "Woke Up Guilty",
+      "setup": "You dream you slept with someone. Not a stranger, someone you actually know. It's vivid, and in the dream you're pleased with yourself. You wake up next to your partner at six with the whole thing still in your mouth like a taste.",
+      "dilemma": "Did anything happen?",
+      "probes": [
+        "Do you tell them over breakfast?",
+        "Does it change how you act around the person from the dream on Thursday?",
+        "What if you'd chosen the dream, could pick it off a shelf before bed? Same answer?"
+      ],
+      "origin": null,
+      "id": "783365f897",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "sex",
+        "dreams"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:36:45.912Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "sex",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Ghostwriter",
+      "setup": "You wrote a brilliant manuscript. A famous author with your politics reads it. They offer you one million dollars to publish it under their name. They will never reveal you wrote it. It will sell millions of copies. Under your own name, it will sell five hundred.",
+      "dilemma": "Do you take the money and let them have the credit?",
+      "probes": [
+        "Is the message more important than your name on it?",
+        "What is the lowest price you would sell your best idea for?"
+      ],
+      "origin": null,
+      "id": "6d12ba9519",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "credit",
+        "money",
+        "legacy"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.340Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Drunk Confession",
+      "setup": "Your close friend gets drunk at a dinner party. They pull you aside and tell you a terrible secret about their marriage. They tell you their partner hits them. The next morning, they call you. They are sober. They say they made the whole thing up for attention.",
+      "dilemma": "Do you stay friends with them?",
+      "probes": [
+        "Which part of their story do you believe?",
+        "Who in your life would you drop immediately if they lied like that?"
+      ],
+      "origin": null,
+      "id": "3714506dfb",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "lies",
+        "trust"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.340Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Shed Cash",
+      "setup": "You are cleaning out your uncle's shed after his funeral. Stuffed inside a rusty paint tin, you find twenty thousand pounds in crisp notes. Nobody else knows it is there. Your siblings are currently in the house, arguing over who gets his worthless car.",
+      "dilemma": "Do you walk into the house and tell them?",
+      "probes": [
+        "How long do you wait to spend it if you keep it?",
+        "Who is the first person you tell?"
+      ],
+      "origin": null,
+      "id": "eb1d23b664",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "money",
+        "family",
+        "secrets"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@5",
+        "at": "2026-09-04T08:37:42.136Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Family Ring",
+      "setup": "You own your great-grandmother’s ring. Your cousin believes it should have gone to her mother and has asked for it twice. Selling it would clear your credit card. Giving it away would end an old family grievance.",
+      "dilemma": "Do you keep it, sell it, or give it to your cousin?",
+      "probes": [
+        "How much money would make you sell it?",
+        "Whose claim matters most to you?",
+        "Why have you not settled this?"
+      ],
+      "origin": null,
+      "id": "fed62d8dfc",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "inheritance",
+        "family",
+        "ownership"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:30:08.118Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Hidden Diagnosis",
+      "setup": "Your parent goes to the doctor alone and gets a terminal diagnosis. They have six months to live. They decide not to tell you or anyone else in the family until the final week. They want their last months to be normal.",
+      "dilemma": "Do you want them to keep that a secret from you?",
+      "probes": [
+        "What would you do differently if you knew?",
+        "Would you hide your own diagnosis from your children?"
+      ],
+      "origin": null,
+      "id": "48121bf1f6",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "parents",
+        "death",
+        "secrets"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.341Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "family",
+          "mortality"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Tracker",
+      "setup": "Your daughter gets her first car. She is driving alone at night. You have an app on your phone. It tracks her location. She does not know it is installed. You promised her you would never track her.",
+      "dilemma": "Do you check the app when she is late coming home?",
+      "probes": [
+        "Why did you break your promise?",
+        "When did your own parents stop invading your privacy?"
+      ],
+      "origin": null,
+      "id": "98c356fa3e",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "parenting",
+        "trust",
+        "privacy"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.341Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Pills in the Bathroom",
+      "setup": "Pain pills left from an operation help you sleep. Your doctor told you to stop weeks ago. You have hidden the last packet behind the towels because your partner would throw it away.",
+      "dilemma": "Do you tell your partner tonight?",
+      "probes": [
+        "How many pills are left?",
+        "Who would you call if you could not stop?",
+        "Why have you kept the packet?"
+      ],
+      "origin": null,
+      "id": "596909cfd5",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "health",
+        "dependence",
+        "honesty"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:30:08.118Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "body",
+          "failure",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Care Fund",
+      "setup": "Your parents are aging and have fifty thousand dollars left in savings. Your brother has a sudden medical emergency. He needs that amount for a treatment insurance will not cover. Your parents ask for your blessing to empty their account to pay for it.",
+      "dilemma": "Do you tell them to do it?",
+      "probes": [
+        "Who pays for your parents' care when they run out of money?",
+        "How much of your own savings would you give your brother today?"
+      ],
+      "origin": null,
+      "id": "4e84c04700",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "money",
+        "health"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.340Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Erased Habit",
+      "setup": "There is a harmless medical procedure. It takes ten minutes. It will permanently remove one habit from your partner. They will not notice it is gone. They will never know you arranged it. They will just stop doing that one thing forever.",
+      "dilemma": "What trait do you remove?",
+      "probes": [
+        "Why haven't you asked them to stop doing it?",
+        "What would they remove from you if they had the chance?"
+      ],
+      "origin": null,
+      "id": "6214947719",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "habits",
+        "control",
+        "partners"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.340Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Tooth You Ignore",
+      "setup": "A tooth has hurt for six months. The dentist may find nothing serious, or may tell you that you need work you cannot afford. You have £800 saved for the first holiday you have taken in years.",
+      "dilemma": "Do you book the appointment before the holiday?",
+      "probes": [
+        "How long have you been putting it off?",
+        "How much pain would make you cancel the trip?",
+        "Why have you not booked?"
+      ],
+      "origin": null,
+      "id": "d46e9bee34",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "health",
+        "avoidance",
+        "money"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:30:08.118Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money",
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
     }
   ]
 }

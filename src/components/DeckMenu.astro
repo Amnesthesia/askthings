@@ -1,8 +1,9 @@
 ---
-// The deck switcher. A native <details>, so it works with JavaScript off and
-// needs no island; in game mode this same element is the only chrome on a
-// phone, so it floats over the page rather than taking a row of its own.
-import { LayoutGrid } from "lucide-react";
+// The deck switcher on plain pages (deck lists, All questions, card pages). A
+// native <details>, so it works with JavaScript off and needs no island; open,
+// it is the same full-screen colour-column picker the games use, not a
+// dropdown. Next to it a Back control returns to wherever the reader was.
+import { ArrowLeft, LayoutGrid, X } from "lucide-react";
 import { publishedDecks } from "../common.ts";
 import { deckPath } from "../shared.ts";
 
@@ -10,25 +11,28 @@ interface Props {
 	current?: string;
 }
 const { current } = Astro.props;
-const decks = publishedDecks();
+const entries = [
+	...publishedDecks().map((d) => ({ href: deckPath(d.deck), name: d.name, slug: d.deck, small: `${d.cards.length} cards` })),
+	{ href: "/spin/", name: "Spin", slug: "spin", small: "one random question" },
+	{ href: "/favourites/", name: "Favourites", slug: "favourites", small: "your starred cards" },
+	{ href: "/questions/", name: "All questions", slug: "questions", small: "browse & filter" },
+];
 ---
 
+<a class="icon-button back" href="/" aria-label="Back" onclick="if (history.length > 1) { history.back(); return false; }">
+  <ArrowLeft size={18} aria-hidden="true" />
+</a>
 <details class="deck-menu">
   <summary aria-label="Switch deck"><LayoutGrid size={18} aria-hidden="true" /> Decks</summary>
-  <nav aria-label="Decks">
-    {decks.map((deck) => (
-      <a href={deckPath(deck.deck)} aria-current={deck.deck === current ? "page" : undefined}>
-        <span>{deck.name}</span>
-        <small>{deck.cards.length} cards</small>
+  <nav class="deck-columns" aria-label="Decks">
+    {entries.map((e, i) => (
+      <a href={e.href} aria-current={e.slug === current ? "page" : undefined} style={`--game: var(--game-${(i % 4) + 1})`}>
+        <span>{e.name}</span>
+        <small>{e.small}</small>
       </a>
     ))}
-    <a href="/spin/" aria-current={current === "spin" ? "page" : undefined}>
-      <span>Spin</span>
-      <small>one random question</small>
-    </a>
-    <a href="/questions/" aria-current={current === "questions" ? "page" : undefined}>
-      <span>All questions</span>
-      <small>browse & filter</small>
-    </a>
+    <button type="button" class="game-icon deck-menu-close" aria-label="Close" onclick="this.closest('details').removeAttribute('open')">
+      <X size={22} aria-hidden="true" />
+    </button>
   </nav>
 </details>
