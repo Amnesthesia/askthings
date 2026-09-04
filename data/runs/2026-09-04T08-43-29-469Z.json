@@ -1,0 +1,61 @@
+{
+  "at": "2026-09-04T08:43:29.469Z",
+  "mode": "live",
+  "argv": [
+    "inquisitives,never-have-i-ever,fast-friends,would-you-rather,thought-experiments,undercurrent,unaskable"
+  ],
+  "stages": {
+    "rate/never-have-i-ever": {
+      "calls": 3,
+      "input": 6884,
+      "output": 11009,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.046446749999999995,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/fast-friends": {
+      "calls": 2,
+      "input": 4464,
+      "output": 4950,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.0219105,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/would-you-rather": {
+      "calls": 2,
+      "input": 4674,
+      "output": 4897,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.02186925,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/thought-experiments": {
+      "calls": 3,
+      "input": 14781,
+      "output": 14611,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.065877,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 10,
+      "input": 30803,
+      "output": 35467,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.1561035,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

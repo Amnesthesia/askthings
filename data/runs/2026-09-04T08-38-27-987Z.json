@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-04T08:38:27.987Z",
+  "mode": "live",
+  "argv": [
+    "inquisitives,never-have-i-ever,fast-friends,would-you-rather,thought-experiments,undercurrent,unaskable"
+  ],
+  "stages": {
+    "generate": {
+      "calls": 21,
+      "input": 72468,
+      "output": 82697,
+      "cached": 9400,
+      "cacheHits": 0,
+      "usd": 1.6910401999999998,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 8,
+      "input": 33778,
+      "output": 26162,
+      "cached": 6202,
+      "cacheHits": 0,
+      "usd": 0.826041,
+      "retries": 0,
+      "failures": 0
+    },
+    "gemini": {
+      "calls": 7,
+      "input": 22382,
+      "output": 47122,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.610228,
+      "retries": 0,
+      "failures": 0
+    },
+    "openai": {
+      "calls": 6,
+      "input": 16308,
+      "output": 9413,
+      "cached": 3198,
+      "cacheHits": 0,
+      "usd": 0.2547712,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

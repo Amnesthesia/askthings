@@ -7723,6 +7723,959 @@
         "relational": "relational",
         "shape": "verdict"
       }
+    },
+    {
+      "title": "Split Evenly",
+      "setup": "You earn about three times what your oldest friend earns. Every time you eat together the bill lands in the middle and gets split down the middle, and he reaches for it fast, before anyone can suggest otherwise. You've watched him pick the cheapest thing on the menu and then pay for half of your fish.",
+      "dilemma": "Do you say anything?",
+      "probes": [
+        "What would you say, in the words you'd actually use?",
+        "Why hasn't the sentence come out yet? Is it his pride or yours?",
+        "If he earned three times what you did, would you want to be told?"
+      ],
+      "origin": null,
+      "id": "16de0ad755",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "friendship",
+        "money",
+        "class"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "money",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "One Coffee Before the Wedding",
+      "setup": "The one you never got over is getting married in three weeks. They message: one coffee, an hour, then they're gone for good and they won't ask again. You're with someone now and it's good. You wouldn't do anything. You'd just go.",
+      "dilemma": "Do you go?",
+      "probes": [
+        "Do you tell your partner beforehand, after, or not at all?",
+        "What are you hoping they say in that hour?",
+        "If your partner went to the same coffee, how would you feel walking them to the door?"
+      ],
+      "origin": null,
+      "id": "3618332f1f",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "loyalty",
+        "longing"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Watch",
+      "setup": "Your dad's watch. He wore it for thirty years and you've had it in a drawer since the funeral. Your brother rings and says he's been thinking about it a lot, that he'd wear it every day, and could he have it. He probably would wear it. You'd keep it in the drawer.",
+      "dilemma": "Does he get the watch?",
+      "probes": [
+        "Which of you was closer to your father? Does that decide it?",
+        "If he sold it in five years, what would you do?",
+        "What object in your house are you keeping for reasons you can't defend?"
+      ],
+      "origin": null,
+      "id": "fb22b88bd8",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "grief",
+        "objects"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Unequal Will",
+      "setup": "Your parents die and the will leaves you sixty percent and your sister forty. You were the one who drove them to appointments, who called on Sundays, who took the phone calls at 2am. She lives four hours away and came at Christmas. The solicitor says nothing has to change unless you want it to.",
+      "dilemma": "Do you even it up?",
+      "probes": [
+        "Do you tell her the split, or let the solicitor?",
+        "If she asks why they did it, what do you say?",
+        "What would the extra twenty percent have to be worth for you to keep it?"
+      ],
+      "origin": null,
+      "id": "b0e846a729",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "money",
+        "fairness"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "What He Says to Her",
+      "setup": "You've watched your friend's boyfriend talk to her the way you wouldn't talk to anyone. Nothing you could take to anybody. She knows you've seen it. Last month she asked you, in the nicest way, to stop bringing it up, because she's staying and she'd like to keep you.",
+      "dilemma": "Do you keep bringing it up?",
+      "probes": [
+        "Which do you want more: her out of it, or her still speaking to you?",
+        "If she marries him, do you go?",
+        "Has anyone ever told you something true about a person you were with? What did you do with it?"
+      ],
+      "origin": null,
+      "id": "490b591235",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "love",
+        "honesty"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Son on the Sofa",
+      "setup": "He's thirty one. This is the third time he's asked to come home, and each time it was going to be a few months. You'd have to move the desk out again, and you'd hear him up at three, and you'd be lending him money by February. He has nowhere else to be by Friday.",
+      "dilemma": "Do you say yes again?",
+      "probes": [
+        "What are you afraid the yes does to him?",
+        "What would you need to hear from him to make it a yes without dread?",
+        "Who did this for you, and how long did they let it run?"
+      ],
+      "origin": null,
+      "id": "9c45140fd7",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "limits",
+        "parenting"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "A Year Without Lying",
+      "setup": "For the next twelve months you can't say anything you believe to be false. Not the big lies, those you'd manage. The 'no, it's lovely'. The 'I'm on my way'. The 'I'm fine'. Silence is allowed, but no cover stories, and nobody knows this has happened to you.",
+      "dilemma": "Who does it cost you first?",
+      "probes": [
+        "Name the person you'd have to start avoiding.",
+        "Which lie do you tell most days? Say it word for word.",
+        "Would anyone close to you leave by the end of the year?"
+      ],
+      "origin": null,
+      "id": "cb5f2b6841",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "honesty",
+        "relationships",
+        "self"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "work"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Pill That Ends the Craving",
+      "setup": "There's a pill for the thing you do too much of. The drinking, the scrolling, the eating at midnight. One dose and the pull is gone for good. But it takes the pleasure with it. You'll never want it again and you'll never enjoy it again, and the evenings that were built around it will just be evenings.",
+      "dilemma": "Do you take it?",
+      "probes": [
+        "Name the thing. Don't pick the polite one.",
+        "How many times have you already promised yourself you'd stop without a pill?",
+        "Who in your life would notice by the end of the first week?"
+      ],
+      "origin": null,
+      "id": "1c4aadd75f",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "habits",
+        "pleasure",
+        "self"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.276Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Diary on the Table",
+      "setup": "Your fifteen year old has left it open on the kitchen table and gone out. You can see your own name on the page. They've been off for weeks and won't say why, and you've been lying awake about it. Reading it takes ninety seconds and they'd never know.",
+      "dilemma": "Do you read it?",
+      "probes": [
+        "What are you hoping isn't in there?",
+        "If you read it and it's bad, what do you say you saw?",
+        "Did your own parents ever go through your things? Did it change anything?"
+      ],
+      "origin": null,
+      "id": "0701557596",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "trust",
+        "parenting"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "Sunday Lunch",
+      "setup": "Your grandmother says the ugly thing again, mildly, over the roast. She's eighty seven. Your cousin's kids are at the table. Everyone does the small laugh and passes the potatoes, and you've done the small laugh for twenty years because she won't change and it would spoil the afternoon.",
+      "dilemma": "Do you say it out loud this time?",
+      "probes": [
+        "What exactly would you say? Try it now.",
+        "Who at that table are you protecting when you stay quiet?",
+        "What would the kids take away from watching you laugh?"
+      ],
+      "origin": null,
+      "id": "c8028e45fe",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "courage",
+        "silence"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "Five Years",
+      "setup": "Your doctor is straightforward about it. Carry on as you are and you get about five good years fewer than you otherwise would. Nothing dramatic today, no scan to be scared of, just arithmetic. She writes down the two or three changes. You take the paper home and put it somewhere.",
+      "dilemma": "What's stopping you?",
+      "probes": [
+        "Which of the changes is the one you already know you won't make?",
+        "Would you make it for a child of yours? Why is your own five years worth less?",
+        "What would have to happen this month for you to start?"
+      ],
+      "origin": null,
+      "id": "28f99b3a17",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "health",
+        "mortality",
+        "habits"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.277Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "mortality",
+          "body",
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Year You'd Delete",
+      "setup": "One year of your memory can be taken out. Not the facts, you'd still know what happened and who you were with, but the feel of it goes. No flinch when the song comes on, no dream about it, nothing waiting for you at 4am. Everyone else remembers it fine.",
+      "dilemma": "Which year, or none?",
+      "probes": [
+        "Say the year.",
+        "What did that year teach you that you'd be giving back?",
+        "Would you rather delete it or have everyone else forget you in it?"
+      ],
+      "origin": null,
+      "id": "7b44861521",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "memory",
+        "pain",
+        "identity"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The First Drink",
+      "setup": "Your closest friend quit drinking after losing their marriage. At your birthday dinner, they order a whisky and ask you not to make a scene. Everyone else carries on talking.",
+      "dilemma": "Do you challenge them at the table?",
+      "probes": [
+        "Who would you risk embarrassing to stop them?",
+        "How many drinks would you wait?",
+        "Why might you stay silent?"
+      ],
+      "origin": null,
+      "id": "34f19f24a2",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "addiction",
+        "friendship",
+        "loyalty"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:30:08.118Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The App That's Never Wrong",
+      "setup": "An app has been right about everyone who used it, for years, with no exceptions. It tells you two things about your partner. They'll stay with you and be reasonably content. And there's someone else out there they'd have been happier with, much happier, if they'd met. You can show them the screen or close it.",
+      "dilemma": "Do you tell them?",
+      "probes": [
+        "If they'd read it about you, would you want to know?",
+        "Is 'reasonably content' enough for you? Say why.",
+        "What's the real reason you'd close it?"
+      ],
+      "origin": null,
+      "id": "aab0948968",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "love",
+        "honesty",
+        "happiness"
+      ],
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:28:30.278Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 5,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Five-Year Contract",
+      "setup": "Marriage is no longer a lifelong commitment. The law changes tomorrow. All marriages now expire automatically after five years. To stay married, both of you have to go to a courthouse and sign a paper. If one of you stays home, the marriage ends.",
+      "dilemma": "If your marriage expired tomorrow, would your partner show up to sign?",
+      "probes": [
+        "Would you go to the courthouse?",
+        "How long has it been since you were sure they would sign?"
+      ],
+      "origin": null,
+      "id": "af5e4d7964",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "marriage",
+        "commitment",
+        "relationships"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.340Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "family",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Train Home",
+      "setup": "Your father is having minor surgery on Friday. He says there is no need to visit. You have missed enough work this year, and the train costs £160. Your sister texts: “He wants you there. He just won’t ask.”",
+      "dilemma": "Do you go home?",
+      "probes": [
+        "Who would notice first if you stayed away?",
+        "How much would the trip need to cost before you refused?",
+        "Why are you waiting to be asked?"
+      ],
+      "origin": null,
+      "id": "ec1b810d02",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "duty",
+        "absence"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:30:08.118Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "Sunday With Gran",
+      "setup": "Your grandmother thinks you still share her faith. She is 88 and tells everyone that praying with you is one of her last comforts. You no longer believe, but correcting her would hurt her.",
+      "dilemma": "Do you keep praying with her?",
+      "probes": [
+        "Who in your family knows what you believe?",
+        "How many more Sundays would you pretend?",
+        "Why have you not told her?"
+      ],
+      "origin": null,
+      "id": "8893a44e2a",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "faith",
+        "family",
+        "honesty"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:30:08.118Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "faith"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Apology After Twenty Years",
+      "setup": "At school, you joined in when a boy was mocked every day. You found him online. He seems happy and has never contacted you. An apology might help him, or it might ask him to carry your guilt again.",
+      "dilemma": "Do you write to him?",
+      "probes": [
+        "What name would you search for tonight?",
+        "How many times have you drafted the message in your head?",
+        "Why have you not sent it?"
+      ],
+      "origin": null,
+      "id": "b34c2b3afe",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "guilt",
+        "apology",
+        "school"
+      ],
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:30:08.118Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Broken Vow",
+      "setup": "You cheat on your partner during a work trip. It happens once. You are overwhelmed with guilt. You know you will never do it again. The other person lives in another country. Your partner will never find out unless you tell them.",
+      "dilemma": "Do you confess?",
+      "probes": [
+        "Are you telling them to clear your own conscience?",
+        "Would you want to know if they did the same thing?"
+      ],
+      "origin": null,
+      "id": "334ff6b8ff",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "infidelity",
+        "guilt",
+        "honesty"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.341Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "title": "The Group Chat",
+      "setup": "You leave your phone unlocked on a table. Your partner picks it up to check the time. A notification pops up. It is a message from your closest friend. It says something cruel about your partner. Your partner reads it.",
+      "dilemma": "Do you defend your friend or your partner?",
+      "probes": [
+        "What is the worst thing your friends have said about your partner?",
+        "Why do you let your friends talk about them that way?"
+      ],
+      "origin": null,
+      "id": "948b3bbbdf",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "loyalty",
+        "partners",
+        "friends"
+      ],
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T06:29:46.341Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
     }
   ]
 }

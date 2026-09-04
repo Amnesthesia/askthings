@@ -173,40 +173,52 @@ export default function QuestionBrowser({ rows }: Props) {
 				onSubmit={(e) => e.preventDefault()}
 				aria-label="Filter questions"
 			>
-				<label>
-					Search
-					<input
-						type="search"
-						value={q}
-						onChange={(e) => setQ(e.target.value)}
-						placeholder="any word"
-					/>
-				</label>
-				<label>
-					Deck
-					<select value={deck} onChange={(e) => setDeck(e.target.value)}>
-						<option value="">All decks</option>
-						{decks.map(([slug, name]) => (
-							<option key={slug} value={slug}>
-								{name}
-							</option>
-						))}
-					</select>
-				</label>
-				{kinds.length > 1 && (
+				<div className="browser-filters-head">
+					<h2>Filter</h2>
+					<span className="browser-count" aria-live="polite">
+						{shown.length} of {rows.length} questions
+					</span>
+					<button type="button" className="secondary" onClick={reset}>
+						Reset
+					</button>
+				</div>
+				<fieldset className="filter-group filter-find">
+					<legend>Find</legend>
 					<label>
-						Shape
-						<select value={kind} onChange={(e) => setKind(e.target.value)}>
-							<option value="">Any</option>
-							{kinds.map((k) => (
-								<option key={k} value={k}>
-									{k}
+						Search
+						<input
+							type="search"
+							value={q}
+							onChange={(e) => setQ(e.target.value)}
+							placeholder="any word"
+						/>
+					</label>
+					<label>
+						Deck
+						<select value={deck} onChange={(e) => setDeck(e.target.value)}>
+							<option value="">All decks</option>
+							{decks.map(([slug, name]) => (
+								<option key={slug} value={slug}>
+									{name}
 								</option>
 							))}
 						</select>
 					</label>
-				)}
-				<fieldset className="range-field">
+					{kinds.length > 1 && (
+						<label>
+							Card type
+							<select value={kind} onChange={(e) => setKind(e.target.value)}>
+								<option value="">Any</option>
+								{kinds.map((k) => (
+									<option key={k} value={k}>
+										{k}
+									</option>
+								))}
+							</select>
+						</label>
+					)}
+				</fieldset>
+				<fieldset className="filter-group range-field">
 					<legend>
 						Exposure level:{" "}
 						{range[0] === range[1] ? range[0] : `${range[0]} to ${range[1]}`}
@@ -237,13 +249,83 @@ export default function QuestionBrowser({ rows }: Props) {
 						))}
 					</div>
 				</fieldset>
-				{rated && (
-					<fieldset>
+				{faceted && (
+					<fieldset className="filter-group tag-field">
 						<legend>
-							Minimum score (1–5). <em>Conversation</em> is how well the card
-							starts a real exchange; <em>depth</em> is how far below the
-							surface the honest answer goes.
+							Subject
+							{subjects.size ? ` (${subjects.size} selected, any match)` : ""}
 						</legend>
+						<div className="tag-chips">
+							{subjectCounts.map(([s, n]) => (
+								<button
+									type="button"
+									key={s}
+									className="tag-chip"
+									aria-pressed={subjects.has(s)}
+									onClick={() => toggleSubject(s)}
+								>
+									{s} <small>{n}</small>
+								</button>
+							))}
+						</div>
+					</fieldset>
+				)}
+				{faceted && (
+					<fieldset className="filter-group facet-field">
+						<legend>What kind of question</legend>
+						{(Object.keys(FACET_OPTIONS) as FacetKey[]).map((k) => (
+							<fieldset className="facet-radios" key={k}>
+								<legend>{FACET_LABEL[k]}</legend>
+								{["", ...FACET_OPTIONS[k]].map((v) => (
+									<label key={v || "any"}>
+										<input
+											type="radio"
+											name={`facet-${k}`}
+											value={v}
+											checked={(facet[k] ?? "") === v}
+											onChange={() =>
+												setFacet((f) => ({ ...f, [k]: v || undefined }))
+											}
+										/>
+										{v || "any"}
+									</label>
+								))}
+							</fieldset>
+						))}
+					</fieldset>
+				)}
+				{rated && (
+					<fieldset className="filter-group score-field">
+						<legend>Scores</legend>
+						<p className="filter-help">
+							Minimums, 1 to 5. <em>Conversation</em> is how well the card
+							starts a real exchange; <em>depth</em> how far below the surface
+							the honest answer goes; <em>escapability</em> how easy a polite
+							non-answer is, so that one is a ceiling.
+						</p>
+						<label>
+							Escapability at most
+							<input
+								type="range"
+								min={1}
+								max={5}
+								step={1}
+								value={maxEscape ?? 5}
+								aria-valuetext={
+									maxEscape !== undefined ? `at most ${maxEscape}` : "any"
+								}
+								onChange={(e) =>
+									setMaxEscape(
+										Number(e.target.value) < 5
+											? Number(e.target.value)
+											: undefined,
+									)
+								}
+							/>
+							<span className="range-value">
+								{maxEscape !== undefined ? `≤ ${maxEscape}` : "any"}
+							</span>
+						</label>
 						{SLIDERS.map((k) => (
 							<label key={k}>
 								{SCORE_LABEL[k]}
@@ -273,86 +355,11 @@ export default function QuestionBrowser({ rows }: Props) {
 						))}
 					</fieldset>
 				)}
-				{rated && (
-					<label>
-						Escapability at most
-						<input
-							type="range"
-							min={1}
-							max={5}
-							step={1}
-							value={maxEscape ?? 5}
-							aria-valuetext={
-								maxEscape !== undefined ? `at most ${maxEscape}` : "any"
-							}
-							onChange={(e) =>
-								setMaxEscape(
-									Number(e.target.value) < 5
-										? Number(e.target.value)
-										: undefined,
-								)
-							}
-						/>
-						<span className="range-value">
-							{maxEscape !== undefined ? `≤ ${maxEscape}` : "any"}
-						</span>
-						<small>
-							How easy a polite non-answer is. Low is what you want.
-						</small>
-					</label>
-				)}
-				{faceted && (
-					<fieldset className="facet-field">
-						<legend>What kind of question</legend>
-						{(Object.keys(FACET_OPTIONS) as FacetKey[]).map((k) => (
-							<label key={k}>
-								{FACET_LABEL[k]}
-								<select
-									value={facet[k] ?? ""}
-									onChange={(e) =>
-										setFacet((f) => ({
-											...f,
-											[k]: e.target.value || undefined,
-										}))
-									}
-								>
-									<option value="">Any</option>
-									{FACET_OPTIONS[k].map((v) => (
-										<option key={v} value={v}>
-											{v}
-										</option>
-									))}
-								</select>
-							</label>
-						))}
-					</fieldset>
-				)}
-				{faceted && (
-					<fieldset className="tag-field">
-						<legend>
-							Subject
-							{subjects.size ? ` (${subjects.size} selected, any match)` : ""}
-						</legend>
-						<div className="tag-chips">
-							{subjectCounts.map(([s, n]) => (
-								<button
-									type="button"
-									key={s}
-									className="tag-chip"
-									aria-pressed={subjects.has(s)}
-									onClick={() => toggleSubject(s)}
-								>
-									{s} <small>{n}</small>
-								</button>
-							))}
-						</div>
-					</fieldset>
-				)}
-				<fieldset className="tag-field">
+				<fieldset className="filter-group tag-field">
 					<legend>
 						Tags{tags.size ? ` (${tags.size} selected, any match)` : ""}
 					</legend>
-					<div className="tag-chips">
+					<div className="tag-chips tag-chips-small">
 						{tagCounts.map(([t, n]) => (
 							<button
 								type="button"
@@ -366,14 +373,7 @@ export default function QuestionBrowser({ rows }: Props) {
 						))}
 					</div>
 				</fieldset>
-				<button type="button" className="secondary" onClick={reset}>
-					Reset
-				</button>
 			</form>
-
-			<p className="browser-count" aria-live="polite">
-				{shown.length} of {rows.length} questions
-			</p>
 
 			<ol className="browser-list">
 				{shown.map((r) => (

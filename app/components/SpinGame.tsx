@@ -32,7 +32,10 @@ export type SpinCard = Card & {
 };
 
 interface Props {
-	cards: SpinCard[];
+	/** Where the pool lives (built JSON: /spin.json). Fetched after mount so
+	 * the page itself stays small. */
+	src: string;
+	/** Every deck in the pool, for the menu, known at build time. */
 	decks: DeckLink[];
 }
 
@@ -87,7 +90,23 @@ const pick = <T,>(list: T[], not?: T): T | undefined => {
  * random from the pool; the pool is whatever the filters allow (decks,
  * exposure range, minimum scores). Filters persist per browser.
  */
-export default function SpinGame({ cards, decks }: Props) {
+export default function SpinGame({ src, decks }: Props) {
+	const [cards, setCards] = useState<SpinCard[]>([]);
+	const [loadError, setLoadError] = useState(false);
+	useEffect(() => {
+		let live = true;
+		fetch(src)
+			.then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.statusText))))
+			.then((pool: { cards: SpinCard[] }) => {
+				if (live) setCards(pool.cards);
+			})
+			.catch(() => {
+				if (live) setLoadError(true);
+			});
+		return () => {
+			live = false;
+		};
+	}, [src]);
 	const [filters, setFilters] = useState<Filters>(DEFAULT);
 	const [menu, setMenu] = useState(false);
 	const [panel, setPanel] = useState(false);
@@ -380,34 +399,36 @@ export default function SpinGame({ cards, decks }: Props) {
 					</fieldset>
 					<fieldset className="facet-field">
 						<legend>What kind of question</legend>
-						<label>
-							Answer shape
-							<select
-								value={filters.shape ?? ""}
-								onChange={(e) => update({ shape: e.target.value || null })}
-							>
-								<option value="">Any</option>
-								{SHAPES.map((v) => (
-									<option key={v} value={v}>
-										{v}
-									</option>
-								))}
-							</select>
-						</label>
-						<label>
-							Frame
-							<select
-								value={filters.relational ?? ""}
-								onChange={(e) => update({ relational: e.target.value || null })}
-							>
-								<option value="">Any</option>
-								{RELATIONS.map((v) => (
-									<option key={v} value={v}>
-										{v}
-									</option>
-								))}
-							</select>
-						</label>
+						<fieldset className="facet-radios">
+							<legend>Answer shape</legend>
+							{["", ...SHAPES].map((v) => (
+								<label key={v || "any"}>
+									<input
+										type="radio"
+										name="spin-shape"
+										value={v}
+										checked={(filters.shape ?? "") === v}
+										onChange={() => update({ shape: v || null })}
+									/>
+									{v || "any"}
+								</label>
+							))}
+						</fieldset>
+						<fieldset className="facet-radios">
+							<legend>Frame</legend>
+							{["", ...RELATIONS].map((v) => (
+								<label key={v || "any"}>
+									<input
+										type="radio"
+										name="spin-relational"
+										value={v}
+										checked={(filters.relational ?? "") === v}
+										onChange={() => update({ relational: v || null })}
+									/>
+									{v || "any"}
+								</label>
+							))}
+						</fieldset>
 					</fieldset>
 					<fieldset className="range-field">
 						<legend>
@@ -511,8 +532,12 @@ export default function SpinGame({ cards, decks }: Props) {
 							</small>
 						</article>
 					) : (
-						<p className="game-card">
-							No cards match these filters. Loosen them a little.
+						<p className="game-card" aria-live="polite">
+							{loadError
+								? "The questions did not load. Try again in a moment."
+								: cards.length === 0
+									? "Loading the questions…"
+									: "No cards match these filters. Loosen them a little."}
 						</p>
 					)}
 				</div>

@@ -37,13 +37,14 @@ export interface DeckSpec {
 		/** Cards asked for in ONE call. Small on purpose: quality slides with
 		 * response length, so a level is filled by many small calls. */
 		candidatesPerTier: number;
-		/** Publish keeps the best cards up to this many per tier. */
-		targetPerTier: number;
-		/** Generate tops a level up until it holds this many times its target in
-		 * unrejected candidates (default 3 in generate.ts); rank picks the best. */
-		oversupply?: number;
+		/** Each run publishes up to this many of the best-ranked eligible cards per
+		 * level, on top of what is there. No ceiling on deck size: decks grow every
+		 * run and the pipeline never removes a card. */
+		publishPerRun: number;
+		/** Calls per provider per level per run (default 2 in generate.ts). */
+		callsPerLevel?: number;
 		/** The deck is generated as ONE complete run per provider (21 Questions):
-		 * asked at targetPerTier, never deduplicated across runs, rated and
+		 * asked at publishPerRun cards, never deduplicated across runs, rated and
 		 * published as a whole. Sequential decks without this (Fast Friends) are
 		 * oversampled and the best cards per set are kept. */
 		wholeRun?: boolean;
@@ -84,7 +85,7 @@ export function loadDeckSpecs(
 		if (!PLAY_ORDERS.includes(s.play?.order))
 			problems.push(`play.order "${s.play?.order}"`);
 		if (!s.generation?.brief?.trim()) problems.push("generation.brief missing");
-		for (const k of ["candidatesPerTier", "targetPerTier"] as const)
+		for (const k of ["candidatesPerTier", "publishPerRun"] as const)
 			if (!Number.isInteger(s.generation?.[k]) || s.generation[k] < 1)
 				problems.push(`generation.${k}`);
 		for (const [provider, model] of Object.entries(

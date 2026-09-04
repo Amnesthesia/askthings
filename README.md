@@ -71,7 +71,7 @@ play:
     - "Whoever draws the card answers first, then asks it back."
 generation:
   candidatesPerTier: 25   # asked per provider per tier per call
-  targetPerTier: 30       # publish keeps the best cards up to this many
+  publishPerRun: 12       # each run publishes up to this many of the best-ranked per level; no ceiling
   wholeRun: false         # true = one complete run per provider, kept or dropped whole (21 Questions)
   brief: |                # what a card IS, the mechanic, hard rules, exemplars
   models:                 # optional per-provider model override for this deck
@@ -165,7 +165,7 @@ pnpm deduplicate  [deck,...]   exact + Dice, then each card's nearest neighbours
 pnpm rate     [deck,...]       rubric scores 1-5 + judged intensity; keep conversation>=3 && voice>=4
 pnpm safety   [deck,...]       the gate: only a positive "ok" passes
 pnpm rank     [deck,...]       comparative order of the survivors within a level; publish sorts by it
-pnpm publish-cards [deck,...]  safe candidates -> content/{deck}.json, best first, up to targetPerTier
+pnpm publish-cards [deck,...]  safe candidates -> content/{deck}.json, best-ranked first, publishPerRun per level per run
 pnpm calibrate [read|measure]  50-card set for a human keep/cut pass; measure = judge agreement with it
 pnpm rerate   [deck,...]       re-judge published cards + live candidates with the current rubric, in place
 ```

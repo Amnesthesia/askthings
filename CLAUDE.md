@@ -81,14 +81,17 @@ this sentence in that deck's generation brief.
 
 The whole screen is the level's colour (`--game-1..4`, white text >= 4.5:1 across the
 ±14° hue drift, tested), the card is white and bold, four edge chevrons, a menu icon that
-folds down a bar of the other games. `/` opens straight into the first published deck.
+folds down a bar of the other games. `/` opens straight into Spin (one random question from every deck; `spinPool()` in `common.ts`); the deck list below it is what crawlers get.
 Cards are thrown out in the direction of travel, tipping as they go, and the next lands from the other side (320ms, `SLIDE_MS`). Shake to shuffle; shuffle
 returns to the start of the level. Past the last card of a level the next swipe opens the
 next level. A heart stars the card into localStorage; `/favourites/` is a synthetic mixed
 deck (`FavouritesGame`, `linkable={false}`, cards carry their own `kind`). Horizontal swipe = next/previous card in the tier;
 vertical swipe = jump tiers. Desktop: arrow keys on the same axes, visible level indicator
 ("Level 2", never the name) and position ("7 / 12"), and an option to show all tiers at once, one card each. The URL reflects
-the current card (`/{deck}/{id}/`) so any position is linkable and back/forward work.
+the current card (`/{deck}/{id}/`) so any position is linkable and back/forward work. Random
+decks shuffle after hydration on every open, opening card included; only a card named in the
+URL is pinned to the front (a bug on 2026-09-04 pinned the server-rendered first card, so
+everyone opened on the same question).
 `prefers-reduced-motion` respected (Spin's flicker settles instantly under it). Touch targets ≥ 44px.
 The viewport is `viewport-fit=cover` and every game sets a `theme-color` meta to the current
 level colour, drift included (`useThemeColor`), removing it on exit: without one iOS Safari
@@ -131,13 +134,16 @@ pipeline never deletes committed cards. Every stage is resumable; every rejectio
 with its reason. Absolute scores (`rate`) decide the gate; the comparative `rank` pass decides
 which survivors publish, because everything that passes sits at voice 4–5.
 
-**Oversupply by many small calls, never longer ones.** Over 5,030 rated cards, positions 20–24
-of a 25-card response scored below positions 0–4 on every axis (voice 4.19 → 4.11,
-conversation 3.75 → 3.60, gate failures 21% → 25%). So `candidatesPerTier` is the size of ONE
-call (12 for question decks) and `generate` issues as many calls per (deck, level, provider)
-as it takes for the level to hold `oversupply` × `targetPerTier` (default 3) unrejected
-candidates; each call's prompt names its call number, which spreads subjects and gives it its
-own cache key. A level already over its oversupply asks for nothing.
+**Many small calls, never longer ones; no ceiling on a deck.** Over 5,030 rated cards,
+positions 20–24 of a 25-card response scored below positions 0–4 on every axis (voice 4.19 →
+4.11, conversation 3.75 → 3.60, gate failures 21% → 25%). So `candidatesPerTier` is the size of
+ONE call (12 for question decks) and `generate` makes `callsPerLevel` (default 2) calls per
+(deck, level, provider) every run; each call's prompt names its call number, which spreads
+subjects and gives it its own cache key. There is no target to fill: every run adds to the
+pool, `rank` re-orders the whole `safe` pool, and `publish` adds up to `publishPerRun` of the
+best per level on top of what is there. Decks grow every run; nothing is removed by the
+pipeline (decision 2026-09-04: "always pick out the best for every round, expand the pools,
+never delete unless told").
 
 **Subject steering is on** (`GEN_STEER=0` to A/B it off): each call gets a rotating slice of
 the subject list plus a shape/time/frame line. Measured on Inquisitives, 400 vs 411 cards,
@@ -160,7 +166,7 @@ for smoke tests. Stages call `callJsonMany`, never one call per card.
 price table (`src/pricing.ts`, prices verified 2026-09-03), accumulated per provider:
 `MAX_USD_PER_PROVIDER` (default 10) stops that provider, `MAX_USD` (default 25) stops the run,
 `MAX_CALLS` (default 1000) is the count backstop. Raised from 5 / 12 on 2026-09-04 when
-oversupply became the default (one 25-per-level pass over six decks measured $4.89). Rerunning `generate` after a killed run is a fresh spend, not a cache hit: the avoid-list moved with the candidates the first run flushed, so every prompt differs. A full run of every deck is estimated at
+the run became many small calls per level (one 25-per-level pass over six decks measured $4.89). Rerunning `generate` after a killed run is a fresh spend, not a cache hit: the avoid-list moved with the candidates the first run flushed, so every prompt differs. A full run of every deck is estimated at
 ≈ $5 total (Anthropic ≈ 2.3, Google ≈ 1.3, OpenAI ≈ 1.4); the run report prints measured $
 per provider so the estimate is corrected by data.
 
@@ -200,8 +206,8 @@ Judging, one model per stage so scores are comparable: dedupe tiebreak + `rate` 
 
 ### Quality levers
 
-Oversupply and select: many 12-card calls until a level holds 3× its target (see the pipeline
-section), then `rank` orders the survivors and publish keeps the top. Writer self-rates
+Many 12-card calls per level per run (see the pipeline section), then `rank` orders the whole
+pool and publish adds the top `publishPerRun` per level. Writer self-rates
 `intensity`; code drops cards > 1 step from the requested tier; `rate` re-assigns tier from
 the judge. Rubric 1–5: `conversation`, `intellectual`, `emotional`, `depth`, `voice`, and
 (`rate@5`, 2026-09-04) `escapability` (how easy a polite non-answer is; LOW is good, the proxy
@@ -259,8 +265,8 @@ disabled, not carried.
 
 ### Per-deck prompts
 
-One specialised brief per deck in `decks.yml` (`brief:` block), several 12-card calls per
-(deck, level, provider) until the level holds its oversupply.
+One specialised brief per deck in `decks.yml` (`brief:` block), `callsPerLevel` 12-card calls
+per (deck, level, provider) every run.
 Each brief: what a card IS, the mechanic (write for how it is played), hard format rules code
 can check, tier guidance, 3–4 exemplars in the house voice. Summaries:
 

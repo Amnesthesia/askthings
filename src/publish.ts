@@ -1,6 +1,7 @@
 // pnpm publish-cards [deck,...] ("publish" alone is a pnpm built-in) — move safe candidates into content/{deck}.json.
-// Additive: never removes a card. Keeps the best up to targetPerTier per tier;
-// a sequential deck takes exactly one whole run, and only while it is empty.
+// Additive: never removes a card. Each run adds up to publishPerRun of the
+// best-ranked eligible cards per level, so decks grow every run with no ceiling;
+// a whole-run deck takes exactly one run, and only while it is empty.
 
 import {
 	type Candidate,
@@ -78,7 +79,7 @@ function publishDeck(spec: DeckSpec) {
 			// warm … 21 the closer), so the best passing card at each position from
 			// any provider's run keeps the arc. Nine whole runs in a row were sunk
 			// by one weak card each, so runs are no longer kept or dropped whole.
-			const n = spec.generation.targetPerTier;
+			const n = spec.generation.publishPerRun;
 			const picked: Candidate[] = [];
 			for (let pos = 0; pos < n; pos++) {
 				const options = safe
@@ -105,7 +106,7 @@ function publishDeck(spec: DeckSpec) {
 				);
 		}
 	} else {
-		// Best first, then fill each tier up to its target. A canonical thought
+		// Best first, publishPerRun per level this run. A canonical thought
 		// experiment retold under three titles is one card: the first (best) one
 		// per normalised origin is kept, the rest rejected with the reason.
 		const originsSeen = new Set(
@@ -113,12 +114,10 @@ function publishDeck(spec: DeckSpec) {
 				.map((c) => (c.origin ? normaliseText(c.origin) : ""))
 				.filter(Boolean),
 		);
+		// Room is per run, not per deck: what is already published never counts
+		// against what this run may add.
 		const room = new Map(
-			spec.tiers.map((t) => [
-				t.level,
-				spec.generation.targetPerTier -
-					deck.cards.filter((c) => c.tier === t.level).length,
-			]),
+			spec.tiers.map((t) => [t.level, spec.generation.publishPerRun]),
 		);
 		chosen = [];
 		for (const c of [...safe].sort((a, b) => quality(b) - quality(a))) {
@@ -139,7 +138,10 @@ function publishDeck(spec: DeckSpec) {
 			}
 			const tier = tierOf(spec, c);
 			if ((room.get(tier) ?? 0) <= 0) {
-				count(reasons, `level ${tier} full (left as safe)`);
+				count(
+					reasons,
+					`level ${tier} has its ${spec.generation.publishPerRun} for this run (left as safe)`,
+				);
 				continue;
 			}
 			room.set(tier, (room.get(tier) ?? 0) - 1);

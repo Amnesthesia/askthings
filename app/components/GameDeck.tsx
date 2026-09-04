@@ -132,7 +132,10 @@ export default function GameDeck({
 	const levelPos = levels.indexOf(tier);
 	// biome-ignore lint/correctness/useExhaustiveDependencies: runs once, after hydration
 	useEffect(() => {
-		const keep = id ?? startId;
+		// Only a card named in the URL is pinned. Pinning whatever the server
+		// rendered (the first card in file order) meant every fresh open of a
+		// random deck began on the same question; only the rest was shuffled.
+		const keep = startId;
 		if (deck.play.order === "sequential") {
 			// The server dealt the first n in file order; a session gets a random
 			// n, still in file order, so a deck with more cards than one sitting

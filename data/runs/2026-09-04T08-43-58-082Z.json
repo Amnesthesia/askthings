@@ -1,0 +1,61 @@
+{
+  "at": "2026-09-04T08:43:58.082Z",
+  "mode": "live",
+  "argv": [
+    "inquisitives,never-have-i-ever,fast-friends,would-you-rather,thought-experiments,undercurrent,unaskable"
+  ],
+  "stages": {
+    "safety/never-have-i-ever": {
+      "calls": 2,
+      "input": 3020,
+      "output": 1203,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.01807,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/fast-friends": {
+      "calls": 2,
+      "input": 2653,
+      "output": 1051,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.015816,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/would-you-rather": {
+      "calls": 1,
+      "input": 1540,
+      "output": 463,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.00771,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/thought-experiments": {
+      "calls": 3,
+      "input": 12163,
+      "output": 2430,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.048626,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 8,
+      "input": 19376,
+      "output": 5147,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.090222,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

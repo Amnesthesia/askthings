@@ -41,7 +41,9 @@ function shuffled<T>(items: T[], seed: number): T[] {
 
 async function rankDeck(spec: DeckSpec) {
 	const all = readCandidates(spec.deck);
-	const todo = all.filter((c) => c.status === "safe" && c.rank === undefined);
+	// Every safe card, ranked or not: the pool competes as a whole each run, so a
+	// card from three runs ago and one from today sit in the same batches.
+	const todo = all.filter((c) => c.status === "safe");
 	if (!todo.length || spec.generation.rate === false) return;
 	const percentiles = new Map<Candidate, number[]>();
 	for (let roll = 0; roll < ROLLS; roll++) {

@@ -9,11 +9,13 @@
 # play.howToPlay: shown on the deck page and behind the game's help button.
 # generation.candidatesPerTier: cards asked for in ONE call. Small on purpose:
 #   quality slides with response length, so a level is filled by many small calls.
-# generation.targetPerTier: publish keeps the best cards up to this many.
-# generation.oversupply: generate tops a level up until it holds this many times
-#   its target in unrejected candidates (default 3); rank then picks the best.
+# generation.callsPerLevel: calls per provider per level per run (default 2).
+# generation.publishPerRun: each run publishes up to this many of the best-ranked
+#   eligible cards per level, on top of what is there. Decks grow every run and
+#   nothing is ever removed by the pipeline; the pool of unpublished candidates
+#   keeps competing in later runs.
 # generation.wholeRun: the deck is one complete run per provider (21 Questions):
-#   asked at targetPerTier; publish assembles one run from the best card per position.
+#   asked at publishPerRun cards; publish assembles one run from the best card per position.
 # generation.rateNote: deck format the style guide would otherwise score as a tell.
 # generation.tierFrom: judge (default; the rater's exposure level decides the
 #   published level) | writer (keep the level it was written for).
@@ -38,7 +40,7 @@ inquisitives:
       - "Go as deep as the other person lets you, and no deeper."
   generation:
     candidatesPerTier: 12
-    targetPerTier: 40
+    publishPerRun: 12
     brief: |
       A card is ONE question a curious interviewer would ask a stranger to skip small talk.
       Mechanic: two or more people, any card, any order; whoever draws it answers first.
@@ -99,7 +101,7 @@ never-have-i-ever:
       - "Swipe up when the room is ready for the next level."
   generation:
     candidatesPerTier: 12
-    targetPerTier: 35
+    publishPerRun: 12
     tierFrom: writer
     brief: |
       A card is ONE first-person statement that begins exactly "Never have I ever" and names one
@@ -160,9 +162,9 @@ fast-friends:
       - "Give it about forty-five minutes. Set three is where it lands."
   generation:
     candidatesPerTier: 12
-    # 12 Aron originals (hand-authored) per set plus as many good new cards as the gate
-    # passes; a session deals 12 of the set at random, in file order.
-    targetPerTier: 40
+    # 12 Aron originals (hand-authored) per set plus new cards every run; a session
+    # deals 12 of the set at random, in file order.
+    publishPerRun: 12
     rateNote: >-
       Instructions ("Tell your partner…", "Share…") and two-part cards ("…? Why?") are this
       deck's format, not tells; score the words inside them.
@@ -231,7 +233,7 @@ twenty-one-questions:
   generation:
     wholeRun: true
     candidatesPerTier: 21
-    targetPerTier: 21
+    publishPerRun: 21
     brief: |
       Write ONE complete run of exactly 21 questions to be played in order by two people taking
       turns. This is a sequence, not a pool: it should start warm, move through curious and
@@ -266,7 +268,7 @@ would-you-rather:
       - "Swipe up when the easy ones stop being interesting."
   generation:
     candidatesPerTier: 12
-    targetPerTier: 35
+    publishPerRun: 12
     brief: |
       A card is two options, a and b, that are genuinely hard to choose between and reveal a
       value or a fear, not a gross-out. Mechanic: pick one, then explain; the explanation is the
@@ -317,7 +319,7 @@ thought-experiments:
       - "Nobody has to be consistent. Notice when you are not."
   generation:
     candidatesPerTier: 10
-    targetPerTier: 60
+    publishPerRun: 10
     # Levels are topics (Puzzling / Uncomfortable / Personal) with canonical
     # experiments assigned per level, not exposure: the judge's intensity
     # pushed nearly everything into levels 2-3 and left level 1 with 11 cards.
@@ -393,7 +395,7 @@ undercurrent:
       - "Finish a level before going deeper. Level three is the point."
   generation:
     candidatesPerTier: 12
-    targetPerTier: 30
+    publishPerRun: 12
     rateNote: >-
       Instructions addressed to the other person ("Tell me…", "Guess…") are this deck's
       format, not tells.
@@ -450,7 +452,7 @@ unaskable:
       - "Start at level one. Go up only when both of you nod."
   generation:
     candidatesPerTier: 12
-    targetPerTier: 40
+    publishPerRun: 12
     tierFrom: writer
     safetyNote: >-
       This deck is deliberately confrontational and both players opt in before the first
@@ -553,9 +555,7 @@ improv:
       - "Swipe up for stranger combinations."
   generation:
     candidatesPerTier: 40
-    targetPerTier: 80
-    # Word banks are not ranked, so there is nothing to oversupply for.
-    oversupply: 1
+    publishPerRun: 40
     rate: false
     tierFrom: writer
     brief: |

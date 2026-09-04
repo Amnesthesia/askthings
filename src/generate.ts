@@ -53,9 +53,8 @@ interface Task {
 	calls: number;
 }
 
-/** A level is topped up until it holds this many times its target in
- * unrejected candidates; `generation.oversupply` overrides per deck. */
-const OVERSUPPLY = 3;
+/** Calls per provider per level per run; `generation.callsPerLevel` overrides. */
+const CALLS_PER_LEVEL = 2;
 
 /** Subject and shape steering per call (GEN_STEER=0 turns it off, for A/B
  * runs). The first corpus measured without it: identity 292, friendship 284,
@@ -251,30 +250,19 @@ async function main() {
 					spec,
 					tier,
 					provider,
-					n: spec.generation.targetPerTier,
+					n: spec.generation.publishPerRun,
 					call: 1,
 					calls: 1,
 				})),
 			);
-		// Small calls, many of them: quality slides with response length (over
-		// 5,030 rated cards, positions 20-24 of a 25-card answer scored below
-		// positions 0-4 on every axis), so each call asks for about one level's
-		// worth and the level is topped up until it holds `oversupply` × target
-		// in cards that have not been rejected. Rank then picks the best.
+		// Small calls, a fixed number of them per run: quality slides with response
+		// length (over 5,030 rated cards, positions 20-24 of a 25-card answer scored
+		// below positions 0-4 on every axis). There is no target to fill: every run
+		// adds to the pool, rank orders it, publish takes the best of it.
 		const n = perTier ?? spec.generation.candidatesPerTier;
-		const candidates = readCandidates(spec.deck);
-		const deck = readDeck(spec);
-		return spec.tiers.flatMap((tier) => {
-			const have =
-				deck.cards.filter((c) => c.tier === tier.level).length +
-				candidates.filter(
-					(c) => c.tier === tier.level && c.status !== "rejected",
-				).length;
-			const want =
-				(spec.generation.oversupply ?? OVERSUPPLY) *
-				spec.generation.targetPerTier;
-			const calls = Math.ceil(Math.max(0, want - have) / n / providers.length);
-			return providers.flatMap((provider) =>
+		const calls = spec.generation.callsPerLevel ?? CALLS_PER_LEVEL;
+		return spec.tiers.flatMap((tier) =>
+			providers.flatMap((provider) =>
 				Array.from({ length: calls }, (_, i) => ({
 					spec,
 					tier,
@@ -283,16 +271,12 @@ async function main() {
 					call: i + 1,
 					calls,
 				})),
-			);
-		});
+			),
+		);
 	});
 	console.log(
 		`generate: ${tasks.length} requests (${decks.length} decks × providers ${providers.join(",")})`,
 	);
-	if (!tasks.length) {
-		console.log("  every level already holds its oversupply; nothing to ask");
-		return;
-	}
 
 	// One batch per (provider, model), all in parallel. Requests are built up
 	// front so every avoid-list reflects the same starting state. Grouped by

@@ -11,7 +11,9 @@ import {
 	cardHeadline,
 	DECK_KINDS,
 	type Deck,
+	type DeckKind,
 	type DilemmaCard,
+	EMPTY_SCORES,
 	IMPROV_SLOTS,
 	type ImprovCard,
 	INTENSITIES,
@@ -259,4 +261,71 @@ export function publishedDecks(root = CONTENT_ROOT): Deck[] {
 /** Headline of a card given its deck — the id basis. */
 export function headlineOf(deck: Deck, card: Card): string {
 	return cardHeadline(deck.kind, card);
+}
+
+/**
+ * The Spin pool: every published card that works out of its deck. Never Have
+ * I Ever is a statement game (its cards only work as that game) and improv is
+ * word banks, so both stay out. Provenance is dropped: a third of the payload
+ * and never shown. `assumesHistory` comes from the rater, never from the text.
+ * Used by /spin/ and by the home page, which opens straight into Spin.
+ */
+export function spinPool() {
+	const decks = publishedDecks().filter(
+		(d) => d.kind !== "improv" && d.deck !== "never-have-i-ever",
+	);
+	return {
+		decks,
+		links: decks.map((d) => ({ deck: d.deck, name: d.name })),
+		// Only what the machine reads: the payload ships inline on the home page,
+		// and the full objects weighed 1.4 MB for 1,300 cards.
+		cards: decks.flatMap((deck) =>
+			deck.cards.map((card) => {
+				const { id, tier, intensity, scores, facets } = card;
+				const text =
+					deck.kind === "question"
+						? { text: (card as QuestionCard).text }
+						: deck.kind === "pair"
+							? { a: (card as PairCard).a, b: (card as PairCard).b }
+							: {
+									title: (card as DilemmaCard).title,
+									setup: (card as DilemmaCard).setup,
+									dilemma: (card as DilemmaCard).dilemma,
+									probes: (card as DilemmaCard).probes,
+								};
+				return {
+					...text,
+					id,
+					tier,
+					intensity,
+					tags: [],
+					origin: null,
+					gen: null,
+					scores: {
+						...EMPTY_SCORES,
+						conversation: scores.conversation,
+						depth: scores.depth,
+					},
+					facets: facets
+						? {
+								target: null,
+								time: null,
+								subjects: facets.subjects,
+								relational: facets.relational,
+								shape: facets.shape,
+							}
+						: undefined,
+					kind: deck.kind,
+					deck: deck.deck,
+					deckName: deck.name,
+					assumesHistory: card.assumesHistory === true,
+				} as Card & {
+					kind: DeckKind;
+					deck: string;
+					deckName: string;
+					assumesHistory: boolean;
+				};
+			}),
+		),
+	};
 }
