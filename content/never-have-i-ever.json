@@ -39,7 +39,7 @@
       "text": "Never have I ever been relieved when a friend's good news fell through.",
       "id": "d7199602c8",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "jealousy",
         "friendship"
@@ -55,34 +55,24 @@
         "conversation": 4,
         "intellectual": 2,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever let my parents believe a version of my life that isn't true.",
-      "id": "d60bb1d1e3",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "family",
-        "honesty"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.645Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
+        "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -103,18 +93,33 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 4,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever told a parent I hated them.",
       "id": "4b5f067be1",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "family",
         "anger"
@@ -127,19 +132,33 @@
         "at": "2026-09-03T12:17:50.645Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 5,
-        "depth": 4,
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever kept someone around because I was scared of being alone.",
       "id": "c4ce7fd8ed",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 2,
       "tags": [
         "loneliness",
         "relationships"
@@ -154,10 +173,24 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 5,
+        "emotional": 4,
         "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -179,10 +212,24 @@
       "scores": {
         "conversation": 4,
         "intellectual": 1,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -206,8 +253,22 @@
         "intellectual": 2,
         "emotional": 4,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -228,11 +289,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 4,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -252,19 +328,33 @@
         "at": "2026-09-03T12:17:50.646Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
+        "conversation": 3,
+        "intellectual": 1,
         "emotional": 4,
-        "depth": 4,
+        "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever cried straight after sex.",
       "id": "7a4dc68cf8",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "sex",
         "emotion"
@@ -278,43 +368,33 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 5,
+        "intellectual": 1,
+        "emotional": 4,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever said “I love you” without meaning it.",
-      "id": "267b46e71c",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "love",
-        "dishonesty"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.597Z"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever contacted an ex while hiding it from my partner.",
       "id": "e3e8d9ce93",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "exes",
         "secrecy"
@@ -329,35 +409,24 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever told someone I loved them without meaning it.",
-      "id": "29da8769a5",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "romance",
-        "lies"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.792Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
         "emotional": 4,
-        "depth": 4,
+        "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -382,7 +451,21 @@
         "emotional": 4,
         "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -402,62 +485,26 @@
         "at": "2026-09-03T12:19:59.793Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever dated someone knowing they were already in a committed relationship.",
-      "id": "0fcbedb061",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "infidelity",
-        "dating"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.793Z"
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever used a secret confided in me against that person later.",
-      "id": "008f26a20b",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "betrayal",
-        "secrets"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.793Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -482,66 +529,29 @@
         "emotional": 4,
         "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever fallen in love with two people at the exact same time.",
-      "id": "cacaa48ed3",
-      "tier": 4,
-      "intensity": 3,
-      "tags": [
-        "love",
-        "romance",
-        "feelings"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.794Z"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever said I love you during sex without actually meaning it.",
-      "id": "1d3f6a90a1",
-      "tier": 4,
-      "intensity": 3,
-      "tags": [
-        "sex",
-        "love",
-        "lies"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.794Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "work"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever practised a conversation in the shower before having it.",
       "id": "acfcdb5f0a",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "rehearsing",
         "habits"
@@ -554,19 +564,33 @@
         "at": "2026-09-03T12:17:50.644Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
-        "depth": 3,
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
       "text": "Never have I ever let a stranger think I was someone else.",
       "id": "ed36fe4ef2",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "mistakenidentity"
       ],
@@ -580,10 +604,24 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 2,
-        "depth": 3,
+        "emotional": 1,
+        "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -607,15 +645,30 @@
         "intellectual": 1,
         "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever stayed in a relationship months after I knew it was over.",
       "id": "3ddedf35fe",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "relationships",
         "regret"
@@ -633,14 +686,28 @@
         "emotional": 4,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever let a friend take the blame for something I did.",
       "id": "16f4c312d9",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "friendship",
         "guilt"
@@ -654,18 +721,33 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever pretended to be happy for someone at their wedding.",
       "id": "c56a0380d3",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "jealousy",
         "weddings"
@@ -680,17 +762,31 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 4,
+        "emotional": 3,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever let a friendship die because I stopped replying.",
       "id": "452a223040",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "friendship",
         "distance"
@@ -704,11 +800,25 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
+        "intellectual": 1,
+        "emotional": 3,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -728,12 +838,27 @@
         "at": "2026-09-03T12:17:50.645Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 3,
+        "conversation": 3,
+        "intellectual": 2,
         "emotional": 3,
-        "depth": 3,
+        "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -754,11 +879,25 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 4,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "feeling"
       }
     },
     {
@@ -779,18 +918,34 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 4,
-        "depth": 3,
+        "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "family",
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever cancelled on a friend because I couldn't face being seen.",
       "id": "7d0580bba4",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "mentalhealth",
         "friendship"
@@ -804,11 +959,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 4,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -830,10 +1000,24 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 4,
+        "emotional": 3,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -854,11 +1038,25 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
+        "intellectual": 1,
+        "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -879,11 +1077,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -904,11 +1117,25 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -929,11 +1156,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
+        "intellectual": 1,
+        "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -954,11 +1196,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -979,43 +1236,32 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 4,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever wanted someone who was completely wrong for me and gone anyway.",
-      "id": "72dd14dbf4",
-      "tier": 4,
-      "intensity": 2,
-      "tags": [
-        "desire",
-        "regret"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.646Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever stayed friends with an ex I still wanted.",
       "id": "161cdc42b8",
       "tier": 4,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "exes",
         "longing"
@@ -1033,7 +1279,21 @@
         "emotional": 4,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1055,10 +1315,26 @@
       "scores": {
         "conversation": 4,
         "intellectual": 1,
-        "emotional": 4,
-        "depth": 3,
+        "emotional": 3,
+        "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body",
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1082,15 +1358,30 @@
         "intellectual": 1,
         "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever fallen for someone who wanted to keep things casual.",
       "id": "a98d15377f",
       "tier": 4,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "feelings",
         "casual"
@@ -1103,63 +1394,26 @@
         "at": "2026-09-03T12:18:35.599Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever revealed a secret during pillow talk.",
-      "id": "488ffd527c",
-      "tier": 4,
-      "intensity": 3,
-      "tags": [
-        "secrets",
-        "pillowtalk"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.599Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever kept a physical souvenir from a past lover.",
-      "id": "5e56a935bf",
-      "tier": 4,
-      "intensity": 2,
-      "tags": [
-        "exes",
-        "nostalgia",
-        "secrets"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.794Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
+        "conversation": 3,
+        "intellectual": 1,
         "emotional": 3,
-        "depth": 3,
+        "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1181,44 +1435,34 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever had a deeply inappropriate dream about someone in this room.",
-      "id": "ceee2c9297",
-      "tier": 4,
-      "intensity": 3,
-      "tags": [
-        "dreams",
-        "group",
-        "intimacy"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.794Z"
-      },
-      "scores": {
-        "conversation": 4,
         "intellectual": 1,
         "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever stopped midway through sex because it was too awkward.",
       "id": "db2daed77f",
       "tier": 4,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "sex",
         "awkward",
@@ -1235,42 +1479,31 @@
         "conversation": 4,
         "intellectual": 1,
         "emotional": 3,
-        "depth": 3,
+        "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever lied about my number of past sexual partners.",
-      "id": "3de392adc9",
-      "tier": 4,
-      "intensity": 2,
-      "tags": [
-        "sex",
-        "lies",
-        "insecurity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.794Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever kissed someone at a wedding I wasn't invited to.",
       "id": "b4023501d4",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "weddings",
         "crushes"
@@ -1283,44 +1516,33 @@
         "at": "2026-09-03T12:17:50.645Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever told a taxi driver a story about myself that was invented.",
-      "id": "b1ce179d49",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "strangers",
-        "lies"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.645Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever taken credit at work for something I didn't do.",
       "id": "e7375ae48a",
       "tier": 2,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "work",
         "credit"
@@ -1336,34 +1558,24 @@
         "conversation": 3,
         "intellectual": 2,
         "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever sent a message about someone to that exact someone.",
-      "id": "02a4b32a2d",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "texting",
-        "mistakes"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.645Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 1,
-        "emotional": 3,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1388,7 +1600,23 @@
         "emotional": 3,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "body",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1408,12 +1636,26 @@
         "at": "2026-09-03T12:17:50.646Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 1,
         "emotional": 3,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1434,11 +1676,25 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 2,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1458,37 +1714,26 @@
         "at": "2026-09-03T12:17:50.646Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 1,
         "emotional": 3,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever regifted something to someone who knew the original giver.",
-      "id": "28b184eb90",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "gifts",
-        "awkwardness"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.596Z"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1509,11 +1754,26 @@
       },
       "scores": {
         "conversation": 3,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 1,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1533,19 +1793,33 @@
         "at": "2026-09-03T12:17:50.644Z"
       },
       "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
       }
     },
     {
       "text": "Never have I ever re-read my own message after sending it, just to admire it.",
       "id": "784421e215",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "texting",
         "vanity"
@@ -1562,8 +1836,22 @@
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -1586,34 +1874,23 @@
         "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever pretended my phone was ringing to escape a conversation.",
-      "id": "2794592e00",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "phones",
-        "escape"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.644Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1636,16 +1913,30 @@
         "conversation": 3,
         "intellectual": 2,
         "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 1,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever pretended to be busy when I saw someone I knew approaching.",
       "id": "19a34bc410",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "avoidance",
         "social"
@@ -1661,9 +1952,23 @@
         "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1686,41 +1991,31 @@
         "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever pretended to like a gift right to the giver's face.",
-      "id": "ee9195715f",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "gifts",
-        "politeness"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.644Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home",
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever called in sick to spend the day doing nothing.",
       "id": "706b05f5e9",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "work",
         "lies"
@@ -1736,16 +2031,30 @@
         "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 1,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever read someone's messages over their shoulder on a train.",
       "id": "38438fd29a",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "nosy",
         "strangers"
@@ -1761,16 +2070,28 @@
         "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 1,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever taken the last of something and blamed someone else.",
       "id": "6c31a8b1fc",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "household",
         "blame"
@@ -1784,11 +2105,26 @@
       },
       "scores": {
         "conversation": 3,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1808,19 +2144,34 @@
         "at": "2026-09-03T12:17:50.645Z"
       },
       "scores": {
-        "conversation": 3,
+        "conversation": 4,
         "intellectual": 2,
         "emotional": 3,
-        "depth": 2,
+        "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever flirted with someone to get better service.",
       "id": "ad5a04a395",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "flirting",
         "favours"
@@ -1836,9 +2187,23 @@
         "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1863,7 +2228,21 @@
         "emotional": 3,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -1883,12 +2262,28 @@
         "at": "2026-09-03T12:17:50.645Z"
       },
       "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "money",
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1908,12 +2303,24 @@
         "at": "2026-09-03T12:18:35.595Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 2,
         "intellectual": 1,
-        "emotional": 2,
+        "emotional": 1,
         "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -1938,7 +2345,21 @@
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -1958,44 +2379,35 @@
         "at": "2026-09-03T12:18:35.596Z"
       },
       "scores": {
-        "conversation": 3,
+        "conversation": 4,
         "intellectual": 1,
-        "emotional": 2,
+        "emotional": 3,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever lied about my height on a dating app.",
-      "id": "8d3ae62c81",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "dating",
-        "lying"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.596Z"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "money",
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever pretended to be asleep to avoid helping someone.",
       "id": "a53fe6c17d",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "avoidance",
         "home"
@@ -2013,14 +2425,28 @@
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever given someone the wrong number on purpose.",
       "id": "c82b9c2433",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "dating",
         "rejection"
@@ -2038,14 +2464,28 @@
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever eaten food with someone else's name on it.",
       "id": "a6053ec8a3",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "food",
         "roommates"
@@ -2063,14 +2503,29 @@
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Never have I ever kept using an ex's streaming account.",
       "id": "7abf349bc9",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "exes",
         "television"
@@ -2088,32 +2543,21 @@
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever kept extra change after noticing a cashier's mistake.",
-      "id": "53e2bbb8a2",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "money",
-        "shops"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.596Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -2138,7 +2582,21 @@
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -2159,37 +2617,25 @@
       },
       "scores": {
         "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever eaten a hotel breakfast I didn't actually pay for.",
-      "id": "2ca74d6d12",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "food",
-        "travel",
-        "mischief"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.791Z"
-      },
-      "scores": {
-        "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -2212,116 +2658,544 @@
       "scores": {
         "conversation": 3,
         "intellectual": 1,
-        "emotional": 3,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever lied about reading a famous book to look intelligent.",
-      "id": "9503d59160",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "books",
-        "vanity",
-        "lies"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.791Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "Never have I ever sent a text to completely the wrong person.",
-      "id": "69ae829070",
-      "tier": 1,
-      "intensity": 2,
+      "text": "Never have I ever wanted someone in this room.",
+      "id": "2fb35437b5",
+      "tier": 4,
+      "intensity": 4,
       "tags": [
-        "texting",
-        "mistakes"
+        "attraction",
+        "present"
       ],
       "origin": null,
       "gen": {
         "provider": "anthropic",
         "model": "claude-opus-5",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.644Z"
+        "at": "2026-09-03T12:17:50.646Z"
       },
       "scores": {
-        "conversation": 3,
+        "conversation": 5,
         "intellectual": 1,
-        "emotional": 3,
-        "depth": 2,
-        "voice": 3,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
-      "text": "Never have I ever taken forty photos to get one decent one of myself.",
-      "id": "953f83a6d1",
-      "tier": 1,
-      "intensity": 1,
+      "text": "Never have I ever used a friend's secret to win an argument.",
+      "id": "82d3e8e652",
+      "tier": 3,
+      "intensity": 3,
       "tags": [
-        "photos",
-        "vanity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.644Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 3,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever confidently mispronounced a word in public.",
-      "id": "9fc4b76fba",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "words",
-        "embarrassment"
+        "friendship",
+        "betrayal"
       ],
       "origin": null,
       "gen": {
         "provider": "openai",
         "model": "gpt-5.6-sol",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
+        "at": "2026-09-03T12:18:35.597Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever ignored a call from someone who needed me.",
+      "id": "b5b690dc81",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "guilt",
+        "support"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.597Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever made a promise I already knew I would break.",
+      "id": "65cc336136",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "promises",
+        "dishonesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.597Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever lied to a partner about my number.",
+      "id": "6f78333c9a",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "sex",
+        "lying"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.646Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever woken up beside someone and regretted staying.",
+      "id": "a168f5d835",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "regret",
+        "hookups"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.599Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever slept with an ex just because I was bored.",
+      "id": "78c4f14cba",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "exes",
+        "sex",
+        "boredom"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.794Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever invented a whole excuse to leave a date early.",
+      "id": "7d7854600d",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "dating",
+        "excuses"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.645Z"
       },
       "scores": {
         "conversation": 3,
         "intellectual": 1,
-        "emotional": 1,
-        "depth": 1,
+        "emotional": 2,
+        "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "Never have I ever called someone by the wrong name twice.",
-      "id": "f7f36d7eb1",
+      "text": "Never have I ever been caught mid-hookup by someone who lived there.",
+      "id": "42f630bfca",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "sex",
+        "embarrassment"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.646Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever slept with an ex after swearing it was over.",
+      "id": "1bcc9e21c5",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "exes",
+        "breakups"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.599Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever said the wrong name during sex.",
+      "id": "2b3ba672df",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "sex",
+        "mistakes"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.599Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever hidden the evidence after breaking something in someone else's house.",
+      "id": "521e405c71",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "mischief",
+        "accidents",
+        "secrets"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.792Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever snooped through a bathroom cabinet at someone's house.",
+      "id": "65df1a3af4",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "nosy",
+        "houses"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.645Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever forgotten someone's name mid-introduction.",
+      "id": "7d0d7e1d69",
       "tier": 1,
       "intensity": 1,
       "tags": [
@@ -2330,10 +3204,10 @@
       ],
       "origin": null,
       "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
+        "provider": "anthropic",
+        "model": "claude-opus-5",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
+        "at": "2026-09-03T12:17:50.644Z"
       },
       "scores": {
         "conversation": 3,
@@ -2341,49 +3215,1708 @@
         "emotional": 2,
         "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "Never have I ever nodded along during a conversation I could not hear.",
-      "id": "62b0713a34",
+      "text": "Never have I ever pretended to have read a book in a conversation.",
+      "id": "755079a43a",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "books",
+        "bluffing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.645Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever made up a dietary restriction to avoid a meal.",
+      "id": "efffc06285",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "food",
+        "excuses"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.645Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever laughed at the wrong moment in a serious meeting.",
+      "id": "4188d8b13d",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "conversation",
+        "work",
+        "laughing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:10:16.973Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever got off a bus a stop early to avoid talking to someone.",
+      "id": "3b7e82986a",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "transport",
+        "avoidance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:10:16.973Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever sent a kissing face emoji to my boss.",
+      "id": "6cb13f9ca5",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "work",
+        "accidents"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:11:56.816Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever told a hairdresser I loved it and hated it.",
+      "id": "2b818c402a",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "hair",
+        "fib"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:10:16.973Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever introduced myself to someone I had already met.",
+      "id": "a0a414dcaa",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "introductions",
+        "memory"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:18.958Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever hidden a pile of washing in the oven before guests arrived.",
+      "id": "9aff014871",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "home",
+        "guests"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:10:16.973Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever let my parents believe I was doing better than I was.",
+      "id": "d32bd63e01",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "shame"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.289Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever left a hospital visit early because I couldn't handle it.",
+      "id": "3909a52410",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "illness",
+        "guilt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "family",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever stopped visiting a grandparent because it got too hard.",
+      "id": "8eceec813a",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "regret"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "mortality",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever moved somewhere new to get away from one person.",
+      "id": "dc9c0b0dd3",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "escape",
+        "love"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever avoided visiting a relative before they died.",
+      "id": "4f465b5803",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "family",
+        "regret"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:34.077Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "family",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever let someone apologise for something that was my fault.",
+      "id": "c46663d2d7",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "guilt",
+        "conflict"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever avoided a friend after someone in their family died.",
+      "id": "15bb45814b",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "grief",
+        "avoidance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "mortality",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever told the same lie so long that I believed it.",
+      "id": "6600ac079d",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "honesty",
+        "self"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever given up on something I still tell people I'm doing.",
+      "id": "aea91d70c9",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "ambition",
         "pretending"
       ],
       "origin": null,
       "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "failure",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever loved someone more than they loved me and stayed anyway.",
+      "id": "1689428ad2",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "heartbreak"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:42.290Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever texted someone else while lying next to a partner.",
+      "id": "98fab1b42b",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "cheating",
+        "phones"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:44.722Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever told a partner a fantasy involving someone we both knew.",
+      "id": "f143f1d1e8",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "fantasy",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:44.722Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever tried something in bed only to keep someone interested.",
+      "id": "43faa8efa0",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "sex",
+        "insecurity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:44.722Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever wanted a friend's partner for years and said nothing.",
+      "id": "ecd8087fef",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "crush",
+        "friends"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:44.722Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever told a friend I loved them and lost the friendship.",
+      "id": "1489bd0492",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "confession",
+        "friends"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:44.722Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever hidden alcohol from the people I live with.",
+      "id": "bc685fc7b6",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "habits",
+        "shame"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:21.362Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home",
+          "failure",
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever ended a friendship because their life was going better than mine.",
+      "id": "98c74d8d5e",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "envy"
+      ],
+      "origin": null,
+      "gen": {
         "provider": "openai",
         "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:34.077Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever ended a relationship the morning after our best sex.",
+      "id": "ea9ffe96c2",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "breakup",
+        "sex"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:55.508Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever fallen asleep beside someone while thinking about somebody else.",
+      "id": "bdfbb780d6",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "longing",
+        "bed"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:55.508Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever kissed someone during our breakup conversation.",
+      "id": "7d7b888da4",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "breakup",
+        "kissing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:55.508Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever read old love letters in bed beside someone new.",
+      "id": "a3616f494f",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "letters",
+        "longing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:55.508Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever had sex just to end an argument.",
+      "id": "dd7d3e9ed0",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "sex",
+        "conflict"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:44.722Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever kept a jumper someone left at my place.",
+      "id": "1491fd7d68",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "borrowing",
+        "clothes"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
       },
       "scores": {
         "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
         "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "Never have I ever joined a queue without knowing what it was for.",
-      "id": "19a0e0eee0",
-      "tier": 1,
+      "text": "Never have I ever cried a bit on purpose to get out of trouble.",
+      "id": "c12ddbaa29",
+      "tier": 2,
       "intensity": 1,
       "tags": [
-        "crowds",
-        "confusion"
+        "manipulation",
+        "tears"
       ],
       "origin": null,
       "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever stretched the truth on my CV and got the job.",
+      "id": "7708dd239c",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "work",
+        "lies"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever hidden in the car for a nap during a family gathering.",
+      "id": "8d68d0cfc4",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "family",
+        "escape"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 5,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever told someone I loved their gift and binned it that week.",
+      "id": "9878ae8f57",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "gifts",
+        "lies"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever searched my own name in a colleague's email inbox.",
+      "id": "86d0344a82",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "snooping"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:13:14.408Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever worn something to an event and returned it the next day.",
+      "id": "ab6146e6e8",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "shopping",
+        "clothes"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever said my phone died when I was just ignoring someone.",
+      "id": "de5f93479f",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "phones",
+        "avoidance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever told a hairdresser I loved it and fixed it at home.",
+      "id": "c174ae4750",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "hair",
+        "politeness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever forged a parent's signature on a school note.",
+      "id": "e660b6b930",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "school",
+        "lies"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:12:31.952Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever fallen asleep in the cinema and woken myself up by snoring.",
+      "id": "dceb61cfb6",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "sleep",
+        "public"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T04:11:56.816Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Never have I ever stepped on a squeaky toy during a serious conversation.",
+      "id": "9e0a6d149c",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "awkward",
+        "interruption"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:53:16.223Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever answered the phone in a fake professional voice.",
+      "id": "d410652eea",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "phone",
+        "persona"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:53:16.223Z"
       },
       "scores": {
         "conversation": 3,
@@ -2391,149 +4924,115 @@
         "emotional": 1,
         "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "Never have I ever answered a question meant for someone else.",
-      "id": "ed8862e0c1",
+      "text": "Never have I ever greeted a dog while ignoring its owner.",
+      "id": "d750d97fbb",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "conversation",
+        "animals",
+        "social"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:53:16.223Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Never have I ever mispronounced a word because I had only ever read it.",
+      "id": "972a2a8b24",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "speaking",
+        "language"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:42:13.956Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever liked an old post while looking through someone’s profile.",
+      "id": "f80fa01ce2",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "social media",
         "awkward"
       ],
       "origin": null,
       "gen": {
         "provider": "openai",
         "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever clapped at the wrong moment.",
-      "id": "cd4bce1a92",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "events",
-        "timing"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever mistaken a stranger for a shop employee.",
-      "id": "f035eb0896",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "shopping",
-        "mistakes"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 1,
-        "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever used the wrong emoji in a serious message.",
-      "id": "f2e9b512aa",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "messages",
-        "emoji"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever been caught making faces at my reflection.",
-      "id": "3d6835a6ec",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "mirrors",
-        "silliness"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.595Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Never have I ever hidden my screen when someone walked by.",
-      "id": "ac630a06f9",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "privacy",
-        "work"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.789Z"
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:42:30.973Z"
       },
       "scores": {
         "conversation": 3,
@@ -2541,7 +5040,522 @@
         "emotional": 2,
         "depth": 2,
         "voice": 3,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever unmuted myself halfway through saying something about the meeting.",
+      "id": "f1c413aca3",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "video calls"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:13.703Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever sat in the wrong seat at the cinema and refused to move.",
+      "id": "72025d4009",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "cinema",
+        "stubborn"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:13.703Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever let a rumour about me spread because I liked it.",
+      "id": "1d6d5bec06",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "reputation",
+        "gossip"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:52:30.716Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever hit the lift close button while making eye contact with someone.",
+      "id": "cd69ad1b41",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "public",
+        "rudeness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:42:28.901Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever liked a three-year-old photo on someone's social media.",
+      "id": "ef44732490",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "internet",
+        "awkward"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:42:13.956Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever said goodbye to someone and then walked away in the same direction.",
+      "id": "42133b9db6",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "social",
+        "walking"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:42:13.956Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever scrolled back and forth on my home screen to look busy.",
+      "id": "d47f6cce6c",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "phone",
+        "public"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:42:13.956Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Never have I ever ordered the dish I could pronounce instead of the one I wanted.",
+      "id": "8ce8eb0361",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "food",
+        "restaurants"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:52:20.296Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever fallen over while leaning back in a chair.",
+      "id": "a40bcf3ee4",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "clumsiness",
+        "furniture"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:53:16.222Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Never have I ever frozen when asked for my own phone number.",
+      "id": "c6f9c9f5a1",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "memory",
+        "panic"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:53:16.222Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Never have I ever walked into a glass wall.",
+      "id": "b8579a21eb",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "clumsy",
+        "public"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:13.703Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever tripped on a flat pavement and turned it into a jog.",
+      "id": "60629182f4",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "clumsy",
+        "street"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:13.703Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Never have I ever sung the wrong words to a song in front of people.",
+      "id": "c88ba3da59",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "music",
+        "singing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:13.703Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "fact"
       }
     }
   ]

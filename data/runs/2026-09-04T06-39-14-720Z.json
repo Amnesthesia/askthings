@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-04T06:39:14.720Z",
+  "mode": "live",
+  "argv": [
+    "fast-friends"
+  ],
+  "stages": {
+    "generate": {
+      "calls": 9,
+      "input": 27063,
+      "output": 29575,
+      "cached": 2352,
+      "cacheHits": 0,
+      "usd": 0.5984387999999999,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 3,
+      "input": 12656,
+      "output": 6950,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.23703000000000002,
+      "retries": 0,
+      "failures": 0
+    },
+    "gemini": {
+      "calls": 3,
+      "input": 8530,
+      "output": 16575,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.21595999999999999,
+      "retries": 0,
+      "failures": 0
+    },
+    "openai": {
+      "calls": 3,
+      "input": 5877,
+      "output": 6050,
+      "cached": 2352,
+      "cacheHits": 0,
+      "usd": 0.1454488,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

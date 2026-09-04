@@ -34,10 +34,14 @@ export interface DeckSpec {
 	play: Play;
 	generation: {
 		brief: string;
-		/** Asked per provider per tier per call. */
+		/** Cards asked for in ONE call. Small on purpose: quality slides with
+		 * response length, so a level is filled by many small calls. */
 		candidatesPerTier: number;
 		/** Publish keeps the best cards up to this many per tier. */
 		targetPerTier: number;
+		/** Generate tops a level up until it holds this many times its target in
+		 * unrejected candidates (default 3 in generate.ts); rank picks the best. */
+		oversupply?: number;
 		/** The deck is generated as ONE complete run per provider (21 Questions):
 		 * asked at targetPerTier, never deduplicated across runs, rated and
 		 * published as a whole. Sequential decks without this (Fast Friends) are
@@ -53,6 +57,9 @@ export interface DeckSpec {
 		rate?: boolean;
 		/** Appended to the safety gate's prompt: what this deck deliberately allows. */
 		safetyNote?: string;
+		/** Appended to the rater's prompt: format conventions of this deck the
+		 * style guide would otherwise score as tells (Fast Friends' instructions). */
+		rateNote?: string;
 		/** Per-provider generation model for this deck; defaults in src/stage.ts. */
 		models?: Partial<Record<ProviderName, string>>;
 	};

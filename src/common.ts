@@ -19,8 +19,13 @@ import {
 	type PairCard,
 	PLAY_ORDERS,
 	type QuestionCard,
+	RELATIONS,
 	RESERVED_SLUGS,
 	SCORE_KEYS,
+	SHAPES,
+	SUBJECTS,
+	TARGETS,
+	TIMES,
 } from "./shared.ts";
 
 export * from "./shared.ts";
@@ -127,6 +132,11 @@ export function validateDeck(deck: Deck): string[] {
 		if (card.origin !== null && !nonEmpty(card.origin))
 			errors.push(`${label}: origin must be a string or null`);
 		if (
+			card.assumesHistory !== undefined &&
+			typeof card.assumesHistory !== "boolean"
+		)
+			errors.push(`${label}: assumesHistory must be a boolean when present`);
+		if (
 			card.gen !== null &&
 			(typeof card.gen !== "object" || !nonEmpty(card.gen.provider))
 		)
@@ -136,11 +146,36 @@ export function validateDeck(deck: Deck): string[] {
 		} else {
 			for (const key of SCORE_KEYS) {
 				const v = card.scores[key];
-				if (v !== null && !(Number.isInteger(v) && v >= 1 && v <= 5))
+				// Absent = unrated on that axis (a card rated before the axis existed).
+				if (v != null && !(Number.isInteger(v) && v >= 1 && v <= 5))
 					errors.push(`${label}: scores.${key} must be 1–5 or null`);
 			}
 			if (card.scores.rated !== null && !nonEmpty(card.scores.rated))
 				errors.push(`${label}: scores.rated must be a string or null`);
+		}
+		if (card.facets !== undefined) {
+			const f = card.facets;
+			const oneOf = (name: string, v: unknown, list: readonly string[]) => {
+				if (v !== null && !list.includes(v as string))
+					errors.push(
+						`${label}: facets.${name} must be one of ${list.join(", ")} or null`,
+					);
+			};
+			if (!f || typeof f !== "object")
+				errors.push(`${label}: facets must be an object`);
+			else {
+				oneOf("target", f.target, TARGETS);
+				oneOf("time", f.time, TIMES);
+				oneOf("relational", f.relational, RELATIONS);
+				oneOf("shape", f.shape, SHAPES);
+				if (
+					!Array.isArray(f.subjects) ||
+					!f.subjects.every((s) => (SUBJECTS as readonly string[]).includes(s))
+				)
+					errors.push(
+						`${label}: facets.subjects must be a list from ${SUBJECTS.join(", ")}`,
+					);
+			}
 		}
 		switch (deck.kind) {
 			case "question":

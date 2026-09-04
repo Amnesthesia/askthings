@@ -1,0 +1,91 @@
+{
+  "at": "2026-09-04T03:28:15.702Z",
+  "mode": "live",
+  "argv": [
+    "unaskable,inquisitives,never-have-i-ever,fast-friends,would-you-rather,undercurrent,twenty-one-questions"
+  ],
+  "stages": {
+    "rate/unaskable": {
+      "calls": 10,
+      "input": 16866,
+      "output": 22915,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.09858075,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/inquisitives": {
+      "calls": 7,
+      "input": 11394,
+      "output": 15867,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.06804675,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/never-have-i-ever": {
+      "calls": 4,
+      "input": 6500,
+      "output": 7396,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.03261,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/fast-friends": {
+      "calls": 2,
+      "input": 3291,
+      "output": 3683,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.016279500000000002,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/would-you-rather": {
+      "calls": 4,
+      "input": 7521,
+      "output": 8217,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.0364545,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/undercurrent": {
+      "calls": 5,
+      "input": 8405,
+      "output": 11282,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.04861125,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/twenty-one-questions": {
+      "calls": 2,
+      "input": 3020,
+      "output": 3319,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.01471125,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 34,
+      "input": 56997,
+      "output": 72679,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.31529399999999996,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

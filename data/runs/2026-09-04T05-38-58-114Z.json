@@ -1,0 +1,89 @@
+{
+  "at": "2026-09-04T05:38:58.114Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "redupe/inquisitives": {
+      "calls": 20,
+      "input": 23477,
+      "output": 7894,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.047210249999999995,
+      "retries": 0,
+      "failures": 0
+    },
+    "redupe/never-have-i-ever": {
+      "calls": 22,
+      "input": 23628,
+      "output": 9788,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.054426,
+      "retries": 0,
+      "failures": 0
+    },
+    "redupe/fast-friends": {
+      "calls": 3,
+      "input": 3775,
+      "output": 1112,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.00700125,
+      "retries": 0,
+      "failures": 0
+    },
+    "redupe/would-you-rather": {
+      "calls": 7,
+      "input": 10466,
+      "output": 2940,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.018874500000000002,
+      "retries": 0,
+      "failures": 0
+    },
+    "redupe/thought-experiments": {
+      "calls": 3,
+      "input": 13997,
+      "output": 1154,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.01482525,
+      "retries": 0,
+      "failures": 0
+    },
+    "redupe/undercurrent": {
+      "calls": 11,
+      "input": 12764,
+      "output": 4980,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.028248,
+      "retries": 0,
+      "failures": 0
+    },
+    "redupe/unaskable": {
+      "calls": 30,
+      "input": 36896,
+      "output": 13206,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.0771945,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 96,
+      "input": 125003,
+      "output": 41074,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.2477797500000001,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

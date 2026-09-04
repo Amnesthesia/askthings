@@ -123,7 +123,6 @@ export default function ImprovGame({ deck, decks }: Props) {
 	);
 
 	// First spin on mount and whenever the level or player count changes.
-	// biome-ignore lint/correctness/useExhaustiveDependencies: spin already depends on banks and players
 	useEffect(() => {
 		spin();
 	}, [spin]);
@@ -218,6 +217,7 @@ export default function ImprovGame({ deck, decks }: Props) {
 								current: d.deck === deck.deck,
 							})),
 							{ href: "/favourites/", name: "Favourites" },
+							{ href: "/spin/", name: "Spin" },
 							{ href: "/questions/", name: "All questions" },
 						]}
 					/>

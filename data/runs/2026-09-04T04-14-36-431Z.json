@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T04:14:36.431Z",
+  "mode": "live",
+  "argv": [
+    "thought-experiments,never-have-i-ever"
+  ],
+  "stages": {
+    "rate/thought-experiments": {
+      "calls": 3,
+      "input": 12151,
+      "output": 5469,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.029622000000000002,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/never-have-i-ever": {
+      "calls": 9,
+      "input": 15908,
+      "output": 20828,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.09003600000000002,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 12,
+      "input": 28059,
+      "output": 26297,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.119658,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

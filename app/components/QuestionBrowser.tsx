@@ -1,9 +1,15 @@
 import { useMemo, useState } from "react";
 import {
+	type Facets,
 	INTENSITIES,
 	type Intensity,
+	RELATIONS,
 	SCORE_KEYS,
 	type Scores,
+	SHAPES,
+	SUBJECTS,
+	TARGETS,
+	TIMES,
 } from "../../src/shared.ts";
 
 /** One card flattened for browsing; built at build time in questions/index.astro. */
@@ -16,6 +22,8 @@ export interface Row {
 	intensity: Intensity;
 	tags: string[];
 	scores: Scores;
+	/** Rater's categorical annotations; absent on cards not yet re-rated. */
+	facets?: Facets;
 	headline: string;
 	/** Extra text for dilemmas / pairs, searched and shown small. */
 	body: string;
@@ -34,7 +42,28 @@ const SCORE_LABEL: Record<(typeof SCORE_KEYS)[number], string> = {
 	emotional: "Emotional",
 	depth: "Depth",
 	voice: "Voice",
+	escapability: "Escapability",
+	specificity: "Specificity",
+	exposureCost: "Exposure cost",
+	revealed: "Revealed, not stated",
 };
+/** Minimum-score sliders. Voice gets none: the gate keeps only cards that sound
+ * like a person, so there is nothing to tune. Escapability is the one axis
+ * where LOW is good, so it gets a maximum slider of its own below. */
+const SLIDERS = SCORE_KEYS.filter((k) => k !== "voice" && k !== "escapability");
+const FACET_LABEL = {
+	target: "Target",
+	time: "Time",
+	relational: "Frame",
+	shape: "Answer shape",
+} as const;
+const FACET_OPTIONS = {
+	target: TARGETS,
+	time: TIMES,
+	relational: RELATIONS,
+	shape: SHAPES,
+} as const;
+type FacetKey = keyof typeof FACET_OPTIONS;
 
 /**
  * The whole database of cards, filterable. Server-rendered with every row so
@@ -48,6 +77,10 @@ export default function QuestionBrowser({ rows }: Props) {
 	const [mins, setMins] = useState<Mins>({});
 	const [tags, setTags] = useState<Set<string>>(new Set());
 	const [q, setQ] = useState("");
+	/** Escapability: low is good, so the control is a ceiling. */
+	const [maxEscape, setMaxEscape] = useState<number | undefined>();
+	const [facet, setFacet] = useState<Partial<Record<FacetKey, string>>>({});
+	const [subjects, setSubjects] = useState<Set<string>>(new Set());
 
 	const decks = useMemo(
 		() =>
@@ -77,6 +110,16 @@ export default function QuestionBrowser({ rows }: Props) {
 			const min = mins[k];
 			if (min && (r.scores[k] ?? 0) < min) return false;
 		}
+		// Unrated on an axis or facet fails any filter set on it: absence is
+		// not evidence.
+		if (maxEscape !== undefined && (r.scores.escapability ?? 6) > maxEscape)
+			return false;
+		for (const k of Object.keys(facet) as FacetKey[]) {
+			const want = facet[k];
+			if (want && r.facets?.[k] !== want) return false;
+		}
+		if (subjects.size && !r.facets?.subjects.some((s) => subjects.has(s)))
+			return false;
 		if (
 			needle &&
 			!`${r.headline} ${r.body} ${r.tags.join(" ")}`
@@ -104,7 +147,24 @@ export default function QuestionBrowser({ rows }: Props) {
 		setMins({});
 		setTags(new Set());
 		setQ("");
+		setMaxEscape(undefined);
+		setFacet({});
+		setSubjects(new Set());
 	};
+	const toggleSubject = (s: string) =>
+		setSubjects((prev) => {
+			const next = new Set(prev);
+			if (next.has(s)) next.delete(s);
+			else next.add(s);
+			return next;
+		});
+	const subjectCounts = useMemo(() => {
+		const n = new Map<string, number>();
+		for (const r of rows)
+			for (const s of r.facets?.subjects ?? []) n.set(s, (n.get(s) ?? 0) + 1);
+		return SUBJECTS.map((s) => [s, n.get(s) ?? 0] as const);
+	}, [rows]);
+	const faceted = rows.some((r) => r.facets);
 
 	return (
 		<div className="browser">
@@ -180,11 +240,11 @@ export default function QuestionBrowser({ rows }: Props) {
 				{rated && (
 					<fieldset>
 						<legend>
-							Minimum score (1–5). <em>Voice</em> is how much the card sounds
-							like a person asked it rather than a model wrote it;{" "}
-							<em>conversation</em> is how well it starts a real exchange.
+							Minimum score (1–5). <em>Conversation</em> is how well the card
+							starts a real exchange; <em>depth</em> is how far below the
+							surface the honest answer goes.
 						</legend>
-						{SCORE_KEYS.map((k) => (
+						{SLIDERS.map((k) => (
 							<label key={k}>
 								{SCORE_LABEL[k]}
 								<input
@@ -211,6 +271,81 @@ export default function QuestionBrowser({ rows }: Props) {
 								</span>
 							</label>
 						))}
+					</fieldset>
+				)}
+				{rated && (
+					<label>
+						Escapability at most
+						<input
+							type="range"
+							min={1}
+							max={5}
+							step={1}
+							value={maxEscape ?? 5}
+							aria-valuetext={
+								maxEscape !== undefined ? `at most ${maxEscape}` : "any"
+							}
+							onChange={(e) =>
+								setMaxEscape(
+									Number(e.target.value) < 5
+										? Number(e.target.value)
+										: undefined,
+								)
+							}
+						/>
+						<span className="range-value">
+							{maxEscape !== undefined ? `≤ ${maxEscape}` : "any"}
+						</span>
+						<small>
+							How easy a polite non-answer is. Low is what you want.
+						</small>
+					</label>
+				)}
+				{faceted && (
+					<fieldset className="facet-field">
+						<legend>What kind of question</legend>
+						{(Object.keys(FACET_OPTIONS) as FacetKey[]).map((k) => (
+							<label key={k}>
+								{FACET_LABEL[k]}
+								<select
+									value={facet[k] ?? ""}
+									onChange={(e) =>
+										setFacet((f) => ({
+											...f,
+											[k]: e.target.value || undefined,
+										}))
+									}
+								>
+									<option value="">Any</option>
+									{FACET_OPTIONS[k].map((v) => (
+										<option key={v} value={v}>
+											{v}
+										</option>
+									))}
+								</select>
+							</label>
+						))}
+					</fieldset>
+				)}
+				{faceted && (
+					<fieldset className="tag-field">
+						<legend>
+							Subject
+							{subjects.size ? ` (${subjects.size} selected, any match)` : ""}
+						</legend>
+						<div className="tag-chips">
+							{subjectCounts.map(([s, n]) => (
+								<button
+									type="button"
+									key={s}
+									className="tag-chip"
+									aria-pressed={subjects.has(s)}
+									onClick={() => toggleSubject(s)}
+								>
+									{s} <small>{n}</small>
+								</button>
+							))}
+						</div>
 					</fieldset>
 				)}
 				<fieldset className="tag-field">
@@ -253,8 +388,12 @@ export default function QuestionBrowser({ rows }: Props) {
 									· conv {r.scores.conversation} · int {r.scores.intellectual} ·
 									emo {r.scores.emotional} · depth {r.scores.depth} · voice{" "}
 									{r.scores.voice}
+									{r.scores.escapability != null &&
+										` · escape ${r.scores.escapability} · specific ${r.scores.specificity} · exposes ${r.scores.exposureCost} · revealed ${r.scores.revealed}`}
 								</>
 							)}
+							{r.facets &&
+								` · ${[r.facets.target, r.facets.time, r.facets.relational, r.facets.shape].filter(Boolean).join(" · ")}${r.facets.subjects.length ? ` · ${r.facets.subjects.join(", ")}` : ""}`}
 							{r.tags.length > 0 && ` · ${r.tags.join(", ")}`}
 						</small>
 					</li>

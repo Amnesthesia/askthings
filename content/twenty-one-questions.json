@@ -21,295 +21,333 @@
   ],
   "cards": [
     {
-      "text": "What’s been unexpectedly good about your week?",
-      "id": "163128120d",
+      "text": "What took up most of your attention today?",
+      "id": "6dd0f74bfb",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "week",
-        "joy"
+        "daily",
+        "attention"
       ],
       "origin": null,
       "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "at": "2026-09-03T12:19:59.797Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 4,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "What's the last thing you got obsessed with for no good reason?",
+      "id": "f2e0e48a90",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "curiosity",
+        "interests"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.649Z"
       },
       "scores": {
         "conversation": 3,
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
-      "text": "Which harmless thing are you embarrassingly particular about?",
-      "id": "e1751c1c1b",
+      "text": "Who did you want to be when you were ten?",
+      "id": "13ab160066",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "quirks",
-        "preferences"
+        "childhood",
+        "ambition"
       ],
       "origin": null,
       "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
+        "provider": "anthropic",
+        "model": "claude-opus-5",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "at": "2026-09-03T12:17:50.649Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What did you get in trouble for most often as a kid?",
+      "id": "f2483b8388",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "childhood",
+        "rules"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.797Z"
       },
       "scores": {
         "conversation": 4,
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "What place brings out a different side of you?",
-      "id": "9813787fbd",
+      "text": "What would you cook for me if I turned up hungry?",
+      "id": "25fa5ab994",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
-        "places",
-        "personality"
+        "food",
+        "hosting"
       ],
       "origin": null,
       "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:59:28.489Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "future",
+        "subjects": [
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do people get wrong about you?",
+      "id": "7809dc3a50",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "identity",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "at": "2026-09-03T12:17:50.649Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Who do you try too hard to impress?",
+      "id": "47f2bcf5ad",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "ego",
+        "relationships"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:47.330Z"
       },
       "scores": {
         "conversation": 4,
         "intellectual": 3,
         "emotional": 3,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What did you love before you cared whether it was cool?",
-      "id": "46d8ebf02f",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "taste",
-        "childhood"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Which compliment have you remembered longer than the person who gave it probably intended?",
-      "id": "0b738c283c",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "compliments",
-        "memory"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
-      "text": "What are you better at than your life currently requires?",
-      "id": "f2bbd2b28c",
+      "text": "When do you feel most useful?",
+      "id": "cebd620fe1",
       "tier": 1,
       "intensity": 2,
       "tags": [
-        "talent",
+        "purpose",
         "work"
       ],
       "origin": null,
       "gen": {
         "provider": "openai",
         "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:34.890Z"
       },
       "scores": {
         "conversation": 3,
         "intellectual": 3,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
-      "text": "When have you enjoyed being completely wrong?",
-      "id": "ba1ec39284",
+      "text": "What did you believe for years that turned out to be wrong?",
+      "id": "962af7c037",
       "tier": 1,
       "intensity": 2,
       "tags": [
-        "beliefs",
-        "surprise"
+        "beliefs"
       ],
       "origin": null,
       "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Which family habit have you caught yourself repeating?",
-      "id": "74d2377c3c",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "family",
-        "habits"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What kind of person makes you feel instantly at ease?",
-      "id": "48da6791c5",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "people",
-        "comfort"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What have you quit that made your life better?",
-      "id": "78671119e2",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "change",
-        "choices"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "When do you feel least like performing?",
-      "id": "3c5fe432ed",
-      "tier": 1,
-      "intensity": 3,
-      "tags": [
-        "identity",
-        "ease"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What choice of yours made sense only later?",
-      "id": "9446fe2b1d",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "decisions",
-        "perspective"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:47:36.397Z"
       },
       "scores": {
         "conversation": 4,
@@ -317,74 +355,39 @@
         "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Who has seen a side of you most people miss?",
-      "id": "42f59ad480",
-      "tier": 1,
-      "intensity": 3,
-      "tags": [
-        "relationships",
-        "identity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "faith",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
-      "text": "What do you envy in people you like?",
-      "id": "667629fc31",
-      "tier": 1,
-      "intensity": 3,
-      "tags": [
-        "envy",
-        "friends"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "When did you last surprise yourself?",
-      "id": "68a2136ef1",
+      "text": "Which family story changes depending on who's telling it?",
+      "id": "092fb165f0",
       "tier": 1,
       "intensity": 2,
       "tags": [
-        "surprise",
-        "change"
+        "family",
+        "stories"
       ],
       "origin": null,
       "gen": {
         "provider": "openai",
         "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:59:51.438Z"
       },
       "scores": {
         "conversation": 4,
@@ -392,158 +395,459 @@
         "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What are you pretending not to care about?",
-      "id": "ff63d6b461",
-      "tier": 1,
-      "intensity": 3,
-      "tags": [
-        "desire",
-        "admission"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "Which past version of you do you feel protective of?",
-      "id": "ce8428d12a",
+      "text": "Who do you wish you had stayed in touch with?",
+      "id": "d571d394e5",
       "tier": 1,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
-        "past",
-        "identity"
+        "relationships",
+        "regret"
       ],
       "origin": null,
       "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What are you afraid people will eventually notice about you?",
-      "id": "4dcbdd2018",
-      "tier": 1,
-      "intensity": 3,
-      "tags": [
-        "fear",
-        "perception"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What kindness do you still wish you’d offered someone?",
-      "id": "cbd069091a",
-      "tier": 1,
-      "intensity": 3,
-      "tags": [
-        "regret",
-        "kindness"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "at": "2026-09-03T12:19:59.797Z"
       },
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
-      "text": "What have you noticed about me that changed during this conversation?",
-      "id": "2c6d0214ed",
+      "text": "What compliment do you remember years later?",
+      "id": "96eb65bfd5",
       "tier": 1,
-      "intensity": 4,
+      "intensity": 2,
       "tags": [
-        "perception",
-        "connection"
+        "memory",
+        "praise"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.649Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Who have you outgrown but still love?",
+      "id": "dbeb49765b",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "change"
       ],
       "origin": null,
       "gen": {
         "provider": "openai",
         "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:59:51.438Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
-      "text": "If we never spoke again, what would you wish you’d told me tonight?",
-      "id": "e119a2efb6",
+      "text": "Which goodbye do you wish you'd handled differently?",
+      "id": "6aacb66c89",
       "tier": 1,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
-        "disclosure",
-        "connection",
-        "parting"
+        "regret",
+        "goodbyes"
       ],
       "origin": null,
       "gen": {
         "provider": "openai",
         "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:34.890Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Who can still make you feel like a child?",
+      "id": "31b33368ea",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "power",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:34.890Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "family",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Who are you jealous of right now?",
+      "id": "a17ba652bd",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "jealousy",
+        "comparison"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:47.330Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When did you last let someone down?",
+      "id": "b67721ea8a",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "guilt",
+        "relationships"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:34.890Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Which dream have you stopped saying out loud?",
+      "id": "ce61f0aebb",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "dreams",
+        "loss"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:34.890Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What are you still trying to prove, and who to?",
+      "id": "0b1f43d47e",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "ambition",
+        "proving"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:59:28.489Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you pretend not to know?",
+      "id": "bc40db2653",
+      "tier": 1,
+      "intensity": 4,
+      "tags": [
+        "secrets",
+        "truth"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.601Z"
+        "at": "2026-09-03T12:19:59.797Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 5,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What did you hold back from telling me today?",
+      "id": "b75eaad790",
+      "tier": 1,
+      "intensity": 4,
+      "tags": [
+        "us",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:48:47.330Z"
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
       }
     }
   ]

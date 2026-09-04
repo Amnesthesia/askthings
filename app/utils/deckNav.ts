@@ -42,6 +42,31 @@ export function dealOrder(order: Order, n: number | null): Order {
 	return new Map([...order].map(([tier, ids]) => [tier, ids.slice(0, n)]));
 }
 
+/**
+ * Deal a random n per tier but keep them in file order: a sequential deck
+ * that holds more cards than one session plays (Fast Friends: 24 per set,
+ * 12 dealt) still climbs the way its file climbs. `keep` is always dealt.
+ */
+export function sampleOrder(
+	order: Order,
+	n: number | null,
+	keep?: string,
+	rng: () => number = Math.random,
+): Order {
+	if (n === null) return order;
+	return new Map(
+		[...order].map(([tier, ids]) => {
+			if (ids.length <= n) return [tier, ids];
+			const chosen = new Set(shuffle(ids, rng).slice(0, n));
+			if (keep && ids.includes(keep) && !chosen.has(keep)) {
+				chosen.delete([...chosen][chosen.size - 1]);
+				chosen.add(keep);
+			}
+			return [tier, ids.filter((id) => chosen.has(id))];
+		}),
+	);
+}
+
 /** Moves one card to the front of its tier, so a shuffle performed after
  * hydration keeps the card already on screen. */
 export function promote(order: Order, id: string): Order {

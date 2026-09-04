@@ -1,0 +1,61 @@
+{
+  "at": "2026-09-04T06:18:54.108Z",
+  "mode": "live",
+  "argv": [
+    "undercurrent,unaskable,twenty-one-questions,thought-experiments"
+  ],
+  "stages": {
+    "rate/undercurrent": {
+      "calls": 15,
+      "input": 25235,
+      "output": 34441,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.14807999999999996,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/unaskable": {
+      "calls": 18,
+      "input": 30746,
+      "output": 42007,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.18058575,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/twenty-one-questions": {
+      "calls": 4,
+      "input": 6582,
+      "output": 9783,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.04162275,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/thought-experiments": {
+      "calls": 4,
+      "input": 16303,
+      "output": 9485,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.047796,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 41,
+      "input": 78866,
+      "output": 95716,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.41808449999999986,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

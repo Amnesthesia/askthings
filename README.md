@@ -14,7 +14,7 @@ demands it, every model call through one metered wrapper.
 |---|---|---|---|
 | Inquisitives | question | 4 — Openers, Unguarded, Vulnerable, Intimate | hand-authored fixture, 40 cards |
 | Never Have I Ever | question (statement) | 4 — Harmless → Spicy | planned |
-| Fast Friends | question | 3 sets of 12 (the Aron procedure, original questions) | planned |
+| Fast Friends | question | 3 sets of 24 (Aron's 36 plus new questions in the same register), 12 dealt per set | live |
 | 21 Questions | question, ordered | 1 run of 21 | planned |
 | Would You Rather | pair `{a, b}` | 3 — Playful, Revealing, Uncomfortable | planned |
 | Thought Experiments & Moral Dilemmas | dilemma | 3 — Puzzling, Uncomfortable, Personal | planned |
@@ -45,8 +45,9 @@ generation prompts and are never rendered; players read the theme of a level the
 
 ### Voice
 
-Questions sound like a curious person talking — the register of Terry Gross or Louis
-Theroux. Plain words, specific, one question per card. No "delve", "journey", "unpack",
+Questions sound like a curious person talking — the register of Anthony Bourdain or Studs
+Terkel: blunt, unsentimental, about how people actually live. Plain words, specific, one
+question per card. No "delve", "journey", "unpack",
 no stacked clauses, no therapy vocabulary, no "What's one thing…" templates. A card
 invites a story or an admission, not a fact.
 
@@ -159,12 +160,20 @@ Node 22 (`.tool-versions`), pnpm 9.
 
 ```
 pnpm sync                      decks.yml -> content/*.json (metadata + play; cards kept)
-pnpm generate [deck,...]       one request per (deck, tier, provider); candidates to data/candidates/
-pnpm deduplicate  [deck,...]       exact + Dice similarity, ambiguous band to a judge
-pnpm rate     [deck,...]       rubric scores 1-5 + judged intensity; keep conversation>=3 && voice>=3
+pnpm generate [deck,...]       12-card calls per (deck, level, provider) until the level holds 3x its target
+pnpm deduplicate  [deck,...]   exact + Dice, then each card's nearest neighbours to a judge
+pnpm rate     [deck,...]       rubric scores 1-5 + judged intensity; keep conversation>=3 && voice>=4
 pnpm safety   [deck,...]       the gate: only a positive "ok" passes
+pnpm rank     [deck,...]       comparative order of the survivors within a level; publish sorts by it
 pnpm publish-cards [deck,...]  safe candidates -> content/{deck}.json, best first, up to targetPerTier
+pnpm calibrate [read|measure]  50-card set for a human keep/cut pass; measure = judge agreement with it
+pnpm rerate   [deck,...]       re-judge published cards + live candidates with the current rubric, in place
 ```
+
+Each rated card carries nine 1–5 scores (conversation, intellectual, emotional, depth, voice,
+escapability, specificity, exposure cost, revealed-not-stated) and five categorical facets
+(target, time, subjects, relational frame, answer shape), all judged by the rater and all
+filterable at `/questions/`; Spin filters on subject, shape and frame.
 
 Run on demand from the `Generate` workflow (`workflow_dispatch`, never scheduled) or
 locally with keys in `.env`. Additive: existing cards are never removed. Every rejection is
@@ -197,6 +206,9 @@ pnpm publish-cards would-you-rather
 ```
 
 ## Game mode
+
+`/spin/` is a slot machine over every question: filters (decks, exposure range, minimum
+scores) set the pool, spin draws one; filters persist in the browser.
 
 The heart on any card stars it. `/favourites/` plays every starred card from every deck as one
 game, grouped into levels by exposure. Favourites live in the browser (localStorage); the page

@@ -22,6 +22,7 @@ import {
 	writeDeck,
 } from "./decks.ts";
 import { deckArgs } from "./stage.ts";
+import { DUPLICATE_AT, diceSimilarity } from "./text.ts";
 
 /** The level a candidate publishes into. */
 function tierOf(spec: DeckSpec, c: Candidate): number {
@@ -30,9 +31,12 @@ function tierOf(spec: DeckSpec, c: Candidate): number {
 	return tierForIntensity(spec, c.judgedIntensity ?? c.intensity);
 }
 
+/** 0..1. The comparative rank when the rank stage has run; otherwise the
+ * rubric sum, which cannot tell the survivors apart (all voice 4-5). */
 function quality(c: Candidate): number {
+	if (c.rank !== undefined) return c.rank;
 	const s = c.scores;
-	return (s?.conversation ?? 0) + (s?.voice ?? 0) + (s?.depth ?? 0);
+	return ((s?.conversation ?? 0) + (s?.voice ?? 0) + (s?.depth ?? 0)) / 15;
 }
 
 function toCard(spec: DeckSpec, c: Candidate): Card {
@@ -46,6 +50,10 @@ function toCard(spec: DeckSpec, c: Candidate): Card {
 		origin: "origin" in c.fields ? c.fields.origin : null,
 		gen: { provider: c.provider, model: c.model, prompt: c.prompt, at: c.at },
 		scores: c.scores ?? EMPTY_SCORES,
+		...(c.assumesHistory !== undefined
+			? { assumesHistory: c.assumesHistory }
+			: {}),
+		...(c.facets ? { facets: c.facets } : {}),
 	} as Card;
 }
 
@@ -66,21 +74,35 @@ function publishDeck(spec: DeckSpec) {
 			}
 			chosen = [];
 		} else {
-			// One whole run: the batch with the best mean quality, in play order.
-			const runs = new Map<string, Candidate[]>();
-			for (const c of safe)
-				runs.set(c.batch, [...(runs.get(c.batch) ?? []), c]);
-			const complete = [...runs.values()].filter(
-				(r) => r.length === spec.generation.targetPerTier,
-			);
-			complete.sort(
-				(a, b) =>
-					b.reduce((n, c) => n + quality(c), 0) -
-					a.reduce((n, c) => n + quality(c), 0),
-			);
-			chosen = (complete[0] ?? []).sort((a, b) => a.position - b.position);
+			// One run assembled by position: the arc lives in the positions (1-5
+			// warm … 21 the closer), so the best passing card at each position from
+			// any provider's run keeps the arc. Nine whole runs in a row were sunk
+			// by one weak card each, so runs are no longer kept or dropped whole.
+			const n = spec.generation.targetPerTier;
+			const picked: Candidate[] = [];
+			for (let pos = 0; pos < n; pos++) {
+				const options = safe
+					.filter((c) => c.position === pos)
+					.sort((a, b) => quality(b) - quality(a));
+				// ponytail: same-position picks from different runs can still ask
+				// the same thing in other words; Dice catches the close ones only.
+				const pick = options.find((c) =>
+					picked.every(
+						(p) =>
+							diceSimilarity(
+								headlineOfFields(spec.kind, c.fields),
+								headlineOfFields(spec.kind, p.fields),
+							) < DUPLICATE_AT,
+					),
+				);
+				if (pick) picked.push(pick);
+			}
+			chosen = picked.length === n ? picked : [];
 			if (!chosen.length)
-				count(reasons, `no complete run of ${spec.generation.targetPerTier}`);
+				count(
+					reasons,
+					`no card passed at ${n - picked.length} of ${n} positions`,
+				);
 		}
 	} else {
 		// Best first, then fill each tier up to its target. A canonical thought

@@ -1,0 +1,40 @@
+---
+// A slot machine over every question on the site. The pool is whatever the
+// filters allow; the island holds the machine, this page is its frame. The
+// full list lives at /questions/, so there is nothing new here to index.
+import SpinGame from "@react/components/SpinGame";
+import type { SpinCard } from "@react/components/SpinGame";
+import { publishedDecks } from "../../common.ts";
+import Base from "../../layouts/Base.astro";
+
+// Never Have I Ever is a statement game whose cards only work as that game; improv is word banks.
+const EXCLUDED = new Set(["never-have-i-ever"]);
+const decks = publishedDecks().filter((d) => d.kind !== "improv" && !EXCLUDED.has(d.deck));
+const links = decks.map((d) => ({ deck: d.deck, name: d.name }));
+// Cards addressed to the asker ("What do you blame me for…") assume the two
+// players know each other; out of their deck they land wrong, so Spin keeps
+// them behind a switch. `assumesHistory` is declared by the writer and confirmed by
+// the rater at generation time; never inferred from the text here.
+// Provenance is dropped: it is a third of the payload and the machine never shows it.
+const cards: SpinCard[] = decks.flatMap((deck) =>
+	deck.cards.map((card) => ({
+		...card,
+		gen: null,
+		kind: deck.kind,
+		deck: deck.deck,
+		deckName: deck.name,
+		assumesHistory: card.assumesHistory === true,
+	})),
+);
+---
+
+<Base
+  title="Spin"
+  description="A slot machine over every question on the site. Set the decks, the exposure range and the minimum scores, then spin."
+  path="/spin/"
+  noindex
+>
+  <SpinGame client:load cards={cards} decks={links} />
+  <h1>Spin</h1>
+  <p>One random question from {cards.length} across {decks.length} decks. Filter the pool by deck, exposure level and score, then spin. Filters stay in this browser.</p>
+</Base>

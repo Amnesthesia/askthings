@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T06:45:37.386Z",
+  "mode": "live",
+  "argv": [
+    "/private/tmp/claude-501/-Users-amnesthesia-Work-askthings/f321c81d-f2f9-43ad-82d3-20391e1cf9bf/scratchpad/judge-claude-sonnet-5-b.json"
+  ],
+  "stages": {
+    "audit/inquisitives": {
+      "calls": 4,
+      "input": 2211,
+      "output": 7578,
+      "cached": 8780,
+      "cacheHits": 0,
+      "usd": 0.081958,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/thought-experiments": {
+      "calls": 6,
+      "input": 25366,
+      "output": 11524,
+      "cached": 13170,
+      "cacheHits": 0,
+      "usd": 0.168606,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 10,
+      "input": 27577,
+      "output": 19102,
+      "cached": 21950,
+      "cacheHits": 0,
+      "usd": 0.250564,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

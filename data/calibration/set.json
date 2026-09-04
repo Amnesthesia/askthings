@@ -1,0 +1,502 @@
+[
+  {
+    "id": "6472da40e0",
+    "deck": "fast-friends",
+    "kind": "question",
+    "tier": 2,
+    "headline": "What did your family argue about most when you were growing up?",
+    "judge": "What did your family argue about most when you were growing up?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "6912110c61",
+    "deck": "fast-friends",
+    "kind": "question",
+    "tier": 1,
+    "headline": "What do people praise you for that you don't care about?",
+    "judge": "What do people praise you for that you don't care about?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "5feac65598",
+    "deck": "fast-friends",
+    "kind": "question",
+    "tier": 3,
+    "headline": "What has loving someone cost you?",
+    "judge": "What has loving someone cost you?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "0cee78fc97",
+    "deck": "fast-friends",
+    "kind": "question",
+    "tier": 3,
+    "headline": "Who did you walk away from when they needed you?",
+    "judge": "Who did you walk away from when they needed you?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "49823a19ef",
+    "deck": "inquisitives",
+    "kind": "question",
+    "tier": 4,
+    "headline": "When do you feel most ashamed of who you are?",
+    "judge": "When do you feel most ashamed of who you are?",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "b76fb8012a",
+    "deck": "inquisitives",
+    "kind": "question",
+    "tier": 1,
+    "headline": "What's a phase you went through that you're glad ended?",
+    "judge": "What's a phase you went through that you're glad ended?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "c5206a4c9e",
+    "deck": "inquisitives",
+    "kind": "question",
+    "tier": 1,
+    "headline": "What was your worst summer job?",
+    "judge": "What was your worst summer job?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "56f87b0ec0",
+    "deck": "inquisitives",
+    "kind": "question",
+    "tier": 4,
+    "headline": "Who do you want sitting next to you on your deathbed?",
+    "judge": "Who do you want sitting next to you on your deathbed?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "3c3b55a8c9",
+    "deck": "inquisitives",
+    "kind": "question",
+    "tier": 4,
+    "headline": "What would have to happen for you to feel your life was wasted?",
+    "judge": "What would have to happen for you to feel your life was wasted?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "651fe863d5",
+    "deck": "inquisitives",
+    "kind": "question",
+    "tier": 4,
+    "headline": "Where do you think I am lying to myself?",
+    "judge": "Where do you think I am lying to myself?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "0b9dff8bfc",
+    "deck": "inquisitives",
+    "kind": "question",
+    "tier": 3,
+    "headline": "Has anyone ever loved you more than you loved them?",
+    "judge": "Has anyone ever loved you more than you loved them?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "784421e215",
+    "deck": "never-have-i-ever",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Never have I ever re-read my own message after sending it, just to admire it.",
+    "judge": "Never have I ever re-read my own message after sending it, just to admire it.",
+    "voice": 4,
+    "conversation": 3
+  },
+  {
+    "id": "38438fd29a",
+    "deck": "never-have-i-ever",
+    "kind": "question",
+    "tier": 2,
+    "headline": "Never have I ever read someone's messages over their shoulder on a train.",
+    "judge": "Never have I ever read someone's messages over their shoulder on a train.",
+    "voice": 4,
+    "conversation": 3
+  },
+  {
+    "id": "a40bcf3ee4",
+    "deck": "never-have-i-ever",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Never have I ever fallen over while leaning back in a chair.",
+    "judge": "Never have I ever fallen over while leaning back in a chair.",
+    "voice": 5,
+    "conversation": 3
+  },
+  {
+    "id": "27dfa78284",
+    "deck": "never-have-i-ever",
+    "kind": "question",
+    "tier": 4,
+    "headline": "Never have I ever kissed a friend and pretended the next morning it never happened.",
+    "judge": "Never have I ever kissed a friend and pretended the next morning it never happened.",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "b4023501d4",
+    "deck": "never-have-i-ever",
+    "kind": "question",
+    "tier": 2,
+    "headline": "Never have I ever kissed someone at a wedding I wasn't invited to.",
+    "judge": "Never have I ever kissed someone at a wedding I wasn't invited to.",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "98fab1b42b",
+    "deck": "never-have-i-ever",
+    "kind": "question",
+    "tier": 4,
+    "headline": "Never have I ever texted someone else while lying next to a partner.",
+    "judge": "Never have I ever texted someone else while lying next to a partner.",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "65cc336136",
+    "deck": "never-have-i-ever",
+    "kind": "question",
+    "tier": 3,
+    "headline": "Never have I ever made a promise I already knew I would break.",
+    "judge": "Never have I ever made a promise I already knew I would break.",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "94f767f3e5",
+    "deck": "thought-experiments",
+    "kind": "dilemma",
+    "tier": 1,
+    "headline": "Mary's Grey Room",
+    "judge": "Mary's Grey Room\nMary has spent her whole life in a room with no colour in it. Everything is black, white or grey, including her screens and her skin. But she's the world's leading expert on colour vision. She knows every wavelength, every nerve, every last fact about what happens in a brain when it sees red. One day the door opens and she walks out into a garden of roses.\nDoes Mary learn something new?\nProbes: If she does, what is it exactly — say it in a sentence. | Could you explain what a smell is like to someone who's never smelled anything? | Would she recognise red on sight, or have to be told?",
+    "voice": 4,
+    "conversation": 3
+  },
+  {
+    "id": "8591402d5e",
+    "deck": "thought-experiments",
+    "kind": "dilemma",
+    "tier": 3,
+    "headline": "The Family Story",
+    "judge": "The Family Story\nYou learn that the story your family tells about how one relative died is false. The truth would clear someone who has carried the blame for years. It would also expose someone who is still alive.\nWould you tell the family?\nProbes: Whose name would make you speak? | How many more years of blame could you allow? | Why has your family preferred the old story?",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "21a671b626",
+    "deck": "thought-experiments",
+    "kind": "dilemma",
+    "tier": 2,
+    "headline": "The Broken Window",
+    "judge": "The Broken Window\nYour son kicks a football through the neighbour’s window. No one sees it happen. Minutes later, another child is blamed because their ball is found in the garden. Replacing the glass will cost you £400.\nDo you say your son did it?\nProbes: Would you speak up if the other child faced no punishment? | Should your son pay from his savings? | What lesson do you teach by protecting him?",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "de57d521e9",
+    "deck": "thought-experiments",
+    "kind": "dilemma",
+    "tier": 2,
+    "headline": "The Stag Do",
+    "judge": "The Stag Do\nYour oldest friend is getting married. The trip is four days abroad and it comes to about £600 once you count flights and the meal. You don't have it. You could put it on a credit card and feel it for six months, or you could say no. Everyone else in the group has already paid.\nDo you tell them the real reason you can't come?\nProbes: What's the lie you'd reach for instead, and who would believe it? | If you go into debt for it, are you buying the friendship or protecting your pride? | Would you want a friend to borrow money to come to yours?",
+    "voice": 4,
+    "conversation": 5
+  },
+  {
+    "id": "fe3d81fe17",
+    "deck": "thought-experiments",
+    "kind": "dilemma",
+    "tier": 3,
+    "headline": "The Voice That Stays",
+    "judge": "The Voice That Stays\nAfter your parent dies, a company offers to build a version of them from their messages, voicemails, photos and emails. It talks like them. It remembers your childhood. It asks how you slept. It's wrong sometimes, in ways that feel exactly right. It costs a small monthly fee, and it never gets tired of you calling.\nWould you subscribe?\nProbes: Would you tell the rest of your family you were talking to it? | If it started saying things your parent never would, would you correct it or let it? | What's the one question you'd ask it in the first week?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "dfbefc09d0",
+    "deck": "thought-experiments",
+    "kind": "dilemma",
+    "tier": 1,
+    "headline": "The Machine Cook",
+    "judge": "The Machine Cook\nA machine can build a plate of your grandmother's stew from scratch, matching the real thing down to the last molecule. Same taste, same steam, same burnt bit at the edge. It takes nine seconds and costs almost nothing.\nWould you rather eat that or her actual cooking?\nProbes: What's missing from the machine's plate, in plain words? | Would you serve it to guests without saying where it came from? | If you couldn't tell them apart blindfolded, why do you still prefer one?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "13ab160066",
+    "deck": "twenty-one-questions",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Who did you want to be when you were ten?",
+    "judge": "Who did you want to be when you were ten?",
+    "voice": 5,
+    "conversation": 3
+  },
+  {
+    "id": "f2e0e48a90",
+    "deck": "twenty-one-questions",
+    "kind": "question",
+    "tier": 1,
+    "headline": "What's the last thing you got obsessed with for no good reason?",
+    "judge": "What's the last thing you got obsessed with for no good reason?",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "6aacb66c89",
+    "deck": "twenty-one-questions",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Which goodbye do you wish you'd handled differently?",
+    "judge": "Which goodbye do you wish you'd handled differently?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "a17ba652bd",
+    "deck": "twenty-one-questions",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Who are you jealous of right now?",
+    "judge": "Who are you jealous of right now?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "ce61f0aebb",
+    "deck": "twenty-one-questions",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Which dream have you stopped saying out loud?",
+    "judge": "Which dream have you stopped saying out loud?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "0b1f43d47e",
+    "deck": "twenty-one-questions",
+    "kind": "question",
+    "tier": 1,
+    "headline": "What are you still trying to prove, and who to?",
+    "judge": "What are you still trying to prove, and who to?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "3a96851270",
+    "deck": "unaskable",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Who did you stop calling once your life got better?",
+    "judge": "Who did you stop calling once your life got better?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "38da902872",
+    "deck": "unaskable",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Who in your group are you glad you're doing better than?",
+    "judge": "Who in your group are you glad you're doing better than?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "5dc03025b4",
+    "deck": "unaskable",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Who do you keep at texting distance so you never have to meet?",
+    "judge": "Who do you keep at texting distance so you never have to meet?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "8cf457828c",
+    "deck": "unaskable",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Whose wedding felt like a mistake while you were there?",
+    "judge": "Whose wedding felt like a mistake while you were there?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "e09b84faf7",
+    "deck": "unaskable",
+    "kind": "question",
+    "tier": 4,
+    "headline": "When did you decide I was never going to change?",
+    "judge": "When did you decide I was never going to change?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "6f047d78c0",
+    "deck": "unaskable",
+    "kind": "question",
+    "tier": 3,
+    "headline": "Who thinks you're dependable because they have never needed too much?",
+    "judge": "Who thinks you're dependable because they have never needed too much?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "24386ef93a",
+    "deck": "unaskable",
+    "kind": "question",
+    "tier": 3,
+    "headline": "Which story about your past do you know is a lie?",
+    "judge": "Which story about your past do you know is a lie?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "f0048b6620",
+    "deck": "undercurrent",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Tell me what you think makes me nervous.",
+    "judge": "Tell me what you think makes me nervous.",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "702f836041",
+    "deck": "undercurrent",
+    "kind": "question",
+    "tier": 3,
+    "headline": "Do you think I love you more, or you me?",
+    "judge": "Do you think I love you more, or you me?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "002c2ca977",
+    "deck": "undercurrent",
+    "kind": "question",
+    "tier": 1,
+    "headline": "What's the first thing you'd warn a stranger about me?",
+    "judge": "What's the first thing you'd warn a stranger about me?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "d0b29b095c",
+    "deck": "undercurrent",
+    "kind": "question",
+    "tier": 2,
+    "headline": "When have I made you uncomfortable without meaning to?",
+    "judge": "When have I made you uncomfortable without meaning to?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "ad8ff10a55",
+    "deck": "undercurrent",
+    "kind": "question",
+    "tier": 2,
+    "headline": "Which subject do we both steer around?",
+    "judge": "Which subject do we both steer around?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "d0d1647601",
+    "deck": "undercurrent",
+    "kind": "question",
+    "tier": 1,
+    "headline": "Which of your friends dislikes me?",
+    "judge": "Which of your friends dislikes me?",
+    "voice": 5,
+    "conversation": 5
+  },
+  {
+    "id": "bc911eda71",
+    "deck": "would-you-rather",
+    "kind": "pair",
+    "tier": 1,
+    "headline": "remember every person's name or remember every joke you've heard?",
+    "judge": "Would you rather remember every person's name — or — remember every joke you've heard?",
+    "voice": 4,
+    "conversation": 3
+  },
+  {
+    "id": "cd59da55ac",
+    "deck": "would-you-rather",
+    "kind": "pair",
+    "tier": 3,
+    "headline": "lose the ability to make new friends or lose contact with everyone you already know?",
+    "judge": "Would you rather lose the ability to make new friends — or — lose contact with everyone you already know?",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "472ab2b225",
+    "deck": "would-you-rather",
+    "kind": "pair",
+    "tier": 2,
+    "headline": "have everyone think you are wealthy when you are broke or have everyone think you are broke when you are wealthy?",
+    "judge": "Would you rather have everyone think you are wealthy when you are broke — or — have everyone think you are broke when you are wealthy?",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "9879787545",
+    "deck": "would-you-rather",
+    "kind": "pair",
+    "tier": 2,
+    "headline": "live somewhere beautiful with no friends nearby or live somewhere dull with everyone you love?",
+    "judge": "Would you rather live somewhere beautiful with no friends nearby — or — live somewhere dull with everyone you love?",
+    "voice": 4,
+    "conversation": 4
+  },
+  {
+    "id": "38b71f69d4",
+    "deck": "would-you-rather",
+    "kind": "pair",
+    "tier": 2,
+    "headline": "be the friend everyone calls in a crisis or be the friend everyone calls for a good night out?",
+    "judge": "Would you rather be the friend everyone calls in a crisis — or — be the friend everyone calls for a good night out?",
+    "voice": 5,
+    "conversation": 4
+  },
+  {
+    "id": "3b0a8ff8d8",
+    "deck": "would-you-rather",
+    "kind": "pair",
+    "tier": 3,
+    "headline": "take your dream job far from everyone you love or keep your life close to them and wonder?",
+    "judge": "Would you rather take your dream job far from everyone you love — or — keep your life close to them and wonder?",
+    "voice": 4,
+    "conversation": 5
+  },
+  {
+    "id": "7f40181860",
+    "deck": "would-you-rather",
+    "kind": "pair",
+    "tier": 3,
+    "headline": "learn your family has hidden something from you or learn your family has hidden you from someone?",
+    "judge": "Would you rather learn your family has hidden something from you — or — learn your family has hidden you from someone?",
+    "voice": 5,
+    "conversation": 5
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-04T06:21:32.989Z",
+  "mode": "live",
+  "argv": [
+    "twenty-one-questions"
+  ],
+  "stages": {
+    "safety/twenty-one-questions": {
+      "calls": 5,
+      "input": 7249,
+      "output": 3899,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.053488,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 5,
+      "input": 7249,
+      "output": 3899,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.053488,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

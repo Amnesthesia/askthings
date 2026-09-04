@@ -46,12 +46,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 2,
+        "escapability": 5,
+        "specificity": 1,
+        "exposureCost": 1,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -66,12 +80,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -86,12 +114,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 4,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -105,12 +147,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 4,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -125,12 +182,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 5,
+        "specificity": 2,
+        "exposureCost": 1,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -144,12 +215,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -164,12 +249,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -184,12 +284,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -204,12 +318,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -223,12 +352,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 2,
+        "escapability": 4,
+        "specificity": 2,
+        "exposureCost": 1,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -243,12 +386,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "faith",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -262,12 +420,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -282,12 +455,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -301,12 +488,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -321,12 +522,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -340,12 +555,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 4,
+        "specificity": 2,
+        "exposureCost": 1,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
       }
     },
     {
@@ -360,12 +590,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -380,12 +625,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -400,12 +660,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 2,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -419,12 +694,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -439,12 +728,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 2,
+        "escapability": 3,
+        "specificity": 1,
+        "exposureCost": 3,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -459,12 +763,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -478,12 +797,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -497,17 +831,32 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "text": "What's a fear you have that sounds silly when you say it?",
       "tags": [
         "fear"
@@ -516,12 +865,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 4,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -536,12 +899,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -556,12 +934,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 2,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -575,12 +968,26 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -595,12 +1002,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "sex"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -615,17 +1037,33 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 1,
       "text": "Is there a belief that's useful to hold and false?",
       "tags": [
         "beliefs",
@@ -635,17 +1073,32 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 4,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 1,
+        "exposureCost": 1,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "faith",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 2,
       "text": "What do you think happens when we die, and does it change how you live?",
       "tags": [
         "mortality",
@@ -655,17 +1108,32 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 2,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "faith"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 2,
       "text": "What would you want people to say about you when you're not in the room?",
       "tags": [
         "identity",
@@ -675,12 +1143,27 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 4,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -694,17 +1177,32 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 2,
+        "escapability": 2,
+        "specificity": 1,
+        "exposureCost": 5,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 2,
       "text": "What do you think I've got wrong about you so far?",
       "tags": [
         "us",
@@ -714,17 +1212,31 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 2,
       "text": "What do you hope is true?",
       "tags": [
         "hope",
@@ -734,17 +1246,32 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 4,
+        "specificity": 1,
+        "exposureCost": 2,
+        "revealed": 1,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "future",
+        "subjects": [
+          "faith",
+          "mortality"
+        ],
+        "relational": "solo",
+        "shape": "feeling"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "text": "If you had one phone call left, who would you call, and what would you say?",
       "tags": [
         "mortality",
@@ -754,17 +1281,33 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "text": "What's the loneliest you've ever been?",
       "tags": [
         "loneliness"
@@ -773,17 +1316,32 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 2,
       "text": "If you knew you had five years left, what would you stop doing tomorrow?",
       "tags": [
         "mortality",
@@ -793,17 +1351,32 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "text": "What do you think you're for?",
       "tags": [
         "meaning",
@@ -813,19 +1386,34 @@
       "origin": null,
       "gen": null,
       "scores": {
-        "conversation": null,
-        "intellectual": null,
-        "emotional": null,
-        "depth": null,
-        "voice": null,
-        "rated": null
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 3,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "text": "What did you give up on that you've never told anyone about?",
       "id": "b85d0923fd",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "dreams",
         "loss"
@@ -838,44 +1426,34 @@
         "at": "2026-09-03T12:17:50.641Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "When were you last genuinely ashamed of how you behaved?",
-      "id": "a687103b17",
-      "tier": 4,
-      "intensity": 4,
-      "tags": [
-        "shame",
-        "behaviour"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.641Z"
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "text": "Have you ever felt relief when you were supposed to feel sad?",
       "id": "aad3e03201",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "grief",
         "honesty"
@@ -889,11 +1467,27 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "mortality",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -913,19 +1507,33 @@
         "at": "2026-09-03T12:17:50.642Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "feeling"
       }
     },
     {
       "text": "What would have to happen for you to feel your life was wasted?",
       "id": "3c3b55a8c9",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "meaning",
         "fear"
@@ -938,19 +1546,35 @@
         "at": "2026-09-03T12:17:50.642Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 4,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "mortality",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "text": "Who would be hardest to lose, and does that person know?",
       "id": "93b90f1358",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "love",
         "loss"
@@ -963,19 +1587,35 @@
         "at": "2026-09-03T12:17:50.642Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "mortality",
+          "family",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What have you wanted to ask me but decided against?",
       "id": "a31a4957c6",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 2,
       "tags": [
         "us",
         "candor"
@@ -988,19 +1628,33 @@
         "at": "2026-09-03T12:18:35.593Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What question are you hoping I never ask you?",
       "id": "5d5ccd009d",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "fear",
         "secrets"
@@ -1013,12 +1667,27 @@
         "at": "2026-09-03T12:19:59.788Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1039,68 +1708,34 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Where did you grow up, and what did it teach you about money?",
-      "id": "de5fb88783",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "money",
-        "childhood"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.640Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Who have you quietly grown apart from without ever saying so?",
-      "id": "749365158e",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "friendship",
-        "distance"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.641Z"
-      },
-      "scores": {
-        "conversation": 5,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "family",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
       "text": "What are you pretending to be fine about?",
       "id": "1062021276",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "denial",
         "honesty"
@@ -1113,12 +1748,27 @@
         "at": "2026-09-03T12:17:50.641Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "feeling"
       }
     },
     {
@@ -1138,12 +1788,27 @@
         "at": "2026-09-03T12:17:50.641Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1163,19 +1828,35 @@
         "at": "2026-09-03T12:17:50.641Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 2,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "What would have to change for you to feel like you'd done enough?",
       "id": "12d0f694d4",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "ambition",
         "enough"
@@ -1188,19 +1869,35 @@
         "at": "2026-09-03T12:17:50.641Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "work",
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "text": "What would you want to be doing on your last ordinary day?",
       "id": "feb6edfe53",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "mortality",
         "meaning"
@@ -1213,12 +1910,27 @@
         "at": "2026-09-03T12:17:50.642Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 4,
+        "conversation": 4,
+        "intellectual": 2,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -1238,12 +1950,27 @@
         "at": "2026-09-03T12:17:50.642Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1264,11 +1991,26 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1289,43 +2031,32 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Have you ever wanted to disappear completely?",
-      "id": "344a533bad",
-      "tier": 4,
-      "intensity": 4,
-      "tags": [
-        "despair",
-        "escape"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.642Z"
-      },
-      "scores": {
-        "conversation": 4,
         "intellectual": 2,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "When you imagine being old, who's sitting next to you?",
       "id": "e090dc3366",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "future",
         "companionship"
@@ -1338,44 +2069,34 @@
         "at": "2026-09-03T12:17:50.642Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "When did you betray your own principles to keep the peace?",
-      "id": "fcce967023",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "values",
-        "compromise"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.591Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
+        "conversation": 4,
+        "intellectual": 2,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What makes you crueler than you want to be?",
       "id": "a061d22f05",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "anger",
         "character"
@@ -1390,35 +2111,25 @@
       "scores": {
         "conversation": 5,
         "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Which relationship brings out a version of you that you dislike?",
-      "id": "451539c593",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "relationships",
-        "identity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.592Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
         "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "feeling"
       }
     },
     {
@@ -1440,10 +2151,25 @@
       "scores": {
         "conversation": 5,
         "intellectual": 3,
-        "emotional": 4,
+        "emotional": 5,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1463,12 +2189,28 @@
         "at": "2026-09-03T12:18:35.594Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
+        "conversation": 4,
+        "intellectual": 2,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1488,62 +2230,27 @@
         "at": "2026-09-03T12:18:35.594Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "When has desire made you unrecognizable to yourself?",
-      "id": "292df3c97c",
-      "tier": 4,
-      "intensity": 4,
-      "tags": [
-        "desire",
-        "identity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.594Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What do you think I secretly judge you for?",
-      "id": "3384f86733",
-      "tier": 4,
-      "intensity": 4,
-      "tags": [
-        "meta",
-        "judgement"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.788Z"
-      },
-      "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -1563,12 +2270,26 @@
         "at": "2026-09-03T12:19:59.788Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1591,16 +2312,31 @@
         "conversation": 4,
         "intellectual": 3,
         "emotional": 5,
-        "depth": 5,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "Which stranger has stuck in your head?",
       "id": "dd985672b3",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "strangers",
         "memory"
@@ -1613,19 +2349,31 @@
         "at": "2026-09-03T12:17:50.638Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 2,
-        "emotional": 4,
-        "depth": 3,
+        "emotional": 3,
+        "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "text": "What were you wrong about the first time you met someone here?",
       "id": "b5aa2a5b41",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 1,
       "tags": [
         "first impressions"
       ],
@@ -1637,19 +2385,33 @@
         "at": "2026-09-03T12:17:50.638Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What argument do you keep having with the same person?",
       "id": "3279dc6ef5",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "conflict",
         "relationships"
@@ -1662,19 +2424,34 @@
         "at": "2026-09-03T12:17:50.640Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "What did your family teach you about money that you're still undoing?",
       "id": "65d2172520",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "family",
         "money"
@@ -1688,11 +2465,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "family",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1712,12 +2504,27 @@
         "at": "2026-09-03T12:17:50.641Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 4,
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "work",
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1738,18 +2545,33 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 3,
         "emotional": 5,
         "depth": 5,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "Is there someone you still love who doesn't know?",
       "id": "41269aea52",
       "tier": 4,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "love",
         "secrets"
@@ -1764,10 +2586,25 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 5,
+        "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "sex",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1788,11 +2625,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 3,
         "emotional": 5,
         "depth": 5,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1813,36 +2665,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What have you never forgiven yourself for?",
-      "id": "65db7bebf9",
-      "tier": 4,
-      "intensity": 4,
-      "tags": [
-        "forgiveness",
-        "self"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.642Z"
-      },
-      "scores": {
-        "conversation": 4,
         "intellectual": 3,
         "emotional": 5,
         "depth": 5,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1862,12 +2704,27 @@
         "at": "2026-09-03T12:18:35.590Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 2,
         "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "work"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1887,37 +2744,26 @@
         "at": "2026-09-03T12:18:35.592Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Who knows a version of you that no longer exists?",
-      "id": "362f3e5380",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "change",
-        "past"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.592Z"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "feeling"
       }
     },
     {
@@ -1942,14 +2788,28 @@
         "emotional": 5,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Which smell takes you straight back somewhere?",
       "id": "5ecd6bf9e0",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "memory",
         "senses"
@@ -1962,12 +2822,26 @@
         "at": "2026-09-03T12:17:50.638Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
-        "depth": 3,
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -1992,7 +2866,22 @@
         "emotional": 4,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "home",
+          "mortality"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -2017,7 +2906,22 @@
         "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "body",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -2039,10 +2943,24 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 4,
+        "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -2066,8 +2984,20 @@
         "intellectual": 4,
         "emotional": 2,
         "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -2088,11 +3018,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "fact"
       }
     },
     {
@@ -2114,42 +3059,31 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What's a compliment you can't take seriously when you hear it?",
-      "id": "c2983e6a43",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "self-image",
-        "praise"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.641Z"
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "What decision are you still defending years later?",
       "id": "e7566b2f23",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 3,
       "tags": [
         "regret",
         "choices"
@@ -2163,43 +3097,33 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Where in your life are you playing it too safe?",
-      "id": "0a4caa7d9b",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "risk",
-        "courage"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.641Z"
-      },
-      "scores": {
-        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
-        "depth": 3,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "text": "What do you think I'd be shocked to learn about you?",
       "id": "220a030ed6",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 3,
       "tags": [
         "secrets",
         "us"
@@ -2212,69 +3136,33 @@
         "at": "2026-09-03T12:17:50.642Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What's the nicest compliment you've received from someone who barely knew you?",
-      "id": "6e200b34ec",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "compliments",
-        "encounters"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.587Z"
-      },
-      "scores": {
         "conversation": 4,
         "intellectual": 2,
         "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What part of your life would be hardest to explain to your younger self?",
-      "id": "835636a041",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "identity",
-        "change"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.593Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
+        "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
       }
     },
     {
       "text": "Who would you most hate to disappoint?",
       "id": "d5f43f5d8a",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 3,
       "tags": [
         "approval",
         "loyalty"
@@ -2288,18 +3176,33 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 4,
-        "depth": 3,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What about getting older are you least prepared for?",
       "id": "ef88f439ff",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 3,
       "tags": [
         "aging",
         "fear"
@@ -2315,34 +3218,24 @@
         "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What's the last photo you took on your phone, and why did you take it?",
-      "id": "aa504649fb",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "photos",
-        "everyday"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.635Z"
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "future",
+        "subjects": [
+          "body",
+          "mortality"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -2362,68 +3255,33 @@
         "at": "2026-09-03T12:17:50.638Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What's the last thing you got genuinely obsessed with?",
-      "id": "914b74bf64",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "interests"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.640Z"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What advice do people give that you think is actually bad?",
-      "id": "c68313dded",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "advice",
-        "opinion"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.640Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
       "text": "What do you spend money on that other people think is wasteful?",
       "id": "47a91f8490",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "money",
         "habits"
@@ -2441,14 +3299,28 @@
         "emotional": 2,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
       "text": "What's a job you've had that changed how you treat strangers?",
       "id": "bcd458e638",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "work",
         "empathy"
@@ -2462,18 +3334,32 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "What did you think adults knew that it turns out nobody knows?",
       "id": "6480256910",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "growing up"
       ],
@@ -2488,9 +3374,23 @@
         "conversation": 4,
         "intellectual": 3,
         "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -2510,12 +3410,26 @@
         "at": "2026-09-03T12:17:50.640Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -2535,12 +3449,26 @@
         "at": "2026-09-03T12:18:35.587Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "story"
       }
     },
     {
@@ -2560,62 +3488,24 @@
         "at": "2026-09-03T12:18:35.587Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 1,
         "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Which household chore do you oddly enjoy?",
-      "id": "84608fb7dd",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "home",
-        "chores"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.587Z"
+        "depth": 1,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What tiny luxury feels worth every penny?",
-      "id": "845bd93e28",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "money",
-        "pleasure"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.587Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -2635,19 +3525,31 @@
         "at": "2026-09-03T12:18:35.588Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "text": "What did your first bad boss teach you?",
       "id": "e5f78711c4",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "work",
         "lessons"
@@ -2661,18 +3563,32 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Who changed your taste in music?",
       "id": "de12c11fd1",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "music",
         "influence"
@@ -2685,37 +3601,27 @@
         "at": "2026-09-03T12:18:35.590Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 1,
+        "conversation": 3,
+        "intellectual": 2,
         "emotional": 3,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Which possession have you kept far longer than it deserved?",
-      "id": "550ceebe17",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "possessions",
-        "memory"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.590Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 1,
-        "emotional": 3,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -2736,38 +3642,27 @@
         "at": "2026-09-03T12:19:59.778Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
+        "conversation": 3,
+        "intellectual": 1,
         "emotional": 3,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What irrational fear did you have as a kid?",
-      "id": "023bac0c9d",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "fears",
-        "childhood",
-        "memory"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.779Z"
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "fact"
       }
     },
     {
@@ -2788,19 +3683,33 @@
         "at": "2026-09-03T12:19:59.784Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 1,
+        "emotional": 2,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
       "text": "What is your most boring memory that you can't forget?",
       "id": "61302aaec9",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "memory",
         "past",
@@ -2815,11 +3724,2450 @@
       },
       "scores": {
         "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "When did you stay somewhere longer than you should have?",
+      "id": "e2862b86a1",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "leaving",
+        "regret"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.592Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What would make your life feel wasted?",
+      "id": "feec3cf82b",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "meaning",
+        "purpose"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.594Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What would you trust me with that you would not trust most people with?",
+      "id": "7e741ee3e4",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "trust",
+        "us"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.594Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When did you realize your parents were just people?",
+      "id": "e84665f319",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "parents",
+        "childhood",
+        "maturity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.786Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Who did you trust that you shouldn't have?",
+      "id": "5b851a6ecf",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "trust",
+        "betrayal",
+        "past"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.786Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Who are you never going to forgive?",
+      "id": "e689a8e0c8",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "forgiveness",
+        "grudges"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.788Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What is the cruelest thing you have ever said to someone?",
+      "id": "f3223864aa",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "cruelty",
+        "guilt",
+        "anger"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.786Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "How do you want to die?",
+      "id": "d107a169b2",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "mortality",
+        "death"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.788Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When do you feel most ashamed of who you are?",
+      "id": "49823a19ef",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "shame",
+        "self"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.788Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 2,
+        "exposureCost": 5,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "feeling"
+      }
+    },
+    {
+      "text": "What makes you laugh when you're alone?",
+      "id": "ae4b5bf42e",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "humour"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.637Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Which shop or building from your childhood is gone now?",
+      "id": "14b0f9d9df",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "nostalgia",
+        "place"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.638Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Which teacher do you still think about, good or bad?",
+      "id": "05a26d1d09",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "school",
+        "formative"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.640Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "When did you last feel like a fraud?",
+      "id": "8257a80569",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "doubt",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.641Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work",
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What food do you associate with being looked after?",
+      "id": "5abb57631c",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "food",
+        "care"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.590Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "home",
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What's the best money you've spent in the last year?",
+      "id": "419f885571",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "money",
+        "taste"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.637Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "What song do you play when nobody else is choosing?",
+      "id": "b914a09520",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "music"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.638Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Which local place would you hate to see disappear?",
+      "id": "c2ddd78458",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "local",
+        "places"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.587Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What was your worst summer job?",
+      "id": "c5206a4c9e",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "work",
+        "childhood",
+        "stories"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.779Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "When did you last break someone's heart?",
+      "id": "1c69ac1dd7",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "love",
+        "pain"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.788Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "sex",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What apology are you still owed?",
+      "id": "2cf34be5dc",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "forgiveness",
+        "hurt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.642Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When do you feel loneliest around other people?",
+      "id": "a9c9712e13",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "loneliness",
+        "belonging"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.592Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "feeling"
+      }
+    },
+    {
+      "text": "When did you learn not to trust your own judgment?",
+      "id": "c666cc9290",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "trust",
+        "doubt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.592Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What did success fail to fix for you?",
+      "id": "89749baa80",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "success",
+        "expectations"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.592Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "past",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What are you scared might never happen for you?",
+      "id": "c6c6d9d8e8",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "future",
+        "fear"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.592Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Which goodbye still feels unfinished?",
+      "id": "fab1e3fa1d",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "grief",
+        "farewell"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.593Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "mortality",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What do you argue about most often in your head?",
+      "id": "66cd7ff8ca",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "thoughts",
+        "conflict",
+        "opinions"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.784Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Who did you forgive but still don't trust?",
+      "id": "09ac6e6cc2",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "relationships",
+        "trust",
+        "past"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.784Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Who do you want sitting next to you on your deathbed?",
+      "id": "56f87b0ec0",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "mortality",
+        "connection"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.788Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "family",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When did you come closest to giving up entirely?",
+      "id": "5f237f8e35",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "despair",
+        "resilience"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.788Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What do you think is going to kill you?",
+      "id": "179d98e152",
+      "tier": 4,
+      "intensity": 2,
+      "tags": [
+        "mortality",
+        "fear"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.788Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What did you lose that you still haven't replaced?",
+      "id": "ef6042dbf9",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "loss",
+        "grief"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.592Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "home",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What age do you feel in your head?",
+      "id": "339e5cd952",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "identity",
+        "aging",
+        "self"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.784Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Who do you call when you get good news?",
+      "id": "ed79209e51",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "relationships",
+        "joy",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.784Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you judge other people for that you do yourself?",
+      "id": "dfe6269cfa",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "judgment",
+        "hypocrisy",
+        "habits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.786Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What compliment do you get most, and do you believe it?",
+      "id": "8c6af3c753",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "self-image"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.638Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What are you slightly too competitive about?",
+      "id": "f4f013775d",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "competition"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.638Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you notice about people that other people miss?",
+      "id": "84a36ede2a",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "observation"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.640Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What's the worst advice you ever followed?",
+      "id": "2139db9b25",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "advice",
+        "mistakes"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.640Z"
+      },
+      "scores": {
+        "conversation": 4,
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What board game do you take way too seriously?",
+      "id": "de8c23d842",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "games",
+        "hobbies",
+        "personality"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.779Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Where did you go that felt like another planet?",
+      "id": "61cc25f8cd",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "travel",
+        "experience",
+        "places"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.784Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What do you eat when you are home alone?",
+      "id": "d1a1096009",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "food",
+        "habits",
+        "privacy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.784Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "home",
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "What are you looking forward to that nobody else cares about?",
+      "id": "8c7d964c44",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "anticipation",
+        "quirks",
+        "hobbies"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.784Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Which small superstition do you still follow?",
+      "id": "6277052f85",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "superstition"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.638Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "faith"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "What do you always notice first in someone's house?",
+      "id": "16ced52d00",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "observation"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.638Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "What would break us?",
+      "id": "9c1e26542d",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "us",
+        "endings"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:39:36.963Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When have I made you feel alone?",
+      "id": "59e7c3c1a4",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "us",
+        "loneliness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:21.617Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What would make you walk away from me?",
+      "id": "f57151e67b",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "us",
+        "limits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:21.617Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When have you trusted me least?",
+      "id": "e18650f376",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "us",
+        "trust"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:21.617Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Where do you think I am lying to myself?",
+      "id": "651fe863d5",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "us",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:41:21.617Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Who do you wish had fought harder to keep you?",
+      "id": "f47a21cd16",
+      "tier": 4,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "abandonment"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:50:26.258Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "affect",
+        "time": "past",
+        "subjects": [
+          "family",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What have I said that you're still carrying around?",
+      "id": "cfbeff01b9",
+      "tier": 4,
+      "intensity": 4,
+      "tags": [
+        "us",
+        "words"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:50:35.678Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Who have you replaced?",
+      "id": "a153d48175",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "love",
+        "loss"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:50:35.678Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What did you think was normal at home until you saw a friend's house?",
+      "id": "223f5fb333",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "family",
+        "childhood"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:39:53.437Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "family",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Whose posts do you always read but never like?",
+      "id": "0de4b1d6cf",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "internet",
+        "habits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:51:12.177Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What's in your bag right now that would surprise me?",
+      "id": "e5854fcdee",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "objects",
+        "curiosity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:39:42.403Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "What did you get in trouble for at school?",
+      "id": "ca87b1427a",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "school",
+        "childhood"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:39:42.403Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Who's the funniest person you've met in real life?",
+      "id": "6f67805219",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "people",
+        "humour"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:39:42.403Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What are you bad at but keep doing anyway?",
+      "id": "7b325ff955",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "hobbies",
+        "habits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:39:42.404Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What was the last Wikipedia page you read all the way through?",
+      "id": "6bf51c6d93",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "internet",
+        "reading"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:40:28.117Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 5,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "How did you get your oldest scar?",
+      "id": "8e5cf3f110",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "bodies",
+        "injuries"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:40:28.117Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What do you know about the people who live next door?",
+      "id": "fdbb829292",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "neighbors",
+        "home"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:40:28.117Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     }
   ]

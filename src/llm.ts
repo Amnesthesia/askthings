@@ -34,10 +34,16 @@ export const DATA_ROOT =
 const CACHE_DIR = join(DATA_ROOT, "_cache");
 
 const CONCURRENCY = Number(process.env.LLM_CONCURRENCY ?? 4);
-const MAX_CALLS = Number(process.env.MAX_CALLS ?? 300);
-const MAX_USD = Number(process.env.MAX_USD ?? 12);
+// A count backstop behind the dollar caps. Dedupe alone makes ~100 judge calls
+// per deck per run (NEAREST pairs per candidate, 30 pairs per call), so 300
+// stopped a normal run half way; the dollar caps are the real guard.
+const MAX_CALLS = Number(process.env.MAX_CALLS ?? 1000);
+// Raised from 12 / 5 on 2026-09-04 when the default run became two generate
+// passes (oversupply by more calls, never longer ones): one pass over six
+// decks measured $4.89.
+const MAX_USD = Number(process.env.MAX_USD ?? 25);
 /** No provider may spend more than this in one run. Enforced, not estimated. */
-const MAX_USD_PER_PROVIDER = Number(process.env.MAX_USD_PER_PROVIDER ?? 5);
+const MAX_USD_PER_PROVIDER = Number(process.env.MAX_USD_PER_PROVIDER ?? 10);
 const MAX_RETRIES = 4;
 const BASE_BACKOFF_MS = 5_000;
 

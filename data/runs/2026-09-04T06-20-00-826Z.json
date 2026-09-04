@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-04T06:20:00.826Z",
+  "mode": "live",
+  "argv": [
+    "undercurrent,unaskable,twenty-one-questions,thought-experiments"
+  ],
+  "stages": {
+    "safety/undercurrent": {
+      "calls": 13,
+      "input": 19424,
+      "output": 11513,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.15397800000000003,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/unaskable": {
+      "calls": 16,
+      "input": 26847,
+      "output": 14785,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.20154399999999997,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/thought-experiments": {
+      "calls": 3,
+      "input": 15027,
+      "output": 3547,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.065524,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 32,
+      "input": 61298,
+      "output": 29845,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.42104600000000014,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

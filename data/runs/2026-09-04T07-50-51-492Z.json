@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-04T07:50:51.492Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "backfill-history": {
+      "calls": 101,
+      "input": 101814,
+      "output": 65302,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.32124299999999983,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 101,
+      "input": 101814,
+      "output": 65302,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.32124299999999983,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

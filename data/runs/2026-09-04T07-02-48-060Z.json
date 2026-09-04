@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T07:02:48.060Z",
+  "mode": "live",
+  "argv": [
+    "/private/tmp/claude-501/-Users-amnesthesia-Work-askthings/f321c81d-f2f9-43ad-82d3-20391e1cf9bf/scratchpad"
+  ],
+  "stages": {
+    "exp-a": {
+      "calls": 21,
+      "input": 37914,
+      "output": 50579,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.21810675,
+      "retries": 0,
+      "failures": 0
+    },
+    "exp-b": {
+      "calls": 21,
+      "input": 37914,
+      "output": 49496,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.21404549999999997,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 42,
+      "input": 75828,
+      "output": 100075,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.4321522499999999,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

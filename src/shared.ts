@@ -30,6 +30,7 @@ export type DeckKind = (typeof DECK_KINDS)[number];
 /** Slugs a deck may not use because a route already owns them. */
 export const RESERVED_SLUGS = [
 	"questions",
+	"spin",
 	"favourites",
 	"about",
 	"404",
@@ -44,6 +45,18 @@ export interface Scores {
 	depth: number | null;
 	/** Sounds like a person asked it. The anti-slop score. */
 	voice: number | null;
+	/** How easy a socially acceptable non-answer is. LOW is good: the proxy for
+	 * depth that catches questions that sound profound and produce nothing. */
+	escapability: number | null;
+	/** Concrete anchor (a person, a place, a time, a thing) vs an abstract category. */
+	specificity: number | null;
+	/** How much the honest answer reveals. Independent of depth; the filter for
+	 * stranger vs friend vs partner. */
+	exposureCost: number | null;
+	/** Does the value come out of a choice or an action (5) or is the person asked
+	 * to self-report it (1)? "What do you value most?" is a 1; "What did you say
+	 * yes to that you should have refused?" is a 5. */
+	revealed: number | null;
 	/** "<provider>/<model>@<prompt-version>" that produced the scores. */
 	rated: string | null;
 }
@@ -54,7 +67,50 @@ export const SCORE_KEYS = [
 	"emotional",
 	"depth",
 	"voice",
+	"escapability",
+	"specificity",
+	"exposureCost",
+	"revealed",
 ] as const satisfies readonly (keyof Scores)[];
+
+/** Categorical annotations from the rater. No ordering in any of them; they
+ * exist for filtering and for controlling the MIX of a set (ten verdicts in a
+ * row is a bad set whatever each card scores). */
+export const TARGETS = [
+	"experience",
+	"position",
+	"priority",
+	"process",
+	"affect",
+] as const;
+export const TIMES = ["past", "present", "future"] as const;
+export const SUBJECTS = [
+	"work",
+	"family",
+	"money",
+	"mortality",
+	"sex",
+	"faith",
+	"failure",
+	"identity",
+	"body",
+	"friendship",
+	"home",
+] as const;
+export const RELATIONS = ["solo", "relational"] as const;
+export const SHAPES = ["story", "verdict", "fact", "feeling"] as const;
+
+export interface Facets {
+	/** What the question aims at. */
+	target: (typeof TARGETS)[number] | null;
+	time: (typeof TIMES)[number] | null;
+	/** Multi-label: a question often sits in two at once. */
+	subjects: (typeof SUBJECTS)[number][];
+	/** The person alone, or the person in relation to someone else. */
+	relational: (typeof RELATIONS)[number] | null;
+	/** What kind of answer it produces. */
+	shape: (typeof SHAPES)[number] | null;
+}
 
 export interface Provenance {
 	provider: string;
@@ -78,6 +134,15 @@ interface CardBase {
 	/** null means hand-authored. */
 	gen: Provenance | null;
 	scores: Scores;
+	/** Only makes sense between two people with a history together ("What do
+	 * you blame me for that you chose yourself?"). Present-moment cards about
+	 * the other person ("What do you like about me?") are NOT this. Declared by
+	 * the writer, confirmed by the rater; never inferred from the text. Mixed
+	 * pools (Spin) hold these back unless asked. Absent on cards published
+	 * before the field existed until the backfill judged them. */
+	assumesHistory?: boolean;
+	/** Categorical annotations from the rater; absent until rated. */
+	facets?: Facets;
 	/** Only on synthetic mixed decks built in the browser (favourites), where
 	 * cards come from decks of different kinds. Never present in content/. */
 	kind?: DeckKind;
@@ -158,6 +223,10 @@ export const EMPTY_SCORES: Scores = {
 	emotional: null,
 	depth: null,
 	voice: null,
+	escapability: null,
+	specificity: null,
+	exposureCost: null,
+	revealed: null,
 	rated: null,
 };
 

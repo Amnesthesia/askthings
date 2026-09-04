@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T04:14:06.513Z",
+  "mode": "live",
+  "argv": [
+    "thought-experiments,never-have-i-ever"
+  ],
+  "stages": {
+    "dedupe/thought-experiments": {
+      "calls": 1,
+      "input": 376,
+      "output": 317,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.00147075,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/never-have-i-ever": {
+      "calls": 8,
+      "input": 9537,
+      "output": 3146,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.018950250000000002,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 9,
+      "input": 9913,
+      "output": 3463,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.020421,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

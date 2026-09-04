@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-04T03:26:41.162Z",
+  "mode": "live",
+  "argv": [
+    "unaskable,inquisitives,never-have-i-ever,fast-friends,would-you-rather,undercurrent,twenty-one-questions"
+  ],
+  "stages": {
+    "dedupe/unaskable": {
+      "calls": 2,
+      "input": 2242,
+      "output": 790,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.004644,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 2,
+      "input": 2242,
+      "output": 790,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.004644,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

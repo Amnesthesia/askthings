@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-04T06:48:56.916Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "rewrite": {
+      "calls": 5,
+      "input": 12001,
+      "output": 1764,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.041642,
+      "retries": 0,
+      "failures": 0
+    },
+    "judge-rewrites": {
+      "calls": 1,
+      "input": 2252,
+      "output": 4901,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.02006775,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 5,
+      "input": 12001,
+      "output": 1764,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.041642,
+      "retries": 0,
+      "failures": 0
+    },
+    "gemini": {
+      "calls": 1,
+      "input": 2252,
+      "output": 4901,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.02006775,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

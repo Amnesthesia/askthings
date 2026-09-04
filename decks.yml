@@ -7,10 +7,14 @@
 #   opened) | free (file order, shuffle offered).
 # play.cardsPerTier: deal at most this many per level per session; null = all.
 # play.howToPlay: shown on the deck page and behind the game's help button.
-# generation.candidatesPerTier: asked per provider per tier per call.
+# generation.candidatesPerTier: cards asked for in ONE call. Small on purpose:
+#   quality slides with response length, so a level is filled by many small calls.
 # generation.targetPerTier: publish keeps the best cards up to this many.
+# generation.oversupply: generate tops a level up until it holds this many times
+#   its target in unrejected candidates (default 3); rank then picks the best.
 # generation.wholeRun: the deck is one complete run per provider (21 Questions):
-#   asked at targetPerTier, kept or dropped whole, one run published.
+#   asked at targetPerTier; publish assembles one run from the best card per position.
+# generation.rateNote: deck format the style guide would otherwise score as a tell.
 # generation.tierFrom: judge (default; the rater's exposure level decides the
 #   published level) | writer (keep the level it was written for).
 # generation.rate: false skips the rubric (improv word banks); safety still runs.
@@ -33,8 +37,8 @@ inquisitives:
       - "Swipe sideways for another card at this level; swipe up to go deeper."
       - "Go as deep as the other person lets you, and no deeper."
   generation:
-    candidatesPerTier: 25
-    targetPerTier: 30
+    candidatesPerTier: 12
+    targetPerTier: 40
     brief: |
       A card is ONE question a curious interviewer would ask a stranger to skip small talk.
       Mechanic: two or more people, any card, any order; whoever draws it answers first.
@@ -94,8 +98,8 @@ never-have-i-ever:
       - "Anyone who put a finger down owes the table the story."
       - "Swipe up when the room is ready for the next level."
   generation:
-    candidatesPerTier: 25
-    targetPerTier: 25
+    candidatesPerTier: 12
+    targetPerTier: 35
     tierFrom: writer
     brief: |
       A card is ONE first-person statement that begins exactly "Never have I ever" and names one
@@ -155,47 +159,62 @@ fast-friends:
       - "Both of you answer every card, taking turns to go first."
       - "Give it about forty-five minutes. Set three is where it lands."
   generation:
-    candidatesPerTier: 25
-    targetPerTier: 12
+    candidatesPerTier: 12
+    # 12 Aron originals (hand-authored) per set plus as many good new cards as the gate
+    # passes; a session deals 12 of the set at random, in file order.
+    targetPerTier: 40
+    rateNote: >-
+      Instructions ("Tell your partner…", "Share…") and two-part cards ("…? Why?") are this
+      deck's format, not tells; score the words inside them.
     brief: |
       This deck follows the Fast Friends procedure from Aron et al. (1997): two people work
       through three sets of twelve questions in order, BOTH answering every question, with each set
-      more self-disclosing than the last. Write ORIGINAL questions in that spirit. Do not reproduce
-      or lightly paraphrase the published 1997 list.
+      more self-disclosing than the last. The deck already holds the 36 original questions as
+      hand-written cards, so they are in the avoid-list; write NEW questions that belong in the same
+      set: same register, same kind of ask, a different question. Never reword an original.
       Reciprocity principle: both people answer, so every question must be equally answerable by
       two strangers with different lives. Rules: at most 30 words; may be two-part ("…? Why?");
       up to a third of the cards may be instructions ("Tell your partner…", "Share…"); no
       yes/no questions.
-      Exemplars:
-      - "If you could have dinner with anyone alive, who, and what would you want to ask them?"
-      - "Tell your partner about the last time you felt properly proud of yourself."
-      - "What do you value most in a friend, and when did you last fail at it yourself?"
-      - "Share something you like about the person across from you that they might not know."
+      Exemplars of new cards that sit beside the originals:
+      - Set one: "What did you want to be when you were eight, and what happened to that idea?"
+      - Set two: "Who believed in you before you'd done anything to earn it?"
+      - Set three: "If the two of us became close, what would you have to warn me about you?"
   tiers:
     - level: 1
       name: Set one
       description: "Warm, curious, low stakes."
       intensity: 1
       guidance: >-
-        Set one: warm and curious. Preferences, small stories, an ideal day, a place they'd return to.
-        IN: "Tell your partner one story about your name.", "If tomorrow were empty, how would you spend it?"
-        Both people answer comfortably within a minute of meeting. Nothing about family pain or the other person yet.
+        Set one, the register of Aron's first twelve: dinner guest, fame, a perfect day, when you
+        last sang, a hunch about how you will die, your life story in four minutes, gratitude, what
+        you would change about how you were raised. Preferences and small stories with one or two
+        cards that lean personal. IN: "Tell your partner one story about your name.", "What did
+        you want to be when you were eight, and what happened to that idea?" Both people answer
+        comfortably within a minute of meeting; nothing about the partner beyond what you notice.
     - level: 2
       name: Set two
       description: "Personal history and how they see themselves."
       intensity: 3
       guidance: >-
-        Set two: personal history and how they see themselves. Childhood, family, what they'd change, what they hide.
-        IN: "Which parent are you more like, and how do you feel about that?", "Who believed in you before you'd earned it?"
-        Real disclosure, still safe: no direct questions about the partner, no mortality.
+        Set two, the register of Aron's second twelve: the crystal ball, the dream not yet
+        attempted, greatest accomplishment, most treasured and most terrible memory, a year left
+        to live, what friendship and love mean, how close the family is, the relationship with
+        your mother. Personal history, values and how they see themselves. IN: "Which parent are
+        you more like, and how do you feel about that?", "Who believed in you before you'd earned
+        it?" Real disclosure, still safe: the partner is only addressed to praise them.
     - level: 3
       name: Set three
       description: "The two of you, and the things rarely said."
       intensity: 4
       guidance: >-
-        Set three: the two of you, and the things rarely said. Half the cards address the partner directly.
-        IN: "Tell your partner what you noticed about them in the first minute, and whether you were right.",
-        "If you died tonight, what would you most regret not having told someone? Why haven't you told them?"
+        Set three, the register of Aron's last twelve: "we" statements, what your partner should
+        know before becoming a close friend, what you like about them said honestly, an
+        embarrassing moment, when you last cried, what is too serious to joke about, the regret
+        you would die with, the one item saved from the fire, whose death would hurt most, a
+        problem you want their advice on. Half the cards address the partner directly. IN: "Tell
+        your partner what you noticed about them in the first minute, and whether you were
+        right.", "If the two of us became close, what would you have to warn me about you?"
         Reciprocal and direct; ends with something both will remember.
 
 twenty-one-questions:
@@ -246,8 +265,8 @@ would-you-rather:
       - "Then everyone defends their pick. That is the game."
       - "Swipe up when the easy ones stop being interesting."
   generation:
-    candidatesPerTier: 25
-    targetPerTier: 25
+    candidatesPerTier: 12
+    targetPerTier: 35
     brief: |
       A card is two options, a and b, that are genuinely hard to choose between and reveal a
       value or a fear, not a gross-out. Mechanic: pick one, then explain; the explanation is the
@@ -299,6 +318,13 @@ thought-experiments:
   generation:
     candidatesPerTier: 10
     targetPerTier: 60
+    # Levels are topics (Puzzling / Uncomfortable / Personal) with canonical
+    # experiments assigned per level, not exposure: the judge's intensity
+    # pushed nearly everything into levels 2-3 and left level 1 with 11 cards.
+    tierFrom: writer
+    rateNote: >-
+      The setup is read aloud from the card, so plain written prose is its format; judge voice
+      on the dilemma and the probes, which are said to the table.
     brief: |
       A card is a thought experiment or moral dilemma with four parts: a short title; a setup
       (the scenario, at most 120 words, plain words, no jargon, no philosopher's names in the
@@ -310,8 +336,19 @@ thought-experiments:
       standard attribution in `origin` (e.g. "Philippa Foot, 1967", "Robert Nozick, 1974",
       "Plutarch / Hobbes", "John Rawls, 1971", "John Searle, 1980", "Frank Jackson, 1982",
       "Derek Parfit, 1984", "Peter Singer, 1972", "William Newcomb / Robert Nozick, 1969").
-      ORIGINAL: a new dilemma about ordinary life (money, friends, family, work, technology)
+      ORIGINAL: a new dilemma about ordinary life (money, friends, family, love, technology)
       with `origin` null. Never invent an attribution.
+      An original must be one the players have faced or will face, told to them in the second
+      person with one concrete detail that makes it theirs ("your sister", "the £40", "the
+      Tuesday it happened"). NOT: workplace ethics-class cases (expenses, discounts, credit
+      for a presentation, a colleague's shortcut, HR), windfalls and lottery tickets, a
+      stranger's wallet, sci-fi machines, deals offered by a genie. Those read like an exam
+      and were pruned. The setup is a story someone is telling across a table, not a case
+      file: no "Suppose that", no "a colleague", no "an organisation".
+      BAD: "The Expenses: your company's bonus scheme rewards…" GOOD: "The City You Won't Move
+      To: your partner is offered the job they've wanted for ten years, in a city you'd hate."
+      BAD: "The Winning Ticket: you find a lottery ticket…" GOOD: "Your Friend's Messages: your
+      closest friend dies and leaves you their laptop, still logged in."
       Canonical experiments to cover (one card each, best retelling wins): Trolley Problem;
       the Fat Man / Footbridge variant; Experience Machine; Ship of Theseus; Veil of Ignorance;
       Chinese Room; Mary's Room; the Teleporter; the Lifeboat; the Drowning Child; the
@@ -355,8 +392,11 @@ undercurrent:
       - "You may pass once per level. Say so out loud."
       - "Finish a level before going deeper. Level three is the point."
   generation:
-    candidatesPerTier: 25
-    targetPerTier: 20
+    candidatesPerTier: 12
+    targetPerTier: 30
+    rateNote: >-
+      Instructions addressed to the other person ("Tell me…", "Guess…") are this deck's
+      format, not tells.
     brief: |
       A closeness deck for two people, in the escalating-intimacy card format: three levels,
       taken in turns, answered honestly, with one pass allowed per level. Write ORIGINAL cards.
@@ -409,8 +449,8 @@ unaskable:
       - "Answer the question that was asked: the name, the number, the order. Deflecting is an answer too; say so out loud."
       - "Start at level one. Go up only when both of you nod."
   generation:
-    candidatesPerTier: 25
-    targetPerTier: 25
+    candidatesPerTier: 12
+    targetPerTier: 40
     tierFrom: writer
     safetyNote: >-
       This deck is deliberately confrontational and both players opt in before the first
@@ -418,116 +458,87 @@ unaskable:
       a death; contempt; the price of a loyalty; who is settling for whom: all allowed.
       Reject only the listed categories.
     brief: |
-      You generate questions that people want answers to but would never dare ask.
-
-      Shock is not the goal. Taboo topics are cheap and vulgarity is cheaper. A question
-      becomes unaskable through PRECISION: it corners someone, presupposes the uncomfortable
-      thing, and leaves no polite exit.
-
-      THE TWO AXES
-        COST     - what it takes to ask it and to answer honestly
-        NOVELTY  - how much the answer reveals that wasn't already available
-      High cost + low novelty = a heist. You extract a fact they already know and were
-      withholding (salary, body count, affair). Uncomfortable, but nothing is discovered.
-      THE TEST: if the answer was sitting there fully formed, rewrite it. The answerer must
-      CONSTRUCT the answer, finding out what they think while saying it.
-
-      THE TWO MECHANISMS
-      [B] NO DIPLOMATIC ANSWER. Rankings, forced choices, priced trade-offs, loaded
-          presuppositions. Deflection is itself a disclosure. B supplies NOVELTY: ranking
-          forces a computation they have never performed.
-      [D] NO COVER STORY. There is no legitimate reason to want to know. The curiosity is
-          the transgression. D supplies COST.
-      DEFAULT MODE IS FUSION: force a ranking of something no one has the right to ask about.
-      Pure B is permissible and merely intense. Pure D drifts toward secret-extraction. Fused,
-      both axes are covered. Target mix: 60% B x D fused, 20% pure B, 20% pure D.
-
-      GENERATORS
-      B - FORCED ORDINALITY: rank the children, the friendships, the loves, the regrets.
-      B - THE TIEBREAK: two things they hold as equal; force the split.
-      B - THE PRICE: name the sum at which a professed value sells.
-      B - THE IMBALANCE PAIR: who do you love more than they love you, and who is on the other
-          side of that with you. Two answers whose juxtaposition is the disclosure.
-      B - THE SACRIFICE: one of them keeps everything, one loses it; which way round.
-      B - THE COUNT: a number they have never totalled.
-      D - THE PRIVATE THOUGHT: the sentence about someone close never said aloud, not even drunk.
-      D - DISQUALIFIED FEELING: relief, contempt, envy, boredom aimed at people they are
-          supposed to love.
-      D - UNEARNED MOTIVE: how much of your generosity is fear; of your patience, spite; of
-          your loyalty, cowardice.
-      D - THE DEAD AUDIENCE: whose approval are you still working for, given they will never
-          see it.
-      D - THE 4AM CONTENT: the actual sentence, not the theme.
-
-      STRUCTURAL RULES
-      One clause. One blade. Second person. Demand a specific referent: a name, a date, a
-      number, an order. No hedging: no "if any", "or not", "how do you feel about", "if you're
-      comfortable". No compound questions.
-      B-SPECIFIC: rank REAL people and REAL items from their life. Never invented strangers,
-      never trolley problems, never "imagine you had to". Ties are banned; if "they're all
-      different" answers it, the question is broken. Demand the tiebreak and the margin. Ask
-      for the ORDER first, then the reason for the bottom slot.
-      D-SPECIFIC: ask for what they have never had reason to compute, not for what they are
-      hiding. "Which child disappoints you" works: most parents have deliberately never ranked
-      them and must do it live. "Which child have you written off" fails: they know, they are
-      withholding, nothing is discovered.
-
-      BANNED
-      Icebreaker-deck and "36 questions" territory. Therapy register (journey, unpack, hold
-      space, inner child, trauma, authentic self, growth, healing). CONFESSION BAIT ("worst
-      thing you've ever done" and family; produces stories people are quietly proud of).
-      ABSTRACTION ESCAPE (invitations to philosophise instead of disclose). THE UNIVERSAL
-      (answerable by a stranger as easily as by the subject). GRIEF AMBUSH (bereavement,
-      illness, known raw wounds: already fully articulated to them, hurts without revealing;
-      pain is not depth). EDGELORD (transgressive topic, trivial structure). THE HEIST.
-
-      SUBJECT: an adult with a history, relationships, a self-image, and contradictions between
-      what they claim and what they do. Assume the sets exist to rank: siblings, parents,
-      friendships, past loves, colleagues, loyalties. Asker's relationship: a friend or partner
-      sitting across the table. Write so any adult could be asked; demand their real referents.
-
-      OUTPUT: this deck uses the JSON schema below, not a numbered list. Put the mechanism in
-      "tags" as one of "b", "d", "bxd", plus one topic word. Report "intensity" on the 1-4
-      exposure scale as the level guidance instructs.
-
-      FINAL PASS: delete and replace any question that (a) you have seen before in substance,
-      (b) can be answered with a story they have already told someone, (c) is uncomfortable in
-      topic but conventional in structure, (d) fails THE TEST, (e) [B] permits a tie or ranks
-      hypothetical people, (f) [D] targets a guarded fact rather than an uncomputed one.
-      Half the set should make the asker's stomach drop before they finish saying it.
+      A card is a question people want answered and would never dare ask. Not shocking:
+      precise. It corners someone, presupposes the uncomfortable thing, and leaves no polite
+      exit.
+      THE DINNER TEST: would the asker have to apologise before saying it to a friend? If not,
+      it belongs in an icebreaker deck, not here. Tastes, habits, apps, holidays, possessions
+      and "what do you mock in strangers" all fail this test however they are dressed.
+      THE HEIST TEST: the answer must not already exist. A guarded fact (salary, body count,
+      the affair) is a heist: uncomfortable, nothing discovered. The answerer should have to
+      work the answer out while saying it: a comparison they have never made, a feeling they
+      are not allowed to have, a motive they have never priced.
+      Ways in (use them; never name them; never let one become a syntax):
+      - the comparison nobody makes: which child, which parent, which friend, which ex. Real
+        people from their own life, never invented ones. A tie is not an answer.
+      - the disqualified feeling: relief, contempt, envy, boredom aimed at someone they are
+        supposed to love.
+      - the price: the sum at which a professed value sells.
+      - the unearned motive: how much of the generosity is fear, of the patience spite, of the
+        loyalty cowardice.
+      - the private sentence: the thing about someone close never said aloud, not even drunk.
+      Write it the way a friend would say it after the second bottle. "Which of your kids do
+      you like least?", never "Rank your children by…". At most two cards in a batch may begin
+      with an imperative (Rank, Name, Put, Give); no two cards may share their first three
+      words. One question, one blade. No hedging ("if any", "or not", "if you're comfortable"),
+      no "and" joining two asks, no adjectives doing the work the question should do. Ask for
+      a referent: the name, the number, the order.
+      BANNED: confession bait ("worst thing you've ever done": produces stories people are
+      proud of); invitations to philosophise; questions a stranger could answer as easily as
+      the subject; grief ambush (bereavement, illness, known raw wounds: hurts without
+      revealing); a transgressive topic on a conventional question; the heist.
+      Exemplars:
+      - "Which of your parents is the bigger coward?"
+      - "Whose funeral would you skip if the flight were expensive and the week were busy?"
+      - "How much of your patience with your mother is contempt you can't afford to show?"
+      - "Between the two of us, who is settling?"
+      Subject: an adult with siblings, parents, exes, old friends, colleagues, and a gap
+      between what they claim and what they do. Asker: a friend or partner across the table.
+      Any adult could be asked; demand their real referents.
+      Near misses from earlier runs, and the card they should have been:
+      - ASKABLE: "Who in your family embarrasses you most?" (said at every dinner) -> "Which parent
+        are you not going to take in?"
+      - GOSSIP: "Which coworker does the least work for the most money?" -> "Which colleague do
+        you enjoy watching struggle?"
+      - HEIST: "What did you stop telling your partner about?" (a fact they are withholding) ->
+        "What do you pretend not to know about your partner so you don't have to leave?"
   tiers:
     - level: 1
-      name: Awkward at a dinner party
-      description: "Prompt intensity 1-3."
+      name: Friends and exes
+      description: "The people outside the room."
       intensity: 2
       guidance: >-
-        Prompt intensity 1-3: awkward at a dinner party. Rankings of tastes, habits, minor
-        loyalties; prices for small professed values; counts nobody has totalled. Report
-        exposure 2.
+        The people outside the room: friends, exes, colleagues, the group chat. Every card
+        still fails the dinner test; the cost is a small betrayal of someone absent.
+        IN: "Which friend do you lie to most?", "Which of your exes was too good for you?"
+        NOT: tastes, habits, possessions, screens, holidays. Report exposure 2.
     - level: 2
-      name: The room goes quiet
-      description: "Prompt intensity 4-6."
+      name: Family and partner
+      description: "Blood and bed."
       intensity: 3
       guidance: >-
-        Prompt intensity 4-6: the room goes quiet. Rankings of friends and family members;
-        disqualified feelings toward people they are supposed to love; unearned motives.
-        Report exposure 3.
+        Blood and bed: parents, siblings, children, the partner. Comparisons they have never
+        made; feelings they are not allowed to have about people they are supposed to love.
+        IN: "Which of your parents is the bigger coward?", "Which of your children would cope
+        best without you?" Nothing about the person across the table yet. Report exposure 3.
     - level: 3
-      name: The relationship may not survive
-      description: "Prompt intensity 7-8."
+      name: Yourself
+      description: "What you claim against what you do."
       intensity: 4
       guidance: >-
-        Prompt intensity 7-8: the relationship may not survive an honest answer. Rankings of
-        loves and children; the imbalance pair; the private thought about someone at the table.
-        Report exposure 4.
+        The gap between what they claim and what they do: the price of a loyalty, the motive
+        under the virtue, the sentence that arrives at 4am, the approval they still work for.
+        IN: "How much of your loyalty to your oldest friend is dread of the conversation that
+        ends it?", "What do you say about yourself that you know isn't true?" Report exposure 4.
     - level: 4
-      name: An accusation with a question mark
-      description: "Prompt intensity 9-10."
+      name: The person across the table
+      description: "An accusation with a question mark."
       intensity: 4
       guidance: >-
-        Prompt intensity 9-10: an accusation with a question mark on it. Loaded
-        presuppositions about the person being asked, the 4am sentence itself, the price at
-        which they would sell the person across from them. Report exposure 4.
+        About me, the one asking. An accusation with a question mark on it: loaded
+        presuppositions about us, who is settling, what I have cost you, the price at which
+        you would sell me. IN: "Between the two of us, who is settling?", "What would I have to
+        do for you to leave?" Every card names me. Report exposure 4.
 
 improv:
   name: Improv
@@ -543,6 +554,8 @@ improv:
   generation:
     candidatesPerTier: 40
     targetPerTier: 80
+    # Word banks are not ranked, so there is nothing to oversupply for.
+    oversupply: 1
     rate: false
     tierFrom: writer
     brief: |

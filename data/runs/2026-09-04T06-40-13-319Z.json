@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-04T06:40:13.319Z",
+  "mode": "live",
+  "argv": [
+    "fast-friends"
+  ],
+  "stages": {
+    "rate/fast-friends": {
+      "calls": 8,
+      "input": 13479,
+      "output": 16638,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.07250175,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 8,
+      "input": 13479,
+      "output": 16638,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.07250175,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

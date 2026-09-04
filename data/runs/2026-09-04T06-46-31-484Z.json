@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T06:46:31.484Z",
+  "mode": "live",
+  "argv": [
+    "/private/tmp/claude-501/-Users-amnesthesia-Work-askthings/f321c81d-f2f9-43ad-82d3-20391e1cf9bf/scratchpad/judge-gpt-5.6-terra-a.json"
+  ],
+  "stages": {
+    "audit/inquisitives": {
+      "calls": 4,
+      "input": 2921,
+      "output": 5899,
+      "cached": 3762,
+      "cacheHits": 0,
+      "usd": 0.07738239999999999,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/thought-experiments": {
+      "calls": 6,
+      "input": 18042,
+      "output": 8321,
+      "cached": 7524,
+      "cacheHits": 0,
+      "usd": 0.13744079999999997,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "openai": {
+      "calls": 10,
+      "input": 20963,
+      "output": 14220,
+      "cached": 11286,
+      "cacheHits": 0,
+      "usd": 0.21482319999999996,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

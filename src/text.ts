@@ -3,28 +3,6 @@
 import type { DeckKind } from "./shared.ts";
 import { normaliseText } from "./shared.ts";
 
-/** Phrases that mark a question as written by a model rather than a person. */
-export const BANNED = [
-	/\bdelve/i,
-	/\btapestry\b/i,
-	/\bjourney\b/i,
-	/\bunpack\b/i,
-	/what'?s one thing/i,
-	/\bin what ways\b/i,
-	/\bnavigate\b/i,
-	/\bresonate/i,
-	/\bhold space\b/i,
-	/\bboundar(?:y|ies)\b/i,
-	/\bself-care\b/i,
-	/\bauthentic\b/i,
-	/\bvulnerabilit/i,
-	/\bworldview\b/i,
-	/\bsignificantly\b/i,
-	/\bshaped who you are\b/i,
-	/\bpivotal\b/i,
-	/\btestament\b/i,
-];
-
 export function wordCount(text: string): number {
 	return text.trim().split(/\s+/).filter(Boolean).length;
 }
@@ -54,9 +32,10 @@ export function slopReason(kind: DeckKind, f: Fields): string | null {
 		f.dilemma,
 		...(f.probes ?? []),
 	].filter((s): s is string => typeof s === "string");
+	// No phrase list here: word-level bans proved too blunt (2026-09-04), and the
+	// rater's tell list plus the per-deck briefs do that job with judgement.
+	// Only shape is checked before a paid judge sees a card.
 	const all = parts.join(" ");
-	for (const re of BANNED)
-		if (re.test(all)) return `banned phrase ${re.source}`;
 	if ((all.match(/—/g) ?? []).length >= 2) return "two or more em-dashes";
 	if (kind === "question") {
 		const t = f.text ?? "";
@@ -113,7 +92,9 @@ export function diceSimilarity(a: string, b: string): number {
 	return total === 0 ? 1 : (2 * overlap) / total;
 }
 
-/** Thresholds: measured on the fixture deck, where the closest two distinct
- * questions score 0.52 and a reworded duplicate scores 0.87. */
+/** Above DUPLICATE_AT is rejected unjudged: a reworded duplicate scores 0.87.
+ * From AMBIGUOUS_FROM up, the NEAREST few go to the judge, so the floor bounds
+ * nothing but nonsense pairs: the published duplicates that slipped through
+ * the old 0.60 floor score 0.39 once the shared opener is stripped. */
 export const DUPLICATE_AT = 0.85;
-export const AMBIGUOUS_FROM = 0.6;
+export const AMBIGUOUS_FROM = 0.3;

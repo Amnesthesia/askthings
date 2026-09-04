@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T06:33:02.664Z",
+  "mode": "live",
+  "argv": [
+    "thought-experiments,fast-friends"
+  ],
+  "stages": {
+    "rate/thought-experiments": {
+      "calls": 4,
+      "input": 17241,
+      "output": 9502,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.04856325,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/fast-friends": {
+      "calls": 8,
+      "input": 13721,
+      "output": 17863,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.077277,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 12,
+      "input": 30962,
+      "output": 27365,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.12584025000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-04T06:30:08.142Z",
+  "mode": "live",
+  "argv": [
+    "thought-experiments"
+  ],
+  "stages": {
+    "generate": {
+      "calls": 9,
+      "input": 21321,
+      "output": 53954,
+      "cached": 3092,
+      "cacheHits": 0,
+      "usd": 1.0106918,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 3,
+      "input": 11309,
+      "output": 16970,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.48079500000000003,
+      "retries": 0,
+      "failures": 0
+    },
+    "gemini": {
+      "calls": 3,
+      "input": 6502,
+      "output": 29758,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.3701,
+      "retries": 0,
+      "failures": 0
+    },
+    "openai": {
+      "calls": 3,
+      "input": 3510,
+      "output": 7226,
+      "cached": 3092,
+      "cacheHits": 0,
+      "usd": 0.15979680000000002,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

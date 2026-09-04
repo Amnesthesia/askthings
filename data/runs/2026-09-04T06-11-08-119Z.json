@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-04T06:11:08.119Z",
+  "mode": "live",
+  "argv": [
+    "inquisitives,never-have-i-ever,would-you-rather,undercurrent,unaskable,twenty-one-questions,thought-experiments"
+  ],
+  "stages": {
+    "rate/inquisitives": {
+      "calls": 19,
+      "input": 31179,
+      "output": 44431,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.19000050000000002,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/never-have-i-ever": {
+      "calls": 18,
+      "input": 31932,
+      "output": 42954,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.1850265,
+      "retries": 0,
+      "failures": 0
+    },
+    "rate/would-you-rather": {
+      "calls": 15,
+      "input": 29251,
+      "output": 33880,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.14898825,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 52,
+      "input": 92362,
+      "output": 121265,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.5240152499999999,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

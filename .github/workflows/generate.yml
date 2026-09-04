@@ -16,7 +16,7 @@ on:
       stages:
         description: "Comma-separated stages to run, in order"
         type: string
-        default: "generate,dedupe,rate,safety,publish"
+        default: "generate,dedupe,rate,safety,rank,publish"
       per_tier:
         description: "Candidates asked per provider per tier (empty = deck default)"
         type: string
@@ -24,11 +24,11 @@ on:
       max_usd_per_provider:
         description: "Hard cap per provider for this run, in USD"
         type: string
-        default: "5"
+        default: "10"
       max_usd:
         description: "Hard cap for the whole run, in USD"
         type: string
-        default: "12"
+        default: "25"
 
 permissions:
   contents: write

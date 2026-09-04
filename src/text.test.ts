@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { dedupeText } from "./candidates.ts";
 import {
 	AMBIGUOUS_FROM,
 	DUPLICATE_AT,
@@ -7,24 +8,25 @@ import {
 	slopReason,
 } from "./text.ts";
 
-test("slop filter names the reason and passes plain questions", () => {
+test("slop filter checks shape only and names the reason", () => {
 	assert.equal(
 		slopReason("question", {
 			text: "What did you believe for a long time that turned out to be wrong?",
 		}),
 		null,
 	);
-	assert.match(
+	// Wording is the judge's call, not a regex's.
+	assert.equal(
 		slopReason("question", {
 			text: "What's one thing you wish people understood?",
-		}) ?? "",
-		/banned phrase/,
+		}),
+		null,
 	);
 	assert.match(
 		slopReason("question", {
-			text: "How do you navigate hard conversations?",
+			text: "Who — of everyone — would you call first — and why?",
 		}) ?? "",
-		/banned/,
+		/em-dash/,
 	);
 	assert.match(
 		slopReason("question", {
@@ -77,17 +79,39 @@ test("dice similarity separates rewordings from different questions", () => {
 		"What did you believe for a long time that turned out to be untrue?",
 	);
 	assert.ok(reworded >= DUPLICATE_AT, `reworded ${reworded.toFixed(2)}`);
-	// … two distinct fixture questions below the ambiguous band …
-	const distinct = diceSimilarity(
-		"What do you like to learn about?",
-		"What have you been avoiding?",
-	);
-	assert.ok(distinct < AMBIGUOUS_FROM, `distinct ${distinct.toFixed(2)}`);
-	// … and a same-topic different-angle pair sits in the band, for the judge.
+	// … and a same-topic different-angle pair stays below it, for the judge.
 	const angle = diceSimilarity(
 		"What do you envy in other people?",
 		"Who do you envy, and for what?",
 	);
 	assert.ok(angle < DUPLICATE_AT, `angle ${angle.toFixed(2)}`);
 	assert.equal(diceSimilarity("Same words.", "same words"), 1);
+});
+
+test("dedupe compares the dilemma, not its title, and drops a fixed opener", () => {
+	assert.equal(
+		dedupeText("dilemma", {
+			title: "The Dent",
+			setup: "You scrape a parked car.",
+			dilemma: "Do you leave a note?",
+			probes: [],
+			origin: null,
+		}),
+		"Do you leave a note? You scrape a parked car.",
+	);
+	assert.equal(
+		dedupeText("question", { text: "Never have I ever cried at an advert." }),
+		"cried at an advert.",
+	);
+	// The published near-duplicates the old 0.60 floor let through must now
+	// reach the judge.
+	const missed = diceSimilarity(
+		dedupeText("question", {
+			text: "Never have I ever pretended my phone rang to get out of a conversation.",
+		}),
+		dedupeText("question", {
+			text: "Never have I ever faked a phone call to escape a charity fundraiser on the street.",
+		}),
+	);
+	assert.ok(missed >= AMBIGUOUS_FROM, `missed ${missed.toFixed(2)}`);
 });

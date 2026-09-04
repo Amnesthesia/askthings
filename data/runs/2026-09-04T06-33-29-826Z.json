@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T06:33:29.826Z",
+  "mode": "live",
+  "argv": [
+    "thought-experiments,fast-friends"
+  ],
+  "stages": {
+    "safety/thought-experiments": {
+      "calls": 3,
+      "input": 14662,
+      "output": 3503,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.064354,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/fast-friends": {
+      "calls": 6,
+      "input": 9490,
+      "output": 5509,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.07407000000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 9,
+      "input": 24152,
+      "output": 9012,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.138424,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

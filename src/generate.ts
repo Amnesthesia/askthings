@@ -14,7 +14,7 @@ import {
 	readCandidates,
 	reject,
 } from "./candidates.ts";
-import { headlineOf } from "./common.ts";
+import { headlineOf, SUBJECTS } from "./common.ts";
 import {
 	type DeckSpec,
 	deckSpec,
@@ -45,7 +45,31 @@ interface Task {
 	spec: DeckSpec;
 	tier: TierSpec;
 	provider: ProviderName;
+	/** Cards asked for in this call. */
 	n: number;
+	/** Which of the level's parallel calls this is; the prompt says so, which
+	 * also gives each call its own cache key. */
+	call: number;
+	calls: number;
+}
+
+/** A level is topped up until it holds this many times its target in
+ * unrejected candidates; `generation.oversupply` overrides per deck. */
+const OVERSUPPLY = 3;
+
+/** Subject and shape steering per call (GEN_STEER=0 turns it off, for A/B
+ * runs). The first corpus measured without it: identity 292, friendship 284,
+ * faith 10, body 51; verdicts 551 to stories 341; future 109 of 961. */
+const STEER = process.env.GEN_STEER !== "0";
+/** A rotating slice of the subject list, so a level's parallel calls cover it
+ * between them: call 1 of 3 gets subjects 1-4, call 2 gets 5-8, and so on. */
+function steerSubjects(call: number, calls: number): readonly string[] {
+	const per = Math.ceil(SUBJECTS.length / Math.max(1, calls));
+	const start = ((call - 1) * per) % SUBJECTS.length;
+	return Array.from(
+		{ length: per },
+		(_, i) => SUBJECTS[(start + i) % SUBJECTS.length],
+	);
 }
 
 /** Headlines a writer must not repeat: what is published plus what is pending. */
@@ -102,7 +126,14 @@ function fieldsOf(
 	}
 }
 
-function requestFor({ spec, tier, provider, n }: Task): JsonRequest {
+function requestFor({
+	spec,
+	tier,
+	provider,
+	n,
+	call,
+	calls,
+}: Task): JsonRequest {
 	return {
 		model: spec.generation.models?.[provider] ?? GEN_MODEL[provider],
 		system: generateSystem(spec),
@@ -111,6 +142,9 @@ function requestFor({ spec, tier, provider, n }: Task): JsonRequest {
 			tier,
 			n,
 			avoidList(spec, tier.level, readCandidates(spec.deck)),
+			calls > 1 || STEER
+				? { call, calls, subjects: STEER ? steerSubjects(call, calls) : [] }
+				: undefined,
 		),
 		schema: generateSchema(spec.kind),
 		// Gemini counts thinking tokens against maxOutputTokens; a Pro response
@@ -166,6 +200,8 @@ function harvest({ spec, tier, provider }: Task, res: CallResult) {
 			tags: strList(item.tags)
 				.slice(0, 3)
 				.map((t) => t.toLowerCase()),
+			// The writer's claim; the rater confirms it and its value wins.
+			assumesHistory: item.assumesHistory === true,
 			status: "new",
 		};
 		if (intensity === null) {
@@ -204,16 +240,54 @@ async function main() {
 	const perTier = process.env.PER_TIER ? Number(process.env.PER_TIER) : null;
 	const tasks: Task[] = decks.flatMap((d) => {
 		const spec = deckSpec(d);
-		const n = spec.generation.wholeRun
-			? spec.generation.targetPerTier
-			: (perTier ?? spec.generation.candidatesPerTier);
-		return spec.tiers.flatMap((tier) =>
-			providers.map((provider) => ({ spec, tier, provider, n })),
-		);
+		if (spec.generation.wholeRun)
+			return spec.tiers.flatMap((tier) =>
+				providers.map((provider) => ({
+					spec,
+					tier,
+					provider,
+					n: spec.generation.targetPerTier,
+					call: 1,
+					calls: 1,
+				})),
+			);
+		// Small calls, many of them: quality slides with response length (over
+		// 5,030 rated cards, positions 20-24 of a 25-card answer scored below
+		// positions 0-4 on every axis), so each call asks for about one level's
+		// worth and the level is topped up until it holds `oversupply` × target
+		// in cards that have not been rejected. Rank then picks the best.
+		const n = perTier ?? spec.generation.candidatesPerTier;
+		const candidates = readCandidates(spec.deck);
+		const deck = readDeck(spec);
+		return spec.tiers.flatMap((tier) => {
+			const have =
+				deck.cards.filter((c) => c.tier === tier.level).length +
+				candidates.filter(
+					(c) => c.tier === tier.level && c.status !== "rejected",
+				).length;
+			const want =
+				(spec.generation.oversupply ?? OVERSUPPLY) *
+				spec.generation.targetPerTier;
+			const calls = Math.ceil(Math.max(0, want - have) / n / providers.length);
+			return providers.flatMap((provider) =>
+				Array.from({ length: calls }, (_, i) => ({
+					spec,
+					tier,
+					provider,
+					n,
+					call: i + 1,
+					calls,
+				})),
+			);
+		});
 	});
 	console.log(
 		`generate: ${tasks.length} requests (${decks.length} decks × providers ${providers.join(",")})`,
 	);
+	if (!tasks.length) {
+		console.log("  every level already holds its oversupply; nothing to ask");
+		return;
+	}
 
 	// One batch per (provider, model), all in parallel. Requests are built up
 	// front so every avoid-list reflects the same starting state. Grouped by

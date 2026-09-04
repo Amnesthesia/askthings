@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-04T05:49:18.452Z",
+  "mode": "live",
+  "argv": [
+    "inquisitives,never-have-i-ever,would-you-rather,undercurrent,unaskable,twenty-one-questions"
+  ],
+  "stages": {
+    "generate": {
+      "calls": 56,
+      "input": 145966,
+      "output": 204208,
+      "cached": 32485,
+      "cacheHits": 0,
+      "usd": 3.9350521999999994,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 19,
+      "input": 62104,
+      "output": 49723,
+      "cached": 17392,
+      "cacheHits": 0,
+      "usd": 1.5622910000000005,
+      "retries": 0,
+      "failures": 0
+    },
+    "gemini": {
+      "calls": 18,
+      "input": 48428,
+      "output": 120196,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 1.5392079999999997,
+      "retries": 0,
+      "failures": 0
+    },
+    "openai": {
+      "calls": 19,
+      "input": 35434,
+      "output": 34289,
+      "cached": 15093,
+      "cacheHits": 0,
+      "usd": 0.8335532000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

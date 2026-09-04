@@ -28,6 +28,7 @@ import {
 	idFromPath,
 	locate,
 	promote,
+	sampleOrder,
 	shuffleOrder,
 	wrap,
 } from "../utils/deckNav.ts";
@@ -130,9 +131,16 @@ export default function GameDeck({
 	const levelPos = levels.indexOf(tier);
 	// biome-ignore lint/correctness/useExhaustiveDependencies: runs once, after hydration
 	useEffect(() => {
+		const keep = id ?? startId;
+		if (deck.play.order === "sequential") {
+			// The server dealt the first n in file order; a session gets a random
+			// n, still in file order, so a deck with more cards than one sitting
+			// plays does not always show the same ones.
+			setOrder(sampleOrder(buildOrder(deck), deck.play.cardsPerTier, keep));
+			return;
+		}
 		if (deck.play.order !== "random") return;
 		const shuffled = shuffleOrder(buildOrder(deck));
-		const keep = id ?? startId;
 		setOrder(
 			dealOrder(
 				keep ? promote(shuffled, keep) : shuffled,
@@ -395,6 +403,7 @@ export default function GameDeck({
 								name: favCount ? `Favourites (${favCount})` : "Favourites",
 								current: deck.deck === "favourites",
 							},
+							{ href: "/spin/", name: "Spin" },
 							{ href: "/questions/", name: "All questions" },
 						]}
 					/>

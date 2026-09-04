@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T06:43:27.115Z",
+  "mode": "live",
+  "argv": [
+    "/private/tmp/claude-501/-Users-amnesthesia-Work-askthings/f321c81d-f2f9-43ad-82d3-20391e1cf9bf/scratchpad/judge-gemini-3.8-flash-a.json"
+  ],
+  "stages": {
+    "audit/inquisitives": {
+      "calls": 4,
+      "input": 6692,
+      "output": 9718,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.0414615,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/thought-experiments": {
+      "calls": 6,
+      "input": 26349,
+      "output": 12480,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.06656174999999999,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 10,
+      "input": 33041,
+      "output": 22198,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.10802324999999999,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

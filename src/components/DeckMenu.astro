@@ -22,6 +22,10 @@ const decks = publishedDecks();
         <small>{deck.cards.length} cards</small>
       </a>
     ))}
+    <a href="/spin/" aria-current={current === "spin" ? "page" : undefined}>
+      <span>Spin</span>
+      <small>one random question</small>
+    </a>
     <a href="/questions/" aria-current={current === "questions" ? "page" : undefined}>
       <span>All questions</span>
       <small>browse & filter</small>

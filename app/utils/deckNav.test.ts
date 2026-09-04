@@ -7,6 +7,7 @@ import {
 	idFromPath,
 	locate,
 	promote,
+	sampleOrder,
 	shuffle,
 	shuffleOrder,
 	wrap,
@@ -104,4 +105,20 @@ test("idFromPath reads only this deck's card pages", () => {
 	);
 	assert.equal(idFromPath("/inquisitives/", "inquisitives"), null);
 	assert.equal(idFromPath("/other/0123456789/", "inquisitives"), null);
+});
+
+test("sampleOrder deals a random subset in file order and always keeps one card", () => {
+	const order = new Map([[1, ["a", "b", "c", "d", "e"]]]);
+	let i = 0;
+	const rng = () => [0.9, 0.1, 0.5, 0.3, 0.7][i++ % 5];
+	const dealt = sampleOrder(order, 3, "e", rng).get(1) ?? [];
+	assert.equal(dealt.length, 3);
+	assert.ok(dealt.includes("e"));
+	const pos = dealt.map((id) => "abcde".indexOf(id));
+	assert.deepEqual(
+		pos,
+		[...pos].sort((x, y) => x - y),
+	);
+	assert.deepEqual(sampleOrder(order, 5).get(1), ["a", "b", "c", "d", "e"]);
+	assert.deepEqual(sampleOrder(order, null).get(1), ["a", "b", "c", "d", "e"]);
 });

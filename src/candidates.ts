@@ -17,6 +17,7 @@ import {
 	type Card,
 	cardHeadline,
 	type DeckKind,
+	type Facets,
 	type Intensity,
 	type Scores,
 } from "./shared.ts";
@@ -64,6 +65,15 @@ export interface Candidate {
 	scores?: Scores;
 	judgedIntensity?: Intensity;
 	reason?: string;
+	/** From `rank`: mean within-level percentile across rolls, 1 = best. Publish
+	 * sorts by it. Not part of the site-facing card. */
+	rank?: number;
+	/** Presumes a shared history between the players (see shared.ts). The
+	 * writer's claim at generate; the rater's verdict replaces it. */
+	assumesHistory?: boolean;
+	/** Categorical annotations from `rate`; every value validated against the
+	 * declared lists, unknown values become null / are dropped. */
+	facets?: Facets;
 }
 
 export interface Rejection {
@@ -92,6 +102,19 @@ export function candidateId(
 
 export function headlineOfFields(kind: DeckKind, fields: CardFields): string {
 	return cardHeadline(kind, fields as unknown as Card);
+}
+
+/**
+ * What dedupe compares. A dilemma's title is a label, not the question, so the
+ * dilemma and setup are compared; a question loses a deck-wide fixed opener,
+ * which would otherwise make every Never Have I Ever card look like every
+ * other one to a character-bigram measure.
+ */
+export function dedupeText(kind: DeckKind, fields: CardFields): string {
+	if (kind === "dilemma" && "setup" in fields)
+		return `${fields.dilemma} ${fields.setup}`;
+	// ponytail: the one fixed opener we have; make it a deck field if a second appears.
+	return headlineOfFields(kind, fields).replace(/^never have i ever\s+/i, "");
 }
 
 export function readCandidates(deck: string): Candidate[] {

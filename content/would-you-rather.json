@@ -35,7 +35,7 @@
       "b": "be forgiven by the person you hurt most",
       "id": "9c74242f47",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "forgiveness",
         "guilt"
@@ -48,12 +48,27 @@
         "at": "2026-09-03T12:05:04.498Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -75,37 +90,25 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 4,
+        "intellectual": 3,
         "emotional": 5,
         "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "give up your closest friendship to save a stranger",
-      "b": "keep the friendship and never learn who died",
-      "id": "e610e016b0",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "loyalty",
-        "sacrifice"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:05:04.498Z"
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -131,7 +134,21 @@
         "emotional": 4,
         "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -139,7 +156,7 @@
       "b": "be loved by three people who know everything",
       "id": "226b4dd408",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "love",
         "identity"
@@ -152,12 +169,27 @@
         "at": "2026-09-03T12:05:04.498Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -165,7 +197,7 @@
       "b": "know one city better than anyone",
       "id": "a15e71aaa5",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "travel",
         "home"
@@ -178,12 +210,26 @@
         "at": "2026-09-03T12:05:04.496Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 3,
+        "conversation": 3,
+        "intellectual": 2,
         "emotional": 2,
-        "depth": 3,
+        "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 4,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -209,7 +255,22 @@
         "emotional": 2,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -234,8 +295,23 @@
         "intellectual": 3,
         "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -258,10 +334,25 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 4,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "home",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -287,7 +378,22 @@
         "emotional": 2,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "money",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -308,12 +414,27 @@
         "at": "2026-09-03T12:05:04.497Z"
       },
       "scores": {
-        "conversation": 3,
+        "conversation": 4,
         "intellectual": 2,
         "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -337,35 +458,23 @@
         "conversation": 3,
         "intellectual": 2,
         "emotional": 1,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "eat your favourite meal every day",
-      "b": "never eat the same meal twice",
-      "id": "c272ffb365",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "food",
-        "routine"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:05:04.495Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 1,
         "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 4,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -373,7 +482,7 @@
       "b": "tell them exactly how you remember them",
       "id": "9ddef9887c",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "family",
         "memory"
@@ -386,12 +495,26 @@
         "at": "2026-09-03T12:17:50.651Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -416,8 +539,24 @@
         "intellectual": 3,
         "emotional": 5,
         "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -425,7 +564,7 @@
       "b": "let one person you love watch it",
       "id": "f9b61aad14",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "shame",
         "exposure"
@@ -439,11 +578,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -464,12 +618,26 @@
         "at": "2026-09-03T12:17:50.651Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -477,7 +645,7 @@
       "b": "be the person nobody worries about",
       "id": "7598336844",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "family",
         "role"
@@ -490,12 +658,27 @@
         "at": "2026-09-03T12:17:50.652Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -503,7 +686,7 @@
       "b": "be the one who is left",
       "id": "9eea98bc56",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "endings",
         "love"
@@ -516,38 +699,26 @@
         "at": "2026-09-03T12:17:50.652Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 2,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "lend money you may never get back",
-      "b": "refuse someone who genuinely needs it",
-      "id": "d542bc37a9",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "money",
-        "friendship"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.603Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 4,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -572,8 +743,22 @@
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -581,7 +766,7 @@
       "b": "be free of everyone's expectations",
       "id": "127fcfe877",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "duty",
         "freedom"
@@ -596,10 +781,25 @@
       "scores": {
         "conversation": 4,
         "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -624,8 +824,23 @@
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -633,7 +848,7 @@
       "b": "be remembered as easy but hollow",
       "id": "1ed3ed8f1c",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "legacy",
         "character"
@@ -648,10 +863,25 @@
       "scores": {
         "conversation": 4,
         "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "identity",
+          "mortality"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -659,7 +889,7 @@
       "b": "never be lonely again",
       "id": "eafa92ebc2",
       "tier": 3,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "loneliness",
         "identity"
@@ -675,9 +905,24 @@
         "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 3,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -699,11 +944,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 4,
-        "emotional": 4,
+        "intellectual": 3,
+        "emotional": 3,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -724,12 +984,27 @@
         "at": "2026-09-03T12:17:50.651Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 4,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "family",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -737,7 +1012,7 @@
       "b": "lose everyone else's memory of you from them",
       "id": "60028682af",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "memory",
         "identity"
@@ -750,12 +1025,27 @@
         "at": "2026-09-03T12:17:50.652Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 4,
-        "emotional": 5,
+        "emotional": 3,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -779,9 +1069,25 @@
         "conversation": 4,
         "intellectual": 3,
         "emotional": 5,
-        "depth": 5,
+        "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "friendship",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -802,12 +1108,27 @@
         "at": "2026-09-03T12:18:35.604Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 5,
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 4,
         "depth": 5,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -815,7 +1136,7 @@
       "b": "leave their care to people they never hurt",
       "id": "448bcc73c6",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "family",
         "duty"
@@ -831,35 +1152,23 @@
         "conversation": 4,
         "intellectual": 3,
         "emotional": 5,
-        "depth": 5,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "be fully understood by someone who dislikes you",
-      "b": "be deeply loved by someone who misunderstands you",
-      "id": "a37fc6238d",
-      "tier": 3,
-      "intensity": 3,
-      "tags": [
-        "love",
-        "identity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.604Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 4,
         "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -867,7 +1176,7 @@
       "b": "keep imagining the parent they might have been",
       "id": "6abcadb178",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "family",
         "rejection"
@@ -882,10 +1191,24 @@
       "scores": {
         "conversation": 4,
         "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
+        "emotional": 4,
+        "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -910,34 +1233,23 @@
         "intellectual": 2,
         "emotional": 3,
         "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "know exactly what your friends earn",
-      "b": "have them know exactly what you earn",
-      "id": "55ae501730",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "money",
-        "secrecy"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.650Z"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -963,7 +1275,22 @@
         "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -984,12 +1311,26 @@
         "at": "2026-09-03T12:17:50.651Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 3,
         "emotional": 3,
         "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1012,10 +1353,25 @@
       "scores": {
         "conversation": 4,
         "intellectual": 3,
-        "emotional": 2,
+        "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1037,63 +1393,27 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 4,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "leave the place that made you who you are",
-      "b": "stay where you no longer feel like yourself",
-      "id": "804847952e",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "belonging",
-        "identity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.604Z"
-      },
-      "scores": {
-        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "keep believing something that gives your life meaning",
-      "b": "learn whether that belief is actually true",
-      "id": "6ca2d151dd",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "belief",
-        "meaning"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.604Z"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 5,
-        "emotional": 3,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1114,12 +1434,26 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1127,7 +1461,7 @@
       "b": "win every argument about the rules",
       "id": "e72dc46826",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "games",
         "competition"
@@ -1140,12 +1474,26 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1153,7 +1501,7 @@
       "b": "only ever listen to music you already know",
       "id": "01b040abee",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "music",
         "taste"
@@ -1166,12 +1514,26 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1179,7 +1541,7 @@
       "b": "always be the one who tells it",
       "id": "b0a9616e33",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "humour",
         "social"
@@ -1192,12 +1554,27 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1205,7 +1582,7 @@
       "b": "eat an average meal with your favourite people",
       "id": "a9840b3acd",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "food",
         "company"
@@ -1218,12 +1595,26 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 4,
+        "emotional": 3,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1244,12 +1635,26 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1275,7 +1680,22 @@
         "emotional": 3,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "home",
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1297,37 +1717,27 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 4,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "take a year off now and start over after",
-      "b": "take six months off every decade until you stop working",
-      "id": "7246abe6d4",
-      "tier": 2,
-      "intensity": 2,
-      "tags": [
-        "time",
-        "rest"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.650Z"
-      },
-      "scores": {
-        "conversation": 4,
         "intellectual": 3,
         "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "money",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1352,8 +1762,22 @@
         "intellectual": 3,
         "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1361,7 +1785,7 @@
       "b": "borrow from a friend and pay back slowly",
       "id": "36abb6e067",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 3,
       "tags": [
         "money",
         "friendship"
@@ -1376,10 +1800,25 @@
       "scores": {
         "conversation": 4,
         "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "money"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1387,7 +1826,7 @@
       "b": "holiday with everyone you love somewhere ordinary",
       "id": "dfc00b3b72",
       "tier": 2,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "travel",
         "people"
@@ -1400,12 +1839,26 @@
         "at": "2026-09-03T12:17:50.651Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 3,
         "intellectual": 2,
         "emotional": 3,
         "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1430,8 +1883,23 @@
         "intellectual": 3,
         "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1439,7 +1907,7 @@
       "b": "have a spare month you never plan",
       "id": "a99209fb6e",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "space",
         "time"
@@ -1452,38 +1920,27 @@
         "at": "2026-09-03T12:17:50.651Z"
       },
       "scores": {
-        "conversation": 3,
-        "intellectual": 2,
+        "conversation": 4,
+        "intellectual": 3,
         "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "always be slightly early and slightly bored",
-      "b": "always be slightly late and slightly panicked",
-      "id": "f443847acf",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "time",
-        "temperament"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.651Z"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "home",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1504,12 +1961,26 @@
         "at": "2026-09-03T12:18:35.602Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 3,
+        "conversation": 3,
+        "intellectual": 2,
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1530,12 +2001,26 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1558,10 +2043,24 @@
       "scores": {
         "conversation": 3,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1584,10 +2083,24 @@
       "scores": {
         "conversation": 3,
         "intellectual": 2,
-        "emotional": 1,
+        "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1610,10 +2123,24 @@
       "scores": {
         "conversation": 3,
         "intellectual": 2,
-        "emotional": 1,
+        "emotional": 2,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1621,7 +2148,7 @@
       "b": "never work past six",
       "id": "58b86c7a55",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "habits",
         "work"
@@ -1634,12 +2161,26 @@
         "at": "2026-09-03T12:17:50.650Z"
       },
       "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1647,7 +2188,7 @@
       "b": "be given the deposit and pick anywhere you like",
       "id": "596e38f32f",
       "tier": 1,
-      "intensity": 1,
+      "intensity": 2,
       "tags": [
         "home",
         "control"
@@ -1660,12 +2201,27 @@
         "at": "2026-09-03T12:17:50.651Z"
       },
       "scores": {
-        "conversation": 3,
+        "conversation": 4,
         "intellectual": 3,
-        "emotional": 1,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "money",
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1691,7 +2247,21 @@
         "emotional": 2,
         "depth": 2,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1716,60 +2286,22 @@
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "wear the same perfect outfit every day",
-      "b": "wear something different every day",
-      "id": "62f470fc90",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "clothes",
-        "choice"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.603Z"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "drive everywhere in complete comfort",
-      "b": "cycle everywhere without traffic",
-      "id": "d474fb6f28",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "transport",
-        "comfort"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.603Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 2,
-        "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
@@ -1794,19 +2326,1054 @@
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money",
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
-      "a": "wake at the same time every morning",
-      "b": "stay up whenever the night feels worth it",
-      "id": "920ee4e8b9",
+      "a": "be your parents' favourite and know it",
+      "b": "be their least favourite and never know",
+      "id": "84932521e1",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "family",
+        "favouritism"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "discover you were wrong about someone you hate",
+      "b": "discover you were wrong about someone you trust",
+      "id": "a79259eabc",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "trust",
+        "judgement"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "learn your family has hidden something from you",
+      "b": "learn your family has hidden you from someone",
+      "id": "7f40181860",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "family",
+        "secrets"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "past",
+        "subjects": [
+          "family",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "never have to work again but never be praised for anything",
+      "b": "work hard forever and be admired for all of it",
+      "id": "7557ebb31d",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "recognition"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 3,
+        "voice": 2,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "work",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have a career that peaks early",
+      "b": "have a career that peaks in your sixties",
+      "id": "90d9f19ed5",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "career",
+        "timing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "win gold in an obscure sport",
+      "b": "come last in a famous race",
+      "id": "fe4f24bfac",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "sleep",
-        "routine"
+        "sports",
+        "glory"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.798Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "be the best player on a losing team",
+      "b": "be the worst player on a winning team",
+      "id": "65e16ff846",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "success",
+        "ego"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.799Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have a dog that understands you",
+      "b": "have a cat that respects you",
+      "id": "30335d4ffc",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "animals",
+        "taste"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.650Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 2,
+        "escapability": 4,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "tell a friend their partner is cheating",
+      "b": "keep quiet until your friend asks directly",
+      "id": "d4830bb541",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "loyalty",
+        "truth"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "sex"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "lose the ability to make new friends",
+      "b": "lose contact with everyone you already know",
+      "id": "cd59da55ac",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "friendship",
+        "loss"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "give ten years of your life to a stranger",
+      "b": "give one year to someone you love",
+      "id": "82e32dc386",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "sacrifice",
+        "mortality"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "leave behind money for the people you love",
+      "b": "leave behind letters for the people you love",
+      "id": "f78835cd63",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "legacy",
+        "death"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "money",
+          "mortality",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "live a life that helps many strangers",
+      "b": "live a life that saves one person close to you",
+      "id": "0cd38c750b",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "purpose",
+        "sacrifice"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.652Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 4,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "lose every memory of someone you loved",
+      "b": "keep every memory but never speak their name again",
+      "id": "ea0cc4cacb",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "memory",
+        "grief"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "take your dream job far from everyone you love",
+      "b": "keep your life close to them and wonder",
+      "id": "3b0a8ff8d8",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "ambition",
+        "family"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "work",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "be remembered as kinder than you were",
+      "b": "be remembered as crueler than you were",
+      "id": "e5948b3fb3",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "legacy",
+        "reputation"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "identity",
+          "mortality"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have your best work credited to someone else",
+      "b": "have someone else's best work credited to you",
+      "id": "0e0ed132a3",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "pride",
+        "recognition"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "stay in a life that is fine forever",
+      "b": "risk it all on something that might ruin you",
+      "id": "bd0caeec63",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "risk",
+        "regret"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "apologise to someone who will never accept it",
+      "b": "be apologised to by someone who does not mean it",
+      "id": "46489b3667",
+      "tier": 3,
+      "intensity": 2,
+      "tags": [
+        "apology",
+        "closure"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.651Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 2,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "hear what people will say at your funeral",
+      "b": "choose what people will say at your funeral",
+      "id": "9b9a99c02a",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "mortality",
+        "legacy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.604Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have everyone think you are wealthy when you are broke",
+      "b": "have everyone think you are broke when you are wealthy",
+      "id": "472ab2b225",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "money",
+        "reputation"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.799Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "pay more whenever it saves you time",
+      "b": "spend more time whenever it saves you money",
+      "id": "2e3af14b3e",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "time",
+        "money"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "host every family celebration at your place",
+      "b": "travel to every family celebration elsewhere",
+      "id": "6a99c6c308",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "family",
+        "hospitality"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family",
+          "home"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "study something fascinating and leave with debt",
+      "b": "study something practical and leave debt-free",
+      "id": "ef1314b536",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "education",
+        "money"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "work",
+          "money"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "answer every message as soon as it arrives",
+      "b": "leave your phone unchecked until evening",
+      "id": "912b215d9f",
+      "tier": 2,
+      "intensity": 1,
+      "tags": [
+        "phone",
+        "attention"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.603Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "work"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "tell a friend their outfit looks bad",
+      "b": "let a friend leave feeling confident",
+      "id": "4995d0f2b1",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "friendship"
       ],
       "origin": null,
       "gen": {
@@ -1818,120 +3385,111 @@
       "scores": {
         "conversation": 3,
         "intellectual": 2,
-        "emotional": 2,
+        "emotional": 3,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
-      "a": "never listen to music again",
-      "b": "never watch a movie again",
-      "id": "24a622df19",
-      "tier": 1,
-      "intensity": 1,
+      "a": "be famous for something silly",
+      "b": "be unknown for something brilliant",
+      "id": "1a71af52f6",
+      "tier": 2,
+      "intensity": 2,
       "tags": [
-        "entertainment",
-        "media"
+        "fame",
+        "legacy"
       ],
       "origin": null,
       "gen": {
         "provider": "gemini",
         "model": "gemini-3.1-pro-preview",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.797Z"
+        "at": "2026-09-03T12:19:59.798Z"
       },
       "scores": {
         "conversation": 3,
-        "intellectual": 2,
+        "intellectual": 3,
         "emotional": 2,
         "depth": 2,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "identity",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
-      "a": "be able to fly, slowly",
-      "b": "be able to teleport, once a day",
-      "id": "60cd5cf737",
+      "a": "remember every person's name",
+      "b": "remember every joke you've heard",
+      "id": "bc911eda71",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "superpowers",
-        "travel"
+        "memory",
+        "social"
       ],
       "origin": null,
       "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.649Z"
+        "at": "2026-09-03T12:18:35.602Z"
       },
       "scores": {
-        "conversation": 3,
+        "conversation": 2,
         "intellectual": 2,
         "emotional": 1,
         "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "never wait in a queue again",
-      "b": "never sit in traffic again",
-      "id": "4da1256e2f",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "patience",
-        "daily life"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.650Z"
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 1,
-        "emotional": 2,
-        "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
-      "a": "be great at cooking one cuisine",
-      "b": "be decent at cooking any cuisine",
-      "id": "92dd0c28d4",
-      "tier": 1,
-      "intensity": 1,
-      "tags": [
-        "food",
-        "skill"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.650Z"
-      },
-      "scores": {
-        "conversation": 3,
-        "intellectual": 2,
-        "emotional": 1,
-        "depth": 1,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "a": "wake up at five feeling brilliant",
-      "b": "stay up till three feeling brilliant",
-      "id": "8c9cbb771a",
+      "a": "wake fully rested after four hours",
+      "b": "fall asleep the instant you choose",
+      "id": "0f919819d7",
       "tier": 1,
       "intensity": 1,
       "tags": [
@@ -1940,10 +3498,251 @@
       ],
       "origin": null,
       "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
         "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.650Z"
+        "at": "2026-09-03T12:18:35.602Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "read any book in an hour",
+      "b": "write any email in a minute",
+      "id": "7b87bd11ee",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "reading",
+        "productivity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.602Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "receive a surprise party",
+      "b": "plan your own perfect party",
+      "id": "8268aaeb38",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "parties",
+        "personality"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.602Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "never have to sleep again",
+      "b": "never have to eat again",
+      "id": "3e9c555b74",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "superpowers",
+        "habits"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.798Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "always look great but feel slightly uncomfortable",
+      "b": "always feel perfectly comfortable but look messy",
+      "id": "e7014a6db6",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "fashion",
+        "comfort"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.798Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "body",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have a dog that lives as long as you do",
+      "b": "have a cat that can talk to you",
+      "id": "050d0cf21b",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "pets",
+        "animals"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.798Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "give up coffee for the rest of your life",
+      "b": "give up alcohol for the rest of your life",
+      "id": "689b7a3f41",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "food",
+        "drink"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.798Z"
       },
       "scores": {
         "conversation": 3,
@@ -1951,25 +3750,364 @@
         "emotional": 2,
         "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "body"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     },
     {
-      "a": "live somewhere it is always warm",
-      "b": "live somewhere with four proper seasons",
-      "id": "76cce5d94b",
+      "a": "always arrive twenty minutes early",
+      "b": "always arrive ten minutes late",
+      "id": "6dffbb9902",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "weather",
-        "place"
+        "time",
+        "habits"
       ],
       "origin": null,
       "gen": {
         "provider": "anthropic",
         "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.650Z"
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:16.877Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 5,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "always know when someone is lying to you",
+      "b": "always have the right thing to say",
+      "id": "59e2c5720d",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "social",
+        "skills"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:45.457Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "do dull work beside people you like",
+      "b": "do work you love alone from anywhere",
+      "id": "7f2669f4c5",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "company"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:45.457Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "confront a close friend who is slowly pulling away",
+      "b": "let the friendship fade out without ever asking why",
+      "id": "a2d4063021",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "friendship",
+        "conflict",
+        "loss"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:56:14.997Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "live above a great bakery",
+      "b": "live above a good pub",
+      "id": "a9074785eb",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "home",
+        "food"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:16.879Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "home"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "holiday somewhere hot with no wifi",
+      "b": "holiday somewhere rainy with everything working",
+      "id": "057f2bd4cc",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "travel",
+        "weather"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:16.879Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have perfect weather every weekend",
+      "b": "have perfect sleep every weeknight",
+      "id": "c06a1fda9c",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "weather",
+        "sleep"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:16.879Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "body",
+          "work"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "always be the driver",
+      "b": "always be the passenger",
+      "id": "cb01f353e7",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "driving",
+        "control"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:16.880Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "stand near the stage with poor sound",
+      "b": "stand at the back with perfect sound",
+      "id": "e8aee39ee4",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "concerts",
+        "music"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:44:26.046Z"
       },
       "scores": {
         "conversation": 3,
@@ -1977,7 +4115,183 @@
         "emotional": 2,
         "depth": 1,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "work with someone brilliant who lets you down",
+      "b": "work with someone average who never does",
+      "id": "8c745a0085",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "work",
+        "trust"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:54:56.417Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "work",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have your name on the building",
+      "b": "have the money in your account",
+      "id": "fbe2396d54",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "money",
+        "legacy"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:54:56.418Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "money",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "understand what animals are saying",
+      "b": "understand what babies are saying",
+      "id": "470e87c6f2",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "powers",
+        "animals"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:16.879Z"
+      },
+      "scores": {
+        "conversation": 2,
+        "intellectual": 1,
+        "emotional": 1,
+        "depth": 1,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "a": "have beautiful handwriting",
+      "b": "have a beautiful singing voice",
+      "id": "21839233e8",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "talent"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:16.879Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 1,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "body",
+          "identity"
+        ],
+        "relational": "solo",
+        "shape": "verdict"
       }
     }
   ]

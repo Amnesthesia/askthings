@@ -1,0 +1,99 @@
+{
+  "at": "2026-09-04T08:09:42.063Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "rerate/inquisitives": {
+      "calls": 24,
+      "input": 55693,
+      "output": 118208,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.48504975000000006,
+      "retries": 0,
+      "failures": 0
+    },
+    "rerate/never-have-i-ever": {
+      "calls": 23,
+      "input": 56119,
+      "output": 105212,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.43663424999999995,
+      "retries": 0,
+      "failures": 0
+    },
+    "rerate/fast-friends": {
+      "calls": 15,
+      "input": 36161,
+      "output": 69470,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.28763325,
+      "retries": 0,
+      "failures": 0
+    },
+    "rerate/twenty-one-questions": {
+      "calls": 1,
+      "input": 2187,
+      "output": 3620,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.01521525,
+      "retries": 0,
+      "failures": 0
+    },
+    "rerate/would-you-rather": {
+      "calls": 14,
+      "input": 36713,
+      "output": 64980,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.27120974999999997,
+      "retries": 0,
+      "failures": 0
+    },
+    "rerate/thought-experiments": {
+      "calls": 8,
+      "input": 37927,
+      "output": 32520,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.15039524999999998,
+      "retries": 0,
+      "failures": 0
+    },
+    "rerate/undercurrent": {
+      "calls": 18,
+      "input": 42451,
+      "output": 85285,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.35165699999999994,
+      "retries": 0,
+      "failures": 0
+    },
+    "rerate/unaskable": {
+      "calls": 29,
+      "input": 68720,
+      "output": 140390,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.5780024999999999,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 132,
+      "input": 335971,
+      "output": 619685,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 2.575796999999999,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

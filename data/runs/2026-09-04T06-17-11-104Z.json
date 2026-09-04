@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-04T06:17:11.104Z",
+  "mode": "live",
+  "argv": [
+    "undercurrent,unaskable,twenty-one-questions,thought-experiments"
+  ],
+  "stages": {
+    "dedupe/undercurrent": {
+      "calls": 49,
+      "input": 57284,
+      "output": 22278,
+      "cached": 0,
+      "cacheHits": 26,
+      "usd": 0.1265055,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/unaskable": {
+      "calls": 96,
+      "input": 119935,
+      "output": 45193,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.259425,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/thought-experiments": {
+      "calls": 22,
+      "input": 88987,
+      "output": 12679,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.11428650000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 167,
+      "input": 266206,
+      "output": 80150,
+      "cached": 0,
+      "cacheHits": 26,
+      "usd": 0.5002170000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

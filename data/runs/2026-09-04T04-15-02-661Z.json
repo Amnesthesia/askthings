@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T04:15:02.661Z",
+  "mode": "live",
+  "argv": [
+    "thought-experiments,never-have-i-ever"
+  ],
+  "stages": {
+    "safety/thought-experiments": {
+      "calls": 2,
+      "input": 10743,
+      "output": 2441,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.045896,
+      "retries": 0,
+      "failures": 0
+    },
+    "safety/never-have-i-ever": {
+      "calls": 6,
+      "input": 10315,
+      "output": 5758,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.07821,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "calls": 8,
+      "input": 21058,
+      "output": 8199,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.12410600000000001,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

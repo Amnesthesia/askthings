@@ -1,0 +1,101 @@
+{
+  "at": "2026-09-04T06:24:04.967Z",
+  "mode": "live",
+  "argv": [
+    "/private/tmp/claude-501/-Users-amnesthesia-Work-askthings/f321c81d-f2f9-43ad-82d3-20391e1cf9bf/scratchpad/audit3.json"
+  ],
+  "stages": {
+    "audit/inquisitives": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 4,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/never-have-i-ever": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 5,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/fast-friends": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 2,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/twenty-one-questions": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 1,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/would-you-rather": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 4,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/thought-experiments": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 6,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/undercurrent": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 3,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/unaskable": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 6,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 0,
+      "input": 0,
+      "output": 0,
+      "cached": 0,
+      "cacheHits": 31,
+      "usd": 0,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

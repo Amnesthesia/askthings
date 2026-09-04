@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-04T06:39:55.286Z",
+  "mode": "live",
+  "argv": [
+    "fast-friends"
+  ],
+  "stages": {
+    "dedupe/fast-friends": {
+      "calls": 37,
+      "input": 46713,
+      "output": 16804,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.09804975,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 37,
+      "input": 46713,
+      "output": 16804,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.09804975,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

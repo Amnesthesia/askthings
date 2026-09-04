@@ -14,7 +14,10 @@
     "deduplicate": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/dedupe.ts",
     "rate": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/rate.ts",
     "safety": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/safety.ts",
+    "rank": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/rank.ts",
     "publish-cards": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/publish.ts",
+    "calibrate": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/calibrate.ts",
+    "rerate": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/rerate.ts",
     "test": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts' 'app/**/*.test.ts'",
     "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app && pnpm test"
   },

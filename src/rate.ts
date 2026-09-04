@@ -4,7 +4,6 @@
 // rejection with a reason, never a default.
 
 import {
-	type Candidate,
 	count,
 	judgeText,
 	ratio,
@@ -15,6 +14,7 @@ import {
 import { type DeckSpec, deckSpec, loadDeckSpecs } from "./decks.ts";
 import { callJsonMany, installUsageReporting } from "./llm.ts";
 import {
+	asFacets,
 	asIntensity,
 	asScore,
 	PROMPT_VERSION,
@@ -32,7 +32,10 @@ import {
 	str,
 } from "./stage.ts";
 
-const KEEP = { conversation: 3, voice: 3 };
+// voice 4: on a 30-card calibration set (15 generated-sounding, 15 spoken) the
+// rate@2 rubric passed 1/15 of the generated at >= 4 and all 15 spoken; at
+// >= 3 it passed 3/15 of the generated.
+const KEEP = { conversation: 3, voice: 4 };
 
 async function rateDeck(spec: DeckSpec) {
 	const all = readCandidates(spec.deck);
@@ -55,6 +58,7 @@ async function rateDeck(spec: DeckSpec) {
 			user: rateUser(
 				spec.kind,
 				batch.map((c) => judgeText(spec.kind, c.fields)),
+				spec.generation.rateNote,
 			),
 			schema: rateSchema,
 			maxOutputTokens: 8000,
@@ -99,6 +103,11 @@ async function rateDeck(spec: DeckSpec) {
 			c.scores = { ...scores, rated: `${RATE_MODEL}@${PROMPT_VERSION.rate}` };
 			c.judgedIntensity = intensity;
 			c.reason = str(item.reason) ?? undefined;
+			// The judge's verdict replaces the writer's claim; a missing or
+			// malformed value leaves the writer's claim standing.
+			if (typeof item.assumesHistory === "boolean")
+				c.assumesHistory = item.assumesHistory;
+			c.facets = asFacets(item);
 			if (
 				(scores.conversation ?? 0) < KEEP.conversation ||
 				(scores.voice ?? 0) < KEEP.voice
@@ -118,20 +127,6 @@ async function rateDeck(spec: DeckSpec) {
 			c.status = "rated";
 		});
 	});
-
-	// An ordered run is a sequence, not a set: one bad card sinks the run.
-	if (spec.generation.wholeRun) {
-		const byBatch = new Map<string, Candidate[]>();
-		for (const c of todo)
-			byBatch.set(c.batch, [...(byBatch.get(c.batch) ?? []), c]);
-		for (const [, run] of byBatch) {
-			if (!run.some((c) => c.status === "rejected")) continue;
-			for (const c of run.filter((c) => c.status === "rated")) {
-				reject(c, spec.kind, "rate", "another card in this run was rejected");
-				count(reasons, "run sunk");
-			}
-		}
-	}
 
 	writeCandidates(spec.deck, all);
 	console.log(

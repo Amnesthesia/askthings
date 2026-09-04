@@ -18,6 +18,7 @@ const rows: Row[] = decks.flatMap((deck) =>
 		intensity: card.intensity,
 		tags: card.tags,
 		scores: card.scores,
+		facets: card.facets,
 		headline: cardHeadline(deck.kind, card),
 		body:
 			deck.kind === "dilemma"
@@ -28,7 +29,7 @@ const rows: Row[] = decks.flatMap((deck) =>
 		path: cardPath(deck.deck, card.id),
 	})),
 );
-const description = `Browse all ${rows.length} questions across ${decks.length} decks. Filter by deck, exposure level, conversation and depth scores, or tag.`;
+const description = `Browse all ${rows.length} questions across ${decks.length} decks. Filter by deck, exposure level, subject, answer shape, how escapable the question is, and more.`;
 const schema = [
 	{
 		"@context": "https://schema.org",

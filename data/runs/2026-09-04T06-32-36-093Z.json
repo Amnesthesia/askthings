@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-04T06:32:36.093Z",
+  "mode": "live",
+  "argv": [
+    "thought-experiments,fast-friends"
+  ],
+  "stages": {
+    "dedupe/thought-experiments": {
+      "calls": 20,
+      "input": 86288,
+      "output": 11170,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.10660349999999999,
+      "retries": 0,
+      "failures": 0
+    },
+    "dedupe/fast-friends": {
+      "calls": 38,
+      "input": 49334,
+      "output": 15916,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.09668549999999998,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 58,
+      "input": 135622,
+      "output": 27086,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.20328900000000003,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

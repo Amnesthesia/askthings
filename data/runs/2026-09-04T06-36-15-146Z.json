@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-04T06:36:15.146Z",
+  "mode": "live",
+  "argv": [],
+  "stages": {
+    "redupe/fast-friends": {
+      "calls": 6,
+      "input": 8712,
+      "output": 2613,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.01633275,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 6,
+      "input": 8712,
+      "output": 2613,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.01633275,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

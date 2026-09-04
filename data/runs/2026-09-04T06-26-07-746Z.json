@@ -1,0 +1,101 @@
+{
+  "at": "2026-09-04T06:26:07.746Z",
+  "mode": "live",
+  "argv": [
+    "/private/tmp/claude-501/-Users-amnesthesia-Work-askthings/f321c81d-f2f9-43ad-82d3-20391e1cf9bf/scratchpad/audit3.json"
+  ],
+  "stages": {
+    "audit/inquisitives": {
+      "calls": 4,
+      "input": 6700,
+      "output": 8661,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.03750375,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/never-have-i-ever": {
+      "calls": 5,
+      "input": 8658,
+      "output": 11226,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.048591,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/fast-friends": {
+      "calls": 2,
+      "input": 3180,
+      "output": 2947,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.01343625,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/twenty-one-questions": {
+      "calls": 1,
+      "input": 1509,
+      "output": 1719,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.007578,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/would-you-rather": {
+      "calls": 4,
+      "input": 7555,
+      "output": 8588,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.037871249999999995,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/thought-experiments": {
+      "calls": 6,
+      "input": 24746,
+      "output": 13081,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.06761325,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/undercurrent": {
+      "calls": 3,
+      "input": 5154,
+      "output": 7261,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.03109425,
+      "retries": 0,
+      "failures": 0
+    },
+    "audit/unaskable": {
+      "calls": 6,
+      "input": 9899,
+      "output": 12782,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.05535675,
+      "retries": 0,
+      "failures": 0
+    }
+  },
+  "providers": {
+    "gemini": {
+      "calls": 31,
+      "input": 67401,
+      "output": 66265,
+      "cached": 0,
+      "cacheHits": 0,
+      "usd": 0.29904449999999994,
+      "retries": 0,
+      "failures": 0
+    }
+  }
+}

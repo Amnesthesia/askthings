@@ -48,18 +48,32 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What do you need from me that you've never asked for?",
       "id": "d5751dc09e",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "needs",
         "asking"
@@ -75,9 +89,23 @@
         "conversation": 5,
         "intellectual": 3,
         "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -98,11 +126,26 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -124,35 +167,25 @@
       "scores": {
         "conversation": 5,
         "intellectual": 4,
-        "emotional": 5,
+        "emotional": 4,
         "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What would change between us if you were completely honest with me?",
-      "id": "b6d53eb2f9",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "honesty",
-        "change"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.655Z"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 4,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -177,7 +210,22 @@
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -198,11 +246,25 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -223,43 +285,33 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 4,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What have you been afraid to tell me because it could change us?",
-      "id": "bfded98539",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "confession",
-        "risk"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.608Z"
-      },
-      "scores": {
-        "conversation": 5,
         "intellectual": 3,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What do you need from me that you hate needing?",
       "id": "842c98d415",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "need",
         "dependence"
@@ -272,19 +324,34 @@
         "at": "2026-09-03T12:18:35.608Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 5,
-        "depth": 5,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "When have you felt furthest from me while we were together?",
       "id": "0c5bfc3096",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "distance",
         "loneliness"
@@ -298,43 +365,32 @@
       },
       "scores": {
         "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Have you ever doubted that I truly cared about you?",
-      "id": "d191ab6a82",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "care",
-        "doubt"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.608Z"
-      },
-      "scores": {
-        "conversation": 5,
         "intellectual": 2,
         "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "When have you wanted me to choose you?",
       "id": "d2199a0891",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "priority",
         "longing"
@@ -347,44 +403,33 @@
         "at": "2026-09-03T12:18:35.608Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
+        "conversation": 4,
+        "intellectual": 2,
         "emotional": 5,
-        "depth": 5,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Where do you think I have failed to really know you?",
-      "id": "17d551ad9c",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "recognition",
-        "identity"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.608Z"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 5,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "When have I made you uncomfortable without meaning to?",
       "id": "d0b29b095c",
       "tier": 2,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "discomfort",
         "feedback"
@@ -397,19 +442,33 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
+        "conversation": 4,
+        "intellectual": 2,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "When have you felt closest to me?",
       "id": "1f2cae3f4d",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 2,
       "tags": [
         "closeness",
         "memory"
@@ -422,37 +481,26 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 2,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What version of me do you like least?",
-      "id": "46ad20dfb5",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "criticism",
-        "perception"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.655Z"
+        "emotional": 4,
+        "depth": 3,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -477,14 +525,28 @@
         "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "When have you wanted more from me than I gave?",
       "id": "91bfc19008",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "wanting",
         "shortfall"
@@ -497,62 +559,26 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Tell me the last thing you swallowed instead of saying to me.",
-      "id": "67eed32ad2",
-      "tier": 2,
-      "intensity": 3,
-      "tags": [
-        "unsaid",
-        "honesty"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.655Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
+        "conversation": 4,
+        "intellectual": 2,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Have I ever hurt you without knowing it?",
-      "id": "691530debf",
-      "tier": 2,
-      "intensity": 3,
-      "tags": [
-        "hurt",
-        "unsaid"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.655Z"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 2,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -572,19 +598,33 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 4,
-        "intellectual": 2,
+        "conversation": 5,
+        "intellectual": 3,
         "emotional": 5,
         "depth": 5,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What do you protect me from?",
       "id": "28b0565bef",
       "tier": 3,
-      "intensity": 4,
+      "intensity": 3,
       "tags": [
         "protection",
         "secrecy"
@@ -597,19 +637,33 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "Is there something you've been waiting for me to notice?",
       "id": "81b9a539cc",
       "tier": 2,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "noticing",
         "unsaid"
@@ -622,62 +676,26 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 5,
-        "intellectual": 3,
+        "conversation": 4,
+        "intellectual": 2,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What topic do you avoid with me because my answer might hurt?",
-      "id": "a03e0072e8",
-      "tier": 3,
-      "intensity": 4,
-      "tags": [
-        "avoidance",
-        "fear"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "openai",
-        "model": "gpt-5.6-sol",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:18:35.607Z"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 5,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "When do you feel most misunderstood by me?",
-      "id": "ee27bb0a3e",
-      "tier": 2,
-      "intensity": 3,
-      "tags": [
-        "misunderstood",
-        "perception"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.804Z"
-      },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -699,17 +717,32 @@
       "scores": {
         "conversation": 5,
         "intellectual": 3,
-        "emotional": 4,
+        "emotional": 5,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Tell me something you assumed about me that turned out to be wrong.",
       "id": "d2834f411d",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "assumptions"
       ],
@@ -721,19 +754,34 @@
         "at": "2026-09-03T12:17:50.654Z"
       },
       "scores": {
-        "conversation": 5,
+        "conversation": 4,
         "intellectual": 2,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 4,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "What do you envy about my life?",
       "id": "faf7271459",
       "tier": 2,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "envy",
         "comparison"
@@ -747,36 +795,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 3,
+        "intellectual": 2,
         "emotional": 4,
-        "depth": 4,
+        "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What part of your life have you kept me out of?",
-      "id": "86e695d12b",
-      "tier": 2,
-      "intensity": 3,
-      "tags": [
-        "distance",
-        "secrecy"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.655Z"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -800,8 +838,22 @@
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -825,8 +877,22 @@
         "intellectual": 4,
         "emotional": 4,
         "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -846,19 +912,33 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 2,
         "emotional": 4,
         "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "What do you rely on me for that you rarely admit?",
       "id": "bcaf69d951",
       "tier": 2,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "reliance",
         "admission"
@@ -874,9 +954,23 @@
         "conversation": 4,
         "intellectual": 3,
         "emotional": 4,
-        "depth": 4,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -901,57 +995,22 @@
         "emotional": 4,
         "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "When did you first realize we were actually close?",
-      "id": "63acfb0bbe",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "realization",
-        "bond"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "gemini",
-        "model": "gemini-3.1-pro-preview",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:19:59.804Z"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 5,
-        "intellectual": 2,
-        "emotional": 4,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What kind of person do you think I'm drawn to?",
-      "id": "9c85456e61",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "attraction",
-        "perception"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.654Z"
-      },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -975,15 +1034,30 @@
         "intellectual": 2,
         "emotional": 3,
         "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "Tell me one thing about my face you've looked at more than once.",
       "id": "765572c3f6",
       "tier": 2,
-      "intensity": 3,
+      "intensity": 2,
       "tags": [
         "looking",
         "appearance"
@@ -1000,8 +1074,22 @@
         "intellectual": 1,
         "emotional": 4,
         "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 5,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "fact"
       }
     },
     {
@@ -1022,11 +1110,26 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 2,
+        "intellectual": 1,
         "emotional": 4,
-        "depth": 3,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1051,32 +1154,21 @@
         "emotional": 5,
         "depth": 4,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "What do you think I'd say is the hardest thing about knowing me?",
-      "id": "1ed4440149",
-      "tier": 2,
-      "intensity": 3,
-      "tags": [
-        "self-image",
-        "difficulty"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.655Z"
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 4,
-        "emotional": 4,
-        "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "feeling"
       }
     },
     {
@@ -1099,9 +1191,24 @@
         "conversation": 4,
         "intellectual": 2,
         "emotional": 4,
-        "depth": 3,
+        "depth": 4,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1121,12 +1228,26 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 3,
         "emotional": 4,
         "depth": 4,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1151,7 +1272,21 @@
         "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1173,17 +1308,31 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 3,
+        "emotional": 4,
         "depth": 3,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What did you notice about me first?",
       "id": "08336d11cd",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "first impressions",
         "noticing"
@@ -1197,18 +1346,32 @@
       },
       "scores": {
         "conversation": 4,
-        "intellectual": 1,
+        "intellectual": 2,
         "emotional": 3,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
       "text": "Guess what I was like at fifteen.",
       "id": "fc18f6bef6",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "guessing",
         "past"
@@ -1221,36 +1384,26 @@
         "at": "2026-09-03T12:17:50.654Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Which of us would handle bad news better? Say why.",
-      "id": "fc3f5627a6",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "comparison"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.654Z"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 3,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1275,7 +1428,21 @@
         "emotional": 3,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1297,10 +1464,25 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 3,
-        "depth": 2,
+        "emotional": 2,
+        "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1320,19 +1502,34 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 2,
         "emotional": 3,
-        "depth": 2,
+        "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "What do you think my family is like?",
       "id": "e45bf0e01a",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "family",
         "guessing"
@@ -1347,17 +1544,31 @@
       "scores": {
         "conversation": 4,
         "intellectual": 2,
-        "emotional": 3,
-        "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
       "text": "Tell me what you thought this would be like before we sat down.",
       "id": "faecd5b458",
       "tier": 1,
-      "intensity": 2,
+      "intensity": 1,
       "tags": [
         "expectations",
         "tonight"
@@ -1370,12 +1581,26 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 2,
         "emotional": 3,
         "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1400,32 +1625,21 @@
         "emotional": 2,
         "depth": 3,
         "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
-      }
-    },
-    {
-      "text": "Which of my habits have you quietly picked up?",
-      "id": "f67951c6b0",
-      "tier": 1,
-      "intensity": 2,
-      "tags": [
-        "influence",
-        "habits"
-      ],
-      "origin": null,
-      "gen": {
-        "provider": "anthropic",
-        "model": "claude-opus-5",
-        "prompt": "generate@1",
-        "at": "2026-09-03T12:17:50.655Z"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
       },
-      "scores": {
-        "conversation": 4,
-        "intellectual": 2,
-        "emotional": 3,
-        "depth": 2,
-        "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1445,12 +1659,26 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 4,
+        "conversation": 5,
         "intellectual": 2,
         "emotional": 3,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
@@ -1470,12 +1698,27 @@
         "at": "2026-09-03T12:17:50.655Z"
       },
       "scores": {
-        "conversation": 3,
+        "conversation": 4,
         "intellectual": 2,
-        "emotional": 4,
+        "emotional": 3,
         "depth": 3,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
       }
     },
     {
@@ -1499,18 +1742,1415 @@
         "intellectual": 2,
         "emotional": 4,
         "depth": 3,
-        "voice": 4,
-        "rated": "gemini-3.8-flash@rate@1"
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
       }
     },
     {
-      "text": "What was the first detail about me that caught your attention?",
-      "id": "4ad3ea9dd5",
+      "text": "Tell me the closest you have come to walking away from me.",
+      "id": "639dc8cfaa",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "leaving",
+        "loyalty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.805Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What have you been afraid to ask me?",
+      "id": "2fd4c62226",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "fear",
+        "unsaid"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you think I need to hear from you tonight?",
+      "id": "2becf7bf8f",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "need",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Where do you think you've let me down?",
+      "id": "f246585b7f",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "regret",
+        "guilt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "When have you felt furthest from me?",
+      "id": "4894465cc4",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "distance",
+        "closeness"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "If this were our last conversation, what would you need to say?",
+      "id": "699bb3d79d",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "mortality",
+        "unsaid"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you hope I never find out?",
+      "id": "b7e488c7cf",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "secrets",
+        "shame"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "failure",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Guess the last thing that made me cry.",
+      "id": "098aed4f29",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "crying",
+        "guessing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Tell me what you think makes me nervous.",
+      "id": "f0048b6620",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "nerves",
+        "anxiety"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.803Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Where do you think I'd go if I disappeared for a week?",
+      "id": "db3e9d7965",
       "tier": 1,
       "intensity": 1,
       "tags": [
-        "first impression",
+        "escape",
+        "guessing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.654Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 3,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "home",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Which one of us is more honest? Be honest.",
+      "id": "b5b4d0a24a",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "comparison"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you think I do when I'm alone all evening?",
+      "id": "cdd091ffc1",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "solitude",
+        "guessing"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "home",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What truth about us do you think I resist?",
+      "id": "dda7d6179e",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "truth",
+        "resistance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 4,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 5,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you think I expect from you but never say?",
+      "id": "354d603b2c",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "pressure",
+        "expectations"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Describe a moment when knowing me cost you something.",
+      "id": "2b198807e2",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "sacrifice",
+        "consequence"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What do you miss about how we used to be?",
+      "id": "d239020007",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "change",
+        "nostalgia"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Have I ever disappointed you more than you let on?",
+      "id": "80c78861cc",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "disappointment",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What do you think I would judge you for if I knew?",
+      "id": "31687c5354",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "judgment",
+        "secrets"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you wish I had apologized for?",
+      "id": "c892d66e02",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "apology",
+        "hurt"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "failure",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What do I do that makes you feel overlooked?",
+      "id": "e7b39aff6a",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "overlooked",
         "attention"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "How do I make it hard for you to be honest with me?",
+      "id": "ab8cdf169c",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "honesty",
+        "friction"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "process",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What part of my life do you feel shut out of?",
+      "id": "f71a7549ea",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "distance",
+        "exclusion"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you think I misunderstand about you?",
+      "id": "2458194539",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "perception",
+        "identity"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 3,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you think I hide from you?",
+      "id": "09a2f1048e",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "secrets",
+        "trust"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What have you been waiting for me to say?",
+      "id": "58b45340ed",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "expectation",
+        "silence"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.805Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "affect",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Tell me something you know about me that I don't.",
+      "id": "315513b47d",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "perception",
+        "insight"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.805Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 3,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you pretend to like about me?",
+      "id": "4a1ddb4e15",
+      "tier": 2,
+      "intensity": 4,
+      "tags": [
+        "pretense",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.805Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 5,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship",
+          "failure"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What is the lie we tell each other the most?",
+      "id": "1bf1c18820",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "lies",
+        "habit"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.805Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 3,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What would you want me to do if you fell apart in front of me?",
+      "id": "7ef6d301ac",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "crisis",
+        "care"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "friendship",
+          "body"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "When did you first decide I was someone you could trust?",
+      "id": "cd2851af1d",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "trust",
+        "memory"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "When have you felt jealous of someone else’s place in my life?",
+      "id": "7425055c8b",
+      "tier": 3,
+      "intensity": 3,
+      "tags": [
+        "jealousy",
+        "importance"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Is there a promise you want from me but cannot ask for?",
+      "id": "ac6b309128",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "promise",
+        "commitment"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Tell me what you want me to remember about you when you're gone.",
+      "id": "01137962e3",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "legacy",
+        "mortality"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.608Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 5,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "future",
+        "subjects": [
+          "mortality",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What do you need from me right now that I am not giving you?",
+      "id": "740f9f5092",
+      "tier": 3,
+      "intensity": 4,
+      "tags": [
+        "needs",
+        "support"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.804Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 5,
+        "depth": 4,
+        "voice": 4,
+        "escapability": 1,
+        "specificity": 3,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Tell me one way I've changed since you met me.",
+      "id": "9fd1e88c8e",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "change",
+        "observation"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:17:50.655Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "How am I different from the person you expected to meet?",
+      "id": "318ba8a06d",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "expectations",
+        "surprise"
       ],
       "origin": null,
       "gen": {
@@ -1524,8 +3164,415 @@
         "intellectual": 2,
         "emotional": 2,
         "depth": 2,
+        "voice": 4,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Where do you think you and I are most different?",
+      "id": "f275a75b24",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "differences",
+        "perception"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "Give me a compliment you've thought of but haven't said.",
+      "id": "79b8d2ccca",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "compliment",
+        "honesty"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.606Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 3,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What quality of mine would you like a little more of yourself?",
+      "id": "c4bd8d579b",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "admiration",
+        "character"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 2,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "priority",
+        "time": "present",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "How can you tell when I'm slightly nervous around you?",
+      "id": "0d4c399a92",
+      "tier": 1,
+      "intensity": 2,
+      "tags": [
+        "nerves",
+        "body language"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 3,
+        "depth": 3,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 3,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "present",
+        "subjects": [
+          "body",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "What about you do you think I noticed before anything else?",
+      "id": "8e8df04e6a",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "self-image",
+        "attention"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 3,
+        "intellectual": 1,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 3,
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "body",
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "fact"
+      }
+    },
+    {
+      "text": "Which choice I've made tonight has told you the most about me?",
+      "id": "cec76378c2",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "choices",
+        "character"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:18:35.607Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 3,
+        "emotional": 2,
+        "depth": 2,
+        "voice": 4,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 2,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "identity"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What kind of teenager do you think I was?",
+      "id": "04f7d3efb3",
+      "tier": 1,
+      "intensity": 1,
+      "tags": [
+        "past",
+        "youth"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@1",
+        "at": "2026-09-03T12:19:59.803Z"
+      },
+      "scores": {
+        "conversation": 4,
+        "intellectual": 2,
+        "emotional": 2,
+        "depth": 2,
         "voice": 5,
-        "rated": "gemini-3.8-flash@rate@1"
+        "escapability": 3,
+        "specificity": 3,
+        "exposureCost": 2,
+        "revealed": 2,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "position",
+        "time": "past",
+        "subjects": [
+          "identity",
+          "family"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "What's something I've said tonight you didn't believe?",
+      "id": "591308ec29",
+      "tier": 2,
+      "intensity": 2,
+      "tags": [
+        "honesty",
+        "tonight"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:43:35.229Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 3,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 4,
+        "exposureCost": 3,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": false,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "verdict"
+      }
+    },
+    {
+      "text": "What have you done for me that I never found out about?",
+      "id": "ad994f90f3",
+      "tier": 2,
+      "intensity": 3,
+      "tags": [
+        "care",
+        "hidden"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:45:14.046Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 2,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 2,
+        "specificity": 4,
+        "exposureCost": 4,
+        "revealed": 5,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "experience",
+        "time": "past",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "story"
+      }
+    },
+    {
+      "text": "Which of your friends dislikes me?",
+      "id": "d0d1647601",
+      "tier": 1,
+      "intensity": 3,
+      "tags": [
+        "friends",
+        "judgment"
+      ],
+      "origin": null,
+      "gen": {
+        "provider": "gemini",
+        "model": "gemini-3.1-pro-preview",
+        "prompt": "generate@3",
+        "at": "2026-09-04T05:46:20.543Z"
+      },
+      "scores": {
+        "conversation": 5,
+        "intellectual": 1,
+        "emotional": 4,
+        "depth": 4,
+        "voice": 5,
+        "escapability": 1,
+        "specificity": 5,
+        "exposureCost": 4,
+        "revealed": 4,
+        "rated": "gemini-3.8-flash@rate@5"
+      },
+      "assumesHistory": true,
+      "facets": {
+        "target": "position",
+        "time": "present",
+        "subjects": [
+          "friendship"
+        ],
+        "relational": "relational",
+        "shape": "fact"
       }
     }
   ]
