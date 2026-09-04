@@ -94,8 +94,10 @@ scroll — cancel on drift, and don't bind mouse events at all.
 
 `/spin/` (`SpinGame`) is a slot machine over every deck except improv (word banks) and Never
 Have I Ever (statements that only work as that game; `EXCLUDED` in `spin/index.astro`):
-filters (decks, exposure range, minimum conversation/depth) set the pool and persist in
-localStorage; spin draws one card. `/spin/` is a reserved slug.
+filters (decks as an exclusion list, Thought Experiments out by default because a read-aloud
+scenario is a different evening from a one-line question; exposure range; minimum
+conversation/depth; subject, answer shape, frame) set the pool and persist in localStorage;
+spin draws one card. `/spin/` is a reserved slug.
 
 **`assumesHistory`** (card field, optional): true when a card only makes sense between two
 people with a history together ("What do you blame me for that you chose yourself?"); false

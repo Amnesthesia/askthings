@@ -394,13 +394,26 @@ html.js .game::before {
 	filter: hue-rotate(var(--drift, 0deg));
 	transition: filter 220ms ease, background-color 220ms ease;
 }
-html.game-open,
-html.game-open body {
+/* While a game is open the document behind it must not scroll at all: iOS
+   Safari ignores overflow:hidden on html, keeps scrolling the list underneath,
+   collapses its toolbar, and the fixed game (sized to the layout viewport)
+   comes up short at the bottom, showing the page behind. Locking the body in
+   place is the only thing iOS honours. The dark background is a belt: if any
+   strip ever shows, it is black, not the deck list. */
+html.game-open {
 	overflow: hidden;
-	height: 100%;
-	/* Rubber-banding past the fixed game showed the page background (white in
-	   light mode) as a strip at the bottom. Nothing behind the game may scroll. */
 	overscroll-behavior: none;
+	background: #0b0b0b;
+}
+html.game-open body {
+	position: fixed;
+	inset: 0;
+	overflow: hidden;
+	background: #0b0b0b;
+}
+html.js .game {
+	height: 100dvh;
+	min-height: 100%;
 }
 html.js .game-resume {
 	position: fixed;
@@ -542,8 +555,12 @@ html.js .game-resume {
 	/* Pico styles every <article> as a card on --surface (white in light
 	   mode), which put white text on a white box. The level colour is the
 	   only background here. */
-	padding: 0.5rem;
-	background: transparent;
+	padding: 0.5rem 1rem;
+	/* Same colour as the page layer, drifted the same way, so a card sliding
+	   over the one leaving hides it instead of interlacing two texts. White
+	   text is unaffected by hue-rotate. */
+	background: var(--game);
+	filter: hue-rotate(var(--drift, 0deg));
 	box-shadow: none;
 	border: 0;
 	border-radius: 0;

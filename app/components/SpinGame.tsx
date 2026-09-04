@@ -64,8 +64,9 @@ const DEFAULT: Filters = {
 	shape: null,
 	relational: null,
 };
-/** Same slot-machine timing as Improv. */
+/** Same slot-machine timing as Improv; slide matches GameDeck's SLIDE_MS. */
 const SPIN_MS = 900;
+const SLIDE_MS = 240;
 const TICK_MS = 70;
 const SCORES = ["conversation", "depth"] as const;
 const SCORE_LABEL = {
@@ -92,6 +93,12 @@ export default function SpinGame({ cards, decks }: Props) {
 	const [panel, setPanel] = useState(false);
 	const [card, setCard] = useState<SpinCard | null>(null);
 	const [spinning, setSpinning] = useState(false);
+	/** The card on its way out, so the new one can slide in over it. */
+	const [leaving, setLeaving] = useState<SpinCard | null>(null);
+	const current = useRef<SpinCard | null>(null);
+	useEffect(() => {
+		current.current = card;
+	}, [card]);
 	const [starred, setStarred] = useState(false);
 
 	// Filters are read after mount: the server has no localStorage.
@@ -148,6 +155,11 @@ export default function SpinGame({ cards, decks }: Props) {
 		if (reduce || pool.length < 2) {
 			settle();
 			return;
+		}
+		// Slide the old card out to the left while the new one flickers in.
+		if (current.current) {
+			setLeaving(current.current);
+			window.setTimeout(() => setLeaving(null), SLIDE_MS);
 		}
 		setSpinning(true);
 		const started = Date.now();
@@ -497,9 +509,18 @@ export default function SpinGame({ cards, decks }: Props) {
 
 			<div className="game-stage" ref={stage}>
 				<div className="game-track">
+					{leaving && (
+						<article
+							className="game-card leave-left"
+							aria-hidden="true"
+							key={`leaving-${leaving.id}`}
+						>
+							<CardView kind={leaving.kind} card={leaving} />
+						</article>
+					)}
 					{card ? (
 						<article
-							className={`game-card${spinning ? " spinning" : ""}`}
+							className={`game-card${spinning ? " spinning" : ""}${leaving ? " enter-left" : ""}`}
 							aria-live={spinning ? "off" : "polite"}
 						>
 							<CardView kind={card.kind} card={card} />
