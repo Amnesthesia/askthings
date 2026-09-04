@@ -36,14 +36,16 @@ interface Props {
 }
 
 interface Filters {
-	/** Deck slugs to draw from; empty means every deck. */
-	decks: string[];
+	/** Deck slugs left out of the pool. Thought Experiments is out by default:
+	 * a read-aloud scenario is a different evening from a one-line question. */
+	excluded: string[];
 	range: [Intensity, Intensity];
 	/** Minimum scores; a missing key means any. Voice is not offered: the gate
 	 * already keeps only cards that sound like a person, so there is nothing
 	 * for a player to tune. */
 	mins: { conversation?: number; depth?: number };
-	/** Include cards that presume a shared history. Off by default. */
+	/** Include cards that presume a shared history. On by default; untick for
+	 * a table of near-strangers. */
 	assumesHistory: boolean;
 	/** Rater's facets: subjects (any match; empty = all), answer shape, frame. */
 	subjects: string[];
@@ -52,11 +54,12 @@ interface Filters {
 }
 
 const FILTERS_KEY = "askthings:spin-filters";
+const DEFAULT_EXCLUDED = ["thought-experiments"];
 const DEFAULT: Filters = {
-	decks: [],
+	excluded: DEFAULT_EXCLUDED,
 	range: [1, 4],
 	mins: {},
-	assumesHistory: false,
+	assumesHistory: true,
 	subjects: [],
 	shape: null,
 	relational: null,
@@ -120,8 +123,7 @@ export default function SpinGame({ cards, decks }: Props) {
 				if (filters.shape && c.facets?.shape !== filters.shape) return false;
 				if (filters.relational && c.facets?.relational !== filters.relational)
 					return false;
-				if (filters.decks.length && !filters.decks.includes(c.deck))
-					return false;
+				if (filters.excluded.includes(c.deck)) return false;
 				if (c.intensity < filters.range[0] || c.intensity > filters.range[1])
 					return false;
 				for (const k of SCORES) {
@@ -215,9 +217,9 @@ export default function SpinGame({ cards, decks }: Props) {
 	};
 	const toggleDeck = (slug: string) =>
 		update({
-			decks: filters.decks.includes(slug)
-				? filters.decks.filter((d) => d !== slug)
-				: [...filters.decks, slug],
+			excluded: filters.excluded.includes(slug)
+				? filters.excluded.filter((d) => d !== slug)
+				: [...filters.excluded, slug],
 		});
 	const setLo = (v: number) =>
 		update({
@@ -228,10 +230,11 @@ export default function SpinGame({ cards, decks }: Props) {
 			range: [filters.range[0], Math.max(v, filters.range[0]) as Intensity],
 		});
 	const active =
-		filters.decks.length > 0 ||
+		[...filters.excluded].sort().join() !==
+			[...DEFAULT_EXCLUDED].sort().join() ||
 		filters.range[0] !== 1 ||
 		filters.range[1] !== 4 ||
-		filters.assumesHistory ||
+		!filters.assumesHistory ||
 		filters.subjects.length > 0 ||
 		filters.shape !== null ||
 		filters.relational !== null ||
@@ -328,20 +331,15 @@ export default function SpinGame({ cards, decks }: Props) {
 						setPanel(false);
 					}}
 				>
-					<label className="spin-about-us">
-						<input
-							type="checkbox"
-							checked={filters.assumesHistory}
-							onChange={(e) => update({ assumesHistory: e.target.checked })}
-						/>
-						Include questions that assume a shared history (
-						{assumesHistoryCount}), like "What do you blame me for that you
-						chose yourself?"
-					</label>
+					<div className="spin-filters-head">
+						<h2>Filter the pool</h2>
+						<span className="spin-pool" aria-live="polite">
+							{pool.length} of {cards.length} cards
+						</span>
+					</div>
 					<fieldset className="tag-field">
 						<legend>
-							Decks
-							{filters.decks.length ? ` (${filters.decks.length})` : " (all)"}
+							Decks ({decks.length - filters.excluded.length} of {decks.length})
 						</legend>
 						<div className="tag-chips">
 							{decks.map((d) => (
@@ -349,7 +347,7 @@ export default function SpinGame({ cards, decks }: Props) {
 									type="button"
 									key={d.deck}
 									className="tag-chip"
-									aria-pressed={filters.decks.includes(d.deck)}
+									aria-pressed={!filters.excluded.includes(d.deck)}
 									onClick={() => toggleDeck(d.deck)}
 								>
 									{d.name}
@@ -476,9 +474,14 @@ export default function SpinGame({ cards, decks }: Props) {
 							</label>
 						))}
 					</fieldset>
-					<p className="spin-pool" aria-live="polite">
-						{pool.length} cards in the pool
-					</p>
+					<label className="spin-about-us">
+						<input
+							type="checkbox"
+							checked={filters.assumesHistory}
+							onChange={(e) => update({ assumesHistory: e.target.checked })}
+						/>
+						Include shared history questions ({assumesHistoryCount})
+					</label>
 					<div className="spin-filter-actions">
 						<button
 							type="button"

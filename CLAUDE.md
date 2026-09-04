@@ -103,8 +103,9 @@ for anything two people who met tonight could ask, even if it says "me" ("What d
 about me?", first impressions, this evening). Declared by the writer (generate schema),
 judged fresh by the rater (its verdict wins), written by publish; the pre-existing corpus was
 backfilled by the same judge. Never inferred from the text with a pattern: a pronoun test
-flags exactly the first-evening cards that are fine. Spin holds these cards back unless the
-player switches them on; inside their own deck (Unaskable L4, Undercurrent) they are the point.
+flags exactly the first-evening cards that are fine. Spin includes them by default with a
+checkbox to drop them for a table of near-strangers; inside their own deck (Unaskable L4,
+Undercurrent) they are the point.
 The definition is one string, `ASSUMES_HISTORY` in `prompts.ts`, shared by every prompt.
 
 The deck switcher is `src/components/DeckMenu.astro`, a native `<details>`: on a phone it is
