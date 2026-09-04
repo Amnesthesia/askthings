@@ -11,6 +11,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Deck, ImprovCard } from "../../src/shared.ts";
 import { deckPath } from "../../src/shared.ts";
 import { useSwipe } from "../hooks/useSwipe.ts";
+import { useThemeColor } from "../hooks/useThemeColor.ts";
 import DeckPicker from "./DeckPicker.tsx";
 import type { DeckLink } from "./GameDeck.tsx";
 
@@ -47,6 +48,7 @@ export default function ImprovGame({ deck, decks }: Props) {
 	const levels = deck.tiers.map((t) => t.level);
 	const [tier, setTier] = useState(levels[0] ?? 1);
 	const levelPos = levels.indexOf(tier);
+	useThemeColor(tier);
 	const [players, setPlayers] = useState(2);
 	const [menu, setMenu] = useState(false);
 	const [combos, setCombos] = useState<Combo[]>([]);

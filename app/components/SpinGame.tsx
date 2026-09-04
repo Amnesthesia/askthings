@@ -13,6 +13,7 @@ import {
 	SUBJECTS,
 } from "../../src/shared.ts";
 import { useSwipe } from "../hooks/useSwipe.ts";
+import { useThemeColor } from "../hooks/useThemeColor.ts";
 import { isFavourite, toggleFavourite } from "../utils/favourites.ts";
 import CardView from "./CardView.tsx";
 import DeckPicker from "./DeckPicker.tsx";
@@ -93,6 +94,7 @@ export default function SpinGame({ cards, decks }: Props) {
 	const [card, setCard] = useState<SpinCard | null>(null);
 	const [spinning, setSpinning] = useState(false);
 	const [starred, setStarred] = useState(false);
+	useThemeColor(card?.intensity ?? 1);
 
 	// Filters are read after mount: the server has no localStorage.
 	useEffect(() => {

@@ -89,7 +89,10 @@ deck (`FavouritesGame`, `linkable={false}`, cards carry their own `kind`). Horiz
 vertical swipe = jump tiers. Desktop: arrow keys on the same axes, visible level indicator
 ("Level 2", never the name) and position ("7 / 12"), and an option to show all tiers at once, one card each. The URL reflects
 the current card (`/{deck}/{id}/`) so any position is linkable and back/forward work.
-`prefers-reduced-motion` respected. Touch targets ≥ 44px. The gesture must not fire on a
+`prefers-reduced-motion` respected (Spin's flicker settles instantly under it). Touch targets ≥ 44px.
+The viewport is `viewport-fit=cover` and every game sets a `theme-color` meta to the current
+level colour, drift included (`useThemeColor`), removing it on exit: without one iOS Safari
+samples the page once at load and tints the notch and toolbar with level 1's teal forever. The gesture must not fire on a
 scroll — cancel on drift, and don't bind mouse events at all.
 
 `/spin/` (`SpinGame`) is a slot machine over every deck except improv (word banks) and Never
@@ -135,6 +138,13 @@ call (12 for question decks) and `generate` issues as many calls per (deck, leve
 as it takes for the level to hold `oversupply` × `targetPerTier` (default 3) unrejected
 candidates; each call's prompt names its call number, which spreads subjects and gives it its
 own cache key. A level already over its oversupply asks for nothing.
+
+**Subject steering is on** (`GEN_STEER=0` to A/B it off): each call gets a rotating slice of
+the subject list plus a shape/time/frame line. Measured on Inquisitives, 400 vs 411 cards,
+same judge: conversation 3.88 → 4.01 (t 3.1), depth 2.84 → 3.05 (t 2.8), specificity 3.62 →
+3.76, escapability 2.09 → 2.00; faith 11 → 27, sex 6 → 32, future 22 → 97 cards; revealed
+slipped 3.51 → 3.40; verdict share unchanged. The subject slice does the work; the shape
+line barely moves shape, so mix control of shape belongs at deal time if it is ever needed.
 
 ### Batch mode
 

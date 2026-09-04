@@ -22,6 +22,7 @@ import {
 } from "../../src/shared.ts";
 import { useShake } from "../hooks/useShake.ts";
 import { useSwipe } from "../hooks/useSwipe.ts";
+import { useThemeColor } from "../hooks/useThemeColor.ts";
 import {
 	buildOrder,
 	dealOrder,
@@ -151,6 +152,7 @@ export default function GameDeck({
 	// Position within the level as a hue offset, centred on the level's colour.
 	const drift =
 		ids.length > 1 ? ((index / (ids.length - 1)) * 2 - 1) * (HUE_DRIFT / 2) : 0;
+	useThemeColor(tier, Number(drift.toFixed(1)));
 
 	// Favourites: read after mount (localStorage), refreshed on every toggle.
 	const [favCount, setFavCount] = useState(0);

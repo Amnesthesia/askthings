@@ -59,7 +59,12 @@ const OVERSUPPLY = 3;
 
 /** Subject and shape steering per call (GEN_STEER=0 turns it off, for A/B
  * runs). The first corpus measured without it: identity 292, friendship 284,
- * faith 10, body 51; verdicts 551 to stories 341; future 109 of 961. */
+ * faith 10, body 51; verdicts 551 to stories 341; future 109 of 961.
+ * A/B on Inquisitives, 400 vs 411 cards, same judge (2026-09-04): steering
+ * raised conversation 3.88 -> 4.01 (t 3.1), depth 2.84 -> 3.05 (t 2.8),
+ * specificity 3.62 -> 3.76, lowered escapability 2.09 -> 2.00; faith 11 -> 27,
+ * sex 6 -> 32, future 22 -> 97; revealed slipped 3.51 -> 3.40. Shape barely
+ * moved (verdicts 36% -> 35%): the shape line does little, the subjects do. */
 const STEER = process.env.GEN_STEER !== "0";
 /** A rotating slice of the subject list, so a level's parallel calls cover it
  * between them: call 1 of 3 gets subjects 1-4, call 2 gets 5-8, and so on. */
